@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* === 1.GENERAL STYLES === */
+
+
+/* ===  Main Css === */
+
+@import 'config/fonts';
+@import 'config/variables';
+
+/* ===  General Styles === */
+
+@import 'base/base';
+
+/* ===  Header Styles === */
+
+@import 'base/header/header';
+
+/* ===  Footer Styles === */
+
+// @import 'base/footer/footer';
