@@ -17,10 +17,11 @@
         haloTimeout: null,
         ready: function() {},
         init: function() {
-            this.sliderBannerBlock();
+            this.initSliderBanner();
+            this.initDropdownColumns();
         },
 
-        sliderBannerBlock: function() {
+        initSliderBanner: function() {
             var bannerBlock = $('[data-banner-carousel]');
 
             bannerBlock.each(function() {
@@ -78,7 +79,29 @@
                 }
 
             });
-        }
+        },
+
+        initDropdownColumns: function() {
+            var sectionColumnTitle = document.querySelectorAll('[data-toggle-column]');
+            if (sectionColumnTitle.length) {
+                for (i = 0; i < sectionColumnTitle.length; i++) {
+                    (function(i) {
+                        sectionColumnTitle[i].addEventListener('click', (event) => {
+                            var $this = event.target,
+                                $content = $this.nextElementSibling;
+
+                            $this.classList.toggle('is-clicked');
+
+                            if ($content.style.maxHeight) {
+                                $content.style.maxHeight = null;
+                            } else {
+                                $content.style.maxHeight = $content.scrollHeight + 'px';
+                            }
+                        });
+                    })(i);
+                }
+            }
+        },
 
 
     }
