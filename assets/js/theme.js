@@ -91,6 +91,7 @@
                                 $content = $this.nextElementSibling;
 
                             $this.classList.toggle('is-clicked');
+                            $content.classList.toggle('is-active');
 
                             if ($content.style.maxHeight) {
                                 $content.style.maxHeight = null;
@@ -103,6 +104,6 @@
             }
         },
 
-
+        
     }
 })(jQuery);
