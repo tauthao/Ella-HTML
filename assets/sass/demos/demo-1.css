@@ -57,10 +57,6 @@
 }
 
 /* START: Section Sub Banner */
-.halo-sub-banner {
-  padding-bottom: 30px;
-}
-
 .halo-sub-banner .banner-title {
   margin: 0;
 }
@@ -72,6 +68,10 @@
 }
 
 /* START: Section  spotlight*/
+.spotlight-block {
+  padding-top: 32px;
+}
+
 .spotlight-block .content {
   padding-top: 30px;
 }
