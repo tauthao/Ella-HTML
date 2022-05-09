@@ -1420,7 +1420,7 @@ svg {
         }
     }
     .product-carousel {
-        .row * {
+        .row .slick-list {
             padding: 0;
         }
         .product-item {
