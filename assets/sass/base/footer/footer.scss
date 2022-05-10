@@ -97,9 +97,7 @@
         &:hover {
             box-shadow: 0 0 0 2px #ffffff;
             &::before {
-                webkit-transform: scale(1);
-                -moz-transform: scale(1);
-                -ms-transform: scale(1);
+                box-shadow: 0 0 0 2px #ffffff!important;
                 transform: scale(1);
                 opacity: 1
             }

@@ -116,6 +116,10 @@ select::-ms-expand {
     display: none
 }
 
+input[type=search]::-webkit-search-cancel-button {
+    display: none;
+}
+
 blockquote {
     border: none;
     background-color: #fafafa;
@@ -513,12 +517,12 @@ a {
 
 .link-underline:hover .text {
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.2rem;
 }
 
 .text-underline .text {
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.2rem;
 }
 
 .image-adapt {
@@ -570,7 +574,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -1272,6 +1276,7 @@ svg {
             color: #232323;
             border-color: #232323;
             width: 100%;
+            min-width: auto;
         }
     }
     .product-infinite-scroll {

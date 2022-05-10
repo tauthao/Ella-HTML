@@ -23,6 +23,7 @@
             this.initPopupRecentlyViewed();
             this.initCloseAnnouncementBar();
             this.initLanguageCurrency();
+            this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
         },
 
@@ -57,7 +58,7 @@
                                         dots: itemDots,
                                         arrows: itemRow,
                                         slidesToShow: itemShow,
-                                        slidesToScroll: 1,
+                                        slidesToScroll: 1
                                     }
                                 },
                                 {
@@ -66,7 +67,7 @@
                                         dots: itemDots,
                                         arrows: itemRow,
                                         slidesToShow: 4,
-                                        slidesToScroll: 1,
+                                        slidesToScroll: 2
                                     }
                                 },
                                 {
@@ -75,7 +76,7 @@
                                         dots: itemDots_mb,
                                         arrows: itemRow_mb,
                                         slidesToShow: 3,
-                                        slidesToScroll: 3,
+                                        slidesToScroll: 3
                                     }
                                 }
                             ]
@@ -225,17 +226,40 @@
         },
 
         initLanguageCurrency: function() {
-            if ($('.header-language_currency').length > 0) {
-                $doc.on('click', '.header-language_currency .halo-language', (event) => {
-                    $('.dropdown-language').toggleClass('show');
+            var languageCurrency = $(".header-language_currency");
+
+            if (languageCurrency.length > 0) {
+                $doc.on('click', '[data-dropdown-toogle]', (event) => {
+                    if ($(event.currentTarget).find(".halo-dropdown").hasClass('show')) {
+                        $('.halo-dropdown').removeClass('show');
+                    } else {
+                        $('.halo-dropdown').removeClass('show');
+                        $(event.currentTarget).find(".halo-dropdown").toggleClass('show');
+                    }
                 });
 
-                // $doc.on('click', (event) => {
-                //     if ($('.dropdown-language-currency').hasClass('show') && ($(event.target).closest('.wrapper_language_currency').length === 0)) {
-                //         $('.dropdown-language-currency').removeClass('show');
-                //     }
-                // });
+                $doc.on('click', (event) => {
+                    if ($('.halo-dropdown').hasClass('show') && ($(event.target).closest('[data-dropdown-toogle]').length === 0)) {
+                        $('.halo-dropdown').removeClass('show');
+                    }
+                });
             }
+        },
+
+        initOpenSearchForm: function() {
+            var inputSearch = $(".header-search__form .header-search__input"),
+                quickSearchResul = inputSearch.parents(".header-search").find(".quickSearchResultsWrap");
+
+            inputSearch.focus(function() {
+                quickSearchResul.addClass("show");
+            });
+
+            $doc.on('click', (event) => {
+                if ($('.quickSearchResultsWrap').hasClass('show') && ($(event.target).closest('.header-search').length === 0)) {
+                    $('.quickSearchResultsWrap').removeClass('show');
+                }
+            });
+
         },
 
         initDynamicBrowserTabTitle: function() {

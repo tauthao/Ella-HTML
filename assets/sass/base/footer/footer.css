@@ -120,7 +120,8 @@
 }
 
 .list-social .list-social__link:hover::before {
-  webkit-transform: scale(1);
+  -webkit-box-shadow: 0 0 0 2px #ffffff !important;
+          box-shadow: 0 0 0 2px #ffffff !important;
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
