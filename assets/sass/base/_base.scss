@@ -427,6 +427,18 @@ table th {
             color: #ffffff;
         }
     }
+    &.button-3 {
+        background-color: transparent;
+        border-color: #ffffff;
+        color: #ffffff;
+        width: 270px;
+        height:50px;
+        &:hover {
+            background-color: #232323;
+            border-color: #232323;
+            color: #ffffff;
+        }
+    }
 }
 
 .left,
@@ -465,6 +477,10 @@ table th {
     padding: 15px;
     margin: 0 auto;
     width: 100%;
+}
+
+.content-box--full {
+    max-width:100% !important;
 }
 
 br:empty,

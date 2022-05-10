@@ -4,14 +4,14 @@
 }
 
 .page-header {
-    display: block;
-    font-size: 24px;
+    position: relative;
     font-weight: bold;
     font-style:normal;
-    line-height: 20px;
-    letter-spacing: .05em;
     color: #232323;
-    position: relative;
+    display: block;
+    letter-spacing: .05em;
+    line-height: 20px;
+    font-size: 24px;
     margin: 0;
 }
 
@@ -21,12 +21,19 @@
 
 .faqs-title:after {
     content: "";
+    background-color: #69c69c;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #69c69c;
+}
+
+.halo-faqs-content {
+    .link-support {
+        text-decoration: underline;
+        text-underline-offset: 0.1rem;
+    }
 }
 
 .faqs-message {
@@ -34,14 +41,15 @@
     .desc{
         margin-top:27px;
     }
+
     .faqs-icon-container {
-        margin-top: 26px;
         display: flex;
         justify-content: center;
         align-items: center;
         justify-items: center;
         width: 100%;
         min-height: 110px;
+        margin-top: 26px;
         border-radius: 0.5rem;
         border: 2px solid #fafafa;
         .message-icon {
@@ -53,10 +61,15 @@
             row-gap: 6px;
             height: 52px;
         }
+
         .message-icon-1+.message-icon-2 {
             border-left: 1px solid #232323;
         }
-            
+
+        img {
+            width:28px;
+            height:29px;
+        }       
     }
 }
 
@@ -65,20 +78,20 @@ h3.title-technical{
 }
 
 .faqs-title {
-    margin-bottom: 28px;
     position: relative;
     width: max-content;
+    margin-bottom: 28px;
     padding-bottom: 7px;
 }
 
 .page-subheader {
     display: block;
+    position: relative;
+    color: #232323;
     font-size: calc(24px - 6px);
     font-weight: 600;
     letter-spacing: .02em;
     line-height: calc(24px + 2px);
-    position: relative;
-    color: #232323;
     margin: 0;
 }
 
@@ -87,68 +100,68 @@ h3.title-technical{
 }
 
 .faqs-item {
-    margin-top: 15px;
+    cursor: pointer; 
     background-color: #fafafa;
-    padding-bottom: 20px;
-    cursor: pointer;  
-    .faqs-heading{
+    margin-top: 15px;
+    padding-bottom: 20px;  
+    .faqs-heading {
         display: inline-block;
         position: relative;
+        color: #232323;
         width: 100%;
         top: 10px;
         font-size:14px;
         line-height: 24px;
-        color: #232323;
         font-weight: 600;
+
         .text {
-            padding: 15px 135px 15px 30px;
             cursor: pointer;
             display: flex;
             flex-wrap: wrap;
+            padding: 15px 135px 15px 30px;      
         } 
         
     }
     .arrow {
         display: inline-block;
         vertical-align: top;
+        pointer-events: none;
         position: absolute;
         top: 50%;
         right: 15px;
         width: 11px;
         height: 11px;
         z-index: 2;
-        pointer-events: none;
-        transform: translateY(-50%) rotate(45deg);
-        border: solid #232323;
-        border-width: 0px 2px 2px 0px;
         padding: 3px;
         transition: all ease .35s;
+        border: solid #232323;
+        border-width: 0px 2px 2px 0px;
+        transform: translateY(-50%) rotate(45deg);
     }
     
     .icon-plus {
         right: 32px;
     }
     
-    
-
     .desc-demo {
         position: relative;
         top: 25px;
-        border-top: 1px solid #232323;
         width:100%;
         padding:25px 0 50px 0;
         font-size: 12px;
         line-height:24px;
         letter-spacing:.02em;
         color: #3c3c3c;
+        border-top: 1px solid #232323;
         .list-item:first-child {
             margin-top: 18px;
         }
-        .list-item {
-            margin-top: 17px;
+
+        .list-item {       
             height: max-content;
             display: flex;
             gap: 11px;
+            margin-top: 17px;
             .list-circle-container {
                 height: 100%;
                 width: 7px;
@@ -162,16 +175,14 @@ h3.title-technical{
                     width: 7px;
                     height: 7px;
                     border-radius: 50%;
-                    background-color: #232323;
-                   
+                    background-color: #232323;   
                 }
             }
+
             .a-color{
                 color: #0688E2;
             }
-        }
-       
-        
+        }  
     }
 
      &:not(.collapsed){
@@ -186,23 +197,23 @@ h3.title-technical{
     padding: 0 30px;
 } 
 
-
-
 .button-contact {
     display: flex;
     justify-content: flex-end;
     margin: 50px 0 100px 0;
+
     a.btn {
         display: flex;
         justify-content: center;
         align-items: center;
+        background: #ef6454;
+        color: #ffffff; 
         font-size: 14px;
         letter-spacing: .05em;
         width: 245px;
         height: 46px;
-        background: #ef6454;
-        color: white;   
     }
+
     .btn-text {
         display: flex;
         justify-content: flex-end;
@@ -236,6 +247,9 @@ h3.title-technical{
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        .btn-text {
+            padding-right: 0;
+        }
     }
 }
 

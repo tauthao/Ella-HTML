@@ -4,14 +4,14 @@
 }
 
 .page-header {
-  display: block;
-  font-size: 24px;
+  position: relative;
   font-weight: bold;
   font-style: normal;
-  line-height: 20px;
-  letter-spacing: .05em;
   color: #232323;
-  position: relative;
+  display: block;
+  letter-spacing: .05em;
+  line-height: 20px;
+  font-size: 24px;
   margin: 0;
 }
 
@@ -21,12 +21,17 @@
 
 .faqs-title:after {
   content: "";
+  background-color: #69c69c;
   position: absolute;
   bottom: 0;
   left: 0;
   height: 3px;
   width: 100%;
-  background-color: #69c69c;
+}
+
+.halo-faqs-content .link-support {
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
 }
 
 .faqs-message {
@@ -38,7 +43,6 @@
 }
 
 .faqs-message .faqs-icon-container {
-  margin-top: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +55,7 @@
   justify-items: center;
   width: 100%;
   min-height: 110px;
+  margin-top: 26px;
   border-radius: 0.5rem;
   border: 2px solid #fafafa;
 }
@@ -78,27 +83,32 @@
   border-left: 1px solid #232323;
 }
 
+.faqs-message .faqs-icon-container img {
+  width: 28px;
+  height: 29px;
+}
+
 h3.title-technical {
   margin-top: 55px;
 }
 
 .faqs-title {
-  margin-bottom: 28px;
   position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-bottom: 28px;
   padding-bottom: 7px;
 }
 
 .page-subheader {
   display: block;
+  position: relative;
+  color: #232323;
   font-size: calc(24px - 6px);
   font-weight: 600;
   letter-spacing: .02em;
   line-height: calc(24px + 2px);
-  position: relative;
-  color: #232323;
   margin: 0;
 }
 
@@ -107,50 +117,50 @@ h3.title-technical {
 }
 
 .faqs-item {
-  margin-top: 15px;
-  background-color: #fafafa;
-  padding-bottom: 20px;
   cursor: pointer;
+  background-color: #fafafa;
+  margin-top: 15px;
+  padding-bottom: 20px;
 }
 
 .faqs-item .faqs-heading {
   display: inline-block;
   position: relative;
+  color: #232323;
   width: 100%;
   top: 10px;
   font-size: 14px;
   line-height: 24px;
-  color: #232323;
   font-weight: 600;
 }
 
 .faqs-item .faqs-heading .text {
-  padding: 15px 135px 15px 30px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 15px 135px 15px 30px;
 }
 
 .faqs-item .arrow {
   display: inline-block;
   vertical-align: top;
+  pointer-events: none;
   position: absolute;
   top: 50%;
   right: 15px;
   width: 11px;
   height: 11px;
   z-index: 2;
-  pointer-events: none;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-  border: solid #232323;
-  border-width: 0px 2px 2px 0px;
   padding: 3px;
   -webkit-transition: all ease .35s;
   transition: all ease .35s;
+  border: solid #232323;
+  border-width: 0px 2px 2px 0px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
 }
 
 .faqs-item .icon-plus {
@@ -160,13 +170,13 @@ h3.title-technical {
 .faqs-item .desc-demo {
   position: relative;
   top: 25px;
-  border-top: 1px solid #232323;
   width: 100%;
   padding: 25px 0 50px 0;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: .02em;
   color: #3c3c3c;
+  border-top: 1px solid #232323;
 }
 
 .faqs-item .desc-demo .list-item:first-child {
@@ -174,7 +184,6 @@ h3.title-technical {
 }
 
 .faqs-item .desc-demo .list-item {
-  margin-top: 17px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -182,6 +191,7 @@ h3.title-technical {
   display: -ms-flexbox;
   display: flex;
   gap: 11px;
+  margin-top: 17px;
 }
 
 .faqs-item .desc-demo .list-item .list-circle-container {
@@ -235,12 +245,12 @@ h3.title-technical {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #ef6454;
+  color: #ffffff;
   font-size: 14px;
   letter-spacing: .05em;
   width: 245px;
   height: 46px;
-  background: #ef6454;
-  color: white;
 }
 
 .button-contact .btn-text {
@@ -284,6 +294,9 @@ h3.title-technical {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 30px;
+  }
+  .button-contact .btn-text {
+    padding-right: 0;
   }
 }
 
