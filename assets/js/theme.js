@@ -21,7 +21,7 @@
             this.initDropdownColumns();
             this.initSliderAboutUs();
             this.initSliderPolicies();
-            this.initSliderStore();
+            this.initSlideShow();
             this.clickedActiveVideoStore();
         },
 
@@ -107,7 +107,6 @@
                 }
             }
         },
-
 
         initSliderAboutUs: function() {
             var bannerBlock = $('[data-banner-about]');
@@ -211,9 +210,8 @@
             });
         },
 
-
-        initSliderStore: function() {
-            var bannerBlock = $('[data-store-about]');
+        initSlideShow: function() {
+            var bannerBlock = $('[data-slide-show]');
 
             bannerBlock.each(function() {
                 var self = $(this),
@@ -227,8 +225,8 @@
                 if (bannerItems.length > 0) {
                     if (!bannerItems.hasClass('slick-initialized')) {
                         bannerItems.slick({
-                            fade: true,
                             mobileFirst: true,
+                            fade: true,
                             adaptiveHeight: false,
                             infinite: false,
                             vertical: false,
@@ -238,18 +236,16 @@
                             arrows: itemRow_mb,
                             nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
                             prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                            responsive: [
-                                {
-                                  breakpoint: 1200,
-                                  settings: {
+                            responsive: [{
+                                breakpoint: 767,
+                                settings: {
                                     dots: itemDots,
                                     arrows: itemRow,
                                     slidesToShow: 1,
                                     slidesToScroll: 1,
-                                  },
                                 }
-                               
-                              ],
+                            }
+                        ]
                         });
                         
                     }
@@ -329,7 +325,7 @@
                             if(!banner.find('.video-banner').hasClass('fixed_video')){
                                 banner.find('.video-banner').addClass('fixed_video');
                             }
-                        } else if($(event.currentTarget).scrollTop() > offsetTop + height + 50 ){
+                        } else if($(event.currentTarget).scrollTop() > offsetTop + height + 20 ){
                             if(!banner.find('.video-banner').hasClass('fixed_video')){
                                 banner.find('.video-banner').addClass('fixed_video');
                             }
