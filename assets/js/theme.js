@@ -25,6 +25,10 @@
             this.initLanguageCurrency();
             this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
+            this.initSidebarLogin();
+            this.initSidebarCart();
+            this.initCloseSidebar();
+            this.initGlobalCheckbox();
         },
 
         initSliderBanner: function() {
@@ -273,8 +277,61 @@
             window.onfocus = function() {
                 document.title = pageTitleContent;
             }
-        }
+        },
 
+        initSidebarLogin: function() {
+            var authIcon = $("[data-open-auth-sidebar]");
+
+            if (authIcon.length) {
+                authIcon.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('auth-sidebar-show');
+                });
+            }
+        },
+
+        initSidebarCart: function() {
+            var authIcon = $("[data-open-cart-sidebar]");
+
+            if (authIcon.length) {
+                authIcon.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('cart-sidebar-show');
+                });
+            }
+        },
+
+        initCloseSidebar: function() {
+            var closeSidebarAuth = $(".background-overlay, .halo-sidebar-close");
+
+            closeSidebarAuth.on('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                if ($body.hasClass('auth-sidebar-show')) {
+                    $body.removeClass('auth-sidebar-show');
+                }
+
+                if ($body.hasClass('cart-sidebar-show')) {
+                    $body.removeClass('cart-sidebar-show');
+                }
+            });
+        },
+
+        initGlobalCheckbox: function() {
+            $doc.on('change', '.global-checkbox--input', (event) => {
+                var targetId = event.target.getAttribute('data-target');
+
+                if (event.target.checked) {
+                    $(targetId).attr('disabled', false);
+                } else {
+                    $(targetId).attr('disabled', true);
+                }
+            });
+        }
 
     }
 })(jQuery);

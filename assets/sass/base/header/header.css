@@ -158,6 +158,11 @@
   padding-bottom: 0;
 }
 
+.header__icon:hover svg {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 /* START: Header Language and Currency */
 .header-language_currency .halo-currency {
   margin-left: 5px;
@@ -166,6 +171,11 @@
 .header-language_currency .halo-currency .text + svg {
   position: relative;
   top: -1px;
+}
+
+.header-language_currency .halo-currency .btn-group .icon {
+  position: relative;
+  top: 2px;
 }
 
 .header-language_currency .halo-currency .currency-menu {
