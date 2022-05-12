@@ -10,6 +10,7 @@
 body {
     &.cart-sidebar-show {
         overflow: hidden;
+        padding-right: 10px;
         .halo-cart-sidebar {
             transform: translate(0);
             opacity: 1;
@@ -105,7 +106,6 @@ body {
         display: block;
         font-size: 0;
         letter-spacing: 0;
-        border-top: 1px solid #e8e8e8;
         padding-top: 18px;
         padding-bottom: 14px;
     }
@@ -134,7 +134,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     flex-grow: 1;
-    padding: 15px 20px 0;
+    padding: 15px 20px 0 30px;
 }
 
 .halo-cart-sidebar {
@@ -314,6 +314,41 @@ body {
         width: 100%;
         +.button {
             margin-top: 15px;
+        }
+    }
+}
+
+.previewCartCollection {
+    padding: 35px 0 7px;
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    .previewCartTitle {
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: .02em;
+        text-transform: unset;
+        position: relative;
+        margin: 0 0 22px;
+    }
+    .halo-product-block {
+        margin-top: 0;
+        padding-bottom: 25px;
+        .row {
+            margin: 0!important;
+            &>* {
+                padding: 0px;
+            }
+            .slick-arrow {
+                top: -54px;
+                transform: translateY(0);
+                &.slick-prev {
+                    left: auto;
+                    right: 43px;
+                }
+            }
         }
     }
 }

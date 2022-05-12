@@ -1,5 +1,6 @@
 body.auth-sidebar-show {
   overflow: hidden;
+  padding-right: 10px;
 }
 
 body.auth-sidebar-show .halo-auth-sidebar {

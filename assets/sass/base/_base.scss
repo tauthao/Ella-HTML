@@ -1154,16 +1154,72 @@ svg {
     top: 50%;
     left: 50%;
     height: auto;
-    z-index: 101;
+    z-index: -1;
     width: 100%;
     max-width: calc(100% - 30px);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background-color: var(--bg-white);
+    background: #ffffff;
     box-shadow: 0 6px 27px #0003;
-    transition: opacity .3s, transform .35s ease, visibility .35s ease;
-    transform: translate(calc(-50% - 10px), -50%);
+    transition: all ease .5s;
+    transform: translate(calc(-50% - 20px), -50%);
+    .halo-popup-wrapper {
+        position: relative;
+        padding: 30px;
+    }
+    .halo-popup-header {
+        margin: 0 0 25px;
+        .halo-popup-title {
+            font-size: 16px;
+            font-weight: 700;
+            overflow: hidden;
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+            letter-spacing: .02em;
+        }
+        .halo-popup-close {
+            display: block;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+            font-size: 0;
+            letter-spacing: 0;
+            text-align: center;
+            padding: 7px;
+            background: #232323;
+            svg {
+                width: 100%;
+                height: 100%;
+                fill: #ffffff;
+            }
+        }
+    }
+    &.customPopup-small {
+        .halo-popup-header {
+            .halo-popup-close {
+                top: 10px;
+                right: 10px;
+                width: 18px;
+                height: 18px;
+                padding: 0;
+                background: #ffffff;
+                svg {
+                    fill: #5a5a5a;
+                    stroke: transparent;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1291,7 +1347,6 @@ svg {
                 letter-spacing: .02em;
                 color: #232323;
                 display: block;
-                margin: 2px 0 px 0;
                 overflow: hidden;
                 white-space: normal;
                 display: -webkit-box;
@@ -1480,6 +1535,33 @@ svg {
         .button {
             max-width: 270px;
             width: 100%;
+        }
+    }
+    .product-item-custom {
+        .product-card-top {
+            display: inline-block;
+            vertical-align: top;
+            width: 80px;
+            height: 107px;
+        }
+        .product-card-bottom {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 90px);
+            padding: 0 25px 0 16px;
+            position: relative;
+            top: -6px;
+            .product-card-information {
+                .card-price {
+                    justify-content: start;
+                }
+                .card-swatch {
+                    text-align: left!important;
+                    .swatch {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
         }
     }
 }

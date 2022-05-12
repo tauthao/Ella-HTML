@@ -29,6 +29,8 @@
             this.initSidebarCart();
             this.initCloseSidebar();
             this.initGlobalCheckbox();
+            this.initNotifyInStock();
+            this.initClosePopup();
         },
 
         initSliderBanner: function() {
@@ -329,6 +331,32 @@
                     $(targetId).attr('disabled', false);
                 } else {
                     $(targetId).attr('disabled', true);
+                }
+            });
+        },
+
+        initNotifyInStock: function() {
+            var btnNotify = $('.is-notify-me');
+
+            if (btnNotify.length) {
+                btnNotify.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('notify-me-show');
+                });
+            }
+        },
+
+        initClosePopup: function() {
+            closePopup = $(".background-overlay, .halo-popup-close");
+
+            closePopup.on('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if ($body.hasClass('notify-me-show')) {
+                    $body.removeClass('notify-me-show');
                 }
             });
         }

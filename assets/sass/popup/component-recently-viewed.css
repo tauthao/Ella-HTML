@@ -5,7 +5,7 @@
   width: 40px;
   -webkit-box-shadow: 0 3px 7px #0003;
           box-shadow: 0 3px 7px #0003;
-  z-index: 100;
+  z-index: 9;
   border-radius: 0 !important;
   opacity: 1;
   visibility: visible;

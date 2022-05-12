@@ -18,6 +18,7 @@
 
 body.cart-sidebar-show {
   overflow: hidden;
+  padding-right: 10px;
 }
 
 body.cart-sidebar-show .halo-cart-sidebar {
@@ -130,7 +131,6 @@ body.cart-sidebar-show .background-overlay {
   display: block;
   font-size: 0;
   letter-spacing: 0;
-  border-top: 1px solid #e8e8e8;
   padding-top: 18px;
   padding-bottom: 14px;
 }
@@ -163,7 +163,7 @@ body.cart-sidebar-show .background-overlay {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 15px 20px 0;
+  padding: 15px 20px 0 30px;
 }
 
 .halo-cart-sidebar .previewCartItem {
@@ -372,6 +372,48 @@ body.cart-sidebar-show .background-overlay {
 
 .previewCartGroup .button + .button {
   margin-top: 15px;
+}
+
+.previewCartCollection {
+  padding: 35px 0 7px;
+  position: relative;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.previewCartCollection .previewCartTitle {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: .02em;
+  text-transform: unset;
+  position: relative;
+  margin: 0 0 22px;
+}
+
+.previewCartCollection .halo-product-block {
+  margin-top: 0;
+  padding-bottom: 25px;
+}
+
+.previewCartCollection .halo-product-block .row {
+  margin: 0 !important;
+}
+
+.previewCartCollection .halo-product-block .row > * {
+  padding: 0px;
+}
+
+.previewCartCollection .halo-product-block .row .slick-arrow {
+  top: -54px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.previewCartCollection .halo-product-block .row .slick-arrow.slick-prev {
+  left: auto;
+  right: 43px;
 }
 
 @media (min-width: 552px) {
