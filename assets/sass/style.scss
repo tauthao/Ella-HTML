@@ -18,4 +18,14 @@
 
 /* ===  Footer Styles === */
 
-// @import 'base/footer/footer';
+@import 'base/footer/footer';
+
+/* ===  Popup === */
+
+@import 'popup/component-recently-viewed';
+@import 'popup/component-notify-me';
+
+/* ===  Sidebar === */
+
+@import 'sidebar/component-auth';
+@import 'sidebar/component-quick-cart';

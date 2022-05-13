@@ -665,6 +665,16 @@
   }
 }
 
+@media (max-width: 550px) {
+  .about-policies .halo-row-item {
+    width: 100%;
+  }
+  .about-policies .policies-content .desc {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 768px) {
   .about-banner .content-box--absolute {
     max-width: 730px;

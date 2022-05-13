@@ -582,6 +582,20 @@
     } //End about contanct
 }
 
+@media (max-width:550px) {
+    .about-policies {
+        .halo-row-item {
+            width: 100%;
+        }
+        .policies-content {
+            .desc {
+                max-width: 80%;
+                margin:0 auto;
+            }
+        }
+    } 
+}
+
 @media (min-width: 768px) {
     .about-banner {
         .content-box--absolute {

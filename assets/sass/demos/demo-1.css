@@ -18,8 +18,8 @@
   position: absolute;
   left: 50%;
   bottom: 0;
-  -webkit-transform: translateX(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   height: 2px;
   width: 40px;
   background: #232323;
@@ -57,10 +57,6 @@
 }
 
 /* START: Section Sub Banner */
-.halo-sub-banner {
-  padding-bottom: 30px;
-}
-
 .halo-sub-banner .banner-title {
   margin: 0;
 }
@@ -72,8 +68,12 @@
 }
 
 /* START: Section  spotlight*/
+.spotlight-block {
+  padding-top: 24px;
+}
+
 .spotlight-block .content {
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .spotlight-block .content .title {
@@ -96,7 +96,7 @@
 /* START: Section  brands*/
 .brands-block {
   border-top: 1px solid #ebebeb;
-  padding: 18px 0px 15px;
+  padding: 15px 0px 15px;
   margin-top: 65px;
 }
 
@@ -117,6 +117,10 @@
 .instagram-block {
   background-color: #fafafa;
   padding: 35px 0 40px;
+}
+
+.instagram-block .halo-block-header {
+  margin-bottom: 13px;
 }
 
 .instagram-block .halo-block-header .title {
@@ -162,7 +166,7 @@
 }
 
 .instagram-block .instagram-button {
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .instagram-block .instagram-button .button {
@@ -272,6 +276,12 @@
   /* START: Section Sub Banner */
   .halo-sub-banner .halo-row-item .banner-title {
     font-size: 16px;
+  }
+  .fullwidth-banner .button {
+    min-width: 237px;
+  }
+  .instagram-block {
+    padding-bottom: 70px;
   }
 }
 

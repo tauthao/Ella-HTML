@@ -1,0 +1,41 @@
+body.notify-me-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.notify-me-show .halo-notify-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+body.notify-me-show .background-overlay {
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-notify-popup {
+  max-width: 470px;
+}
+
+.halo-notify-popup .form-field .form-label {
+  text-align: center;
+  margin-bottom: 23px;
+  letter-spacing: .02em;
+  font-weight: 500;
+}
+
+.halo-notify-popup .form-field input {
+  text-align: center;
+}
+
+.halo-notify-popup .button {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=component-notify-me.css.map */
