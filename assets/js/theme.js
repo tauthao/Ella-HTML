@@ -230,7 +230,7 @@
                             adaptiveHeight: false,
                             infinite: false,
                             vertical: false,
-                            slidesToShow: 1,
+                            slidesToShow: 2,
                             slidesToScroll: 1,
                             dots: itemDots_mb,
                             arrows: itemRow_mb,
