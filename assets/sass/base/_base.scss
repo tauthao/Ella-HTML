@@ -167,7 +167,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-    padding: 7px 12px 5px;
+    padding: 11px 12px 10px;
     line-height: $line-height;
 }
 
@@ -529,12 +529,12 @@ a {
 
 .link-underline:hover .text {
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.2rem;
 }
 
 .text-underline .text {
     text-decoration: underline;
-    text-underline-offset: 0.3rem;
+    text-underline-offset: 0.2rem;
 }
 
 .image-adapt {
@@ -786,6 +786,7 @@ svg {
     letter-spacing: .02em;
     color: #232323;
     margin: 0px;
+    font-weight:400;
 }
 
 
@@ -889,8 +890,8 @@ svg {
 label {
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: .05;
-    line-height: 22px;
+    letter-spacing: .02em;
+    line-height: 20px;
     text-transform: capitalize;
     text-align: left;
     color: #232323;
@@ -928,11 +929,9 @@ label {
 
 .red-asterisk {
     color: #f1152f;
-    margin-left: 0;
+    margin-left: 3px;
 }
 /* END: Form */
-
-
 
 
 /* START: Slick Slider */
