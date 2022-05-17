@@ -30,6 +30,8 @@
             this.initCloseSidebar();
             this.initGlobalCheckbox();
             this.initNotifyInStock();
+            this.initEditQuickCart();
+            this.initNewsLetterPopup();
             this.initClosePopup();
             this.initSliderAboutUs();
             this.initSlideShow();
@@ -352,8 +354,70 @@
             }
         },
 
+        initEditQuickCart: function() {
+            var btnQuickEdit = $('[data-open-edit-cart]');
+
+            if (btnQuickEdit.length) {
+                btnQuickEdit.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('edit-cart-show');
+                });
+            }
+        },
+
+        initNewsLetterPopup: function() {
+            var newstterPopup = $(".halo-newsletter-popup");
+
+            if (newstterPopup.length > 0) {
+                var timeToShow = newstterPopup.data('delay'),
+                    expiresDate = newstterPopup.data('expire');
+
+                if (halo.getCookie('newsletter-popup') === '') {
+                    setTimeout(function() {
+                        document.body.classList.add('newsletter-show');
+                    }, timeToShow);
+                }
+            }
+        },
+
+        setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            const expires = 'expires=' + d.toUTCString();
+            document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+        },
+
+        getCookie(cname) {
+            const name = cname + '=';
+            const ca = document.cookie.split(';');
+
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+
+            return '';
+        },
+
+        deleteCookie(name) {
+            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        },
+
+        setClosePopup() {
+            this.setCookie('newsletter-popup', 'closed', this.expiresDate);
+            document.body.classList.remove('newsletter-show');
+        },
+
+
         initClosePopup: function() {
-            closePopup = $(".background-overlay, .halo-popup-close");
+            var closePopup = $(".background-overlay-popup, .halo-popup-close");
 
             closePopup.on('click', (event) => {
                 event.preventDefault();
@@ -361,6 +425,10 @@
 
                 if ($body.hasClass('notify-me-show')) {
                     $body.removeClass('notify-me-show');
+                }
+
+                if ($body.hasClass('edit-cart-show')) {
+                    $body.removeClass('edit-cart-show');
                 }
             });
         },
@@ -400,7 +468,7 @@
                                         slidesToScroll: 1,
                                     }
                                 },
-                                
+
                             ]
                         });
                     }
@@ -443,18 +511,17 @@
                                     slidesToShow: 1,
                                     slidesToScroll: 1,
                                 }
-                            }
-                        ]
+                            }]
                         });
-                        
+
                     }
                 }
 
             });
         },
 
-        clickedActiveVideoBanner: function () {
-            if($('[data-video-banner]').length > 0) {
+        clickedActiveVideoBanner: function() {
+            if ($('[data-video-banner]').length > 0) {
                 var videoBanner = $('[data-video-banner]');
 
                 videoBanner.each((index, element) => {
@@ -462,17 +529,17 @@
                         banner = self.parents('.store-right'),
                         icon = banner.find('[data-close-video]'),
                         modal = banner.find('.modal-content-video');
-                        
-                        self.off('click').on('click', (event) => {
+
+                    self.off('click').on('click', (event) => {
                         event.preventDefault();
                         event.stopPropagation();
-                        
+
                         var dataVideo = self.data('video');
 
                         $('.video-banner').find('.modal-video-content').remove();
                         $('.video-banner').removeClass('open_video fixed_video');
 
-                        if(self.hasClass('video_youtube')){
+                        if (self.hasClass('video_youtube')) {
                             var templateModal = `
                                 <div class="modal-video-content">
                                     <div class="video_YT video">
@@ -491,7 +558,7 @@
                                         </iframe>\
                                     </div>
                                 </div>
-                            `;   
+                            `;
                         } else {
                             var templateModal = `
                                 <div class="modal-video-content">
@@ -515,17 +582,17 @@
                         banner.find('.modal-video-content').remove();
                         banner.find('.video-banner').removeClass('open_video fixed_video');
                     });
-                    
+
                     $win.on('scroll', (event) => {
                         var offsetTop = modal.offset().top,
                             height = modal.height();
 
-                        if($(event.currentTarget).scrollTop() < offsetTop - height){
-                            if(!banner.find('.video-banner').hasClass('fixed_video')){
+                        if ($(event.currentTarget).scrollTop() < offsetTop - height) {
+                            if (!banner.find('.video-banner').hasClass('fixed_video')) {
                                 banner.find('.video-banner').addClass('fixed_video');
                             }
-                        } else if($(event.currentTarget).scrollTop() > offsetTop + height + 20 ){
-                            if(!banner.find('.video-banner').hasClass('fixed_video')){
+                        } else if ($(event.currentTarget).scrollTop() > offsetTop + height + 20) {
+                            if (!banner.find('.video-banner').hasClass('fixed_video')) {
                                 banner.find('.video-banner').addClass('fixed_video');
                             }
                         }
@@ -534,6 +601,6 @@
             }
         },
 
-        
+
     }
 })(jQuery);

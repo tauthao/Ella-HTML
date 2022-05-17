@@ -12,7 +12,7 @@ body.notify-me-show .halo-notify-popup {
   z-index: 101;
 }
 
-body.notify-me-show .background-overlay {
+body.notify-me-show .background-overlay-popup {
   z-index: 99;
   opacity: 1;
   visibility: visible;
