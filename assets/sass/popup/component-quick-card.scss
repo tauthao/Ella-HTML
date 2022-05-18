@@ -130,6 +130,8 @@ body {
         .button {
             width: 100%;
             max-width: 100%;
+            position: relative;
+            bottom: -1px;
             &:hover {
                 background-color: #232323;
                 border-color: #232323;

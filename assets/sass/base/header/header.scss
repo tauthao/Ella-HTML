@@ -34,6 +34,20 @@
     }
 }
 
+[data-header-sticky] {
+    z-index: 9;
+    top: -100%;
+}
+
+.header.animate {
+    transition: all ease .35s;
+}
+
+.has-stickyHeader [data-header-sticky].sticky-down {
+    position: sticky;
+    top: 0;
+}
+
 
 /* START: Header Top */
 

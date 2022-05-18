@@ -21,7 +21,8 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            // this.initCloseAnnouncementBar();
+            this.initCloseAnnouncementBar();
+            this.initHeaderSticky();
             this.initLanguageCurrency();
             this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
@@ -30,8 +31,9 @@
             this.initCloseSidebar();
             this.initGlobalCheckbox();
             this.initNotifyInStock();
+            this.initQuickShop();
             this.initEditQuickCart();
-            this.initNewsLetterPopup();
+            // this.initNewsLetterPopup();
             this.initClosePopup();
             this.initSliderAboutUs();
             this.initSlideShow();
@@ -183,7 +185,8 @@
 
         initPopupRecentlyViewed: function() {
             var iconPopup = $(".recently-viewed-icon.open-popup"),
-                iconBackToTop = $(".recently-viewed-icon.scroll-to-top");
+                iconBackToTop = $(".recently-viewed-icon.scroll-to-top"),
+                iconPopupNewsletter = $("[data-open-newsletter-popup]");
 
             iconPopup.off('click').on('click', (event) => {
                 event.preventDefault();
@@ -200,6 +203,13 @@
                     self.addClass("is-open");
                     document.getElementById(currPopup).classList.add('is-visible');
                 }
+            });
+
+            iconPopupNewsletter.off('click').on('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $body.addClass('newsletter-show');
             });
 
             $doc.on('click', (event) => {
@@ -235,6 +245,50 @@
                 });
             });
 
+        },
+
+        initHeaderSticky: function() {
+            var header_position,
+                header_height,
+                activeClass = 'has-stickyHeader',
+                sticky = $('[data-header-sticky]');
+
+            header_height = sticky.height();
+            header_position = sticky.offset().top + sticky.outerHeight(true);
+
+            if (sticky.length > 0) {
+                halo.stickyScroll(sticky, header_position, header_height, activeClass);
+            }
+        },
+
+        stickyScroll: function(sticky, position, delta, activeClass) {
+            var lastScrollTop = 0;
+
+            $win.on('scroll load', () => {
+                var scroll = $win.scrollTop();
+
+                if (Math.abs(lastScrollTop - scroll) <= delta) {
+                    return;
+                }
+
+                if (scroll > lastScrollTop && scroll > position) {
+                    sticky.removeClass('sticky-down').addClass('sticky-up ');
+                    $body.addClass(activeClass);
+                } else {
+                    if (scroll + $win.height() < $doc.height()) {
+                        sticky.removeClass('sticky-up').addClass('sticky-down');
+
+                        if (scroll > position) {
+                            $body.addClass(activeClass);
+                        } else {
+                            $body.removeClass(activeClass);
+                            sticky.removeClass('sticky-up sticky-down');
+                        }
+                    }
+                }
+
+                lastScrollTop = scroll;
+            });
         },
 
         initLanguageCurrency: function() {
@@ -354,6 +408,19 @@
             }
         },
 
+        initQuickShop: function() {
+            var btnQuickShop = $('[data-quickshop-popup]');
+
+            if (btnQuickShop.length) {
+                btnQuickShop.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('quickshop-popup-show');
+                });
+            }
+        },
+
         initEditQuickCart: function() {
             var btnQuickEdit = $('[data-open-edit-cart]');
 
@@ -372,49 +439,24 @@
 
             if (newstterPopup.length > 0) {
                 var timeToShow = newstterPopup.data('delay'),
-                    expiresDate = newstterPopup.data('expire');
+                    expiresDate = newstterPopup.data('expire'),
+                    btnClose = $("[data-close-newsletter-popup],.background-overlay-popup");
 
-                if (halo.getCookie('newsletter-popup') === '') {
+                if ($.cookie('newsletter-popup') != 'closed') {
                     setTimeout(function() {
-                        document.body.classList.add('newsletter-show');
+                        $body.addClass('newsletter-show');
                     }, timeToShow);
-                }
+                };
+
+                btnClose.click(function(e) {
+                    $.cookie('newsletter-popup', 'closed', {
+                        expires: 1,
+                        path: '/'
+                    });
+                    $body.removeClass('newsletter-show');
+                });
             }
         },
-
-        setCookie(cname, cvalue, exdays) {
-            const d = new Date();
-            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            const expires = 'expires=' + d.toUTCString();
-            document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
-        },
-
-        getCookie(cname) {
-            const name = cname + '=';
-            const ca = document.cookie.split(';');
-
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) === ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) === 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-
-            return '';
-        },
-
-        deleteCookie(name) {
-            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        },
-
-        setClosePopup() {
-            this.setCookie('newsletter-popup', 'closed', this.expiresDate);
-            document.body.classList.remove('newsletter-show');
-        },
-
 
         initClosePopup: function() {
             var closePopup = $(".background-overlay-popup, .halo-popup-close");
@@ -427,8 +469,12 @@
                     $body.removeClass('notify-me-show');
                 }
 
-                if ($body.hasClass('edit-cart-show')) {
-                    $body.removeClass('edit-cart-show');
+                if ($body.hasClass('notify-me-show')) {
+                    $body.removeClass('notify-me-show');
+                }
+
+                if ($body.hasClass('quickshop-popup-show')) {
+                    $body.removeClass('quickshop-popup-show');
                 }
             });
         },

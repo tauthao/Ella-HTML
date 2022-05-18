@@ -38,6 +38,22 @@
   color: #b05d5d;
 }
 
+[data-header-sticky] {
+  z-index: 9;
+  top: -100%;
+}
+
+.header.animate {
+  -webkit-transition: all ease .35s;
+  transition: all ease .35s;
+}
+
+.has-stickyHeader [data-header-sticky].sticky-down {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 /* START: Header Top */
 .header-top {
   display: none;

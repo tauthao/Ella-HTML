@@ -2235,6 +2235,22 @@ label {
   color: #b05d5d;
 }
 
+[data-header-sticky] {
+  z-index: 9;
+  top: -100%;
+}
+
+.header.animate {
+  -webkit-transition: all ease .35s;
+  transition: all ease .35s;
+}
+
+.has-stickyHeader [data-header-sticky].sticky-down {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 /* START: Header Top */
 .header-top {
   display: none;
@@ -3779,6 +3795,8 @@ body.edit-cart-show .background-overlay-popup {
 .halo-edit-cart-popup .product-edit-action .button {
   width: 100%;
   max-width: 100%;
+  position: relative;
+  bottom: -1px;
 }
 
 .halo-edit-cart-popup .product-edit-action .button:hover {
@@ -3978,6 +3996,137 @@ body.newsletter-show .background-overlay-popup {
 @media (max-width: 551px) {
   .halo-newsletter-popup {
     max-width: calc(100% - 30px);
+  }
+}
+
+body.quickshop-popup-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.quickshop-popup-show .halo-quickshop-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+body.quickshop-popup-show .background-overlay-popup {
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-quickshop-popup {
+  max-width: calc(100% - 30px);
+}
+
+.halo-quickshop-popup .halo-popup-header {
+  margin: 0;
+}
+
+.halo-quickshop-popup .halo-popup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.halo-quickshop-popup .halo-productView-left {
+  width: 45%;
+  padding-right: 30px;
+  display: none;
+}
+
+.halo-quickshop-popup .halo-productView-right {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.halo-quickshop-popup .halo-productView-right .product-title {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.halo-quickshop-popup .halo-productView-right .card-price {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.halo-quickshop-popup .halo-productView-right .card-price .price-item .money {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants .form__label {
+  font-size: 14px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants [data-header-option] {
+  font-size: 12px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__label {
+  min-width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__label .text {
+  font-size: 11px;
+}
+
+.halo-quickshop-popup .halo-productView-right .wrapper-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0px 15px;
+}
+
+.halo-quickshop-popup .halo-productView-right .wrapper-action .previewCartItem-qty {
+  margin-top: 0;
+}
+
+.halo-quickshop-popup .halo-productView-right .wrapper-action .btn-card-action {
+  width: calc(100% - 110px);
+}
+
+.halo-quickshop-popup .halo-productView-right .wrapper-action .btn-card-action .button {
+  width: 100%;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-see-details {
+  padding-bottom: 15px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-see-details .button {
+  width: 100%;
+}
+
+@media (min-width: 551px) {
+  .halo-quickshop-popup .halo-productView-left {
+    display: block;
+  }
+  .halo-quickshop-popup .halo-productView-right {
+    width: 55%;
+  }
+}
+
+@media (min-width: 768px) {
+  .halo-quickshop-popup {
+    max-width: 680px;
   }
 }
 

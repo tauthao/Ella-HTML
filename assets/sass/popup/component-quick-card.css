@@ -150,6 +150,8 @@ body.edit-cart-show .background-overlay-popup {
 .halo-edit-cart-popup .product-edit-action .button {
   width: 100%;
   max-width: 100%;
+  position: relative;
+  bottom: -1px;
 }
 
 .halo-edit-cart-popup .product-edit-action .button:hover {
