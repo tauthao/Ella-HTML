@@ -1,0 +1,28 @@
+body.quick-view-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.quick-view-show .halo-quick-view-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+
+body.quick-view-show .background-overlay-popup {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-quick-view-popup {
+  max-width: 1020px;
+}
+
+.halo-quick-view-popup .halo-popup-header {
+  margin: 0;
+}
+/*# sourceMappingURL=component-quickview.css.map */

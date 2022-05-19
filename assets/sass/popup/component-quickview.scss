@@ -1,0 +1,25 @@
+body {
+    &.quick-view-show {
+        overflow: hidden;
+        padding-right: 10px;
+        .halo-quick-view-popup {
+            pointer-events: auto;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            visibility: visible;
+            z-index: 9999;
+        }
+        .background-overlay-popup {
+            z-index: 999;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.halo-quick-view-popup {
+    max-width: 1020px;
+    .halo-popup-header {
+        margin: 0;
+    }
+}

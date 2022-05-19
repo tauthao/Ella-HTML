@@ -696,6 +696,7 @@ a {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 .image-adapt img {
@@ -1863,79 +1864,6 @@ label {
 }
 
 /* END: Product Card */
-.productView-variants .form__label {
-  display: block;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .02em;
-  line-height: 22px;
-  text-transform: capitalize;
-  text-align: left;
-  color: #232323;
-  margin-bottom: 4px;
-}
-
-.productView-variants .form__label [data-header-option] {
-  color: #969696;
-  font-weight: 400;
-  margin-left: 2px;
-}
-
-.productView-variants .product-form__label {
-  border-radius: 20px;
-  position: relative;
-  font-size: 0;
-  width: auto;
-  min-width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border: 1px solid #cbcbcb;
-  background: 0 0;
-  cursor: pointer;
-  padding: 0 10px;
-  opacity: 1;
-  margin: 5px 10px 14px 0;
-}
-
-.productView-variants .product-form__label.active {
-  border-color: #232323;
-}
-
-.productView-variants .product-form__label:hover {
-  border-color: #232323;
-}
-
-.productView-variants .product-form__label .text {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: #232323;
-  text-align: center;
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
-}
-
-.productView-variants .product-form__swatch .product-form__label {
-  border-radius: 50%;
-  padding: 3px;
-  margin-bottom: 3px;
-}
-
-.productView-variants .product-form__swatch .product-form__label .pattern {
-  display: block;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 0;
-  letter-spacing: 0;
-  position: relative;
-  background-size: cover;
-}
-
 @media (max-width: 1200px) {
   .slick-arrow.slick-next {
     right: 10px;
@@ -3293,6 +3221,117 @@ label {
   }
 }
 
+/* ===  Product Styles === */
+/* START: Product Varint */
+.productView-variants .form__label {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  line-height: 22px;
+  text-transform: capitalize;
+  text-align: left;
+  color: #232323;
+  margin-bottom: 4px;
+}
+
+.productView-variants .form__label [data-header-option] {
+  color: #969696;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.productView-variants .product-form__label {
+  border-radius: 20px;
+  position: relative;
+  font-size: 0;
+  width: auto;
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #cbcbcb;
+  background: 0 0;
+  cursor: pointer;
+  padding: 0 10px;
+  opacity: 1;
+  margin: 5px 10px 14px 0;
+}
+
+.productView-variants .product-form__label.active {
+  border-color: #232323;
+}
+
+.productView-variants .product-form__label:hover {
+  border-color: #232323;
+}
+
+.productView-variants .product-form__label .text {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #232323;
+  text-align: center;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.productView-variants .product-form__swatch .product-form__label {
+  border-radius: 50%;
+  padding: 3px;
+  margin-bottom: 3px;
+}
+
+.productView-variants .product-form__swatch .product-form__label .pattern {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0;
+  letter-spacing: 0;
+  position: relative;
+  background-size: cover;
+}
+
+/* END: Product Varint */
+/* START: Product Infomation */
+.productView-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.productView-information .halo-productView-left {
+  width: 470px;
+}
+
+.productView-information .halo-productView-right {
+  width: calc(100% - 470px);
+  padding-left: 30px;
+}
+
+.productView-information .halo-productView-right .productView-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  color: #232323;
+  margin: 0;
+}
+
+/* END: Product Infomation */
 /* ===  Popup === */
 .halo-recently-viewed-popup {
   top: 50%;
@@ -4128,6 +4167,34 @@ body.quickshop-popup-show .background-overlay-popup {
   .halo-quickshop-popup {
     max-width: 680px;
   }
+}
+
+body.quick-view-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.quick-view-show .halo-quick-view-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+
+body.quick-view-show .background-overlay-popup {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-quick-view-popup {
+  max-width: 1020px;
+}
+
+.halo-quick-view-popup .halo-popup-header {
+  margin: 0;
 }
 
 /* ===  Sidebar === */
