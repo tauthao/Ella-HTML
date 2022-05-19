@@ -3297,7 +3297,80 @@ label {
 }
 
 /* END: Product Varint */
-/* START: Product Infomation */
+/* START: Product Rating */
+.productView-rating {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: -2px;
+}
+
+.productView-rating .spr-badge-starrating {
+  font-size: 18px;
+}
+
+.productView-rating .spr-icon::before {
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  width: auto;
+  height: auto;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.productView-rating .spr-icon.spr-icon-star::before {
+  content: "\2605";
+  color: #232323;
+}
+
+.productView-rating .spr-icon.spr-icon-star-empty::before {
+  content: "\2605";
+  color: #c8c8c8;
+}
+
+.productView-rating .spr-badge-caption {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #232323;
+  margin: 0 0 0 10px;
+  text-transform: capitalize;
+  letter-spacing: .02em;
+}
+
+.productView-soldProduct {
+  margin-left: 23px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.productView-soldProduct .text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: .02em;
+  color: #e95144;
+}
+
+.productView-soldProduct .icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: -2px;
+  fill: #e95144;
+  margin-right: 7px;
+}
+
+/* END: Product Rating */
+/* START: Product Information */
 .productView-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3329,9 +3402,13 @@ label {
   letter-spacing: 0;
   color: #232323;
   margin: 0;
+  line-height: 30px;
+  position: relative;
+  top: -7px;
+  margin-bottom: 2px;
 }
 
-/* END: Product Infomation */
+/* END: Product Information */
 /* ===  Popup === */
 .halo-recently-viewed-popup {
   top: 50%;
