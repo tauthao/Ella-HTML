@@ -1,0 +1,198 @@
+body.edit-cart-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.edit-cart-show .halo-edit-cart-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+
+body.edit-cart-show .background-overlay-popup {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-edit-cart-popup {
+  max-width: 840px;
+}
+
+.halo-edit-cart-popup .halo-popup-wrapper {
+  padding: 0px;
+}
+
+.halo-edit-cart-popup .halo-popup-header {
+  padding: 28px 30px 28px;
+  margin: 0;
+}
+
+.halo-edit-cart-popup .cart-edit {
+  padding: 0 50px;
+}
+
+.halo-edit-cart-popup .halo-product-block {
+  margin: 0;
+}
+
+.halo-edit-cart-popup .product-edit-item {
+  font-size: 0;
+  letter-spacing: 0;
+}
+
+.halo-edit-cart-popup .product-edit-itemLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter {
+  width: 265px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 30px;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter .product-edit-title {
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: .02em;
+  text-transform: capitalize;
+  color: #232323;
+  padding: 0 0 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter .product-edit-title-variant {
+  display: block;
+  color: #969696;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter .card-price {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 9px;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter .product-quantity {
+  margin-top: 9px;
+}
+
+.halo-edit-cart-popup .product-edit-itemCenter .product-quantity .previewCartItem-qty {
+  margin-top: 10px;
+}
+
+.halo-edit-cart-popup .product-edit-itemRight {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 386px);
+  text-align: left;
+  position: relative;
+}
+
+.halo-edit-cart-popup .add-more {
+  display: block;
+  padding: 25px 0 27px 16px;
+  border-top: 1px solid #e8e8e8;
+  font-size: 12px;
+  position: relative;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .02em;
+  color: #232323;
+  margin: 18px 0 0;
+}
+
+.halo-edit-cart-popup .add-more .text::before {
+  top: 50%;
+  content: "";
+  width: 10px;
+  height: 1px;
+  line-height: 22px;
+  left: 0;
+  display: block;
+  position: absolute;
+  background-color: #232323;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.halo-edit-cart-popup .add-more .text::after {
+  top: 50%;
+  content: "";
+  width: 1px;
+  height: 10px;
+  line-height: 22px;
+  left: 4px;
+  display: block;
+  position: absolute;
+  background-color: #232323;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.halo-edit-cart-popup .product-edit-action .button {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  bottom: -1px;
+}
+
+.halo-edit-cart-popup .product-edit-action .button:hover {
+  background-color: #232323;
+  border-color: #232323;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .halo-edit-cart-popup {
+    max-width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .halo-edit-cart-popup .cart-edit {
+    padding: 0 40px;
+  }
+  .halo-edit-cart-popup .cart-edit .product-edit-itemLeft {
+    display: none;
+  }
+  .halo-edit-cart-popup .cart-edit .product-edit-itemCenter {
+    padding: 0 30px 0px 0px;
+    width: 50%;
+  }
+  .halo-edit-cart-popup .cart-edit .product-edit-itemRight {
+    width: 50%;
+  }
+}
+
+@media (max-width: 551px) {
+  .halo-edit-cart-popup .cart-edit .product-edit-itemLeft {
+    display: none;
+  }
+  .halo-edit-cart-popup .cart-edit .product-edit-itemCenter {
+    padding: 0;
+    width: 100%;
+  }
+  .halo-edit-cart-popup .cart-edit .product-edit-itemRight {
+    margin-top: 35px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=component-quick-card.css.map */

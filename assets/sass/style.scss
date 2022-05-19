@@ -20,10 +20,18 @@
 
 @import 'base/footer/footer';
 
+/* ===  Product Styles === */
+
+@import 'base/product/componet-product';
+
 /* ===  Popup === */
 
 @import 'popup/component-recently-viewed';
 @import 'popup/component-notify-me';
+@import 'popup/component-quick-card';
+@import 'popup/component-newsletter';
+@import 'popup/component-quickshop';
+@import 'popup/component-quickview';
 
 /* ===  Sidebar === */
 
