@@ -1060,8 +1060,8 @@ label {
 }
 
 .contact-form .form-input {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .form-input,
@@ -3408,7 +3408,7 @@ label {
   margin-bottom: 2px;
 }
 
-/* END: Product Infomation */
+/* END: Product Information */
 /* ===  Popup === */
 .halo-recently-viewed-popup {
   top: 50%;
