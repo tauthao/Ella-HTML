@@ -19,7 +19,29 @@ body {
 
 .halo-quick-view-popup {
     max-width: 1020px;
+    .halo-popup-wrapper {
+        padding: 0;
+        .halo-popup-content {
+            padding: 30px;
+        }
+    }
     .halo-popup-header {
         margin: 0;
+    }
+    .halo-popup-content {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 80vh;
+    }
+}
+
+@media(min-width:1600px) {
+    .halo-quick-view-popup {
+        .halo-popup-wrapper {
+            .halo-popup-content {
+                padding: 50px;
+            }
+        }
     }
 }

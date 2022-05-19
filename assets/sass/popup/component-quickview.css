@@ -22,7 +22,28 @@ body.quick-view-show .background-overlay-popup {
   max-width: 1020px;
 }
 
+.halo-quick-view-popup .halo-popup-wrapper {
+  padding: 0;
+}
+
+.halo-quick-view-popup .halo-popup-wrapper .halo-popup-content {
+  padding: 30px;
+}
+
 .halo-quick-view-popup .halo-popup-header {
   margin: 0;
+}
+
+.halo-quick-view-popup .halo-popup-content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+@media (min-width: 1600px) {
+  .halo-quick-view-popup .halo-popup-wrapper .halo-popup-content {
+    padding: 50px;
+  }
 }
 /*# sourceMappingURL=component-quickview.css.map */

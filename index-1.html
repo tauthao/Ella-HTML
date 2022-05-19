@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/sass/demos/demo-1.css">
 </head>
 
-<body class="template-index-1 quick-view-show">
+<body class="template-index-1">
     <div class="page-wrapper">
         <div class="announcement-bar">
             <div class="container container-1170">
@@ -194,7 +194,7 @@
                                                 <a class="currency-item" href="#" data-currency="GBP">
                                                     <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
                                                 <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"></circle>
-                                                <g>b
+                                                <g>
                                                 <path style="fill:#0052B4;" d="M52.92,100.142c-20.109,26.163-35.272,56.318-44.101,89.077h133.178L52.92,100.142z"></path>
                                                 <path style="fill:#0052B4;" d="M503.181,189.219c-8.829-32.758-23.993-62.913-44.101-89.076l-89.075,89.076H503.181z"></path>
                                                 <path style="fill:#0052B4;" d="M8.819,322.784c8.83,32.758,23.993,62.913,44.101,89.075l89.074-89.075L8.819,322.784L8.819,322.784   z"></path>
@@ -603,7 +603,7 @@
                                         <span class="text-count" aria-hidden="true" data-cart-count="">3</span><span class="visually-hidden">0 items</span>
                                     </div>
                                 </a>
-                                <a href="#" class="header__icon header__icon--wishlist link link-underline focus-inset">
+                                <a href="wishlists.html" class="header__icon header__icon--wishlist link link-underline focus-inset">
                                     <svg viewBox="0 0 512 512" class="icon icon-wishlist">
                                         <g>
                                         <g>
@@ -629,7 +629,7 @@
                                         <span class="text">Sign In</span>
                                     </a>
                                     <span class="or-text">or</span>
-                                    <a class="header__link--account link-underline" id="customer_register_link" href="#">
+                                    <a class="header__link--account link-underline" id="customer_register_link" href="register.html">
                                         <span class="text">Create an account</span>
                                     </a>
                                 </div>
@@ -3336,9 +3336,13 @@
                         </svg>
                     </a>
                 </div>
-                <div class="halo-popup-content productView-information  custom-scrollbar">
+                <div class="halo-popup-content custom-scrollbar productView-information">
                     <div class="halo-productView-left productView-images">
                         <div class="productView-images-wrapper">
+                            <div class="card__badge badge-left">
+                                <span class="badge sale-badge" aria-hidden="true">Sale</span>
+                                <span class="badge custom-badge" aria-hidden="true">Must Have</span>
+                            </div>
                             <div class="productView-image-wrapper">
                                 <div class="productView-image">
                                     <a class="animate-scale image image-adapt" style="padding-top: 150%" tabindex="0">
@@ -3367,7 +3371,7 @@
                                 <span class="spr-badge-caption">2 reviews</span>
                                 </span>
                             </div>
-                            <div class="productView-soldProduct" data-sold-out-product="" data-item="3,5,6,7,8,10,12,15" data-hours="10,15,16,17,18,20,25,35" style="">
+                            <div class="productView-soldProduct" data-sold-out-product="" data-item="3,5,6,7,8,10,12,15" data-hours="10,15,16,17,18,20,25,35">
                                 <svg class="icon icon-fire-2" viewBox="0 0 384 512">
                                     <path d="M216 23.858c0-23.802-30.653-32.765-44.149-13.038C48 191.851 224 200 224 288c0 35.629-29.114 64.458-64.85 63.994C123.98 351.538 96 322.22 96 287.046v-85.51c0-21.703-26.471-32.225-41.432-16.504C27.801 213.158 0 261.332 0 320c0 105.869 86.131 192 192 192s192-86.131 192-192c0-170.29-168-193.003-168-296.142z"></path>
                                 </svg>
@@ -3376,6 +3380,34 @@
                                 <span data-sold-out-hours="">15</span> hours
                                 </span>
                             </div>
+                        </div>
+                        <div class="productView-info">
+                            <div class="productView-info-item">
+                                <span class="productView-info-name">Brand:</span>
+                                <span class="productView-info-value"><a href="#" title="Dkny">DKNY</a></span>
+                            </div>
+                            <div class="productView-info-item" data-sku="">
+                                <span class="productView-info-name">SKU:</span>
+                                <span class="productView-info-value">W0690042</span>
+                            </div>
+                            <div class="productView-info-item" data-inventory="">
+                                <span class="productView-info-name"> Availability:</span>
+                                <span class="productView-info-value">100 In Stock</span>
+                            </div>
+                        </div>
+                        <div class="productView-price card-price price__sale">
+                            <div class="price-item price-item--regular">
+                                <span class="money ">$86.00</span>
+                            </div>
+                            <div class="price-item price__last">
+                                <span class="money ">$68.80</span>
+                            </div>
+                        </div>
+                        <div class="productView-countDown" data-countdown="Dec 31, 2022 18:00:00">
+                            <span class="num">226<span>Day</span></span>
+                            <span class="num">3<span>Hrs</span></span>
+                            <span class="num">27<span>Min</span></span>
+                            <span class="num">2<span>Sec</span></span>
                         </div>
                         <div class="productView-variants halo-productOptions">
                             <div class="product-form__input product-form__swatch">
@@ -3432,6 +3464,78 @@
                                 <label class="product-form__label available" for="">
                                     <span class="text">Option 3</span>
                                 </label>
+                            </div>
+                        </div>
+                        <div class="quantity_selector">
+                            <label class="form-label quantity__label" for="">Quantity:</label>
+                            <cart-update-quantity class="previewCartItem-qty">
+                                <label class="form-label hiddenLabel" for="upsell-update-39504888725594"></label>
+                                <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
+                                <input class="form-input quantity" name="quantity" id="upsell-update-39504901341274" data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
+                                <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
+                            </cart-update-quantity>
+                        </div>
+                        <div class="productView-subtotal">
+                            <span class="text">Subtotal: </span>
+                            <span class="money">$286.00</span>
+                        </div>
+                        <div class="productView-perks">
+                            <div class="productView-sizeChart">
+                                <a class="link link-underline" href="javascript:void(0)" data-open-size-chart-popup="">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16">
+                                        <image width="25" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAAWElEQVQ4jWNUVlaexsDAkMlAOzCdCdmCO3fuMFCbDTKfiYY+gINRS6hjiYqKClY2qWrwWkJNAMon/2ltyWjqGsSWMDIy0t6S//9pl8hAlkynmekgwMAwHQD5bhxCu6stFwAAAABJRU5ErkJggg=="></image>
+                                    </svg>
+                                    <span class="text">Size Guide</span>
+                                </a>
+                            </div>
+                            <div class="productView-compareColor style-1">
+                                <a class="link link-underline" href="javascript:void(0)" aria-label="link" data-open-compare-color-popup="">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                                        <image width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAD10lEQVQ4jU2UT2xUVRTGf+e+9+ZNB2aw08G2aCpVkVpIsEBU8D+IqSVEgahLNQYXxsjCrUtduSHRxBhcYNSFIhghEQiKJCImNrVUYAimaKAwbanQ6Uw7fTPvvXvMawvxJCc3uTf3y/m+c74j7xxYRzmq8VBbxM5HM5SrEfUwenFpxu9dnks9rKrtYARxS3bwfL+9WjkqGflOjWBKiqkrxOCyEEaS1B5r5X3E6avWY6wFY5J3F22ErfGNWo84vKnIUYT3EAZu/58/LI2YrWnDSd/RPlVhNlKmwxgQFIOWK1CL5n+49KrHz1i2IfMILhYyjtfVP+5+XjhLbseqkCtlQyXU8Voc/5jDGxRE7VSlh5hncU0bHshVslqRfaT1CYGiG6cCX2Xx3iZo+XowxhWlt6t+KJji3VgZvlW6qE3o36cZPuQa2+UaqE8+js1njmM3max/Y3PKTDze4k9xd9by6RlzYLRuX7grx7DqLZg5qKT+Sya0O5zruh8fpGkObEPssdkUy1t2RtbHcyZoXzR2PdcU7/7jmsM/NwV3QcG5SEAXLWRWd2uzjpFWJExoOi87Fzf+8MHFSt+dV6pPETiN/etbfv9icES5GQRsWxFAIgg+asro8WnMRQ/GZVomTJec9daaP13kbyflilNuq4YtVGc7uRR1D1wIt1CPUqRDh8NHCny0cR+PTZzEfDKK+cvDVj3I2IToGWIBB0hrwTUmgNwUpCPiap4rxa3gWag3uFyr8OXbb1Ca6OaRlR/T0XkZUwixjTRoDI6AFWiIuGTCMeqpApM5nGL7Wjt0B1oARiu8de4Qq1jGIE9zadDwZLiXgjvDChmDVNMacjG6OBlr/dfVUyv7Gcuspuwngj6vHSzrKv5SckbHmGIJVpS01mheNMmZ0v0UpmZ4IDfSptn8Vkox4imyJOo3eqH5W6Z9SAF52siwp7U0TH56BDsnwELTVFjs1fDSFnLskUywDHeB2nXnG6PNnCCvv9olkOTyoaGXmmZmDlalcG9inf/3PyP1zvHU0v39dt0rUEH8BqT0N5z4J5c8gb0hu8SxpzrOncuvLp6gKvntMe4GRzgGDCV2UjVrPCd6LufPtp+eeTAxOD1+cdLUw1047qw7N2gRF5qHR1/rHj751SzZbICPQ6OtldSryY6wKLWwg8gafAKanSqng+7plsbk68vdkfM4XmLr+R1gbHw4JPNMg8wxJaQJw9I5TytCgyBspx4VUIlISXTcs+GmGPM9Mm//2/souVAxAyi9gUY7OiXdl0bWB2irKzWJbW68Vr+nP+MOHImUgwnbZMHMBfAfct24toplOLEAAAAASUVORK5CYII="></image>
+                                    </svg>
+                                    <span class="text">Compare Color</span>
+                                </a>
+                            </div>
+                            <div class="productView-askAnExpert">
+                                <a class="link link-underline" href="javascript:void(0)" data-open-ask-an-expert=""><svg class="icon" id="icon-mail" viewBox="0 0 512 512"> <path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path> </svg>
+                                    <span class="text">Ask An Expert</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="previewCartAction">
+                            <div class="previewCartGroup">
+                                <div class="previewCartGroup-top">
+                                    <div class="productView-action">
+                                        <a class="button button-1 button-view-cart text-center" href="#">Add to Cart</a>
+                                    </div>
+                                    <div class="productView-wishlist">
+                                        <a data-wishlist="" href="#" data-wishlist-handle="(Product 16) Sample - Clothing And Accessory Boutiques For Sale" data-product-id="6617631490138">
+                                            <span class="visually-hidden">Add to wishlist</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="icon icon-wishlist"><path d="M 9.5 5 C 5.363281 5 2 8.402344 2 12.5 C 2 13.929688 2.648438 15.167969 3.25 16.0625 C 3.851563 16.957031 4.46875 17.53125 4.46875 17.53125 L 15.28125 28.375 L 16 29.09375 L 16.71875 28.375 L 27.53125 17.53125 C 27.53125 17.53125 30 15.355469 30 12.5 C 30 8.402344 26.636719 5 22.5 5 C 19.066406 5 16.855469 7.066406 16 7.9375 C 15.144531 7.066406 12.933594 5 9.5 5 Z M 9.5 7 C 12.488281 7 15.25 9.90625 15.25 9.90625 L 16 10.75 L 16.75 9.90625 C 16.75 9.90625 19.511719 7 22.5 7 C 25.542969 7 28 9.496094 28 12.5 C 28 14.042969 26.125 16.125 26.125 16.125 L 16 26.25 L 5.875 16.125 C 5.875 16.125 5.390625 15.660156 4.90625 14.9375 C 4.421875 14.214844 4 13.273438 4 12.5 C 4 9.496094 6.457031 7 9.5 7 Z"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="productView-share">
+                                        <div class="share-content">
+                                            <button class="share-button button">
+                                                <svg class="icon" viewBox="0 0 227.216 227.216"> <path d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875C203.759,199.715,191.26,212.216,175.897,212.216z"></path> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="previewCartGroup-bottom">
+                                    <div class="previewCartCheckbox global-checkbox">
+                                        <input class="global-checkbox--input" type="checkbox" name="conditions" id="sidebar_cart_conditions" data-target="#cart-sidebar-checkout">
+                                        <label class="global-checkbox--label form-label--checkbox" for="sidebar_cart_conditions">I agree with the</label>
+                                        <a href="javascript:void(0)" data-term-condition="">Terms Conditions</a>
+                                    </div>
+                                    <button class="button button-2 button-checkout" onclick="window.location='#'" disabled="disabled" id="cart-sidebar-checkout">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productView-more">
+                            <div class="productView-ViewingProduct" data-customer-view="283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18" data-customer-view-time="5">
+                                <svg class="icon" id="icon-eye" viewBox="0 0 511.626 511.626"> <g> <path d="M505.918,236.117c-26.651-43.587-62.485-78.609-107.497-105.065c-45.015-26.457-92.549-39.687-142.608-39.687 c-50.059,0-97.595,13.225-142.61,39.687C68.187,157.508,32.355,192.53,5.708,236.117C1.903,242.778,0,249.345,0,255.818 c0,6.473,1.903,13.04,5.708,19.699c26.647,43.589,62.479,78.614,107.495,105.064c45.015,26.46,92.551,39.68,142.61,39.68 c50.06,0,97.594-13.176,142.608-39.536c45.012-26.361,80.852-61.432,107.497-105.208c3.806-6.659,5.708-13.223,5.708-19.699 C511.626,249.345,509.724,242.778,505.918,236.117z M194.568,158.03c17.034-17.034,37.447-25.554,61.242-25.554 c3.805,0,7.043,1.336,9.709,3.999c2.662,2.664,4,5.901,4,9.707c0,3.809-1.338,7.044-3.994,9.704 c-2.662,2.667-5.902,3.999-9.708,3.999c-16.368,0-30.362,5.808-41.971,17.416c-11.613,11.615-17.416,25.603-17.416,41.971 c0,3.811-1.336,7.044-3.999,9.71c-2.667,2.668-5.901,3.999-9.707,3.999c-3.809,0-7.044-1.334-9.71-3.999 c-2.667-2.666-3.999-5.903-3.999-9.71C169.015,195.482,177.535,175.065,194.568,158.03z M379.867,349.04 c-38.164,23.12-79.514,34.687-124.054,34.687c-44.539,0-85.889-11.56-124.051-34.687s-69.901-54.2-95.215-93.222 c28.931-44.921,65.19-78.518,108.777-100.783c-11.61,19.792-17.417,41.207-17.417,64.236c0,35.216,12.517,65.329,37.544,90.362 s55.151,37.544,90.362,37.544c35.214,0,65.329-12.518,90.362-37.544s37.545-55.146,37.545-90.362 c0-23.029-5.808-44.447-17.419-64.236c43.585,22.265,79.846,55.865,108.776,100.783C449.767,294.84,418.031,325.913,379.867,349.04 z"></path> </g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
+                                <span class="text">99 customers are viewing this product</span>
                             </div>
                         </div>
                     </div>
@@ -4006,7 +4110,7 @@
                                                 <a href="#" class="card-media">
                                                     <img src="./assets/images/card product/img-18.jpg" alt="Halo Product">
                                                 </a>
-                                            </div> 
+                                            </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-card-information text-left">
                                                     <a href="#" class="card-title link-underline card-title-ellipsis">
