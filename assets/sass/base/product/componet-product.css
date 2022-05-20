@@ -55,6 +55,7 @@
 
 .productView-variants .product-form__swatch .product-form__label {
   border-radius: 50%;
+  line-height: 40px;
   padding: 3px;
   margin-bottom: 3px;
 }
@@ -450,6 +451,73 @@
 
 .productView-information .previewCartAction .previewCartCheckbox {
   margin: 14px 0px 12px;
+}
+
+.productView-information .share-button__fallback {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: auto;
+  right: 0;
+  padding: 2rem;
+  top: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 7px #0003;
+          box-shadow: 0 3px 7px #0003;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.productView-information .share-button__fallback.is-open {
+  top: calc(100% + 15px);
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}
+
+.productView-information .share-button__fallback .share-button__close {
+  position: absolute;
+  top: 14px;
+  right: 22px;
+  font-size: 0;
+}
+
+.productView-information .share-button__fallback .form-label {
+  letter-spacing: .02em;
+}
+
+.productView-information .share-button__fallback .share-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productView-information .share-button__fallback .form-field {
+  width: calc(100% - 56px);
+}
+
+.productView-information .share-button__fallback .button {
+  width: 46px;
+  margin: 0 0 0 10px;
+  min-width: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 0;
+}
+
+.productView-information .share-button__fallback .button svg {
+  fill: #ffffff;
+  height: auto;
 }
 
 .productView-information .productView-more {

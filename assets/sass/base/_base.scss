@@ -188,6 +188,41 @@ input[type=checkbox]:checked+.form-label--checkbox:after {
     opacity: 1;
 }
 
+input[type=radio]+.form-label--radio:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: all 50ms ease-out;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked+.form-label--radio:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[type=radio]+.form-label--radio:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    transition: all 50ms ease-out;
+    width: 0;
+    height: 0;
+    border: 4px solid #000;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+}
+
 blockquote {
     border: none;
     background-color: #fafafa;

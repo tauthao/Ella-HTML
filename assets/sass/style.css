@@ -196,6 +196,45 @@ input[type=checkbox]:checked + .form-label--checkbox:after {
   opacity: 1;
 }
 
+input[type=radio] + .form-label--radio:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  -webkit-transition: all 50ms ease-out;
+  transition: all 50ms ease-out;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+input[type=radio]:checked + .form-label--radio:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+input[type=radio] + .form-label--radio:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  -webkit-transition: all 50ms ease-out;
+  transition: all 50ms ease-out;
+  width: 0;
+  height: 0;
+  border: 4px solid #000;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+
 blockquote {
   border: none;
   background-color: #fafafa;
@@ -3280,6 +3319,7 @@ label {
 
 .productView-variants .product-form__swatch .product-form__label {
   border-radius: 50%;
+  line-height: 40px;
   padding: 3px;
   margin-bottom: 3px;
 }
@@ -3675,6 +3715,73 @@ label {
 
 .productView-information .previewCartAction .previewCartCheckbox {
   margin: 14px 0px 12px;
+}
+
+.productView-information .share-button__fallback {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: auto;
+  right: 0;
+  padding: 2rem;
+  top: 100%;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 3px 7px #0003;
+          box-shadow: 0 3px 7px #0003;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.productView-information .share-button__fallback.is-open {
+  top: calc(100% + 15px);
+  opacity: 1;
+  z-index: 999;
+  visibility: visible;
+}
+
+.productView-information .share-button__fallback .share-button__close {
+  position: absolute;
+  top: 14px;
+  right: 22px;
+  font-size: 0;
+}
+
+.productView-information .share-button__fallback .form-label {
+  letter-spacing: .02em;
+}
+
+.productView-information .share-button__fallback .share-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productView-information .share-button__fallback .form-field {
+  width: calc(100% - 56px);
+}
+
+.productView-information .share-button__fallback .button {
+  width: 46px;
+  margin: 0 0 0 10px;
+  min-width: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 0;
+}
+
+.productView-information .share-button__fallback .button svg {
+  fill: #ffffff;
+  height: auto;
 }
 
 .productView-information .productView-more {
@@ -4587,6 +4694,300 @@ body.quick-view-show .background-overlay-popup {
 @media (min-width: 1600px) {
   .halo-quick-view-popup .halo-popup-wrapper .halo-popup-content {
     padding: 50px;
+  }
+}
+
+body.size-chart-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.size-chart-show .halo-size-chart-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+}
+
+body.size-chart-show .background-overlay {
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-size-chart-popup {
+  max-width: calc(100% - 30px);
+}
+
+.halo-size-chart-popup .halo-popup-wrapper {
+  padding: 0;
+}
+
+.halo-size-chart-popup .halo-popup-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 15px 13px;
+  margin-bottom: 0;
+}
+
+.halo-size-chart-popup .wrapper-content {
+  padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.halo-size-chart-popup .wrapper-content img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .halo-size-chart-popup {
+    max-width: 700px;
+  }
+  .halo-size-chart-popup .wrapper-content {
+    padding: 30px 50px 30px;
+  }
+}
+
+body.ask-an-expert-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.ask-an-expert-show .halo-ask-an-expert-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+}
+
+body.ask-an-expert-show .background-overlay {
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-ask-an-expert-popup {
+  max-width: calc(100% - 30px);
+}
+
+.halo-ask-an-expert-popup .halo-popup-wrapper {
+  padding: 0;
+}
+
+.halo-ask-an-expert-popup .halo-popup-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 15px 13px;
+  margin-bottom: 0;
+}
+
+.halo-ask-an-expert-popup .wrapper-content {
+  padding: 20px 20px 40px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .heading {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .text {
+  display: block;
+  font-size: 12px;
+  font-weight: var(--font-weight-normal);
+  color: #5a5a5a;
+  line-height: 22px;
+  letter-spacing: .02em;
+  margin: 0 auto;
+  padding: 2px 30px 0;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .intro {
+  font-size: 12px;
+  font-weight: 500;
+  color: #232323;
+  line-height: 22px;
+  letter-spacing: .02em;
+  margin: 24px 0 0;
+  padding: 22px 0 23px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field label {
+  font-weight: 400;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field + .form-field {
+  margin-top: 15px;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field + .form-field.form-field-radio {
+  margin-top: 22px;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-radio .form-label {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin: 0 25px 0 0;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-radio-2 .form-label:first-child {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-textarea {
+  margin-top: 23px;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-actions {
+  margin-top: 23px;
+}
+
+.halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-actions .button {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .halo-ask-an-expert-popup {
+    max-width: 700px;
+  }
+  .halo-ask-an-expert-popup .wrapper-content {
+    padding: 30px 50px 50px;
+  }
+}
+
+body.compare-color-show {
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+body.compare-color-show .halo-compare-color-popup {
+  pointer-events: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+}
+
+body.compare-color-show .background-overlay {
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-compare-color-popup {
+  max-width: calc(100% - 30px);
+}
+
+.halo-compare-color-popup .halo-popup-wrapper {
+  padding: 0;
+}
+
+.halo-compare-color-popup .halo-popup-header {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 30px 13px;
+  margin-bottom: 0;
+}
+
+.halo-compare-color-popup .wrapper-content {
+  padding: 15px 30px 15px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors {
+  padding: 15px 0;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-swatch {
+  margin-bottom: 25px;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .compareColors-list .item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-option {
+  display: none;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-option:checked + .swatch-compare-color-label {
+  border-color: #232323;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  font-size: 0;
+  letter-spacing: 0;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  border: 2px solid #e6e6e6;
+  background: 0 0;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label::after, .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label::before {
+  display: none;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label .pattern {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-text {
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #969696;
+  text-transform: capitalize;
+  letter-spacing: .02em;
+}
+
+@media (min-width: 768px) {
+  .halo-compare-color-popup {
+    max-width: 970px;
   }
 }
 

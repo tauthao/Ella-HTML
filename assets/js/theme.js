@@ -28,17 +28,20 @@
             this.initDynamicBrowserTabTitle();
             this.initSidebarLogin();
             this.initSidebarCart();
-            this.initCloseSidebar();
             this.initGlobalCheckbox();
             this.initNotifyInStock();
             this.initQuickShop();
             this.initEditQuickCart();
             // this.initNewsLetterPopup();
-            this.initClosePopup();
             this.initSliderAboutUs();
             this.initSlideShow();
-            this.clickedActiveVideoBanner();
-            this.showPopupPassWord();
+            this.initClickedActiveVideoBanner();
+            this.initShowPopupPassWord();
+            this.initShowPopupShare();
+            this.initCountdown();
+            this.initProductCustomerViewing();
+            this.initProductSizeChart();
+            this.initProducAskAnExpert();
         },
 
         initSliderBanner: function() {
@@ -343,7 +346,8 @@
         },
 
         initSidebarLogin: function() {
-            var authIcon = $("[data-open-auth-sidebar]");
+            var authIcon = $("[data-open-auth-sidebar]"),
+                btnClose = $(".background-overlay, .halo-sidebar-close");
 
             if (authIcon.length) {
                 authIcon.on('click', (event) => {
@@ -352,11 +356,21 @@
 
                     $body.addClass('auth-sidebar-show');
                 });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('auth-sidebar-show')) {
+                        $body.removeClass('auth-sidebar-show');
+                    }
+                });
+
             }
         },
 
         initSidebarCart: function() {
-            var authIcon = $("[data-open-cart-sidebar]");
+            var authIcon = $("[data-open-cart-sidebar]"),
+                btnClose = $(".background-overlay, .halo-sidebar-close");
 
             if (authIcon.length) {
                 authIcon.on('click', (event) => {
@@ -365,23 +379,16 @@
 
                     $body.addClass('cart-sidebar-show');
                 });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('cart-sidebar-show')) {
+                        $body.removeClass('cart-sidebar-show');
+                    }
+                });
+
             }
-        },
-
-        initCloseSidebar: function() {
-            var closeSidebarAuth = $(".background-overlay, .halo-sidebar-close");
-
-            closeSidebarAuth.on('click', (event) => {
-                event.preventDefault();
-                event.stopPropagation();
-                if ($body.hasClass('auth-sidebar-show')) {
-                    $body.removeClass('auth-sidebar-show');
-                }
-
-                if ($body.hasClass('cart-sidebar-show')) {
-                    $body.removeClass('cart-sidebar-show');
-                }
-            });
         },
 
         initGlobalCheckbox: function() {
@@ -397,7 +404,8 @@
         },
 
         initNotifyInStock: function() {
-            var btnNotify = $('.is-notify-me');
+            var btnNotify = $('.is-notify-me'),
+                btnclose = $(".background-overlay-popup, .halo-popup-close");
 
             if (btnNotify.length) {
                 btnNotify.on('click', (event) => {
@@ -406,11 +414,23 @@
 
                     $body.addClass('notify-me-show');
                 });
+
+                btnclose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if ($body.hasClass('notify-me-show')) {
+                        $body.removeClass('notify-me-show');
+                    }
+
+                });
+
             }
         },
 
         initQuickShop: function() {
-            var btnQuickShop = $('[data-quickshop-popup]');
+            var btnQuickShop = $('[data-quickshop-popup]'),
+                btnclose = $(".background-overlay-popup, .halo-popup-close");
 
             if (btnQuickShop.length) {
                 btnQuickShop.on('click', (event) => {
@@ -419,11 +439,21 @@
 
                     $body.addClass('quickshop-popup-show');
                 });
+                btnclose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if ($body.hasClass('quickshop-popup-show')) {
+                        $body.removeClass('quickshop-popup-show');
+                    }
+
+                });
             }
         },
 
         initEditQuickCart: function() {
             var btnQuickEdit = $('[data-open-edit-cart]');
+            btnclose = $(".background-overlay-popup, .halo-popup-close");
 
             if (btnQuickEdit.length) {
                 btnQuickEdit.on('click', (event) => {
@@ -431,6 +461,16 @@
                     event.stopPropagation();
 
                     $body.addClass('edit-cart-show');
+                });
+
+                btnclose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if ($body.hasClass('edit-cart-show')) {
+                        $body.removeClass('edit-cart-show');
+                    }
+
                 });
             }
         },
@@ -457,27 +497,6 @@
                     $body.removeClass('newsletter-show');
                 });
             }
-        },
-
-        initClosePopup: function() {
-            var closePopup = $(".background-overlay-popup, .halo-popup-close");
-
-            closePopup.on('click', (event) => {
-                event.preventDefault();
-                event.stopPropagation();
-
-                if ($body.hasClass('notify-me-show')) {
-                    $body.removeClass('notify-me-show');
-                }
-
-                if ($body.hasClass('notify-me-show')) {
-                    $body.removeClass('notify-me-show');
-                }
-
-                if ($body.hasClass('quickshop-popup-show')) {
-                    $body.removeClass('quickshop-popup-show');
-                }
-            });
         },
 
         initSliderAboutUs: function() {
@@ -567,7 +586,7 @@
             });
         },
 
-        clickedActiveVideoBanner: function() {
+        initClickedActiveVideoBanner: function() {
             if ($('[data-video-banner]').length > 0) {
                 var videoBanner = $('[data-video-banner]');
 
@@ -648,12 +667,12 @@
             }
         },
 
-        showPopupPassWord: function() {
+        initShowPopupPassWord: function() {
             $doc.on('click', '[data-open-password-popup]', (event) => {
                 event.preventDefault();
                 var $target = $(event.currentTarget),
                     $popup = $target.siblings('.popup');
-                if(!$target.hasClass('active')){
+                if (!$target.hasClass('active')) {
                     $target.addClass('active');
                     $popup.addClass('open');
                 } else {
@@ -661,12 +680,158 @@
                     $popup.removeClass('open');
                 }
             });
-            $doc.on('click', (event) =>{
-                if(!event.target.closest('[data-open-password-popup]') && !event.target.closest('[data-password-popup]')){
+            $doc.on('click', (event) => {
+                if (!event.target.closest('[data-open-password-popup]') && !event.target.closest('[data-password-popup]')) {
                     $('[data-open-password-popup]').removeClass('active');
                     $('[data-password-popup]').removeClass('open');
                 }
             });
-        }
+        },
+
+        initShowPopupShare: function() {
+            var wrapper = $(".productView-share");
+
+            if (wrapper.length > 0) {
+                var btnCopy = wrapper.find(".share-group .button-copy"),
+                    btnShare = wrapper.find(".share-button"),
+                    $temp = $("<input>"),
+                    $url = wrapper.find(".field__input").val();
+
+                btnShare.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    wrapper.find(".share-button__fallback").toggleClass("is-open");
+                });
+
+                btnCopy.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    wrapper.append($temp);
+                    $temp.val($url).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                    wrapper.find(".field__input").val("URL copied!");
+
+                });
+
+                $doc.on('click', '.share-button__close', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $(".share-button__fallback").removeClass("is-open");
+                });
+
+                $doc.on('click', (event) => {
+
+                    if ($(event.target).closest('.share-button__fallback').length === 0) {
+                        $(".share-button__fallback").removeClass("is-open");
+                    }
+                });
+            }
+        },
+
+        initCountdown: function() {
+            var countdownElm = $('[data-countdown]');
+            if (countdownElm.length) {
+                countdownElm.each(function() {
+                    var self = $(this),
+                        countDown = self.data('countdown'),
+                        countDownDate = new Date(countDown).getTime();
+
+                    var countdownfunction = setInterval(function() {
+                        var now = new Date().getTime(),
+                            distance = countDownDate - now;
+
+                        if (distance < 0) {
+                            clearInterval(countdownfunction);
+                            self.remove();
+                        } else {
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+                                hours = `0${Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}`.slice(-2),
+                                minutes = `0${Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))}`.slice(-2),
+                                seconds = `0${Math.floor((distance % (1000 * 60)) / 1000)}`.slice(-2),
+                                strCountDown = '';
+                            if (self.hasClass('product-countdown-block')) {
+
+                            } else {
+                                strCountDown = '<span class="num">' + days + '<span>Day</span></span>\
+                                <span class="num">' + hours + '<span>Hrs</span></span>\
+                                <span class="num">' + minutes + '<span>Min</span></span>\
+                                <span class="num">' + seconds + '<span>Sec</span></span>';
+                            }
+                            self.html(strCountDown);
+                        }
+                    }, 0);
+                });
+            }
+        },
+
+        initProductCustomerViewing: function() {
+            var wrapper = $(".productView-more").find('[data-customer-view]');
+
+            if (wrapper.length > 0) {
+                var numbersViewer = wrapper.data('customer-view'),
+                    numbersViewerList = JSON.parse('[' + numbersViewer + ']'),
+                    numbersViewerTime = wrapper.data('customer-view-time'),
+                    timeViewer = parseInt(numbersViewerTime) * 1000;
+
+                setInterval(function() {
+                    var numbersViewerItem = (Math.floor(Math.random() * numbersViewerList.length));
+
+                    wrapper.find('.text').text('[number] customers are viewing this product'.replace('[number]', numbersViewerList[numbersViewerItem]));
+                }, timeViewer);
+            }
+        },
+
+        initProductSizeChart: function() {
+            var btnSizeChart = $('[data-open-size-chart-popup]'),
+                btnClose = $(".background-overlay, .halo-popup-close");
+
+
+            if (btnSizeChart.length) {
+                btnSizeChart.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('size-chart-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('size-chart-show')) {
+                        $body.removeClass('size-chart-show');
+                    }
+                });
+            }
+        },
+
+        initProducAskAnExpert: function() {
+            var btnNotify = $('[data-open-ask-an-expert]'),
+                btnClose = $(".background-overlay, .halo-popup-close");
+
+
+            if (btnNotify.length) {
+                btnNotify.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('ask-an-expert-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('ask-an-expert-show')) {
+                        $body.removeClass('ask-an-expert-show');
+                    }
+                });
+            }
+        },
+
+
+
     }
 })(jQuery);
