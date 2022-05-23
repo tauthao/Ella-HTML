@@ -105,6 +105,15 @@ body.compare-color-show .background-overlay {
   letter-spacing: .02em;
 }
 
+.halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-image {
+  text-align: center;
+}
+
+.halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-image .title {
+  padding: 15px 0 25px;
+  display: block;
+}
+
 @media (min-width: 768px) {
   .halo-compare-color-popup {
     max-width: 970px;

@@ -1281,7 +1281,7 @@ label {
     background: #ffffff;
     box-shadow: 0 6px 27px #0003;
     transition: all ease .5s;
-    transform: translate(calc(-50% - 20px), -50%);
+    transform: translate(calc(-50% - 25px), -50%);
     .halo-popup-wrapper {
         position: relative;
         padding: 30px;
@@ -1558,7 +1558,7 @@ label {
             letter-spacing: 0;
             cursor: pointer;
             color: #232323;
-            background-color: #ffffff;
+            background: #ffffff;
             .text {
                 padding: 0 15px 0 30px;
                 color: #232323;
@@ -1575,7 +1575,7 @@ label {
                 visibility: hidden;
                 right: calc(100% - 30px);
                 height: 36px;
-                background-color: #ffffff;
+                background: #ffffff;
                 line-height: 36px;
                 position: absolute;
                 top: 50%;
@@ -1585,6 +1585,16 @@ label {
                 transition: all ease .3s;
                 transition-duration: 350ms;
                 pointer-events: none;
+            }
+            &.wishlist-added {
+                background: #232323;
+                .text {
+                    background: #232323;
+                    color: #ffffff;
+                }
+                svg {
+                    fill: #ffffff;
+                }
             }
         }
         .card-product__group-item {

@@ -190,8 +190,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -201,8 +201,9 @@
 }
 
 .productView-information .halo-productView-left {
-  width: 470px;
+  width: 100%;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .productView-information .halo-productView-left .card__badge {
@@ -217,9 +218,56 @@
   right: 0;
 }
 
+.productView-information .halo-productView-left .productView-thumbnail-wrapper {
+  margin: 8px 0 0;
+  position: relative;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for {
+  position: relative;
+  font-size: 0;
+  letter-spacing: 0;
+  padding: 0 35px;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-thumbnail {
+  padding: 0 7.5px;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-thumbnail .productView-thumbnail-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .slick-current .productView-thumbnail-link img {
+  opacity: .3;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .slick-arrow {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  padding: 3px !important;
+  border: none;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .slick-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .slick-arrow:hover {
+  background: transparent;
+}
+
+.productView-information .halo-productView-left .productView-thumbnail-wrapper .slick-arrow:hover svg {
+  fill: #cbcbcb;
+}
+
 .productView-information .halo-productView-right {
-  width: calc(100% - 470px);
-  padding-left: 30px;
+  width: 100%;
 }
 
 .productView-information .halo-productView-right .productView-title {
@@ -546,5 +594,44 @@
   line-height: 22px;
 }
 
+@media (max-width: 551px) {
+  .productView-soldProduct {
+    margin-left: 0;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .productView-information .halo-productView-left {
+    width: 50%;
+    margin-bottom: 0px;
+  }
+  .productView-information .halo-productView-right {
+    width: 50%;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productView-information .halo-productView-left {
+    width: 470px;
+  }
+  .productView-information .halo-productView-right {
+    width: calc(100% - 470px);
+  }
+}
+
 /* END: Product Information */
+.image-zoom {
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.image-zoom img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=componet-product.css.map */

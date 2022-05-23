@@ -93,6 +93,13 @@ body {
                 text-transform: capitalize;
                 letter-spacing: .02em;
             }
+            .halo-compareColors-image {
+                text-align: center;
+                .title {
+                    padding: 15px 0 25px;
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ class CompareColor extends HTMLElement {
         super();
 
         this.popup = this;
-        this.imageList = $(this.querySelector('.halo-compareColors-image'));
+        this.imageList = $(this.querySelector('.halo-compareColors-image .row'));
         this.textList = this.querySelector('.halo-compareColors-text');
         this.sortTable = document.getElementById('sortTableList');
 
@@ -21,7 +21,7 @@ class CompareColor extends HTMLElement {
             );
         }
 
-        document.querySelector('.background-overlay').addEventListener(
+        document.querySelector('.background-overlay,.halo-popup-close').addEventListener(
             'click',
             this.setClosePopup.bind(this)
         );
@@ -30,7 +30,10 @@ class CompareColor extends HTMLElement {
             this.onChangeHandler(event);
         }, 0);
 
-        this.querySelector('ul').addEventListener('input', this.debouncedOnChange.bind(this));
+        this.querySelector('ul').addEventListener(
+            'input',
+            this.debouncedOnChange.bind(this)
+        );
 
         if (window.innerWidth >= 1025 && this.sortTable) {
             new Sortable(this.sortTable, {
@@ -49,14 +52,13 @@ class CompareColor extends HTMLElement {
     }
 
     setClosePopup(event) {
-        event.preventDefault();
-        event.stopPropagation();
 
         document.body.classList.remove('compare-color-show');
     }
 
     onChangeHandler(event) {
         event.preventDefault();
+
 
         var input = event.target,
             label = input.nextElementSibling,
@@ -65,7 +67,7 @@ class CompareColor extends HTMLElement {
         if (input.checked) {
             var title = label.getAttribute('title'),
                 image = label.getAttribute('data-variant-img'),
-                item = `<div class="item item-${id} item-compare-color"><span class="image"><img src="${image}" alt="${title}"></span><span class="title text-center">${title}</span></div>`;
+                item = `<div class="item col-6 col-md-4 col-lg-3 item-${id} item-compare-color"><span class="image"><img src="${image}" alt="${title}"></span><span class="title text-center">${title}</span></div>`;
 
             this.imageList.append(item);
         } else {
@@ -93,4 +95,4 @@ class CompareColor extends HTMLElement {
     }
 }
 
-customElements.define('compare-color', CompareColor);
+customElements.define('compare-color-pr', CompareColor);
