@@ -1,6 +1,5 @@
 body.newsletter-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.newsletter-show .halo-newsletter-popup {
@@ -153,6 +152,12 @@ body.newsletter-show .background-overlay-popup {
 @media (max-width: 551px) {
   .halo-newsletter-popup {
     max-width: calc(100% - 30px);
+  }
+}
+
+@media (min-width: 1025px) {
+  body.newsletter-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-newsletter.css.map */

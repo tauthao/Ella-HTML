@@ -1,6 +1,5 @@
 body.size-chart-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.size-chart-show .halo-size-chart-popup {
@@ -50,6 +49,12 @@ body.size-chart-show .background-overlay {
   }
   .halo-size-chart-popup .wrapper-content {
     padding: 30px 50px 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.size-chart-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-sizechart.css.map */

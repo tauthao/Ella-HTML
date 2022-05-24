@@ -1,6 +1,5 @@
 body.ask-an-expert-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.ask-an-expert-show .halo-ask-an-expert-popup {
@@ -121,6 +120,12 @@ body.ask-an-expert-show .background-overlay {
   }
   .halo-ask-an-expert-popup .wrapper-content {
     padding: 30px 50px 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.ask-an-expert-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=componet-ask-an-expert.css.map */

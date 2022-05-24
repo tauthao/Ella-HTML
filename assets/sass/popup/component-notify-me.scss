@@ -1,7 +1,6 @@
 body {
     &.notify-me-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-notify-popup {
             opacity: 1;
             visibility: visible;
@@ -34,5 +33,13 @@ body {
         width: 100%;
         margin-left: 0;
         margin-top: 10px
+    }
+}
+
+@media(min-width:1025px){
+    body {
+        &.notify-me-show {
+            padding-right: 10px;
+        }
     }
 }

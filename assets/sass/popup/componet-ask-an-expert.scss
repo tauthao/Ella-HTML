@@ -1,7 +1,6 @@
 body {
     &.ask-an-expert-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-ask-an-expert-popup {
             pointer-events: auto;
             transform: translate(-50%, -50%);
@@ -112,6 +111,14 @@ body {
         max-width: 700px;
         .wrapper-content {
             padding: 30px 50px 50px;
+        }
+    }
+}
+
+@media(min-width:1025px){
+    body {
+        &.ask-an-expert-show {
+            padding-right: 10px;
         }
     }
 }

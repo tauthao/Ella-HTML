@@ -1365,6 +1365,10 @@ label {
         right: 0;
         transform: translate(101%);
     }
+    &.halo-sidebar-left {
+        left: 0;
+        transform: translate(-101%);
+    }
     .halo-sidebar-header {
         position: relative;
         padding: 24px 20px 0;
@@ -1613,12 +1617,12 @@ label {
         }
     }
     .card-action {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
         padding: 0;
         background: transparent;
-        z-index: 10;
+        z-index: 1;
         margin: 0;
         transition: all ease .5s;
         opacity: 1;
@@ -1849,6 +1853,32 @@ label {
     }
 }
 
+@media(max-width:767px){
+    .halo-sidebar{
+        .halo-sidebar-header {
+            padding: 9px 20px 9px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .halo-sidebar-close{
+            top: 0px!important;
+            background: #232323!important;
+            svg{
+                fill: #ffffff!important;
+            }
+        }
+        &.halo-sidebar-left{
+            .halo-sidebar-close{
+                right: -40px!important;
+            }
+        }
+        &.halo-sidebar-right{
+            .halo-sidebar-close{
+                left: -40px!important;
+            }
+        }
+    }
+}
+
 @media (max-width:551px) {
     .halo-block .halo-row--swipe .halo-row-item {
         width: 300px;
@@ -2002,6 +2032,8 @@ label {
             }
         }
         .card-action {
+            position: absolute;
+            z-index: 10;
             opacity: 0;
             visibility: hidden;
             bottom: -15px;

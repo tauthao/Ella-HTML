@@ -1,6 +1,5 @@
 body.quick-view-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.quick-view-show .halo-quick-view-popup {
@@ -58,6 +57,12 @@ body.quick-view-show .background-overlay-popup {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.quick-view-show {
+    padding-right: 10px;
   }
 }
 

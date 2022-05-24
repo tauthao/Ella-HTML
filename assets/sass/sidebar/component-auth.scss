@@ -1,7 +1,6 @@
 body {
     &.auth-sidebar-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-auth-sidebar {
             transform: translate(0);
             opacity: 1;
@@ -45,5 +44,10 @@ body {
     .auth-form {
         padding-left: 30px;
         padding-right: 30px;
+    }
+    body {
+        &.auth-sidebar-show {
+            padding-right: 10px;
+        }
     }
 }

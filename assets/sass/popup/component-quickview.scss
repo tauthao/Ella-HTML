@@ -1,7 +1,6 @@
 body {
     &.quick-view-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-quick-view-popup {
             pointer-events: auto;
             transform: translate(-50%, -50%);
@@ -55,6 +54,14 @@ body {
                 position: sticky;
                 top: 0;
             }
+        }
+    }
+}
+
+@media(min-width:1025px){
+    body {
+        &.quick-view-show {
+            padding-right: 10px;
         }
     }
 }

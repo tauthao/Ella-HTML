@@ -28,6 +28,7 @@
             this.initDynamicBrowserTabTitle();
             this.initSidebarLogin();
             this.initSidebarCart();
+            this.initSidebarSearch();
             this.initGlobalCheckbox();
             this.initNotifyInStock();
             this.initQuickShop();
@@ -47,6 +48,7 @@
             this.initProductImageGallery();
             this.initWishlistActive();
             this.initUpdateVlueQuantity();
+            this.initMenuMobile();
         },
 
         initSliderBanner: function() {
@@ -390,6 +392,28 @@
                     event.stopPropagation();
                     if ($body.hasClass('cart-sidebar-show')) {
                         $body.removeClass('cart-sidebar-show');
+                    }
+                });
+
+            }
+        },
+        initSidebarSearch: function() {
+            var searchIcon = $("[data-mobile-search]"),
+                btnClose = $(".background-overlay, .halo-sidebar-close");
+
+            if (searchIcon.length) {
+                searchIcon.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('search_sidebar-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('search_sidebar-show')) {
+                        $body.removeClass('search_sidebar-show');
                     }
                 });
 
@@ -962,6 +986,61 @@
                 }
 
             });
+        },
+
+        initMenuMobile: function() {
+            var iconMenu = $('[data-mobile-menu]'),
+                itemDropdown = $('.site-nav-mobile .menu_mobile_link'),
+                btnClose = $(".background-overlay, .halo-sidebar-close"),
+                navTitle = $('.nav-title-mobile');
+
+                if (iconMenu.length) {
+                    iconMenu.on('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+    
+                        $body.addClass('menu-sidebar_show');
+                    });
+    
+                    btnClose.on('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        if ($body.hasClass('menu-sidebar_show')) {
+                            $body.removeClass('menu-sidebar_show');
+                        }
+                    });
+
+                    itemDropdown.on('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+        
+                        var $target = $(event.target);
+                        $target.parent().siblings().removeClass('is-open').addClass('is-hidden');
+                        $target.parent().removeClass('is-hidden').addClass('is-open');
+                    });
+        
+                    navTitle.on('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+        
+                        var $target = $(event.target);
+                        var $target = $(event.currentTarget),
+                            $parentLv1 = $target.parents('.menu-lv-1'),
+                            $parentLv2 = $target.parents('.menu-lv-2'),
+                            $parentLv3 = $target.parents('.menu-lv-3');
+        
+                            if ($parentLv3.length > 0) {
+                                $parentLv3.siblings().removeClass('is-hidden');
+                                $parentLv3.removeClass('is-open');
+                            } else if ($parentLv2.length > 0) {
+                                $parentLv2.siblings().removeClass('is-hidden');
+                                $parentLv2.removeClass('is-open');
+                            } else if ($parentLv1.length > 0) {
+                                $parentLv1.siblings().removeClass('is-hidden');
+                                $parentLv1.removeClass('is-open');
+                            }
+                    });
+                }
         },
 
     }

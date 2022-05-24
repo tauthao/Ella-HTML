@@ -1,6 +1,5 @@
 body.compare-color-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.compare-color-show .halo-compare-color-popup {
@@ -112,6 +111,12 @@ body.compare-color-show .background-overlay {
 .halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-image .title {
   padding: 15px 0 25px;
   display: block;
+}
+
+@media (min-width: 1025px) {
+  body.compare-color-show {
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 768px) {

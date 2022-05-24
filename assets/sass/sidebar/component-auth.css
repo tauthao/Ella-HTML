@@ -1,6 +1,5 @@
 body.auth-sidebar-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.auth-sidebar-show .halo-auth-sidebar {
@@ -48,6 +47,9 @@ body.auth-sidebar-show .background-overlay {
   .auth-form {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  body.auth-sidebar-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-auth.css.map */

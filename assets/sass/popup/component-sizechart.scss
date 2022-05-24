@@ -1,7 +1,6 @@
 body {
     &.size-chart-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-size-chart-popup {
             pointer-events: auto;
             transform: translate(-50%, -50%);
@@ -44,6 +43,13 @@ body {
         max-width: 700px;
         .wrapper-content {
             padding: 30px 50px 30px;
+        }
+    }
+}
+@media(min-width:1025px){
+    body {
+        &.size-chart-show {
+            padding-right: 10px;
         }
     }
 }

@@ -1,7 +1,6 @@
 body {
     &.newsletter-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-newsletter-popup {
             pointer-events: auto;
             transform: translate(-50%, -50%);
@@ -130,5 +129,13 @@ body {
 @media(max-width:551px) {
     .halo-newsletter-popup {
         max-width: calc(100% - 30px);
+    }
+}
+
+@media(min-width:1025px){
+    body {
+        &.newsletter-show {
+            padding-right: 10px;
+        }
     }
 }

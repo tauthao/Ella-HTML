@@ -18,7 +18,6 @@
 
 body.cart-sidebar-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.cart-sidebar-show .halo-cart-sidebar {
@@ -34,7 +33,17 @@ body.cart-sidebar-show .background-overlay {
   visibility: visible;
 }
 
-.halo-sidebar .halo-sidebar-wrapper.CartItemDrop {
+.halo-cart-sidebar .halo-sidebar-header {
+  padding: 24px 20px 0;
+  border: none;
+}
+
+.halo-cart-sidebar .halo-sidebar-wrapper {
+  overflow-x: inherit;
+  overflow-y: inherit;
+}
+
+.halo-cart-sidebar .halo-sidebar-wrapper .CartItemDrop {
   overflow-x: inherit;
   overflow-y: inherit;
 }
@@ -376,6 +385,9 @@ body.cart-sidebar-show .background-overlay {
 @media (min-width: 1025px) {
   .haloCalculatorShipping {
     padding: 0 30px;
+  }
+  body.cart-sidebar-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-quick-cart.css.map */
