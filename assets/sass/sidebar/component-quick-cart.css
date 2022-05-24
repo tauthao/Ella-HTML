@@ -6,7 +6,6 @@
     background-position: 40px 0;
   }
 }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 0 0;
@@ -15,18 +14,14 @@
     background-position: 40px 0;
   }
 }
-
 body.cart-sidebar-show {
   overflow: hidden;
 }
-
 body.cart-sidebar-show .halo-cart-sidebar {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   visibility: visible;
 }
-
 body.cart-sidebar-show .background-overlay {
   z-index: 99;
   opacity: 1;
@@ -37,25 +32,18 @@ body.cart-sidebar-show .background-overlay {
   padding: 24px 20px 0;
   border: none;
 }
-
 .halo-cart-sidebar .halo-sidebar-wrapper {
   overflow-x: inherit;
   overflow-y: inherit;
 }
-
 .halo-cart-sidebar .halo-sidebar-wrapper .CartItemDrop {
   overflow-x: inherit;
   overflow-y: inherit;
 }
 
 .previewCart-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
   height: 100%;
 }
@@ -72,7 +60,6 @@ body.cart-sidebar-show .background-overlay {
   min-height: 26px;
   padding: 0 20px;
 }
-
 .haloCalculatorShipping .progress {
   position: relative;
   margin: 0 0 10px;
@@ -83,23 +70,18 @@ body.cart-sidebar-show .background-overlay {
   display: block;
   height: auto;
 }
-
 .haloCalculatorShipping .progress.progress.progress-100 .progress_shipping {
   background: #ededed;
 }
-
 .haloCalculatorShipping .progress.progress.progress-100 .progress-meter {
   background-color: #ffc206;
 }
-
 .haloCalculatorShipping .progress .progress-meter {
   -webkit-animation: 2s linear 0s infinite progress-bar-stripes;
           animation: 2s linear 0s infinite progress-bar-stripes;
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
-  -webkit-transition: .9s linear;
-  transition: .9s linear;
-  -webkit-transition-property: width, background-color;
+  transition: 0.9s linear;
   transition-property: width, background-color;
   position: relative;
   display: block;
@@ -112,21 +94,18 @@ body.cart-sidebar-show .background-overlay {
   color: #ffffff;
   text-align: center;
 }
-
 .haloCalculatorShipping .progress .progress_shipping {
   height: 16px;
   border: 0;
 }
-
 .haloCalculatorShipping .message {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 22px;
   color: #727272;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
 }
-
 .haloCalculatorShipping .message .money {
   margin-right: 3px;
 }
@@ -135,7 +114,6 @@ body.cart-sidebar-show .background-overlay {
   position: relative;
   padding: 5px 30px 125px;
 }
-
 .previewCartInfo .previewCartTotals {
   display: block;
   font-size: 0;
@@ -143,22 +121,19 @@ body.cart-sidebar-show .background-overlay {
   padding-top: 18px;
   padding-bottom: 14px;
 }
-
 .previewCartInfo .item {
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
   line-height: 22px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   font-weight: 600;
   color: #232323;
 }
-
 .previewCartInfo .previewCartTotals-label {
   width: 120px;
   text-align: left;
 }
-
 .previewCartInfo .previewCartTotals-value {
   width: calc(100% - 120px);
   font-size: 16px;
@@ -169,39 +144,28 @@ body.cart-sidebar-show .background-overlay {
 .previewCart {
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   padding: 15px 20px 0 30px;
 }
 
 .halo-cart-sidebar .previewCartItem {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
   font-size: 0;
   letter-spacing: 0;
   padding-bottom: 25px;
   border-bottom: 1px solid #e8e8e8;
 }
-
 .halo-cart-sidebar .previewCartItem:last-child {
   border-bottom: 0;
   padding-bottom: 0;
 }
-
 .halo-cart-sidebar .previewCartItem + .previewCartItem {
   border-top: 0;
   margin-top: 23px;
 }
-
 .halo-cart-sidebar .previewCartItem-image {
   display: inline-block;
   vertical-align: top;
@@ -210,7 +174,6 @@ body.cart-sidebar-show .background-overlay {
   position: relative;
   top: 6px;
 }
-
 .halo-cart-sidebar .previewCartItem-content {
   width: calc(100% - 80px);
   padding: 0 20px;
@@ -218,7 +181,6 @@ body.cart-sidebar-show .background-overlay {
   display: inline-block;
   vertical-align: top;
 }
-
 .halo-cart-sidebar .previewCartItem-name {
   overflow: hidden;
   white-space: normal;
@@ -229,12 +191,11 @@ body.cart-sidebar-show .background-overlay {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   color: #232323;
   text-transform: capitalize;
   margin: 0 0 8px;
 }
-
 .halo-cart-sidebar .previewCartItem-options {
   display: inline-block;
   vertical-align: top;
@@ -242,27 +203,23 @@ body.cart-sidebar-show .background-overlay {
   padding: 0 30px 0 0;
   margin: 0 0 7px;
 }
-
 .halo-cart-sidebar .previewCartItem-options span {
   display: block;
   font-size: 12px;
   font-weight: 400;
   color: #969696;
   text-transform: capitalize;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   line-height: 22px;
 }
-
 .halo-cart-sidebar .previewCartItem-edit {
   display: inline-block;
   vertical-align: top;
   position: absolute;
   top: 50%;
   right: -2px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .halo-cart-sidebar .previewCartItem-edit svg {
   width: 16px;
   height: 16px;
@@ -270,7 +227,6 @@ body.cart-sidebar-show .background-overlay {
   position: relative;
   top: -2px;
 }
-
 .halo-cart-sidebar .previewCartItem-price {
   display: block;
   font-size: 14px;
@@ -279,13 +235,11 @@ body.cart-sidebar-show .background-overlay {
   line-height: 22px;
   color: #232323;
 }
-
 .halo-cart-sidebar .previewCartItem-remove {
   position: absolute;
   right: 8px;
   top: 50%;
 }
-
 .halo-cart-sidebar .previewCartItem-remove svg {
   fill: #5a5a5a;
   width: 18px;
@@ -304,7 +258,6 @@ body.cart-sidebar-show .background-overlay {
   color: #3c3c3c;
   text-transform: unset;
 }
-
 .previewCartCheckbox input[type=checkbox] ~ a {
   display: inline-block;
   vertical-align: top;
@@ -312,12 +265,10 @@ body.cart-sidebar-show .background-overlay {
   line-height: 20px;
   color: #3c3c3c;
   margin: 0 0 0 5px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(97%, transparent), color-stop(3%, #3c3c3c));
   background-image: linear-gradient(transparent 97%, #3c3c3c 3%);
   background-repeat: repeat-x;
   background-position-y: -2px;
 }
-
 .previewCartCheckbox input[type=checkbox] ~ a:hover {
   color: #232323;
 }
@@ -325,11 +276,9 @@ body.cart-sidebar-show .background-overlay {
 .previewCartGroup {
   margin: 12px 0 0;
 }
-
 .previewCartGroup .button {
   width: 100%;
 }
-
 .previewCartGroup .button + .button {
   margin-top: 15px;
 }
@@ -340,37 +289,30 @@ body.cart-sidebar-show .background-overlay {
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
 }
-
 .previewCartCollection .previewCartTitle {
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
   line-height: 24px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   text-transform: unset;
   position: relative;
   margin: 0 0 22px;
 }
-
 .previewCartCollection .halo-product-block {
   margin-top: 0;
   padding-bottom: 25px;
 }
-
 .previewCartCollection .halo-product-block .row {
   margin: 0 !important;
 }
-
 .previewCartCollection .halo-product-block .row > * {
   padding: 0px;
 }
-
 .previewCartCollection .halo-product-block .row .slick-arrow {
   top: -54px;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
-
 .previewCartCollection .halo-product-block .row .slick-arrow.slick-prev {
   left: auto;
   right: 43px;
@@ -381,13 +323,12 @@ body.cart-sidebar-show .background-overlay {
     max-width: 420px;
   }
 }
-
 @media (min-width: 1025px) {
   .haloCalculatorShipping {
     padding: 0 30px;
   }
+
   body.cart-sidebar-show {
     padding-right: 10px;
   }
-}
-/*# sourceMappingURL=component-quick-cart.css.map */
+}/*# sourceMappingURL=component-quick-cart.css.map */

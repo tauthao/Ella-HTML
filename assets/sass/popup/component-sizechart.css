@@ -1,16 +1,13 @@
 body.size-chart-show {
   overflow: hidden;
 }
-
 body.size-chart-show .halo-size-chart-popup {
   pointer-events: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
   z-index: 99999;
 }
-
 body.size-chart-show .background-overlay {
   z-index: 99999;
   opacity: 1;
@@ -20,17 +17,14 @@ body.size-chart-show .background-overlay {
 .halo-size-chart-popup {
   max-width: calc(100% - 30px);
 }
-
 .halo-size-chart-popup .halo-popup-wrapper {
   padding: 0;
 }
-
 .halo-size-chart-popup .halo-popup-header {
   border-bottom: 1px solid #e6e6e6;
   padding: 16px 15px 13px;
   margin-bottom: 0;
 }
-
 .halo-size-chart-popup .wrapper-content {
   padding: 20px;
   position: relative;
@@ -38,7 +32,6 @@ body.size-chart-show .background-overlay {
   overflow-y: auto;
   max-height: 80vh;
 }
-
 .halo-size-chart-popup .wrapper-content img {
   width: 100%;
 }
@@ -51,10 +44,8 @@ body.size-chart-show .background-overlay {
     padding: 30px 50px 30px;
   }
 }
-
 @media (min-width: 1025px) {
   body.size-chart-show {
     padding-right: 10px;
   }
-}
-/*# sourceMappingURL=component-sizechart.css.map */
+}/*# sourceMappingURL=component-sizechart.css.map */

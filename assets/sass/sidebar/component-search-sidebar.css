@@ -1,14 +1,11 @@
 body.search_sidebar-show {
   overflow: hidden;
 }
-
 body.search_sidebar-show .halo-sidebar_search {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   visibility: visible;
 }
-
 body.search_sidebar-show .background-overlay {
   z-index: 99;
   opacity: 1;
@@ -18,33 +15,27 @@ body.search_sidebar-show .background-overlay {
 .halo-sidebar_search .header-search {
   max-width: 100%;
 }
-
 .halo-sidebar_search .header-search .header-search__form {
   padding: 0px 20px;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper {
   overflow-x: inherit;
   overflow-y: inherit;
   padding: 25px 0px 40px;
   margin: 0;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .search-bar .input-group-field {
   padding: 10px 12px 10px;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .search-bar .icon-search {
   padding: 10px;
   width: 40px;
   height: 40px;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .search-bar .icon-search svg {
   width: 100%;
   height: 100%;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .quickSearchResultsWrap {
   position: relative;
   top: 0;
@@ -52,30 +43,23 @@ body.search_sidebar-show .background-overlay {
   opacity: 1;
   width: 100%;
   padding: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   margin: 20px 0px;
   padding: 0px 20px;
   max-height: calc(100vh - 150px);
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .quickSearchResultsWrap .halo-product-block .halo-row--swipe {
   overflow: auto;
   white-space: nowrap;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin-left: -10px;
   margin-right: -10px;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .quickSearchResultsWrap .halo-product-block .halo-row--swipe > * {
   padding: 0px 10px;
 }
-
 .halo-sidebar_search .halo-sidebar-wrapper .quickSearchResultsWrap .halo-product-block .product-item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 220px;
 }
 
@@ -83,5 +67,4 @@ body.search_sidebar-show .background-overlay {
   body.search_sidebar-show {
     padding-right: 10px;
   }
-}
-/*# sourceMappingURL=component-search-sidebar.css.map */
+}/*# sourceMappingURL=component-search-sidebar.css.map */
