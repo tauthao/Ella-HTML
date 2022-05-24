@@ -21,8 +21,8 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            this.initCloseAnnouncementBar();
-            this.initHeaderSticky();
+            // this.initCloseAnnouncementBar();
+            // this.initHeaderSticky();
             this.initLanguageCurrency();
             this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
@@ -39,6 +39,7 @@
             this.initSlideShow();
             this.clickedActiveVideoBanner();
             this.showPopupPassWord();
+            this.showPopupLookbook();
         },
 
         initSliderBanner: function() {
@@ -667,6 +668,32 @@
                     $('[data-password-popup]').removeClass('open');
                 }
             });
-        }
+        },
+
+        showPopupLookbook: function() {
+            $doc.on('click', '[data-open-lookbook-popup]', (event) => {
+                event.preventDefault();
+                var $target = $(event.currentTarget),
+                    $popup = $target.siblings('.popup-lookbook');
+                if(!$target.hasClass('active')){
+                    $target.addClass('active');
+                    $popup.addClass('open');
+                } else {
+                    $target.removeClass('active');
+                    $popup.removeClass('open');
+                }   
+            });
+            $doc.on('click', (event) =>{
+                if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
+                    $('[data-open-lookbook-popupp]').removeClass('active');
+                    $('[data-lookbook-popup]').removeClass('open');
+                }
+            });
+            $doc.on('click', '[data-popup-icon]', (event) =>{
+                event.preventDefault();
+                $('[data-open-lookbook-popupp]').removeClass('active');
+                $('[data-lookbook-popup]').removeClass('open');
+            });
+        },
     }
 })(jQuery);
