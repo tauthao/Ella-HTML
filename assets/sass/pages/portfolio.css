@@ -223,6 +223,14 @@
 }
 
 @media (max-width: 767px) {
+  .portfolio-page .img-box .image {
+    padding-bottom: 30% !important;
+  }
+  .portfolio-page .container-filter #buttonGroup li {
+    border-radius: 2px;
+    margin: 5px 5px 5px;
+    width: auto;
+  }
   .portfolio-page .grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
