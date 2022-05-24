@@ -1,6 +1,5 @@
 body.edit-cart-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.edit-cart-show .halo-edit-cart-popup {
@@ -193,6 +192,12 @@ body.edit-cart-show .background-overlay-popup {
   .halo-edit-cart-popup .cart-edit .product-edit-itemRight {
     margin-top: 35px;
     width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.edit-cart-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-quick-card.css.map */

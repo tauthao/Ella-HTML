@@ -1,7 +1,6 @@
 body {
     &.edit-cart-show {
         overflow: hidden;
-        padding-right: 10px;
         .halo-edit-cart-popup {
             pointer-events: auto;
             transform: translate(-50%, -50%);
@@ -179,6 +178,14 @@ body {
                 margin-top: 35px;
                 width: 100%;
             }
+        }
+    }
+}
+
+@media(min-width:1025px){
+    body {
+        &.edit-cart-show {
+            padding-right: 10px;
         }
     }
 }

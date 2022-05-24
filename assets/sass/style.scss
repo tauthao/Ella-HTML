@@ -15,6 +15,7 @@
 /* ===  Header Styles === */
 
 @import 'base/header/header';
+@import 'base/header/header-mobile';
 
 /* ===  Footer Styles === */
 
@@ -32,8 +33,13 @@
 @import 'popup/component-newsletter';
 @import 'popup/component-quickshop';
 @import 'popup/component-quickview';
+@import 'popup/component-sizechart';
+@import 'popup/componet-ask-an-expert';
+@import 'popup/component-compare-color';
 
 /* ===  Sidebar === */
 
 @import 'sidebar/component-auth';
 @import 'sidebar/component-quick-cart';
+@import 'sidebar/component-search-sidebar';
+@import 'sidebar/componet-menu-sidebar';

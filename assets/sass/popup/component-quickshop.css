@@ -1,6 +1,5 @@
 body.quickshop-popup-show {
   overflow: hidden;
-  padding-right: 10px;
 }
 
 body.quickshop-popup-show .halo-quickshop-popup {
@@ -126,6 +125,12 @@ body.quickshop-popup-show .background-overlay-popup {
 @media (min-width: 768px) {
   .halo-quickshop-popup {
     max-width: 680px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.quickshop-popup-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=component-quickshop.css.map */

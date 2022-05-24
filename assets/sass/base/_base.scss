@@ -188,6 +188,41 @@ input[type=checkbox]:checked+.form-label--checkbox:after {
     opacity: 1;
 }
 
+input[type=radio]+.form-label--radio:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: all 50ms ease-out;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked+.form-label--radio:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[type=radio]+.form-label--radio:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    transition: all 50ms ease-out;
+    width: 0;
+    height: 0;
+    border: 4px solid #000;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+}
+
 blockquote {
     border: none;
     background-color: #fafafa;
@@ -1246,7 +1281,7 @@ label {
     background: #ffffff;
     box-shadow: 0 6px 27px #0003;
     transition: all ease .5s;
-    transform: translate(calc(-50% - 20px), -50%);
+    transform: translate(calc(-50% - 25px), -50%);
     .halo-popup-wrapper {
         position: relative;
         padding: 30px;
@@ -1280,6 +1315,7 @@ label {
             text-align: center;
             padding: 7px;
             background: #232323;
+            z-index: 9;
             svg {
                 width: 100%;
                 height: 100%;
@@ -1328,6 +1364,10 @@ label {
     &.halo-sidebar-right {
         right: 0;
         transform: translate(101%);
+    }
+    &.halo-sidebar-left {
+        left: 0;
+        transform: translate(-101%);
     }
     .halo-sidebar-header {
         position: relative;
@@ -1443,36 +1483,6 @@ label {
             -webkit-box-orient: vertical;
         }
     }
-    .card-price {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        .price-item {
-            .money {
-                display: inline-block;
-                vertical-align: middle;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 22px;
-                color: #232323;
-            }
-        }
-        &.price__sale {
-            .price-item--regular {
-                margin: 0 10px 0 0;
-                span {
-                    text-decoration: line-through;
-                    font-weight: 400;
-                    color: #969696;
-                }
-            }
-            .price__last span {
-                color: #e95144;
-            }
-        }
-    }
     .card-swatch {
         display: flex;
         justify-content: center;
@@ -1552,7 +1562,7 @@ label {
             letter-spacing: 0;
             cursor: pointer;
             color: #232323;
-            background-color: #ffffff;
+            background: #ffffff;
             .text {
                 padding: 0 15px 0 30px;
                 color: #232323;
@@ -1569,7 +1579,7 @@ label {
                 visibility: hidden;
                 right: calc(100% - 30px);
                 height: 36px;
-                background-color: #ffffff;
+                background: #ffffff;
                 line-height: 36px;
                 position: absolute;
                 top: 50%;
@@ -1579,6 +1589,16 @@ label {
                 transition: all ease .3s;
                 transition-duration: 350ms;
                 pointer-events: none;
+            }
+            &.wishlist-added {
+                background: #232323;
+                .text {
+                    background: #232323;
+                    color: #ffffff;
+                }
+                svg {
+                    fill: #ffffff;
+                }
             }
         }
         .card-product__group-item {
@@ -1597,12 +1617,12 @@ label {
         }
     }
     .card-action {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
         padding: 0;
         background: transparent;
-        z-index: 10;
+        z-index: 1;
         margin: 0;
         transition: all ease .5s;
         opacity: 1;
@@ -1649,6 +1669,37 @@ label {
                     }
                 }
             }
+        }
+    }
+}
+
+.card-price {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .price-item {
+        .money {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #232323;
+        }
+    }
+    &.price__sale {
+        .price-item--regular {
+            margin: 0 10px 0 0;
+            span {
+                text-decoration: line-through;
+                font-weight: 400;
+                color: #969696;
+            }
+        }
+        .price__last span {
+            color: #e95144;
         }
     }
 }
@@ -1799,6 +1850,32 @@ label {
 @media (max-width:768px) {
     .halo-block .halo-row--swipe .halo-row-item {
         width: 330px;
+    }
+}
+
+@media(max-width:767px){
+    .halo-sidebar{
+        .halo-sidebar-header {
+            padding: 9px 20px 9px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .halo-sidebar-close{
+            top: 0px!important;
+            background: #232323!important;
+            svg{
+                fill: #ffffff!important;
+            }
+        }
+        &.halo-sidebar-left{
+            .halo-sidebar-close{
+                right: -40px!important;
+            }
+        }
+        &.halo-sidebar-right{
+            .halo-sidebar-close{
+                left: -40px!important;
+            }
+        }
     }
 }
 
@@ -1955,6 +2032,8 @@ label {
             }
         }
         .card-action {
+            position: absolute;
+            z-index: 10;
             opacity: 0;
             visibility: hidden;
             bottom: -15px;
