@@ -36,11 +36,6 @@
             // this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
-<<<<<<< HEAD
-            this.clickedActiveVideoBanner();
-            this.showPopupPassWord();
-            this.showPopupLookbook();
-=======
             this.initClickedActiveVideoBanner();
             this.initShowPopupPassWord();
             this.initShowPopupShare();
@@ -54,7 +49,7 @@
             this.initWishlistActive();
             this.initUpdateVlueQuantity();
             this.initMenuMobile();
->>>>>>> main
+            this.initShowPopupLookbook();
         },
 
         initSliderBanner: function() {
@@ -723,33 +718,6 @@
             });
         },
 
-<<<<<<< HEAD
-        showPopupLookbook: function() {
-            $doc.on('click', '[data-open-lookbook-popup]', (event) => {
-                event.preventDefault();
-                var $target = $(event.currentTarget),
-                    $popup = $target.siblings('.popup-lookbook');
-                if(!$target.hasClass('active')){
-                    $target.addClass('active');
-                    $popup.addClass('open');
-                } else {
-                    $target.removeClass('active');
-                    $popup.removeClass('open');
-                }   
-            });
-            $doc.on('click', (event) =>{
-                if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
-                    $('[data-open-lookbook-popupp]').removeClass('active');
-                    $('[data-lookbook-popup]').removeClass('open');
-                }
-            });
-            $doc.on('click', '[data-popup-icon]', (event) =>{
-                event.preventDefault();
-                $('[data-open-lookbook-popupp]').removeClass('active');
-                $('[data-lookbook-popup]').removeClass('open');
-            });
-        },
-=======
         initShowPopupShare: function() {
             var wrapper = $(".productView-share");
 
@@ -1076,6 +1044,31 @@
                 }
         },
 
->>>>>>> main
+        initShowPopupLookbook: function() {
+            $doc.on('click', '[data-open-lookbook-popup]', (event) => {
+                event.preventDefault();
+                var $target = $(event.currentTarget),
+                    $popup = $target.siblings('.popup-lookbook');
+                if(!$target.hasClass('active')){
+                    $target.addClass('active');
+                    $popup.addClass('open');
+                } else {
+                    $target.removeClass('active');
+                    $popup.removeClass('open');
+                }   
+            });
+            $doc.on('click', (event) =>{
+                if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
+                    $('[data-open-lookbook-popupp]').removeClass('active');
+                    $('[data-lookbook-popup]').removeClass('open');
+                }
+            });
+            $doc.on('click', '[data-popup-icon]', (event) =>{
+                event.preventDefault();
+                $('[data-open-lookbook-popupp]').removeClass('active');
+                $('[data-lookbook-popup]').removeClass('open');
+            });
+        },
+
     }
 })(jQuery);
