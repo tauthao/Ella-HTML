@@ -990,7 +990,7 @@
 
         initMenuMobile: function() {
             var iconMenu = $('[data-mobile-menu]'),
-                itemDropdown = $('.site-nav-mobile .menu_mobile_link'),
+                itemDropdown = $('.site-nav-mobile .menu-lv-item.dropdown .menu_mobile_link'),
                 btnClose = $(".background-overlay, .halo-sidebar-close"),
                 navTitle = $('.nav-title-mobile');
 
