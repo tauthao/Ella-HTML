@@ -2,7 +2,12 @@
   margin-top: 15px;
 }
 
-.collections .wrapper-content .title {
+.collections .wrapper-content .halo-row-item .button {
+  width: 100%;
+  max-width: 190px;
+}
+
+.collections .wrapper-content .halo-row-item .title {
   font-size: 20px;
   letter-spacing: .05em;
   font-weight: 700;
@@ -11,7 +16,7 @@
   margin-bottom: 0;
 }
 
-.collections .wrapper-content .sub-title {
+.collections .wrapper-content .halo-row-item .sub-title {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: .02em;
@@ -20,17 +25,28 @@
   color: #999999;
 }
 
-.collections .wrapper-content .desc {
-  margin: 15px 0 34px 0;
-}
-
-.collections .wrapper-content .button {
-  width: 100%;
-  max-width: 190px;
+.collections .wrapper-content .halo-row-item .desc {
+  margin: 15px 0 37px 0;
 }
 
 .collections .wrapper-content .halo-row-item.space {
   margin-top: 60px;
+}
+
+.collections .button-collections.button {
+  width: 100%;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.collections .button-bottom {
+  margin: 60px 0;
 }
 
 @media (max-width: 1023px) {
