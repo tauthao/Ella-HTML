@@ -78,16 +78,20 @@
     .page-content{
         .header-title{
             font-size: 26px;
-            padding: 35px 15px 10px;
+            padding: 35px 15px 30px;
             letter-spacing: 0.05em;
             margin: 0;
         }
         .banner-with-text{
-            padding-bottom: 130px;
+            padding-bottom: 30px;
             .block-wrapper{
                 position: relative;
                 justify-content: space-between;
                 align-items: center;
+                margin: 0;
+                & > *{
+                    padding: 0;
+                }
                 &::after{
                     content: "";
                     position: absolute;
@@ -96,6 +100,29 @@
                     width: 57.5%;
                     height: 116%;
                     background-color: #fafafa;
+                    z-index: -1;
+                }
+                .halo-block-banner,
+                .halo-block-content{
+                    max-width: 50%;
+                    flex-basis:50%;
+                }
+                .halo-row-carousel{
+                    .slick-dots{
+                        position: absolute;
+                        left: 50%;
+                        bottom: 27px;
+                        transform: translate(-50%);
+                        button{
+                            border-color:#ffffff;
+                            background:transparent;
+                        }
+                        li{
+                            &.slick-active button{
+                                background: #ffffff;
+                            }
+                        }
+                    }
                 }
                 .halo-block-content{
                     z-index: 2;
@@ -139,7 +166,8 @@
                 .title{
                     color: #232323;
                     font-size: 24px;
-                    margin-bottom: 26px;
+                    margin-bottom: 20px;
+                    margin-top: 13px;
                     &:before{
                         display:none;
                     }
@@ -152,9 +180,12 @@
                     max-width: 680px;
                 }
             }
+            .halo-row-item{
+                margin-top: 12px;
+            }
             .custom-service-item{
                 .img-box{
-                    margin-bottom: 30px;
+                    margin-bottom: 32px;
                 }
                 .content{
                     .name{
@@ -180,12 +211,36 @@
     }
 }
 
+@media(max-width:767px){
+    .page-about-us-2 {
+        .banner-with-text {
+            .block-wrapper {
+                .col{
+                    max-width: 100%!important;
+                    flex-basis: 100%!important;
+                }
+                &::after{
+                    width: 100%!important;
+                    height: 100%!important;
+                }
+                .content-box{
+                    max-width: 100%!important;
+                    padding: 30px 15px 40px!important;
+                }
+            }
+        }
+    }
+}
+
 @media(min-width:768px){
     .page-about-us-2{
         .page-content{
             .header-title{
                 font-size: 30px;
-                padding: 52px 15px 50px;
+                padding: 40px 15px;
+            }
+            .banner-with-text{
+                padding-bottom: 90px;
             }
         }
     }
@@ -193,6 +248,9 @@
 @media(min-width:1025px){
     .page-about-us-2{
         .page-content{
+            .header-title{
+                padding: 52px 15px 50px;
+            }
             .banner-with-text{
                 .block-wrapper{
                     .content-box{
@@ -202,6 +260,15 @@
                     }
                 }
             }  
+        }
+    }
+}
+@media(min-width:1600px){
+    .page-about-us-2{
+        .page-content{
+            .banner-with-text{
+                padding-bottom: 130px;
+            }
         }
     }
 }

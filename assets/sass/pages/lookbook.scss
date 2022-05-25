@@ -1,4 +1,19 @@
 
+@keyframes box-shadow {
+    0%,
+    100% {
+        -webkit-box-shadow: 0 0 0 0;
+        -moz-box-shadow: 0 0 0 0;
+        box-shadow: 0 0 0 0
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 4px;
+        -moz-box-shadow: 0 0 0 4px;
+        box-shadow: 0 0 0 4px
+    }
+}
+
 .lookbook-page {
     .slick-arrow.slick-prev {
         left: -77px;
@@ -24,21 +39,14 @@
             .image-mobile {
                 display: none;
             }
-            .active .icon-banner {
-                .item-icon {
-                    transform: rotate(45deg);
-                    transition: all ease .3s;
-                }
-            }
-            
             .icon-banner {
                 position: absolute;
                 z-index: 2;
                 &::before {
                     animation: box-shadow 1.5s linear infinite;
                     content: "";
-                    width: 30px;
-                    height: 30px;
+                    width: 27px;
+                    height: 27px;
                     position: absolute;
                     border-radius: 50%;
                     left: 0;
@@ -46,38 +54,31 @@
                     color: rgba(35, 35, 35, 0.3);
                 }
                 .item-icon {
-                    width: 30px;
-                    height: 30px;
+                    width: 27px;
+                    height: 27px;
                     display: block;
-                    -moz-border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    -ms-border-radius: 50%;
-                    -o-border-radius: 50%;
                     border-radius: 50%;
                     position: relative;
                     cursor: pointer;
                     transition: all ease .3s;
-                    transform: rotate(0);
                     background-color: #232323;
-                    &::before {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        content: "";
-                        width: 12px;
-                        height: 2px;
-                        background-color: #ffffff;
-                        transform: translate(-50%,-50%);
-                    }
+                    &::before,
                     &::after {
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
                         content: "";
+                        background-color: #ffffff;
+                    }
+                    &::before{
+                        width: 12px;
+                        height: 2px;
+                        top: 13px;
+                        left: 7px;
+                    }
+                    &::after {
                         width: 2px;
                         height: 12px;
-                        background-color: #ffffff;
-                        transform: translate(-50%,-50%);
+                        top: 8px;
+                        left: 12px;
                     }
                 }
             }
@@ -101,15 +102,18 @@
                         height: 100%;
                     }
                 }
-                .icon-popup {
+                .icon-close-popup {
                     position: absolute;
-                    top: 12px;
-                    right: 12px;
+                    top: 10px;
+                    right: 13px;
+                    width: 18px;
+                    height: 18px;
                     cursor: pointer;
+                    z-index: 9;
                     svg {
-                        width:18px;
-                        height: 18px;
-                        color: #232323;
+                        width:100%;
+                        height: 100%;
+                        fill: #232323;
                     }
                 }
                 .content-popup {
@@ -153,6 +157,10 @@
         }
         .list-social {
             text-align: center;
+            ul{
+                margin: 0;
+                padding: 18px 0px 28px;
+            }
             .list-social__item {
                 padding-left:18px;
                 svg {
@@ -178,22 +186,6 @@
     
     
 }
-
-@keyframes box-shadow {
-    0%,
-    100% {
-        -webkit-box-shadow: 0 0 0 0;
-        -moz-box-shadow: 0 0 0 0;
-        box-shadow: 0 0 0 0
-    }
-
-    50% {
-        -webkit-box-shadow: 0 0 0 4px;
-        -moz-box-shadow: 0 0 0 4px;
-        box-shadow: 0 0 0 4px
-    }
-}
-
 @media (max-width: 1024px) {
     .slick-dots {
         position: absolute;
@@ -226,8 +218,8 @@
                     top:40% !important;
                     left:10% !important;
                     width: 100%;
-                    max-width: 77%;
-                    .icon-popup{
+                    max-width: 60%;
+                    .icon-close-popup{
                         top: -14px;
                         right: -12px;
                         background: #232323;
@@ -236,7 +228,7 @@
                         svg {
                             width: 12px;
                             height: 12px;
-                            color: #ffffff;
+                            fill: #ffffff;
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -248,13 +240,12 @@
                     }
                     .pupop-top {
                         background-color: #ffffff;
-                        img {
-                            padding: 20px;
-                        }
+                        width: 100%;
+                        max-width: 110px;
                     }
                     .popup-button {
                         .content-popup {
-                            padding: 20px 20px 20px 5px;
+                            padding: 20px;
                             .price {
                                 padding: 12px 0 4px 0;
                             }

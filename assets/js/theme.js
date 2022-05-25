@@ -578,8 +578,7 @@
 
             bannerBlock.each(function() {
                 var self = $(this),
-                    bannerItems = self.find(".row"),
-                    itemShow = self.data("item-to-show"),
+                    bannerItems = self.find(".halo-row-carousel"),
                     itemDots = self.data("item-dots"),
                     itemDots_mb = self.data("item-dots-mb"),
                     itemRow = self.data("item-arrows"),
@@ -612,7 +611,6 @@
 
                     }
                 }
-
             });
         },
 
@@ -1059,13 +1057,13 @@
             });
             $doc.on('click', (event) =>{
                 if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
-                    $('[data-open-lookbook-popupp]').removeClass('active');
+                    $('[data-open-lookbook-popup]').removeClass('active');
                     $('[data-lookbook-popup]').removeClass('open');
                 }
             });
-            $doc.on('click', '[data-popup-icon]', (event) =>{
+            $doc.on('click', '[data-close-popup]', (event) =>{
                 event.preventDefault();
-                $('[data-open-lookbook-popupp]').removeClass('active');
+                $('[data-open-lookbook-popup]').removeClass('active');
                 $('[data-lookbook-popup]').removeClass('open');
             });
         },
