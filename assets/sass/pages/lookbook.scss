@@ -33,7 +33,6 @@
         fill: #232323;
         color: #ffffff;
     }
-
     .wrapper-content {
         .item-lookbook {
             .image-mobile {
@@ -155,6 +154,11 @@
                 z-index: 12;
             }
         }
+       
+        
+
+    }
+    .text-blocks {
         .list-social {
             text-align: center;
             ul{
@@ -180,26 +184,45 @@
                 text-align: center;
             }
         }
-        
-
     }
-    
+}
+
+
+@media (max-width: 1024px) {
+    .lookbook-page {
+        .slick-dots {
+            position: absolute;
+            bottom: 17%; 
+            button {
+                border: 1px solid #ffffff;
+                background: #ffffff;
+                width:14px;
+                height: 14px;
+            }
+        }
+        .slick-dots li.slick-active button {
+            background: rgba(255, 255, 255, 0);
+            border-color: #ffffff;
+        }
+        .slick-dots {
+            bottom: 6% !important;
+        } 
+    }
     
 }
-@media (max-width: 1024px) {
-    .slick-dots {
-        position: absolute;
-        bottom: 17%; 
-        button {
-            border: 1px solid #ffffff;
-            background: #ffffff;
-            width:14px;
-            height: 14px;
+
+@media (max-width: 768px) {
+    .lookbook-page {
+        .wrapper-content {
+            .item-lookbook .popup-lookbook {
+                top: 7% !important;
+                left: 48.8% !important;
+                max-width: 150px;
+                .button {
+                   min-width: 100px;
+                }
+            }
         }
-    }
-    .slick-dots li.slick-active button {
-        background: rgba(255, 255, 255, 0);
-        border-color: #ffffff;
     } 
 }
 
@@ -253,7 +276,15 @@
                     }
                     
                 }
-            } 
+            }
+            
+        }
+        .text-blocks .list-social ul {
+            margin: 0;
+            padding: 15px 0px 17px;
+        } 
+        .list-social .list-social__item {
+            margin: 0;
         }
     }
 }

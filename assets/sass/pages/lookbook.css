@@ -187,52 +187,66 @@
   z-index: 12;
 }
 
-.lookbook-page .wrapper-content .list-social {
+.lookbook-page .text-blocks .list-social {
   text-align: center;
 }
 
-.lookbook-page .wrapper-content .list-social ul {
+.lookbook-page .text-blocks .list-social ul {
   margin: 0;
   padding: 18px 0px 28px;
 }
 
-.lookbook-page .wrapper-content .list-social .list-social__item {
+.lookbook-page .text-blocks .list-social .list-social__item {
   padding-left: 18px;
 }
 
-.lookbook-page .wrapper-content .list-social .list-social__item svg {
+.lookbook-page .text-blocks .list-social .list-social__item svg {
   width: 26px;
   height: 26px;
 }
 
-.lookbook-page .wrapper-content .list-social .list-social__item:nth-child(1) {
+.lookbook-page .text-blocks .list-social .list-social__item:nth-child(1) {
   padding-left: 0;
 }
 
-.lookbook-page .wrapper-content .button-lk {
+.lookbook-page .text-blocks .button-lk {
   text-align: center;
 }
 
-.lookbook-page .wrapper-content .button-lk .button-bottom-lookbook {
+.lookbook-page .text-blocks .button-lk .button-bottom-lookbook {
   width: 100%;
   max-width: 320px;
   text-align: center;
 }
 
 @media (max-width: 1024px) {
-  .slick-dots {
+  .lookbook-page .slick-dots {
     position: absolute;
     bottom: 17%;
   }
-  .slick-dots button {
+  .lookbook-page .slick-dots button {
     border: 1px solid #ffffff;
     background: #ffffff;
     width: 14px;
     height: 14px;
   }
-  .slick-dots li.slick-active button {
+  .lookbook-page .slick-dots li.slick-active button {
     background: rgba(255, 255, 255, 0);
     border-color: #ffffff;
+  }
+  .lookbook-page .slick-dots {
+    bottom: 6% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .lookbook-page .wrapper-content .item-lookbook .popup-lookbook {
+    top: 7% !important;
+    left: 48.8% !important;
+    max-width: 150px;
+  }
+  .lookbook-page .wrapper-content .item-lookbook .popup-lookbook .button {
+    min-width: 100px;
   }
 }
 
@@ -283,6 +297,13 @@
   }
   .lookbook-page .wrapper-content .item-lookbook .popup-lookbook .popup-button .content-popup .price {
     padding: 12px 0 4px 0;
+  }
+  .lookbook-page .text-blocks .list-social ul {
+    margin: 0;
+    padding: 15px 0px 17px;
+  }
+  .lookbook-page .list-social .list-social__item {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=lookbook.css.map */
