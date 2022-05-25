@@ -1418,23 +1418,22 @@ label {
 
 /* START: Page Sidebar*/
     .page-sidebar{
-        position: sticky;
-        top: 30px;
-        left: unset!important;
-        right: unset!important;
-        bottom: unset;
-        height: auto;
-        transition: unset;
-        transform: unset!important;
-        z-index: inherit;
-        background-color: transparent;
-        display: inline-block;
-        vertical-align: top;
-        width: 210px;
-        opacity: 1;
-        visibility: visible;
-        float: left;
-
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 101;
+        max-width: calc(100% - 40px);
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-101%);
+        transition: opacity 0.5s, transform 350ms ease, visibility 350ms ease;
+        background-color: #ffffff;
+        .sidebarBlock {
+            margin-bottom: 38px;
+        }
         .halo-sidebar-header {
             position: relative;
             padding: 24px 20px 0;
@@ -1475,8 +1474,185 @@ label {
                 }
             }
         }
+        .sidebarBlock-heading{
+            font-size: 14px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 22px;
+            color: #232323;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0;
+            padding-bottom: 9px;
+            margin-bottom: 13px;
+        }
+        .sidebarBlock-content{
+            .nav{
+                margin: 0;
+                li{
+                    margin: 0;
+                    position: relative;
+                    padding-right: 22px;
+                    cursor: pointer;
+                    width: 100%;
+                    a{
+                        font-size: 13px;
+                        display: inline-block;
+                        font-weight: 500;
+                        color: #232323;
+                        padding: 7px 0 6px 0;
+                        line-height: 22px;
+                        position: relative;
+                        transition: padding-left .5s linear;
+                    }
+                }
+            }
+        }
+        .recent-articles{
+            .article{
+                padding-bottom: 16px;
+                & + .article{
+                    border-top: 1px solid #e6e6e6;
+                    padding-top: 15px;
+                }
+                a{
+                    font-size: 12px;
+                    line-height:22px;
+                    font-weight: 500;
+                }
+                em{
+                    display: block;
+                    font-style: normal;
+                    color: #999999;
+                    font-size: 12px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .sidebar-product{
+            .halo-product-block{
+                margin: 30px 0px 0px;
+                .product-card{
+                    .card-action{
+                        opacity: 1;
+                        visibility: visible;
+                        pointer-events: auto;
+                        bottom: 0;
+                        position: relative;
+                    }
+                }
+            }
+        }
+        .sidebar-banner{
+            padding-bottom: 6px;
+            .img-box{
+                & + .img-box{
+                    margin-top: 30px;
+                }
+            }
+        }
+        .sidebar-cms-custom{
+            .desc{
+                & + .desc{
+                    margin-top: 24px; 
+                }
+            }
+        }
     }
+    .sidebar-toogle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 9px;
+        background-color: #f5f5f5;
+        margin: 0 0 15px;
+        svg{
+            width: 100%;
+            height: 100%;
+            stroke: transparent;
+            fill: #808080;
+        }
+    }
+    .page-title {
+        margin-bottom:32px;
+        font-size: 24px;
+        letter-spacing:.05em;
+    }
+
+/* START: pagination list*/
+.pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center;
+    .pagination-arrow:first-child {
+        margin-right: 10px;
+    }
+    li {
+        min-width: 4rem;
+    }
+    .pagination-arrow {
+        position: relative;
+    }
+    .pagination__item-arrow {
+        color: #232323;
+        background: #fff;
+        border: 1px solid #232323;
+        display: flex;
+        line-height: 1;
+        font-size: 0;
+        letter-spacing: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 10px 12px;
+        width: 40px;
+        height: 40px;
+        transform: translateY(-50%);
+        z-index: 1;
+        outline: none;
+        transition: all ease .3s;
+        border-radius: 50%;
+        .icon {
+            fill: #3c3c3c;
+            max-width: 100%;
+            max-height: 100%;
+            width: 17px;
+            height: 17px;
+            color: #323232;
+            stroke: transparent;
+        }
+    }
+    .pagination__item--prev .icon {
+        transform: rotate(90deg);
+    }
+    .pagination__item--next .icon {
+        transform: rotate(270deg);
+    }
+    .pagination-num .pagination__item {
+        color: #707070;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all ease .05s;
+        &:hover,
+        &.active {
+            background-color: #f8f8f8;
+            color: #3c3c3c;
+            font-weight: 600;
+        }
+    }
+}
 /* START: Product Card */
+
 
 .halo-product-block {
     margin-top: 35px;
@@ -1944,9 +2120,13 @@ label {
     }
 }
 
+
 @media (min-width: 552px) {
     .halo-sidebar {
         max-width: 370px;
+    }
+    .page-sidebar {
+        max-width: 210px;
     }
 }
 
@@ -2109,14 +2289,35 @@ label {
         padding-right: 30px;
     }
     .page-sidebar{
+        position: sticky;
+        top: 30px;
+        left: unset!important;
+        right: unset!important;
+        bottom: unset;
+        height: auto;
+        transition: unset;
+        transform: unset!important;
+        z-index: inherit;
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: top;
+        width: 210px;
+        transform: translate(0);
+        opacity: 1;
+        visibility: visible;
+        float: left;
         .halo-sidebar-header{
             display: none;
         }
         & + .page-content {
-            // width: calc(100% - 210px);
-            // padding-left: 20px;
-            // float: left;
+            width: calc(100% - 210px);
+            padding-left: 30px;
+            float: left;
         }
+    }
+    .sidebar-toogle {
+        display: none;
+        margin-bottom: 0;
     }
 }
 

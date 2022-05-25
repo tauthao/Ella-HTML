@@ -141,74 +141,10 @@
             }
         }
         .pagination__list {
-            display: flex;
-            flex-wrap: wrap;
             width: 50%;
             float: right;
             justify-content: flex-end;
-            .pagination-arrow:first-child {
-                margin-right: 10px;
-            }
-            li {
-                min-width: 4rem;
-            }
-            .pagination-arrow {
-                position: relative;
-            }
-            .style-2 {
-                min-width: 3.5rem;
-            }
-            .pagination__item-arrow {
-                color: #232323;
-                background: #fff;
-                border: 1px solid #232323;
-                display: flex;
-                line-height: 1;
-                font-size: 0;
-                letter-spacing: 0;
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                padding: 10px 12px;
-                width: 40px;
-                height: 40px;
-                transform: translateY(-50%);
-                z-index: 1;
-                outline: none;
-                transition: all ease .3s;
-                border-radius: 50%;
-                .icon {
-                    fill: #3c3c3c;
-                    max-width: 100%;
-                    max-height: 100%;
-                    width: 17px;
-                    height: 17px;
-                    color: #323232;
-                    stroke: transparent;
-                }
-            }
-            .pagination__item--prev .icon {
-                transform: rotate(90deg);
-            }
-            .pagination__item--next .icon {
-                transform: rotate(270deg);
-            }
-            .pagination-num .pagination__item {
-                color: #707070;
-                width: 40px;
-                height: 40px;
-                background-color: #fff;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all ease .05s;
-                &:hover {
-                    background-color: #f8f8f8;
-                    color: #3c3c3c;
-                    font-weight: 600;
-                }
-            }
+            
         }
     }
 
