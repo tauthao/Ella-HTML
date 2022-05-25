@@ -369,6 +369,12 @@
     }
 } //End about contact
 
+@media(max-width:1400px){
+    .about-store .slick-slider .slick-arrow{
+        display: none!important;
+    }
+}
+
 @media (max-width: 1024px) {
     .about-banner {
         button.slick-arrow.slick-prev.slick-disabled {
@@ -411,6 +417,7 @@
         .store-left {
             .store-content {
                 max-width: 340px;
+                padding: 0px 20px;
             }
         }
         .slick-dots {
@@ -559,7 +566,7 @@
             display: flex;
             flex-direction: column;
             align-items:flex-start;
-            padding: 0 0 0 10px !important;
+            padding: 20px!important;
         }
         .content-left {
             .wrapper-text {

@@ -472,6 +472,12 @@
   width: 190px;
 }
 
+@media (max-width: 1400px) {
+  .about-store .slick-slider .slick-arrow {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .about-banner button.slick-arrow.slick-prev.slick-disabled {
     left: 15px;
@@ -503,6 +509,7 @@
   }
   .about-store .store-left .store-content {
     max-width: 340px;
+    padding: 0px 20px;
   }
   .about-store .slick-dots {
     margin-top: 30px;
@@ -644,7 +651,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 0 0 0 10px !important;
+    padding: 20px !important;
   }
   .about-contact .content-left .wrapper-text {
     border-right: none;

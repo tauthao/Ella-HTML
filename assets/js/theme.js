@@ -51,7 +51,7 @@
             this.initMenuMobile();
             // this.clickedActiveVideoBanner();
             this.initShowPopupPassWord();
-            this.showPopupLookbook();
+            this.initShowPopupLookbook();
         },
 
         initSliderBanner: function() {
@@ -580,8 +580,7 @@
 
             bannerBlock.each(function() {
                 var self = $(this),
-                    bannerItems = self.find(".row"),
-                    itemShow = self.data("item-to-show"),
+                    bannerItems = self.find(".halo-row-carousel"),
                     itemDots = self.data("item-dots"),
                     itemDots_mb = self.data("item-dots-mb"),
                     itemRow = self.data("item-arrows"),
@@ -614,7 +613,6 @@
 
                     }
                 }
-
             });
         },
 
@@ -717,33 +715,6 @@
                     $('[data-open-password-popup]').removeClass('active');
                     $('[data-password-popup]').removeClass('open');
                 }
-            });
-        },
-
-
-        showPopupLookbook: function() {
-            $doc.on('click', '[data-open-lookbook-popup]', (event) => {
-                event.preventDefault();
-                var $target = $(event.currentTarget),
-                    $popup = $target.siblings('.popup-lookbook');
-                if(!$target.hasClass('active')){
-                    $target.addClass('active');
-                    $popup.addClass('open');
-                } else {
-                    $target.removeClass('active');
-                    $popup.removeClass('open');
-                }   
-            });
-            $doc.on('click', (event) =>{
-                if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
-                    $('[data-open-lookbook-popupp]').removeClass('active');
-                    $('[data-lookbook-popup]').removeClass('open');
-                }
-            });
-            $doc.on('click', '[data-popup-icon]', (event) =>{
-                event.preventDefault();
-                $('[data-open-lookbook-popupp]').removeClass('active');
-                $('[data-lookbook-popup]').removeClass('open');
             });
         },
 
@@ -1073,6 +1044,31 @@
                 }
         },
 
+        initShowPopupLookbook: function() {
+            $doc.on('click', '[data-open-lookbook-popup]', (event) => {
+                event.preventDefault();
+                var $target = $(event.currentTarget),
+                    $popup = $target.siblings('.popup-lookbook');
+                if(!$target.hasClass('active')){
+                    $target.addClass('active');
+                    $popup.addClass('open');
+                } else {
+                    $target.removeClass('active');
+                    $popup.removeClass('open');
+                }   
+            });
+            $doc.on('click', (event) =>{
+                if(!event.target.closest('[data-open-lookbook-popup]') && !event.target.closest('[data-lookbook-popup]')){
+                    $('[data-open-lookbook-popup]').removeClass('active');
+                    $('[data-lookbook-popup]').removeClass('open');
+                }
+            });
+            $doc.on('click', '[data-close-popup]', (event) =>{
+                event.preventDefault();
+                $('[data-open-lookbook-popup]').removeClass('active');
+                $('[data-lookbook-popup]').removeClass('open');
+            });
+        },
 
     }
 })(jQuery);
