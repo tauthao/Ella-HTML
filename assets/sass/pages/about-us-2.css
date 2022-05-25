@@ -1,4 +1,4 @@
-.page-about-us-2 .about-us-banner {
+.page-about-us-2 .about-us-header {
   position: relative;
   background-image: url(../../images/Pages/contact-us/about-bg-image.png);
   background-size: cover;
@@ -8,7 +8,7 @@
   background-attachment: fixed;
 }
 
-.page-about-us-2 .about-us-banner .breadcrumb {
+.page-about-us-2 .about-us-header .breadcrumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -17,16 +17,16 @@
   margin: 0;
 }
 
-.page-about-us-2 .about-us-banner .breadcrumb .separate svg {
+.page-about-us-2 .about-us-header .breadcrumb .separate svg {
   color: #ffffff;
   fill: #ffffff;
 }
 
-.page-about-us-2 .about-us-banner .breadcrumb a {
+.page-about-us-2 .about-us-header .breadcrumb a {
   color: #ffffff;
 }
 
-.page-about-us-2 .about-us-banner .page-heading .page-title {
+.page-about-us-2 .about-us-header .page-heading .page-title {
   display: block;
   font-size: 24px;
   font-weight: 700;
@@ -38,7 +38,7 @@
   margin: 0;
 }
 
-.page-about-us-2 .about-us-banner .page-heading .desc {
+.page-about-us-2 .about-us-header .page-heading .desc {
   margin-top: 5px;
   max-width: 540px;
   margin-left: auto;

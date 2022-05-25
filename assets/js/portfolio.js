@@ -1,84 +1,62 @@
-var grid = document.querySelector('.grid');
-var msnry;
-// element selectors
-var imgAll = document.querySelectorAll('.grid-item');
-var imgCosmopolis = document.querySelectorAll('.cosmopolis');
-var imgSuito = document.querySelectorAll('.suito');
-var imgMilancelos = document.querySelectorAll('.milancelos');
-var imgBlazero = document.querySelectorAll('.blazero');
-var imgGlamos = document.querySelectorAll('.glamos');
-var imgMetropolis = document.querySelectorAll('.metropolis');
-var clickIcon = document.querySelectorAll('.zoom');
-// buttons
-const tabsUl = document.getElementById('buttonGroup');
-const lis = tabsUl.children;
-const gridItems = grid.children;
+class Portfolio extends HTMLElement {
+    constructor() {
+        super();
 
-imagesLoaded(grid, function(){
-	msnry = new Masonry( grid, {
-		//options
-		itemSelector: '.grid-item',
-		columnWidth: '.grid-sizer',
-		percentPosition: true
-	});
-});
+        this.Shuffle = window.Shuffle;
+        this.element = this.querySelector('.shuffle-container');
+        this.sizer = this.querySelector('.sizer-element');
+        this.tabs = document.getElementById('haloPortfolioTabs');
+        this.tabContents = document.getElementById('haloPortfolioTabContents');
+        
+        this.shuffleInstance = new this.Shuffle(this.element,
+        {
+            itemSelector: '.masonry-item',
+            sizer: this.sizer
+        });
 
-//element & class name
-function toggleClass(parentElem, childElems, className){
-	for(let i = 0; i <childElems.length; i++){
-		if(childElems[i]==parentElem){
-			childElems[i].classList.add(className);
-		}
-		else{
-			childElems[i].classList.remove(className);
-		}
-	}
+        if(this.tabs){
+            if(this.tabs.querySelector('a')){
+                this.tabs.querySelectorAll('a').forEach((tabButton) => {
+                    tabButton.addEventListener('click', this.onClickTabButtonHandler.bind(this));
+                });
+            }
+        }
+    }
+
+    onClickTabButtonHandler(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        var btn = event.currentTarget,
+            tab = event.target.closest('li'),
+            value = tab.getAttribute('data-gallery');
+
+        if(!tab.classList.contains('is-active')){
+            this.tabs.querySelectorAll('li').forEach((element) => {
+                element.classList.remove('is-active');
+            });
+
+            tab.classList.add('is-active');
+
+            this.filterSelection(value);
+        }
+    }
+
+    filterSelection(keyword){
+        var items = $('[data-gallery-tab-content] .masonry-item');
+
+        if (keyword == 'all'){
+            this.shuffleInstance.filter();
+        } else {
+            this.shuffleInstance.filter((element) => {
+                var filterValue = element.getAttribute('data-gallery-item');
+
+                if(filterValue !== undefined && filterValue !== null){
+                    return $(element).data('gallery-item').indexOf(keyword) != -1;
+                }
+            });
+        }
+    }
 }
 
-function showImages(showImg, hideImg1, hideImg2){
-	for(let i = 0; i < showImg.length; i++){
-			showImg[i].style.display = "block";
-		}
-		for(let i = 0; i < hideImg1.length; i++){
-			hideImg1[i].style.display = "none";
-		}
-		for(let i = 0; i< hideImg2.length; i++){
-			hideImg2[i].style.display = "none";
-		}
-}
-
-tabsUl.addEventListener('click', (event) =>{
-	let tabLi = event.target.parentNode;
-	toggleClass(tabLi, lis, 'is-active');
-	//show all images
-	if(event.target.id == "all"){
-		for(let i = 0; i< imgAll.length; i++){
-			imgAll[i].style.display = "block";
-		}
-	}
-    if(event.target.id == "Cosmopolis"){
-		showImages(imgCosmopolis, imgSuito, imgMilancelos, imgBlazero, imgGlamos, imgMetropolis);
-	}
-    if(event.target.id == "Suito"){
-		showImages(imgSuito, imgMilancelos, imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis );
-	}
-    if(event.target.id == "Milancelos"){
-		showImages(imgMilancelos, imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis, imgSuito);
-	}
-    if(event.target.id == "Blazero"){
-		showImages(imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos);
-	}
-    if(event.target.id == "Glamos"){
-		showImages(imgGlamos, imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos, imgBlazero);
-	}
-    if(event.target.id == "Metropolis"){
-		showImages(imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos, imgBlazero, imgGlamos);
-	}
-	msnry.layout();
-});
-
-
-
-
-
-
+customElements.define('portfolio-item', Portfolio);

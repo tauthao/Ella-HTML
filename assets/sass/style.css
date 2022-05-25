@@ -1479,6 +1479,79 @@ label {
   padding: 0 0 70px;
 }
 
+/* START: Page Sidebar*/
+.page-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  left: unset !important;
+  right: unset !important;
+  bottom: unset;
+  height: auto;
+  -webkit-transition: unset;
+  transition: unset;
+  -webkit-transform: unset !important;
+          transform: unset !important;
+  z-index: inherit;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  opacity: 1;
+  visibility: visible;
+  float: left;
+}
+
+.page-sidebar .halo-sidebar-header {
+  position: relative;
+  padding: 24px 20px 0;
+  background-color: #fff;
+  padding: 9px 20px 9px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-sidebar .halo-sidebar-header .title {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: .02em;
+  line-height: 22px;
+  color: #232323;
+  text-transform: uppercase;
+}
+
+.page-sidebar .halo-sidebar-header .halo-page-sidebar-close {
+  position: absolute;
+  top: 0px;
+  background: #232323;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  z-index: 10;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.page-sidebar .halo-sidebar-header .halo-page-sidebar-close svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  stroke: transparent;
+}
+
 /* START: Product Card */
 .halo-product-block {
   margin-top: 35px;
@@ -2146,6 +2219,9 @@ label {
   .halo-sidebar .halo-sidebar-header {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .page-sidebar .halo-sidebar-header {
+    display: none;
   }
 }
 
