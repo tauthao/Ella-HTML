@@ -8,12 +8,10 @@ var imgMilancelos = document.querySelectorAll('.milancelos');
 var imgBlazero = document.querySelectorAll('.blazero');
 var imgGlamos = document.querySelectorAll('.glamos');
 var imgMetropolis = document.querySelectorAll('.metropolis');
-var clickIcon = document.querySelectorAll('.zoom');
 // buttons
 const tabsUl = document.getElementById('buttonGroup');
 const lis = tabsUl.children;
 const gridItems = grid.children;
-
 imagesLoaded(grid, function(){
 	msnry = new Masonry( grid, {
 		//options
@@ -22,7 +20,6 @@ imagesLoaded(grid, function(){
 		percentPosition: true
 	});
 });
-
 //element & class name
 function toggleClass(parentElem, childElems, className){
 	for(let i = 0; i <childElems.length; i++){
@@ -34,8 +31,7 @@ function toggleClass(parentElem, childElems, className){
 		}
 	}
 }
-
-function showImages(showImg, hideImg1, hideImg2){
+function showImages(showImg, hideImg1, hideImg2, hideImg3, hideImg4, hideImg5){
 	for(let i = 0; i < showImg.length; i++){
 			showImg[i].style.display = "block";
 		}
@@ -45,8 +41,16 @@ function showImages(showImg, hideImg1, hideImg2){
 		for(let i = 0; i< hideImg2.length; i++){
 			hideImg2[i].style.display = "none";
 		}
+		for(let i = 0; i< hideImg3.length; i++){
+			hideImg3[i].style.display = "none";
+		}
+		for(let i = 0; i< hideImg4.length; i++){
+			hideImg4[i].style.display = "none";
+		}
+		for(let i = 0; i< hideImg5.length; i++){
+			hideImg5[i].style.display = "none";
+		}
 }
-
 tabsUl.addEventListener('click', (event) =>{
 	let tabLi = event.target.parentNode;
 	toggleClass(tabLi, lis, 'is-active');
@@ -56,29 +60,38 @@ tabsUl.addEventListener('click', (event) =>{
 			imgAll[i].style.display = "block";
 		}
 	}
-    if(event.target.id == "Cosmopolis"){
+	//show ny images
+	if(event.target.id == "cosmopolis"){
 		showImages(imgCosmopolis, imgSuito, imgMilancelos, imgBlazero, imgGlamos, imgMetropolis);
 	}
-    if(event.target.id == "Suito"){
-		showImages(imgSuito, imgMilancelos, imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis );
+	// show flowers
+	if(event.target.id == "suito"){
+		showImages(imgSuito, imgMilancelos, imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis);
 	}
-    if(event.target.id == "Milancelos"){
+	// show other images
+	if(event.target.id == "milancelos"){
 		showImages(imgMilancelos, imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis, imgSuito);
 	}
-    if(event.target.id == "Blazero"){
+	// show other images
+	if(event.target.id == "blazero"){
 		showImages(imgBlazero, imgGlamos, imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos);
 	}
-    if(event.target.id == "Glamos"){
+
+	// show other images
+	if(event.target.id == "glamos"){
 		showImages(imgGlamos, imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos, imgBlazero);
 	}
-    if(event.target.id == "Metropolis"){
+	// show other images
+	if(event.target.id == "metropolis"){
 		showImages(imgMetropolis, imgCosmopolis, imgSuito, imgMilancelos, imgBlazero, imgGlamos);
 	}
 	msnry.layout();
 });
-
-
-
+grid.addEventListener('click',function(event){
+	let imgContainer = event.target.parentNode;
+	toggleClass(imgContainer, gridItems, 'grid-item__expanded');
+	msnry.layout();
+});
 
 
 

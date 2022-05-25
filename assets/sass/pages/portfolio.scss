@@ -31,7 +31,6 @@
             padding: 10px 0 9px 0;
             justify-content: center;
             background: #fafafa;
-           
             li {
                 padding-left:50px;
                 
@@ -75,7 +74,6 @@
                 transform: translate(-50%,-50%);
                 opacity: 1;
             }
-
             &:hover .content{
                 opacity: 1;
                 background-color: #232323;
@@ -185,11 +183,13 @@
         .img-box .image {
            padding-bottom: 30% !important;
         }
-        .container-filter #buttonGroup li {
-            border-radius: 2px;
-            margin: 5px 5px 5px;
-            width: auto;
-        }
+        .container-filter {
+            #buttonGroup li {
+                border-radius: 2px;
+                margin: 5px 5px 5px;
+                width: auto;
+            }
+        } 
         .grid{
             grid-template-columns: 1fr;
             width: 100%;

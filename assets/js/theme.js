@@ -36,11 +36,6 @@
             // this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
-<<<<<<< HEAD
-            this.clickedActiveVideoBanner();
-            this.showPopupPassWord();
-            this.showPopupLookbook();
-=======
             this.initClickedActiveVideoBanner();
             this.initShowPopupPassWord();
             this.initShowPopupShare();
@@ -54,7 +49,9 @@
             this.initWishlistActive();
             this.initUpdateVlueQuantity();
             this.initMenuMobile();
->>>>>>> main
+            // this.clickedActiveVideoBanner();
+            this.initShowPopupPassWord();
+            this.showPopupLookbook();
         },
 
         initSliderBanner: function() {
@@ -723,7 +720,7 @@
             });
         },
 
-<<<<<<< HEAD
+
         showPopupLookbook: function() {
             $doc.on('click', '[data-open-lookbook-popup]', (event) => {
                 event.preventDefault();
@@ -749,7 +746,7 @@
                 $('[data-lookbook-popup]').removeClass('open');
             });
         },
-=======
+
         initShowPopupShare: function() {
             var wrapper = $(".productView-share");
 
@@ -1076,6 +1073,6 @@
                 }
         },
 
->>>>>>> main
+
     }
 })(jQuery);
