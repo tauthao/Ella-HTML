@@ -1,50 +1,39 @@
 .collections .wrapper-content {
   margin-top: 15px;
 }
-
 .collections .wrapper-content .halo-row-item .button {
   width: 100%;
   max-width: 190px;
 }
-
 .collections .wrapper-content .halo-row-item .title {
   font-size: 20px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   font-weight: 700;
   color: #232323;
   margin-top: 25px;
   margin-bottom: 0;
 }
-
 .collections .wrapper-content .halo-row-item .sub-title {
   font-size: 12px;
   line-height: 22px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   font-weight: 400;
   margin-top: 8px;
   color: #999999;
 }
-
 .collections .wrapper-content .halo-row-item .desc {
   margin: 15px 0 37px 0;
 }
-
 .collections .wrapper-content .halo-row-item.space {
   margin-top: 60px;
 }
-
 .collections .button-collections.button {
   width: 100%;
   max-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto;
 }
-
 .collections .button-bottom {
   margin: 60px 0;
 }
@@ -54,7 +43,6 @@
     margin-top: 60px;
   }
 }
-
 @media (max-width: 767px) {
   .collections .halo-row-item.space {
     margin-top: 40px !important;
@@ -65,5 +53,4 @@
   .collections .halo-row-item:nth-child(2) {
     margin-top: 40px;
   }
-}
-/*# sourceMappingURL=collections.css.map */
+}/*# sourceMappingURL=collections.css.map */

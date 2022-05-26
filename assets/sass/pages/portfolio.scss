@@ -79,6 +79,14 @@ portfolio-item{
             }
         }
     }
+    .haloPortfolioContent{
+        .desc{
+            max-width:470px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 32px 15px 38px;
+        }
+    }
 }
 
 .tabs-contents{
@@ -92,6 +100,7 @@ portfolio-item{
         padding: 5px;
         display: inline-block;
         vertical-align: top;
+        width: 100%;
         .item{
             position: relative;
             .icon{
@@ -135,7 +144,7 @@ portfolio-item{
                     line-height: 22px;
                     letter-spacing: .02em;
                     color: #ffffff;
-                    margin: 0 0 2px;
+                    margin: 0;
                 }
                 .desc{
                    color: #ffffff;
@@ -170,7 +179,7 @@ portfolio-item{
         }
     }
     .portfolio-showmore-btn{
-        padding: 23px 15px 23px;
+        padding: 45px 15px 45px;
         text-align: center;
         .button{
             width: 100%;
@@ -207,6 +216,32 @@ portfolio-item{
     }
 }
 
+/* START: Portfolio With Sidebar */
+.portfolio-with-sidebar{
+    .portfolio-tabs{
+        .tabs{
+            display: block;
+            background:transparent;
+            margin-top: 5px;
+            .tab{
+                padding: 11px 0px;
+                width: 100%;
+                color: #232323;
+                border-top: 1px solid #787878;
+                &:last-child{
+                    border-bottom: 1px solid #787878; 
+                }
+            }
+        }
+    } 
+}
+
+/* END: Portfolio With Sidebar */
+@media(max-width:767px){
+    .portfolio-tabs .haloPortfolioContent .desc{
+        padding: 15px 15px 25px;
+    }
+}
 @media(min-width:1025px){
     .tabs-contents{
         .masonry-row{
