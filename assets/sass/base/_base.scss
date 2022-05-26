@@ -1417,6 +1417,7 @@ label {
 }
 
 /* START: Page Sidebar*/
+
     .page-sidebar{
         position: fixed;
         top: 0;
@@ -1431,6 +1432,13 @@ label {
         transform: translate(-101%);
         transition: opacity 0.5s, transform 350ms ease, visibility 350ms ease;
         background-color: #ffffff;
+        .halo-sidebar-wrapper{
+            padding: 30px 15px;
+            height: 100%;
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
         .sidebarBlock {
             margin-bottom: 38px;
         }
@@ -1499,7 +1507,7 @@ label {
                         font-size: 13px;
                         display: inline-block;
                         font-weight: 500;
-                        color: #232323;
+                        color: #3c3c3c;
                         padding: 7px 0 6px 0;
                         line-height: 22px;
                         position: relative;
@@ -1535,7 +1543,31 @@ label {
         }
         .sidebar-product{
             .halo-product-block{
-                margin: 30px 0px 0px;
+                    margin: 30px auto 0px;
+                    width: 100%;
+                    max-width: 240px;
+                .product-card-top{
+                    width: 100%;
+                    max-width: 140px;
+                    margin: 0 auto;
+                    .card__badge{
+                        &.badge-left{
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+
+                .slick-arrow{
+                    top: 85px;
+                    transform: translateY(0);
+                    border: none;
+                    padding: 5px!important;
+                    background: transparent;
+                    svg{
+                        fill:#232323;
+                    }
+                }
                 .product-card{
                     .card-action{
                         opacity: 1;
@@ -1562,6 +1594,20 @@ label {
                 }
             }
         }
+        &.page-sidebar-left{
+            left: 0;
+            transform: translate(-101%);
+        }
+        &.page-sidebar-right{
+            right:0;
+            transform: translate(101%);
+            .halo-sidebar-header {
+                .halo-page-sidebar-close{
+                    right: inherit;
+                    left: -40px;
+                }
+            }
+        }
     }
     .sidebar-toogle{
         display: block;
@@ -1583,20 +1629,43 @@ label {
         letter-spacing:.05em;
     }
 
-/* START: pagination list*/
+    body{
+        &.open-mobile-sidebar{
+            .page-sidebar {
+                transform: translate(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            .background-overlay {
+                z-index: 99;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+/* START: pagination list */
 .pagination__list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content:center;
-    .pagination-arrow:first-child {
-        margin-right: 10px;
+    .pagination-arrow {
+        &:first-child{
+            margin-right: 10px;
+        }
+        &.disabled{
+            opacity: .4;
+            
+        }
     }
     li {
         min-width: 4rem;
     }
     .pagination-arrow {
         position: relative;
+        width: 35px;
+        min-width: 35px;
     }
     .pagination__item-arrow {
         color: #232323;
@@ -1609,22 +1678,28 @@ label {
         cursor: pointer;
         position: absolute;
         top: 50%;
-        padding: 10px 12px;
-        width: 40px;
-        height: 40px;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
         transform: translateY(-50%);
         z-index: 1;
         outline: none;
         transition: all ease .3s;
         border-radius: 50%;
+        
         .icon {
             fill: #3c3c3c;
-            max-width: 100%;
-            max-height: 100%;
-            width: 17px;
-            height: 17px;
+            width: 100%;
+            height: 100%;
             color: #323232;
             stroke: transparent;
+        }
+        &:hover{
+            color: #ffffff;
+            background: #232323;
+            .icon{
+                fill:#ffffff;
+            }
         }
     }
     .pagination__item--prev .icon {
@@ -1635,8 +1710,8 @@ label {
     }
     .pagination-num .pagination__item {
         color: #707070;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         background-color: #fff;
         border-radius: 50%;
         display: flex;
@@ -2126,7 +2201,7 @@ label {
         max-width: 370px;
     }
     .page-sidebar {
-        max-width: 210px;
+        max-width: 300px;
     }
 }
 
@@ -2306,6 +2381,9 @@ label {
         opacity: 1;
         visibility: visible;
         float: left;
+        .halo-sidebar-wrapper{
+            padding: 0;
+        }
         .halo-sidebar-header{
             display: none;
         }
@@ -2313,6 +2391,13 @@ label {
             width: calc(100% - 210px);
             padding-left: 30px;
             float: left;
+        }
+        &.page-sidebar-right{
+            float: right;
+            & + .page-content {
+                padding-left: 0;
+                padding-right: 30px;
+            }
         }
     }
     .sidebar-toogle {

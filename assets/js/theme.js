@@ -50,6 +50,7 @@
             this.initUpdateVlueQuantity();
             this.initMenuMobile();
             this.initShowPopupLookbook();
+            this.initToggleSidebarMobile();
         },
 
         initSliderBanner: function() {
@@ -1065,6 +1066,22 @@
                 event.preventDefault();
                 $('[data-open-lookbook-popup]').removeClass('active');
                 $('[data-lookbook-popup]').removeClass('open');
+            });
+        },
+
+        initToggleSidebarMobile: function() {
+            $doc.on('click', '[data-sidebar]', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $body.addClass('open-mobile-sidebar');
+            });
+
+            $doc.on('click', '[data-close-sidebar],.background-overlay', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                $body.removeClass('open-mobile-sidebar');
             });
         },
 
