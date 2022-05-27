@@ -1,4 +1,4 @@
-class Portfolio extends HTMLElement {
+class masonry extends HTMLElement {
     constructor() {
         super();
 
@@ -59,4 +59,4 @@ class Portfolio extends HTMLElement {
     }
 }
 
-customElements.define('portfolio-item', Portfolio);
+customElements.define('masonry-items', masonry);

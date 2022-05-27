@@ -1,50 +1,17 @@
-portfolio-item{
+masonry-items{
     display: block;
 }
-.portfolio-header{
-    position: relative;
-    background-image: url(../../images/Pages/portfolio/Banner-Portfolio-1.png);
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-position: center top;
-    height: 270px;
-    background-attachment: fixed;
-    .breadcrumb{
-        justify-content: center;
-        color:#ffffff;
-        padding: 18px 0px 0px;
-        margin: 0;
-        .separate {
-            svg{
-                color: #ffffff;
-                fill: #ffffff;      
-            }
-        }
-        a{
-            color: #ffffff;
-        }
-    }
-    .page-heading{
-        .page-title{
-            display: block;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 22px;
-            letter-spacing: .05em;
-            color: #ffffff;
-            position: relative;
-            padding: 50px 0 17px;
-            margin: 0;
-        }
-        .desc{
-            margin-top: 5px;
-            max-width: 540px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #ffffff;
-        }
+.portfolio-page{
+    .page-header{
+        background-image: url(../../images/Pages/portfolio/Banner-Portfolio-1.png);
+        background-size: cover;
+        background-repeat: repeat-x;
+        background-position: center top;
+        height: 270px;
+        background-attachment: fixed;
     }
 }
+
 
 .portfolio-tabs{  
     .tabs{
@@ -101,6 +68,9 @@ portfolio-item{
         display: inline-block;
         vertical-align: top;
         width: 100%;
+        &.sizer-element{
+            padding: 0!important;
+        }
         .item{
             position: relative;
             .icon{
@@ -188,6 +158,15 @@ portfolio-item{
     }
 }
 
+.portfolio-with-sidebar{
+    .tabs-contents{
+        .portfolio-showmore-btn{
+            padding: 30px 15px;
+        }
+    }
+}
+
+
 @media(min-width:768px){
 
     .portfolio-tabs{  
@@ -262,4 +241,12 @@ portfolio-item{
             
         }
     }
+    .portfolio{
+        .page-sidebar {
+            &+ .page-content{
+                padding-left: 20px;
+            }
+        }
+    }
+    
 }

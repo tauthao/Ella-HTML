@@ -1,3 +1,7 @@
+
+masonry-items{
+    display: block;
+}
 .blog-template{
     .halo-blog-content{
         .article-title{
@@ -88,6 +92,32 @@
             }
         }
     }
+    &.blog-template-masory{
+        .masonry-row{
+            margin-left: -10px;
+            margin-right: -10px;
+            .masonry-item{
+                width: 100%;
+                padding: 0px 10px;
+                display: inline-block;
+                vertical-align: top;
+                &.masonry-item{
+                    padding-top: 0;
+                    border: none;
+                    padding-bottom: 10px;
+                }
+            }
+            .article-img {
+                margin-bottom: 22px;
+            }
+            .blog-info{
+                margin-bottom: 19px;
+            }
+            .desc{
+                margin-bottom: 30px;
+            }
+        }
+    }
     
 }
 
@@ -103,6 +133,7 @@
         }
     }
 }
+
 
 @media(min-width:768px){
     .blog-template-full-width{
@@ -134,7 +165,20 @@
             }
         }
     }
+    .blog-template{
+        &.blog-template-masory{
+            .masonry-row{
+                margin-left: -15px;
+                margin-right: -15px;
+                .masonry-item{
+                    width: 50%;
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
 }
+
 
 @media(min-width:1200px){
     .blog-template-full-width{

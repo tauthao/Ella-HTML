@@ -37,7 +37,6 @@
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
-            this.initShowPopupPassWord();
             this.initShowPopupShare();
             this.initCountdown();
             this.initProductCustomerViewing();
@@ -694,27 +693,6 @@
                     });
                 });
             }
-        },
-
-        initShowPopupPassWord: function() {
-            $doc.on('click', '[data-open-password-popup]', (event) => {
-                event.preventDefault();
-                var $target = $(event.currentTarget),
-                    $popup = $target.siblings('.popup');
-                if (!$target.hasClass('active')) {
-                    $target.addClass('active');
-                    $popup.addClass('open');
-                } else {
-                    $target.removeClass('active');
-                    $popup.removeClass('open');
-                }
-            });
-            $doc.on('click', (event) => {
-                if (!event.target.closest('[data-open-password-popup]') && !event.target.closest('[data-password-popup]')) {
-                    $('[data-open-password-popup]').removeClass('active');
-                    $('[data-password-popup]').removeClass('open');
-                }
-            });
         },
 
         initShowPopupShare: function() {

@@ -942,7 +942,7 @@ svg {
 
 .desc {
     font-size: 12px;
-    line-height: 22px;
+    line-height: 2;
     letter-spacing: .02em;
     color: #232323;
     margin: 0px;
@@ -999,14 +999,50 @@ svg {
 /* END: Banner Image */
 
 
-/* START: Breadcrumb */
 
+/* START: Page Title */
+.page{
+    padding-bottom: 50px;
+}
+.page-header{
+    position: relative;
+    .page-title {
+        margin-bottom:22px;
+        font-size: 24px;
+        letter-spacing:.05em;
+        color: #232323;
+    }
+    .content-box--absolute{
+        .breadcrumb{
+            justify-content: center;
+            color:#ffffff;
+            padding: 18px 0px 0px;
+            margin: 0;
+            letter-spacing: .02em;
+            .separate {
+                svg{
+                    color: #ffffff;
+                    fill: #ffffff;      
+                }
+            }
+            a{
+                color: #ffffff;
+            }
+        }
+        .page-title{
+            color: #ffffff;
+            padding: 12px 0px;
+        }
+    }
+}
 .breadcrumb {
     color: #999999;
     padding-top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
+    padding: 20px 0px 11px;
     a {
         font-size: 12px;
         line-height: 24px;
@@ -1014,9 +1050,6 @@ svg {
         color: #999999;
         &:hover {
             color: #232323;
-            .text {
-                text-underline-offset: 0.2rem;
-            }
         }
     }
     .separate {
@@ -1035,7 +1068,7 @@ svg {
 }
 
 
-/* END: Breadcrumb */
+/* END: Page Title */
 
 
 /* START: Form */
@@ -1623,12 +1656,6 @@ label {
             fill: #808080;
         }
     }
-    .page-title {
-        margin-bottom:32px;
-        font-size: 24px;
-        letter-spacing:.05em;
-    }
-
     body{
         &.open-mobile-sidebar{
             .page-sidebar {
@@ -1645,6 +1672,7 @@ label {
     }
 
 /* START: pagination list */
+
 .pagination__list {
     display: flex;
     flex-wrap: wrap;
@@ -2403,6 +2431,9 @@ label {
     .sidebar-toogle {
         display: none;
         margin-bottom: 0;
+    }
+    .page{
+        padding-bottom: 80px;
     }
 }
 

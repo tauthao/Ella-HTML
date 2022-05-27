@@ -79,25 +79,22 @@
     }
 } //End about banner
 
-.about-intro {
+.page-header {
     .breadcrumb {
         justify-content: center;
-        margin-top: 35px;
-        margin-bottom: 10px;
+        padding: 37px 0px 11px;
     }
     .page-title {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
     .desc {
         max-width: 730px;
         margin: 0 auto;
+        letter-spacing: .02em;
+        line-height: 24px;
     }
-    .page-title {
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: .05em;
-    }
-} //End about intro
+    
+} 
 
 .about-policies {
     margin-top: 64px;
