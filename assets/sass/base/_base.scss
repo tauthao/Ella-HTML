@@ -1065,6 +1065,9 @@ svg {
             fill: #999999;
         }
     }
+    &.position-center {
+        justify-content: center;  
+    }
 }
 
 
@@ -2303,7 +2306,7 @@ label {
     }
     .animate-overlay {
         position: relative;
-        a:before {
+        .image:before {
             position: absolute;
             content: "";
             top: 0;
@@ -2317,7 +2320,7 @@ label {
             z-index: 2;
         }
         &:hover{
-            a:before{
+            .image:before{
                 opacity: 1;
             }
         }
@@ -2462,6 +2465,13 @@ label {
     .container.container-1170,
     .container.container-header-1170 {
         max-width: 1200px!important;
+    }
+    /* END: Container */
+    .slick-arrow.slick-prev {
+        left: 5px;
+    }
+    .slick-arrow.slick-next {
+        right: 5px;
     }
 }
 

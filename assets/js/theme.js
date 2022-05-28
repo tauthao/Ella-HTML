@@ -138,7 +138,7 @@
                             nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
                             prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
                             responsive: [{
-                                    breakpoint: 1600,
+                                    breakpoint: 1300,
                                     settings: {
                                         dots: itemDots,
                                         arrows: itemRow,
