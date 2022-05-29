@@ -1,0 +1,248 @@
+.collection-header{
+    margin-bottom: 25px;
+    .collection-title{
+        font-size: 20px;
+        letter-spacing:.05em;
+        color:#232323;
+        margin: 33px 0px 0px;
+    }
+    .desc{
+        font-size: 12px;
+        color:#3c3c3c;
+        margin-top: 15px;
+    }
+}
+.toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+    padding: 30px 0;
+    border-top: 1px solid #dedede;
+    .toolbar-wrapper{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toolbar-col{
+        font-size: 0;
+        letter-spacing: 0;
+    }
+    .toolbar-label{
+        display: none;
+    }
+    .toolbar-item{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        z-index: 2;
+        font-size: 0;
+        letter-spacing: 0;
+        .icon-mode{
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            width: 26px;
+            height: 26px;
+            padding: 3px;
+            border: 1px solid #dfdfdf;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                background-color: #dfdfdf;
+                width: 4px;
+                height: 18px;
+            }
+            &.icon-mode-list{
+                &:before {
+                    width: 18px;
+                    height: 4px;
+                    box-shadow: 0 7px 0 #dfdfdf,0 14px 0 #dfdfdf;
+                }
+            }
+            & + .icon-mode{
+                margin-left: 5px;
+            }
+            &.grid-2{
+                width: 19px;
+                &:before{
+                    box-shadow: 7px 0 0 #dfdfdf;
+                }
+            }
+            &.grid-3{
+                &:before{
+                    box-shadow: 7px 0 0 #dfdfdf,14px 0 0 #dfdfdf;
+                }
+            }
+            &.grid-4{
+                width: 33px;
+                &:before{
+                    box-shadow: 7px 0 0 #dfdfdf,14px 0 0 #dfdfdf,21px 0 0 #dfdfdf;
+                }
+            }
+            &.grid-5{
+                width: 40px;
+                &:before{
+                    box-shadow: 7px 0 0 #dfdfdf,14px 0 0 #dfdfdf,21px 0 0 #dfdfdf, 28px 0 0 #dfdfdf;
+                }
+            }
+            &.active{
+                border-color: #323232;
+                &:before{
+                    background: #323232,;
+                }
+                &.icon-mode-list{
+                    &:before {
+                        box-shadow: 0 7px 0 #323232,0 14px 0 #323232;
+                    }
+                }
+                &.grid-2{
+                    width: 19px;
+                    &:before{
+                        box-shadow: 7px 0 0 #323232;
+                    }
+                }
+                &.grid-3{
+                    &:before{
+                        box-shadow: 7px 0 0 #323232,14px 0 0 #323232;
+                    }
+                }
+                &.grid-4{
+                    width: 33px;
+                    &:before{
+                        box-shadow: 7px 0 0 #323232,14px 0 0 #323232,21px 0 0 #323232;
+                    }
+                }
+                &.grid-5{
+                    width: 40px;
+                    &:before{
+                        box-shadow: 7px 0 0 #323232,14px 0 0 #323232,21px 0 0 #323232, 28px 0 0 #323232;
+                    }
+                }  
+            }
+        }
+        
+    }
+    .toolbar-dropdown{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        .label-tab{
+            background-color: #ffffff;
+            border: 1px solid #dadada;
+            padding: 7px 38px 7px 20px;
+            min-height: 45px;
+            width: 100%;
+            min-width: 89px;
+            max-width: 149px;
+            cursor: pointer;
+            position: relative;
+            line-height: 29px;
+        }
+        .label-text{
+            font-size: 12px;
+            font-weight: 400;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            color: #3c3c3c;
+        }
+        .icon-dropdown{
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform:translateY(-50%);
+            svg{
+                fill: #3c3c3c;
+                color: #3c3c3c;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .dropdown-menu{
+            position: absolute;
+            top: calc(100% + 5px);
+            left: auto;
+            right: 0;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            font-size: 0;
+            letter-spacing: 0;
+            background-color: #ffffff;
+            z-index: 5;
+            width: 100%;
+            min-width: 90px;
+            padding: 13px 13px 13px 20px;
+            transition: all 0.5s ease;
+            box-shadow: 0 1px 4px rgba(0, 0, 0,0.15);
+            display: initial;
+            border-radius: 0px;
+            border:none;
+
+            // opacity: 1;
+            // visibility: visible;
+            // pointer-events: auto;
+            // transform: translate(0);
+            li{
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                width: 100%;
+                .text{
+                    display: block;
+                    padding: 7px 0 0;
+                    font-weight: 400;
+                    color: #232323;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+                &.is-active {
+                    .text{
+                        text-decoration: underline;
+                        text-underline-offset: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
+    .toolbar-limitView{
+        .toolbar-sort{
+            margin-left: 28px;
+            .dropdown-menu{
+                min-width: 180px;
+            }
+        }
+    }
+}
+.productListing{
+    .product-item{
+        padding-bottom: 20px;
+    }
+}
+
+@media(min-width:1025px){
+  .toolbar{
+    .toolbar-colLeft{
+        display: flex;
+        align-items: center;
+    }
+    .toolbar-label{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 15px 0 0;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #3c3c3c;
+        font-size: 12px;
+        letter-spacing:.02em;
+    }
+  }  
+}
