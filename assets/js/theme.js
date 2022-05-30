@@ -50,6 +50,7 @@
             this.initMenuMobile();
             this.initShowPopupLookbook();
             this.initToggleSidebarMobile();
+            this.initPriceRangeFilter();
         },
 
         initSliderBanner: function() {
@@ -1063,5 +1064,26 @@
             });
         },
 
+        initPriceRangeFilter: function(){
+            var filterPrice = $(".filter-price");
+            if(filterPrice.length > 0){
+                var lowerSlider = filterPrice.find('#range-lower'),
+                    upperSlider = filterPrice.find('#range-upper');
+
+                upperSlider.on('input propertychange', () => {
+                    var upperVal = parseInt(upperSlider.val());
+                   
+                    filterPrice.find('#filter__max').val(upperVal);
+                });
+
+                lowerSlider.on('input propertychange', () => {
+                    var lowerVal = parseInt(lowerSlider.val());
+
+                    filterPrice.find('#filter__min').val(lowerVal);
+                });
+            }
+
+        },
+        
     }
 })(jQuery);

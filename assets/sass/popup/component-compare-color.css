@@ -1,13 +1,16 @@
 body.compare-color-show {
   overflow: hidden;
 }
+
 body.compare-color-show .halo-compare-color-popup {
   pointer-events: auto;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
   z-index: 99999;
 }
+
 body.compare-color-show .background-overlay {
   z-index: 99999;
   opacity: 1;
@@ -17,14 +20,17 @@ body.compare-color-show .background-overlay {
 .halo-compare-color-popup {
   max-width: calc(100% - 30px);
 }
+
 .halo-compare-color-popup .halo-popup-wrapper {
   padding: 0;
 }
+
 .halo-compare-color-popup .halo-popup-header {
   border-bottom: 1px solid #e6e6e6;
   padding: 16px 30px 13px;
   margin-bottom: 0;
 }
+
 .halo-compare-color-popup .wrapper-content {
   padding: 15px 30px 15px;
   position: relative;
@@ -32,24 +38,30 @@ body.compare-color-show .background-overlay {
   overflow-y: auto;
   max-height: 80vh;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors {
   padding: 15px 0;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-swatch {
   margin-bottom: 25px;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .compareColors-list .item {
   display: inline-block;
   vertical-align: top;
   margin: 0 10px 10px 0;
   position: relative;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-option {
   display: none;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-option:checked + .swatch-compare-color-label {
   border-color: #232323;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label {
   display: block;
   border-radius: 50%;
@@ -65,9 +77,11 @@ body.compare-color-show .background-overlay {
   cursor: pointer;
   padding: 3px;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label::after, .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label::before {
   display: none;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .swatch-compare-color-label .pattern {
   display: block;
   width: 100%;
@@ -80,17 +94,20 @@ body.compare-color-show .background-overlay {
   background-size: cover;
   background-position: center;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-text {
   font-size: 12px;
   font-weight: 400;
   font-style: italic;
   color: #969696;
   text-transform: capitalize;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-image {
   text-align: center;
 }
+
 .halo-compare-color-popup .wrapper-content .halo-compareColors .halo-compareColors-image .title {
   padding: 15px 0 25px;
   display: block;
@@ -101,8 +118,10 @@ body.compare-color-show .background-overlay {
     padding-right: 10px;
   }
 }
+
 @media (min-width: 768px) {
   .halo-compare-color-popup {
     max-width: 970px;
   }
-}/*# sourceMappingURL=component-compare-color.css.map */
+}
+/*# sourceMappingURL=component-compare-color.css.map */

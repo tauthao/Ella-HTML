@@ -1,3 +1,12 @@
+.collection-wrapper{
+    margin-bottom: 50px;
+    .breadcrumb{
+        padding: 20px 0px 27px;
+    }
+}
+.collection{
+    margin-bottom: 80px;
+}
 .collection-header{
     margin-bottom: 25px;
     .collection-title{
@@ -12,6 +21,7 @@
         margin-top: 15px;
     }
 }
+
 .toolbar{
     display: flex;
     align-items: center;
@@ -23,8 +33,24 @@
     .toolbar-wrapper{
         display: flex;
         flex: 1;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        &:not(.toolbar-mobile){
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &.toolbar-mobile{
+            justify-content: flex-start;
+        }
+        &:not(.toolbar-mobile){
+            & + .toolbar-mobile{
+                justify-content: flex-end;
+            }
+        }
+        .toolbar-colLeft{
+            display: none;
+        }
     }
     .toolbar-col{
         font-size: 0;
@@ -34,7 +60,7 @@
         display: none;
     }
     .toolbar-item{
-        display: inline-block;
+        display: flex;
         vertical-align: middle;
         position: relative;
         z-index: 2;
@@ -126,12 +152,35 @@
                 }  
             }
         }
+        &.sidebar-toogle{
+            padding: 0;
+            margin: 0;
+            width: auto;
+            height: auto;
+            background: #ffffff;
+        }
         
+    }
+    .toolbar-icon{
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        padding: 3px;
+        border: 1px solid #323232;
+        .icon{
+            width: 100%;
+            height: 100%;
+            fill: #323232;
+        }
     }
     .toolbar-dropdown{
         display: inline-block;
         vertical-align: middle;
         position: relative;
+        &.limited-view{
+            display: none;
+        }
         .label-tab{
             background-color: #ffffff;
             border: 1px solid #dadada;
@@ -215,24 +264,82 @@
     }
     .toolbar-limitView{
         .toolbar-sort{
-            margin-left: 28px;
             .dropdown-menu{
                 min-width: 180px;
             }
         }
     }
 }
+
 .productListing{
     .product-item{
         padding-bottom: 20px;
     }
 }
 
+.pagination-page-total{
+    color: #707070;
+    letter-spacing: .02em;
+    margin: 0px 0px 20px;
+    .pagination-total-progress{
+        max-width: 190px;
+        height: 3px;
+        background-color: #e6e6e6;
+        text-align: left;
+        margin: 7px auto 0;
+        display: block;
+        .pagination-total-item{
+            width: 0;
+            height: 100%;
+            background-color: #4b6cc0;
+            display: block;
+            transition: all ease 1s;
+        }
+    }
+}
+.infinite-scrolling{
+    .button{
+        width: 100%;
+        max-width: 290px;
+    }
+}
+
+.halo-product-block{
+    clear: both;
+    .category-product-header{
+        border-top: 1px solid #e6e6e6;
+        padding: 30px 0px 12px;
+        .title{
+            font-size: 18px;
+            letter-spacing: .02em;
+            font-weight: 600;
+            color: #232323;
+        }
+    }
+}
+
+@media(min-width:551px){
+    .toolbar {
+        .toolbar-dropdown{
+            &.limited-view{
+                display: inline-block;
+            }
+        }
+        .toolbar-limitView{
+            .toolbar-sort{
+                margin-left: 28px;
+            }
+        }
+    }
+}
+
 @media(min-width:1025px){
   .toolbar{
-    .toolbar-colLeft{
-        display: flex;
-        align-items: center;
+    .toolbar-wrapper{
+        .toolbar-colLeft{
+            display: flex;
+            align-items: center;
+        }
     }
     .toolbar-label{
         display: inline-block;
@@ -243,6 +350,14 @@
         color: #3c3c3c;
         font-size: 12px;
         letter-spacing:.02em;
+    }
+    .toolbar-wrapper{
+        &.toolbar-mobile{
+            display: none;
+        }
+    }
+    .toolbar-item{
+        display: inline-block;
     }
   }  
 }
