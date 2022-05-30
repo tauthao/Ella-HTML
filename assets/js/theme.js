@@ -51,6 +51,7 @@
             this.initShowPopupLookbook();
             this.initToggleSidebarMobile();
             this.initPriceRangeFilter();
+            this.initCollapseSidebarBlock();
         },
 
         initSliderBanner: function() {
@@ -1083,6 +1084,21 @@
                 });
             }
 
+        },
+
+        initCollapseSidebarBlock: function (){
+            $doc.on('click', '.sidebarBlock-headingWrapper .sidebarBlock-heading', (event) => {
+                var $target = $(event.currentTarget),
+                    $blockCollapse = $target.parent().siblings();
+
+                if($target.hasClass('is-clicked')){
+                    $target.removeClass('is-clicked');
+                    $blockCollapse.slideUp('slow'); 
+                } else {
+                    $target.addClass('is-clicked');
+                    $blockCollapse.slideDown('slow');
+                }
+            });
         },
         
     }

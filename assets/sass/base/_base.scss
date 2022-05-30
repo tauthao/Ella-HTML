@@ -1530,6 +1530,7 @@ label {
             padding-bottom: 9px;
             margin-bottom: 13px;
             position: relative;
+            cursor: pointer;
             .icon{
                 position: absolute;
                 right: 0;
@@ -1547,10 +1548,8 @@ label {
             }
         }
         .sidebarBlock-content{
-            transition: max-height .5s ease-out;
-            max-height: 0;
-            overflow: hidden;
             position: relative;
+            overflow: hidden;
             .nav{
                 margin: 0;
                 li{
@@ -1570,10 +1569,6 @@ label {
                         transition: padding-left .5s linear;
                     }
                 }
-            }
-            &.is-active{
-                max-height: inherit;
-                // overflow: visible;
             }
         }
         .facets__list{
@@ -1691,7 +1686,9 @@ label {
         }
         .filter-prices{
             width: 100%;
-            padding-bottom: 7px;
+            .sidebarBlock-content{
+                padding-bottom: 7px;
+            }
             .price-container{
                 display: flex;
                 width:100%;
