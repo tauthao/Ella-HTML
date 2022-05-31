@@ -1,13 +1,16 @@
 body.ask-an-expert-show {
   overflow: hidden;
 }
+
 body.ask-an-expert-show .halo-ask-an-expert-popup {
   pointer-events: auto;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
   z-index: 99999;
 }
+
 body.ask-an-expert-show .background-overlay {
   z-index: 99999;
   opacity: 1;
@@ -17,14 +20,17 @@ body.ask-an-expert-show .background-overlay {
 .halo-ask-an-expert-popup {
   max-width: calc(100% - 30px);
 }
+
 .halo-ask-an-expert-popup .halo-popup-wrapper {
   padding: 0;
 }
+
 .halo-ask-an-expert-popup .halo-popup-header {
   border-bottom: 1px solid #e6e6e6;
   padding: 16px 15px 13px;
   margin-bottom: 0;
 }
+
 .halo-ask-an-expert-popup .wrapper-content {
   padding: 20px 20px 40px;
   position: relative;
@@ -32,65 +38,77 @@ body.ask-an-expert-show .background-overlay {
   overflow-y: auto;
   max-height: 80vh;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .heading {
   display: block;
   margin: 0 auto;
   padding: 15px;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .text {
   display: block;
   font-size: 12px;
   font-weight: var(--font-weight-normal);
   color: #5a5a5a;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   margin: 0 auto;
   padding: 2px 30px 0;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .intro {
   font-size: 12px;
   font-weight: 500;
   color: #232323;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   margin: 24px 0 0;
   padding: 22px 0 23px;
   border-top: 1px solid #e6e6e6;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field label {
   font-weight: 400;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field + .form-field {
   margin-top: 15px;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field + .form-field.form-field-radio {
   margin-top: 22px;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-radio .form-label {
   display: inline-block;
   vertical-align: top;
   width: auto;
   margin: 0 25px 0 0;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-radio-2 .form-label:first-child {
   display: block;
   margin-right: 0;
   margin-bottom: 15px;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-field.form-field-textarea {
   margin-top: 23px;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-actions {
   margin-top: 23px;
 }
+
 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .form-actions .button {
   max-width: 100%;
   width: 100%;
@@ -104,8 +122,10 @@ body.ask-an-expert-show .background-overlay {
     padding: 30px 50px 50px;
   }
 }
+
 @media (min-width: 1025px) {
   body.ask-an-expert-show {
     padding-right: 10px;
   }
-}/*# sourceMappingURL=componet-ask-an-expert.css.map */
+}
+/*# sourceMappingURL=componet-ask-an-expert.css.map */

@@ -9,9 +9,11 @@ masonry-items {
   font-weight: 600;
   margin-bottom: 6px;
 }
+
 .blog-template .halo-blog-content .article-title span {
   text-underline-offset: 0.4rem;
 }
+
 .blog-template .halo-blog-content .blog-info {
   color: #999999;
   font-size: 12px;
@@ -20,13 +22,16 @@ masonry-items {
   font-style: normal;
   margin-bottom: 30px;
 }
+
 .blog-template .halo-blog-content .blog-info .blog-author,
 .blog-template .halo-blog-content .blog-info .blog-comment {
   margin-left: 10px;
 }
+
 .blog-template .halo-blog-content .article-details .article-img {
   margin-bottom: 30px;
 }
+
 .blog-template .halo-blog-content .article-details .desc {
   margin-bottom: 26px;
   overflow: hidden;
@@ -37,66 +42,83 @@ masonry-items {
   color: #3c3c3c;
   line-height: 24px;
 }
+
 .blog-template .halo-blog-content .article-details .actions .button {
   width: 100%;
   max-width: 168px;
 }
+
 .blog-template .halo-blog-content .list-article {
   position: relative;
   top: -4px;
 }
+
 .blog-template .halo-blog-content .list-article .article-item {
   margin-bottom: 45px;
 }
+
 .blog-template .halo-blog-content .list-article .article-item + .article-item {
   border-top: 1px solid #E6E6E5;
   padding-top: 40px;
 }
+
 .blog-template .halo-blog-content .list-article .article-item:last-child {
   margin-bottom: 40px;
 }
+
 .blog-template .halo-blog-content .pagination {
   border-top: 1px solid #e6e6e6;
   padding-top: 35px;
 }
+
 .blog-template.blog-template-full-width .list-article .article-item {
   margin-bottom: 0;
   border: none;
 }
+
 .blog-template.blog-template-full-width .list-article .article-item + .article-item {
   border: none;
   padding-top: 0;
 }
+
 .blog-template.blog-template-full-width .list-article .article-details .blog-info {
   margin-bottom: 20px;
 }
+
 .blog-template.blog-template-full-width .list-article .article-details .desc {
   margin-bottom: 30px;
 }
+
 .blog-template.blog-template-full-width .halo-blog-content .pagination {
   border-top: none;
 }
+
 .blog-template.blog-template-masory .masonry-row {
   margin-left: -10px;
   margin-right: -10px;
 }
+
 .blog-template.blog-template-masory .masonry-row .masonry-item {
   width: 100%;
   padding: 0px 10px;
   display: inline-block;
   vertical-align: top;
 }
+
 .blog-template.blog-template-masory .masonry-row .masonry-item.masonry-item {
   padding-top: 0;
   border: none;
   padding-bottom: 10px;
 }
+
 .blog-template.blog-template-masory .masonry-row .article-img {
   margin-bottom: 22px;
 }
+
 .blog-template.blog-template-masory .masonry-row .blog-info {
   margin-bottom: 19px;
 }
+
 .blog-template.blog-template-masory .masonry-row .desc {
   margin-bottom: 30px;
 }
@@ -109,14 +131,25 @@ masonry-items {
     margin-bottom: 20px;
   }
 }
+
 @media (min-width: 768px) {
   .blog-template-full-width .list-article .article-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .blog-template-full-width .list-article .article-item:nth-child(even) {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .blog-template-full-width .list-article .article-item .article-img {
     width: 50%;
@@ -129,9 +162,10 @@ masonry-items {
     padding: 30px 30px 30px 0;
   }
   .blog-template-full-width .halo-blog-content .pagination__list {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-
   .blog-template.blog-template-masory .masonry-row {
     margin-left: -15px;
     margin-right: -15px;
@@ -141,6 +175,7 @@ masonry-items {
     padding: 0px 15px;
   }
 }
+
 @media (min-width: 1200px) {
   .blog-template-full-width .list-article .article-item .article-details {
     padding: 30px 0 30px 80px;
@@ -148,4 +183,5 @@ masonry-items {
   .blog-template-full-width .list-article .article-item:nth-child(even) .article-details {
     padding: 30px 80px 30px 0;
   }
-}/*# sourceMappingURL=blog.css.map */
+}
+/*# sourceMappingURL=blog.css.map */
