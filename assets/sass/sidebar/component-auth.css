@@ -1,14 +1,11 @@
 body.auth-sidebar-show {
   overflow: hidden;
 }
-
 body.auth-sidebar-show .halo-auth-sidebar {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   opacity: 1;
   visibility: visible;
 }
-
 body.auth-sidebar-show .background-overlay {
   z-index: 99;
   opacity: 1;
@@ -18,7 +15,6 @@ body.auth-sidebar-show .background-overlay {
 .auth-form {
   padding: 22px 20px;
 }
-
 .auth-form .form-field + .form-field {
   margin-top: 14px;
 }
@@ -26,11 +22,9 @@ body.auth-sidebar-show .background-overlay {
 .auth-actions {
   margin: 15px 0 0;
 }
-
 .auth-actions .button {
   width: 100%;
 }
-
 .auth-actions .auth-link {
   font-size: 12px;
   margin: 14px 0 22px;
@@ -38,7 +32,6 @@ body.auth-sidebar-show .background-overlay {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
-
 .auth-actions .auth-link:hover {
   color: #232323;
 }
@@ -48,8 +41,8 @@ body.auth-sidebar-show .background-overlay {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   body.auth-sidebar-show {
     padding-right: 10px;
   }
-}
-/*# sourceMappingURL=component-auth.css.map */
+}/*# sourceMappingURL=component-auth.css.map */

@@ -2166,9 +2166,9 @@ label {
             white-space: nowrap;
             overflow-x: auto;
             overflow-y: hidden;
-            padding: 0 0 0 15px;
+            padding: 0 15px 0 15px;
             margin-left: -15px;
-            margin-right: 0;
+            margin-right: -15px;
             flex-wrap: nowrap;
             .halo-row-item {
                 margin-top: 0;
@@ -2254,11 +2254,18 @@ label {
     .content-box--center {
         left: 50%;
     }
+
+    .content-box--bottom {
+        top: inherit;
+        bottom: 0;
+        transform: translate(-50%,0);
+    }
     .content-box--right {
         left: inherit;
         right: 15px;
         transform: translate(0, -50%);
     }
+    
     .row {
         margin-left: -10px;
         margin-right: -10px;

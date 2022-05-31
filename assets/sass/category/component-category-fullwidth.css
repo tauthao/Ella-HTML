@@ -1,0 +1,57 @@
+.template-full-width .toolbar .results-count span {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: #707070;
+}
+.template-full-width .collection-description {
+  color: #3c3c3c;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 0px 17px;
+}
+.template-full-width .collection-cusstom-banner {
+  margin: 20px 0px 40px;
+}
+.template-full-width .collection-cusstom-banner .halo-row-item {
+  margin-bottom: 30px;
+}
+.template-full-width .collection-cusstom-banner .content-box {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 9;
+}
+.template-full-width .collection-cusstom-banner .content-box .sub-banner-title {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0;
+}
+.template-full-width .collection-cusstom-banner .content-box .banner-title {
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: #ffffff;
+  padding: 13px 0px 24px;
+}
+.template-full-width .collection-cusstom-banner .content-box .banner-title a {
+  color: #ffffff;
+}
+.template-full-width .collection-cusstom-banner .content-box .banner-title .text {
+  text-decoration-thickness: 1px !important;
+}
+.template-full-width .collection-cusstom-banner .content-box .banner-button {
+  border-color: #ffffff;
+  width: 100%;
+  max-width: 167px;
+  text-align: center;
+  color: #232323;
+  background: #ffffff;
+}
+.template-full-width .collection-cusstom-banner .content-box .banner-button:hover {
+  background: transparent;
+  color: #ffffff;
+}/*# sourceMappingURL=component-category-fullwidth.css.map */
