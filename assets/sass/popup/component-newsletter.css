@@ -1,13 +1,16 @@
 body.newsletter-show {
   overflow: hidden;
 }
+
 body.newsletter-show .halo-newsletter-popup {
   pointer-events: auto;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
   z-index: 99;
 }
+
 body.newsletter-show .background-overlay-popup {
   z-index: 9;
   opacity: 1;
@@ -17,22 +20,31 @@ body.newsletter-show .background-overlay-popup {
 .halo-newsletter-popup {
   max-width: 940px;
 }
+
 .halo-newsletter-popup .halo-popup-header {
   margin: 0;
 }
+
 .halo-newsletter-popup .halo-popup-wrapper {
   padding: 0;
 }
+
 .halo-newsletter-popup .wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .halo-newsletter-popup .halo-popup-banner {
   width: 470px;
   display: inline-block;
   max-height: 100%;
   overflow: hidden;
 }
+
 .halo-newsletter-popup .halo-popup-content {
   overflow-x: hidden;
   overflow-y: auto;
@@ -42,69 +54,84 @@ body.newsletter-show .background-overlay-popup {
   padding: 70px 30px 40px;
   width: calc(100% - 470px);
 }
+
 .halo-newsletter-popup .halo-popup-content .header-content {
   padding: 0;
   max-width: 270px;
   margin: 0 auto;
 }
+
 .halo-newsletter-popup .halo-popup-content .header-content .newsletter-popup-title {
   font-size: 20px;
   margin: 0 0 10px;
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
   color: #232323;
 }
+
 .halo-newsletter-popup .halo-popup-content .header-content .desc {
   display: block;
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   padding: 2px 0 22px;
   color: #232323;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter {
   width: 100%;
   max-width: 270px;
   margin: 0 auto;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter .newsletter-form .newsletter-form__field-wrapper {
   display: block;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter .newsletter-form .newsletter-form__field-wrapper .field__input {
   background-color: transparent;
   text-align: center;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter .newsletter-form .newsletter-form__field-wrapper .field {
   margin-right: 0;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter .button {
   margin-top: 10px;
   max-width: 100%;
   width: 100%;
 }
+
 .halo-newsletter-popup .halo-popup-content .list-social {
   text-align: center;
   margin-top: 37px;
   margin-bottom: 10px;
 }
+
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__item {
   margin-right: 0;
 }
+
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__link {
   padding: 12px;
 }
+
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__link::before {
   display: none;
 }
+
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__link svg {
   width: 18px;
   height: 18px;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter--checked {
   margin-top: 10px;
   display: inline-block !important;
   width: auto !important;
 }
+
 .halo-newsletter-popup .halo-popup-content .newsletter--checked label {
   text-align: center;
   font-weight: 400;
@@ -121,13 +148,16 @@ body.newsletter-show .background-overlay-popup {
     width: 100%;
   }
 }
+
 @media (max-width: 551px) {
   .halo-newsletter-popup {
     max-width: calc(100% - 30px);
   }
 }
+
 @media (min-width: 1025px) {
   body.newsletter-show {
     padding-right: 10px;
   }
-}/*# sourceMappingURL=component-newsletter.css.map */
+}
+/*# sourceMappingURL=component-newsletter.css.map */

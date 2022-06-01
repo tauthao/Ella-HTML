@@ -8,7 +8,7 @@ class masonry extends HTMLElement {
         this.tabs = document.getElementById('haloPortfolioTabs');
         this.tabContents = document.getElementById('haloPortfolioTabContents');
         
-        this.shuffleInstance = new this.Shuffle(this.element,
+        masonry.shuffleInstance = new this.Shuffle(this.element,
         {
             itemSelector: '.masonry-item',
             sizer: this.sizer
@@ -21,6 +21,10 @@ class masonry extends HTMLElement {
                 });
             }
         }
+    }
+
+    static reShuffleInstance() {
+        masonry.shuffleInstance.filter();
     }
 
     onClickTabButtonHandler(event){
@@ -46,9 +50,9 @@ class masonry extends HTMLElement {
         var items = $('[data-gallery-tab-content] .masonry-item');
 
         if (keyword == 'all'){
-            this.shuffleInstance.filter();
+            masonry.shuffleInstance.filter();
         } else {
-            this.shuffleInstance.filter((element) => {
+            masonry.shuffleInstance.filter((element) => {
                 var filterValue = element.getAttribute('data-gallery-item');
 
                 if(filterValue !== undefined && filterValue !== null){

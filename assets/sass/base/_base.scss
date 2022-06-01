@@ -1475,6 +1475,7 @@ label {
             position: relative;
             overflow-x: hidden;
             overflow-y: auto;
+            max-height: 80vh;
         }
         .sidebarBlock {
             margin-bottom: 38px;
@@ -1944,6 +1945,56 @@ label {
                 }
             }
         }
+        .sidebar-refined-widgets{
+            padding: 20px 15px 10px;
+            width: 100%;
+            .facets__clear-all{
+                vertical-align: middle;
+                margin-right: 18px;
+                font-size: 12px;
+                color: #3c3c3c;
+                letter-spacing: .02em;
+                margin-bottom: 12px;
+                text-transform: capitalize;
+            }
+            .facets__list--refined{
+                display: inline-block;
+                vertical-align: middle;
+                margin-top: 0;
+                margin-bottom: 0;
+                text-align: left;
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 10px 10px 0;
+                    .active-facets__button{
+                        display: block;
+                        font-size: 12px;
+                        font-weight:400;
+                        letter-spacing: .02em;
+                        color: #232323;
+                        padding: 4px 12px;
+                        border-radius: 3px;
+                        background-color: #fafafa;
+                        cursor: pointer;
+                        transition: all ease .3s;
+                        svg{
+                            position: relative;
+                            top: -1px;
+                            margin-left: 3px;
+                        }
+                        &:hover{
+                            background: #707070;
+                            color: #ffffff;
+                            svg{
+                                fill:#ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
         &.page-sidebar-left{
             left: 0;
             transform: translate(-101%);
@@ -1975,6 +2026,7 @@ label {
     }
     body{
         &.open-mobile-sidebar{
+            overflow: hidden;
             .page-sidebar {
                 transform: translate(0);
                 opacity: 1;
@@ -2387,6 +2439,7 @@ label {
         float: left;
         .halo-sidebar-wrapper{
             padding: 0;
+            max-height: initial;
         }
         .halo-sidebar-header{
             display: none;
