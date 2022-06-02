@@ -1148,8 +1148,9 @@
                  if (!self.hasClass('active')) {
                      parents.find('.icon-mode').removeClass('active');
                      self.addClass('active');
- 
+
                      halo.viewModeLayout();
+                     halo.initMasonry();
                  };
              });
         },
@@ -1163,12 +1164,12 @@
                  strClass = 'col-12 col-6 col-md-4 col-lg-3 col5';
  
              switch (col) {
-                 case 1:
+                case 1:
                      products.removeClass('products-grid').addClass('products-list');
                      gridItem.removeClass(strClass).addClass('col-12');
                      break;
-                 default:
-                     switch (col) {
+                default:
+                    switch (col) {
                          case 2:
                              products.removeClass('products-list').addClass('products-grid');
                              gridItem.removeClass(strClass).addClass('col-6');
@@ -1188,11 +1189,8 @@
                              products.removeClass('products-list').addClass('products-grid');
                              gridItem.removeClass(strClass).addClass('col-6 col-md-4 col-lg-3 col5');
                              break;
-                     }
-             };
-
-             const masonry = customElements.get('masonry-items');
-             masonry.reShuffleInstance();
+                    }
+                };
         },
  
         setActiveViewModeMediaQuery: function () {
@@ -1262,7 +1260,19 @@
             $body.on('click', (event) =>{
                 $(".dropdown-menu").removeClass("is-open");
             })
-        }
+        },
+
+        initMasonry: function() {
+            var t = $(".collection-template .product-collection[data-layout]");
+            if (t.length) {
+                var e = t.data("layout"),
+                    i = t.isotope({
+                    layoutMode: e,
+                    itemSelector: "[data-gridItem]"
+                });
+                return i
+            }
+        },
         
     }
 })(jQuery);

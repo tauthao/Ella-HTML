@@ -312,6 +312,7 @@
         padding-bottom: 20px;
     }
 }
+
 .pagination-page-total{
     color: #707070;
     letter-spacing: .02em;
@@ -332,12 +333,14 @@
         }
     }
 }
+
 .infinite-scrolling{
     .button{
         width: 100%;
         max-width: 290px;
     }
 }
+
 .halo-product-block{
     clear: both;
     .category-product-header{
@@ -425,6 +428,51 @@
     }
 }
 
+// Category layout masonry 
+.collection-template-masonry{
+    padding-bottom: 50px;
+    .collection {
+        margin-bottom: 60px;
+    }
+    .product-collection{
+        .grid-item-masonry{
+            margin-bottom: 20px;
+            .product-card{
+                .productView-countDown{
+                    position: absolute;
+                    z-index: 9;
+                    bottom: 26px;
+                    margin: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                    text-align: center;
+                    .num{
+                        color: #ffffff;
+                        border-color: transparent;
+                        background-color: rgba(50,50,50,.9);
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding: 5px 6px 5px;
+                        min-width: 50px;
+                        margin-bottom: 4px;
+                        span{
+                            color: #ffffff;
+                            letter-spacing: .02em;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination-page-total{
+        margin: 4px 0px 20px;
+    }
+    .halo-product-block{
+        margin-top: 35px;
+    }
+}
 // Custom Banner
 .halo-custom-banner{
     clear: both;
@@ -514,7 +562,18 @@
             animation-fill-mode: both;
             border-bottom: 1px solid #dedede;
         }
-    } 
+    }
+    .collection-template-masonry{
+        .product-collection{
+            .grid-item-masonry{
+                .product-card{
+                    .productView-countDown{
+                        bottom: 60px
+                    }
+                }
+            }
+        }
+    }    
 }
 
 @media(max-width:768px){
@@ -547,6 +606,32 @@
             margin-bottom: 15px;
         }
     }
+}
+
+@media (max-width: 551px){
+    .collection-template-masonry{
+        .product-collection{
+            .grid-item-masonry{
+                .product-card{
+                    .productView-countDown{
+                        .num{
+                            color: #232323;
+                            border-color: transparent;
+                            background-color: transparent;
+                            font-size: 16px;
+                            padding: 0;
+                            min-width: 34px;
+                            font-weight: 600;
+                            span{
+                                color: #232323;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }
 
 @media(min-width:551px){
