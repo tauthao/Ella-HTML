@@ -614,15 +614,12 @@
 }
 
 .page-cart .cart-page-product {
+  margin-top: 15px;
   border-top: 1px solid #e6e6e6;
   margin-top: 58px;
 }
 
-.page-cart .cart-page-product .halo-product-block {
-  margin-top: 15px;
-}
-
-.page-cart .cart-page-product .halo-product-block .title-product-cart {
+.page-cart .cart-page-product .title-product-cart {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: .02em;

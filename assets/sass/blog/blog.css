@@ -1,7 +1,3 @@
-masonry-items {
-  display: block;
-}
-
 .blog-template .halo-blog-content .article-title {
   font-size: 18px;
   line-height: 28px;
@@ -93,33 +89,21 @@ masonry-items {
   border-top: none;
 }
 
-.blog-template.blog-template-masory .masonry-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.blog-template.blog-template-masory .masonry-row .masonry-item {
-  width: 100%;
-  padding: 0px 10px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.blog-template.blog-template-masory .masonry-row .masonry-item.masonry-item {
+.blog-template.blog-template-masory .list-article .article-item.article-item {
   padding-top: 0;
   border: none;
   padding-bottom: 10px;
 }
 
-.blog-template.blog-template-masory .masonry-row .article-img {
+.blog-template.blog-template-masory .list-article .article-img {
   margin-bottom: 22px;
 }
 
-.blog-template.blog-template-masory .masonry-row .blog-info {
+.blog-template.blog-template-masory .list-article .blog-info {
   margin-bottom: 19px;
 }
 
-.blog-template.blog-template-masory .masonry-row .desc {
+.blog-template.blog-template-masory .list-article .desc {
   margin-bottom: 30px;
 }
 
@@ -165,14 +149,6 @@ masonry-items {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-  .blog-template.blog-template-masory .masonry-row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .blog-template.blog-template-masory .masonry-row .masonry-item {
-    width: 50%;
-    padding: 0px 15px;
   }
 }
 

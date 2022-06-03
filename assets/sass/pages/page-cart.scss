@@ -485,19 +485,17 @@
 
     }   //End cart countdown
     .cart-page-product {
-         border-top: 1px solid #e6e6e6;   
-         margin-top: 58px;
-         .halo-product-block {
-            margin-top: 15px;
-            .title-product-cart {
-                font-size: 18px;
-                font-weight: 600;
-                letter-spacing:.02em;
-                color: #232323;
-                margin: 34px 0;
-            }
+        margin-top: 15px;
+        border-top: 1px solid #e6e6e6;   
+        margin-top: 58px;
+        .title-product-cart {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing:.02em;
+            color: #232323;
+            margin: 34px 0;
         }
-    }   //End cart page product
+    }//End cart page product
 }
 
 @media (max-width: 1024px){

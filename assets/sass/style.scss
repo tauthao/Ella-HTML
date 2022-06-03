@@ -1,36 +1,26 @@
 @charset "UTF-8";
-
-/* === 1.GENERAL STYLES === */
-
-
 /* ===  Main Css === */
-
 @import 'config/fonts';
 @import 'config/variables';
 
 /* ===  General Styles === */
-
 @import 'base/base';
 
 /* ===  Header Styles === */
-
 @import 'base/header/header';
 @import 'base/header/header-mobile';
 
 /* ===  Footer Styles === */
-
 @import 'base/footer/footer';
+@import 'base/footer/toolbar-bottom-mobile';
 
 /* ===  Product Card === */
-
 @import 'base/card/component-card';
 
 /* ===  Product Styles === */
-
 @import 'base/product/component-product';
 
 /* ===  Popup === */
-
 @import 'popup/component-recently-viewed';
 @import 'popup/component-notify-me';
 @import 'popup/component-quick-card';
@@ -40,10 +30,11 @@
 @import 'popup/component-sizechart';
 @import 'popup/componet-ask-an-expert';
 @import 'popup/component-compare-color';
+@import 'popup/component-notification';
 
 /* ===  Sidebar === */
-
 @import 'sidebar/component-auth';
 @import 'sidebar/component-quick-cart';
 @import 'sidebar/component-search-sidebar';
 @import 'sidebar/componet-menu-sidebar';
+@import 'sidebar/component-before-you-leave';

@@ -306,24 +306,6 @@
 }
 
 /* START: List Collection Layout Mansonry */
-.list-categories-masonry .masonry-row {
-  margin-left: -5px;
-  margin-right: -5px;
-  font-size: 0;
-  letter-spacing: 0;
-}
-
-.list-categories-masonry .masonry-item {
-  padding: 0px 5px;
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-}
-
-.list-categories-masonry .masonry-item.sizer-element {
-  padding: 0 !important;
-}
-
 @media (max-width: 767px) {
   .list-categories-2 .collections-wrapper {
     height: auto;
@@ -365,18 +347,6 @@
         -ms-flex-direction: row-reverse !important;
             flex-direction: row-reverse !important;
   }
-  .list-categories-masonry .masonry-row {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .list-categories-masonry .masonry-row.column-3 .masonry-item {
-    width: 50%;
-    padding: 0px 10px;
-  }
-  .list-categories-masonry .masonry-row.column-2 .masonry-item {
-    width: 50%;
-    padding: 0px 15px;
-  }
 }
 
 @media (min-width: 1025px) {
@@ -410,18 +380,6 @@
   }
   .page-collections-masonry .collection-description {
     margin: 52px auto 72px;
-  }
-  .list-categories-masonry .masonry-row {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .list-categories-masonry .masonry-row.column-3 .masonry-item {
-    width: 33.33333333%;
-    padding: 0px 15px;
-  }
-  .list-categories-masonry .masonry-row.column-2 .masonry-item {
-    width: 50%;
-    padding: 15px;
   }
 }
 /*# sourceMappingURL=component-collection-list.css.map */

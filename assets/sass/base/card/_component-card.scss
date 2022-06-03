@@ -53,7 +53,7 @@
             overflow: hidden;
             white-space: normal;
             display: -webkit-box;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 2;
             text-overflow: ellipsis;
             -webkit-box-orient: vertical;
         }
@@ -103,6 +103,9 @@
                 background-position: center;
             }
             &:hover {
+                border-color: #232323;
+            }
+            &.is-active{
                 border-color: #232323;
             }
         }
