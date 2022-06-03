@@ -1,0 +1,35 @@
+.product-layout-default{
+    .breadcrumb{
+        padding: 20px 0px 30px;
+    }
+    .halo-productView-right{
+        .productView-title{
+            margin: 0;
+        }
+        .productView-rating{
+            .spr-badge-starrating{
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+
+}
+@media(min-width:1025px){
+    .product-layout-default{
+        .productView-information{
+            .halo-productView-right{
+                width:500px;
+                padding-left: 60px;
+            }
+            .halo-productView-left{
+                width:calc(100% - 500px);
+                .productView-image{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}

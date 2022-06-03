@@ -63,6 +63,7 @@
             this.initCollapseSidebarBlock();
             this.initBeforeYouLeave();
             this.initNotification();
+            this.initProductNextPrev();
 
             if($body.hasClass('template-collection')){
                 this.initAddEventViewModeLayout();
@@ -1371,7 +1372,43 @@
                     $body.removeClass('notification-show');
                 }
             });    
-        }, 
+        },
+
+        initProductNextPrev: function(){
+            var wrapper = $('.product-detail').find('.productView-nextProducts');
+            console.log("wrapper",wrapper)
+            if (wrapper.length > 0 && $win.width() > 1024) {
+                
+                const prodWrap = wrapper.find('.next-prev-modal'),
+                    prodIcons = wrapper.find('.next-prev-icons'),
+                    nextWrap = $('#next-product-modal'),
+                    prevWrap = $('#prev-product-modal');
+
+                prodIcons.on('mouseover', () => {
+                    prodWrap.addClass('is-show');
+                })
+                .on('mouseleave', () => {
+                    prodWrap.removeClass('is-show');
+                });
+
+                $('.next-icon', prodIcons).on('mouseover', () => {
+                    prevWrap.removeClass('is-active');
+                    nextWrap.addClass('is-active');
+                });
+
+                $('.prev-icon', prodIcons).on('mouseover', () => {
+                    nextWrap.removeClass('is-active');
+                    prevWrap.addClass('is-active');
+                });
+
+                prodWrap.on('mouseover', () => {
+                    prodWrap.addClass('is-show');
+                })
+                .on('mouseleave', () => {
+                    prodWrap.removeClass('is-show');
+                });
+            }
+        },
         
     }
 })(jQuery);

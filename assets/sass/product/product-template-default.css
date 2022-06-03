@@ -1,0 +1,23 @@
+.product-layout-default .breadcrumb {
+  padding: 20px 0px 30px;
+}
+.product-layout-default .halo-productView-right .productView-title {
+  margin: 0;
+}
+.product-layout-default .halo-productView-right .productView-rating .spr-badge-starrating {
+  position: relative;
+  top: 1px;
+}
+
+@media (min-width: 1025px) {
+  .product-layout-default .productView-information .halo-productView-right {
+    width: 500px;
+    padding-left: 60px;
+  }
+  .product-layout-default .productView-information .halo-productView-left {
+    width: calc(100% - 500px);
+  }
+  .product-layout-default .productView-information .halo-productView-left .productView-image img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=product-template-default.css.map */
