@@ -64,6 +64,7 @@
             this.initBeforeYouLeave();
             this.initNotification();
             this.initProductNextPrev();
+            this.initProductBUndle();
 
             if($body.hasClass('template-collection')){
                 this.initAddEventViewModeLayout();
@@ -1407,6 +1408,37 @@
                 .on('mouseleave', () => {
                     prodWrap.removeClass('is-show');
                 });
+            }
+        },
+        initProductBUndle: function() {
+            var btnChooseOption = $('.halo-product-bundle .bundle-product-toogle'),
+                btnclose = $(".halo-popup-close");
+
+            if (btnChooseOption.length) {
+                btnChooseOption.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    var self = $(event.currentTarget),
+                    itemProduct = self.parents('.bundlePdItem');
+
+                    $('.halo-product-bundle .bundlePdItem').removeClass('is-open');
+                    itemProduct.addClass('is-open');
+
+                });
+
+                btnclose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $('.halo-product-bundle .bundlePdItem').removeClass('is-open');
+                });
+
+                $body.on('click', (event) => {
+                    if(($(event.target).closest('.bundle-product-options').length === 0)){
+                        event.preventDefault();
+                        $('.halo-product-bundle .bundlePdItem').removeClass('is-open');
+                    }
+                });
+
             }
         },
         

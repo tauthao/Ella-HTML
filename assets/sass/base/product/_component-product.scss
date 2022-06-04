@@ -542,7 +542,85 @@
 }/* END: Product securityImage */
 .productView-nextProducts{
     display: none;
-}
+}/* END: Product nextProducts */
+
+.frequently-bought-together-block{
+    padding-bottom: 70px;
+    padding-top: 52px;
+    background: #f8f8f8;
+    .halo-block-header{
+        margin: 0 0 30px;
+        .title{
+            text-align: left;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: .02em;
+            color: #232323;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .bundlePdItem{
+        padding: 15px;
+        background-color: #fff;
+        position: relative;
+        .bundle-product-content{
+            padding: 20px 0 0;
+            text-align: left;
+            .bundle-product-checkbox{
+                position: relative;
+                width: 100%;
+                padding-bottom: 7px;
+            }
+            .card-price{
+                justify-content: flex-start;
+                padding-bottom: 16px;
+            }
+            .button{
+                width: 100%;
+                max-width:100%;
+            }
+        }
+        .bundle-product-options{
+            max-width: 400px;
+            position: absolute;
+            left:0;
+            transform: translate(0,-50%);
+            box-shadow: 0 3px 7px #0003;
+            .halo-popup-header{
+                background-color: #f5f5f5;
+                padding: 0px 20px;
+                margin: 0;
+                .halo-popup-title{
+                    padding-top: 12px;
+                    padding-bottom: 10px;
+                    letter-spacing:.02em;
+                    text-align: left;
+                    font-size: 14px;
+                }
+                .halo-popup-close{
+                    background: transparent;
+                }
+            }
+            .halo-popup-wrapper{
+                padding: 20px;
+            }
+        }
+        &.is-open {
+            .bundle-product-options {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                z-index: 101;
+                left: 15px;
+            }
+           
+        }
+    }
+}/* END: Product Bundle */
+
 @media(max-width:551px) {
     .productView-soldProduct {
         margin-left: 0;

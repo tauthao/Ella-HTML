@@ -566,6 +566,7 @@ button.disabled,
   font-size: 14px;
   letter-spacing: 0.05em;
   cursor: pointer;
+  text-align: center;
 }
 .button.button-1 {
   background-color: #232323;
@@ -4414,6 +4415,82 @@ body.open-mobile-sidebar .background-overlay {
   display: none;
 }
 
+/* END: Product nextProducts */
+.frequently-bought-together-block {
+  padding-bottom: 70px;
+  padding-top: 52px;
+  background: #f8f8f8;
+}
+.frequently-bought-together-block .halo-block-header {
+  margin: 0 0 30px;
+}
+.frequently-bought-together-block .halo-block-header .title {
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #232323;
+}
+.frequently-bought-together-block .halo-block-header .title:before {
+  display: none;
+}
+.frequently-bought-together-block .bundlePdItem {
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-content {
+  padding: 20px 0 0;
+  text-align: left;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-content .bundle-product-checkbox {
+  position: relative;
+  width: 100%;
+  padding-bottom: 7px;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-content .card-price {
+  justify-content: flex-start;
+  padding-bottom: 16px;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-content .button {
+  width: 100%;
+  max-width: 100%;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-options {
+  max-width: 400px;
+  position: absolute;
+  left: 0;
+  transform: translate(0, -50%);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-options .halo-popup-header {
+  background-color: #f5f5f5;
+  padding: 0px 20px;
+  margin: 0;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-options .halo-popup-header .halo-popup-title {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-size: 14px;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-options .halo-popup-header .halo-popup-close {
+  background: transparent;
+}
+.frequently-bought-together-block .bundlePdItem .bundle-product-options .halo-popup-wrapper {
+  padding: 20px;
+}
+.frequently-bought-together-block .bundlePdItem.is-open .bundle-product-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 101;
+  left: 15px;
+}
+
+/* END: Product Bundle */
 @media (max-width: 551px) {
   .productView-soldProduct {
     margin-left: 0;
