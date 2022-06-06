@@ -181,7 +181,7 @@
                                         dots: itemDots_mb,
                                         arrows: itemRow_mb,
                                         slidesToShow: 3,
-                                        slidesToScroll: 3,
+                                        slidesToScroll: 1,
                                     }
                                 }
                             ]
@@ -198,8 +198,10 @@
                 for (i = 0; i < sectionColumnTitle.length; i++) {
                     (function(i) {
                         sectionColumnTitle[i].addEventListener('click', (event) => {
-                            var $this = event.target,
+                            var $this = event.currentTarget,
                                 $content = $this.nextElementSibling;
+
+                                console.log("$content",$content)
 
                             $this.classList.toggle('is-clicked');
                             $content.classList.toggle('is-active');
@@ -440,7 +442,7 @@
         initGlobalCheckbox: function() {
             $doc.on('change', '.global-checkbox--input', (event) => {
                 var targetId = event.target.getAttribute('data-target');
-
+                
                 if (event.target.checked) {
                     $(targetId).attr('disabled', false);
                 } else {
@@ -632,11 +634,11 @@
 
         initClickedActiveVideoBanner: function() {
             if ($('[data-video-banner]').length > 0) {
-                var videoBanner = $('[data-video-banner]');
+                var videoIcon = $('[data-open-video]');
 
-                videoBanner.each((index, element) => {
+                videoIcon.each((index, element) => {
                     var self = $(element),
-                        banner = self.parents('.store-right'),
+                        banner = self.parents('.halo-block-video'),
                         icon = banner.find('[data-close-video]'),
                         modal = banner.find('.modal-content-video');
 
@@ -1377,7 +1379,6 @@
 
         initProductNextPrev: function(){
             var wrapper = $('.product-detail').find('.productView-nextProducts');
-            console.log("wrapper",wrapper)
             if (wrapper.length > 0 && $win.width() > 1024) {
                 
                 const prodWrap = wrapper.find('.next-prev-modal'),
@@ -1433,8 +1434,7 @@
                 });
 
                 $body.on('click', (event) => {
-                    if(($(event.target).closest('.bundle-product-options').length === 0)){
-                        event.preventDefault();
+                    if(($(event.target).closest('.bundle-product-options').length === 0) && ($(event.target).closest('.bundlePdItem-wrapper').length === 0)){
                         $('.halo-product-bundle .bundlePdItem').removeClass('is-open');
                     }
                 });
