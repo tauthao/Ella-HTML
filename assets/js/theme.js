@@ -41,6 +41,7 @@
             this.initGlobalCheckbox();
             this.initNotifyInStock();
             this.initQuickShop();
+            this.initQuickAddToCard();
             this.initEditQuickCart();
             // this.initNewsLetterPopup();
             this.initSliderAboutUs();
@@ -66,6 +67,8 @@
             this.initNotification();
             this.initProductNextPrev();
             this.initProductBUndle();
+            this.initProductVariantChange();
+            this.initStickyAddToCart();
 
             if($body.hasClass('template-collection')){
                 this.initAddEventViewModeLayout();
@@ -252,8 +255,6 @@
                         sectionColumnTitle[i].addEventListener('click', (event) => {
                             var $this = event.currentTarget,
                                 $content = $this.nextElementSibling;
-
-                                console.log("$content",$content)
 
                             $this.classList.toggle('is-clicked');
                             $content.classList.toggle('is-active');
@@ -456,6 +457,7 @@
                     event.stopPropagation();
 
                     $body.addClass('cart-sidebar-show');
+                    $body.removeClass('quickshop-popup-show');
                 });
 
                 btnClose.on('click', (event) => {
@@ -534,7 +536,7 @@
 
             if (btnQuickShop.length) {
                 btnQuickShop.on('click', (event) => {
-                    event.preventDefault();
+                    // event.preventDefault();
                     event.stopPropagation();
 
                     $body.addClass('quickshop-popup-show');
@@ -549,6 +551,16 @@
 
                 });
             }
+        },
+
+        initQuickAddToCard: function() {
+            var btnAddTocart = $('[data-btn-quickShop-addtocart]'),
+                sidebarCart = $('[data-open-cart-sidebar]')
+
+            btnAddTocart.on('click', (event) => {
+                $body.removeClass('quickshop-popup-show');
+                sidebarCart.trigger('click');
+            });
         },
 
         initEditQuickCart: function() {
@@ -977,6 +989,7 @@
             var sliderFor = $(".halo-productView").find('.productView-for'),
                 sliderNav = $(".halo-productView").find('.productView-nav'),
                 arrow = sliderNav.data('arrow'),
+                vertical = sliderFor.data('vertical'),
                 iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
 
             if (!sliderFor.hasClass('slick-initialized') && !sliderNav.hasClass('slick-initialized')) {
@@ -989,7 +1002,7 @@
                     draggable: false,
                     adaptiveHeight: false,
                     focusOnSelect: true,
-                    vertical: false,
+                    vertical: vertical,
                     verticalSwiping: false,
                     infinite: false,
                     nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
@@ -999,6 +1012,12 @@
                         settings: {
                             slidesToShow: 4,
                             slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            vertical: false
                         }
                     }]
                 });
@@ -1463,6 +1482,7 @@
                 });
             }
         },
+
         initProductBUndle: function() {
             var btnChooseOption = $('.halo-product-bundle .bundle-product-toogle'),
                 btnclose = $(".halo-popup-close");
@@ -1493,6 +1513,63 @@
 
             }
         },
+
+        initProductVariantChange: function() {
+            var wrapper =  $('.productView-variants'),
+                variantInputItem = wrapper.find('.product-form__radio'),
+                variantItemAvailable  = wrapper.find('.product-form__label.available '),
+                variantSoldoutItem = wrapper.find('.product-form__label.soldout'),
+                productViewNotifyMe = $('.previewCartAction .productView-notifyMe');
+            
+            variantInputItem.on('change', (event) => {
+                var self = $(event.currentTarget),
+                    value = self.val();
+
+                self.siblings('.form__label').find('[data-header-option]').text(value);
+            })
+
+            variantItemAvailable.on('click', (event) => {
+                event.preventDefault;
+                event.stopPropagation;
+
+                var btnAction = $(event.currentTarget).parents('.productView-variants').siblings('.previewCartAction'),
+                    btnValue = btnAction.find('.button-view-cart');
+
+                btnValue.text('Add To Cart');
+                btnValue.removeAttr('disabled',);
+                productViewNotifyMe.slideUp('slow');
+            });
+
+            variantSoldoutItem.on('click', (event) => {
+                event.preventDefault;
+                event.stopPropagation;
+                var btnAction = $(event.currentTarget).parents('.productView-variants').siblings('.previewCartAction'),
+                    btnValue = btnAction.find('.button-view-cart');
+
+                productViewNotifyMe.slideDown('slow');
+                btnValue.attr('disabled', 'true');
+                btnValue.text('Sold Out');
+                
+
+            });
+        },
+
+        initStickyAddToCart: function () {
+            var offSetTop = $('.productView-information  .productView-action').offset().top;
+
+            $(window).scroll(function () {
+                var scrollTop = $(this).scrollTop();
+                
+
+                if (scrollTop > offSetTop) {
+                    $('.productView-stickyCart').addClass('show-sticky');
+                }
+                else {
+                    $('.productView-stickyCart').removeClass('show-sticky');
+                }
+            });
+
+        }
         
     }
 })(jQuery);

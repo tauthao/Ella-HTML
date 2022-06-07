@@ -16,7 +16,7 @@
     }
     .halo-product-block{
         clear: both;
-        .category-product-header{
+        .product-header{
             border-top: 1px solid #e6e6e6;
             padding: 30px 0px 12px;
             .title{
@@ -34,6 +34,7 @@
             .halo-productView-right{
                 width:500px;
                 padding-left: 60px;
+                padding-top: 15px;
             }
             .halo-productView-left{
                 width:calc(100% - 500px);
