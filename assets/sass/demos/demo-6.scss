@@ -1,14 +1,20 @@
+.halo-block-slideshow{
+    margin-bottom:20px;
+}// End Block Slide Show
 .halo-block-four-banner{
     margin-bottom: 30px;
     .halo-row-item{
         margin-bottom:20px;
+        &.halo-row-2item{
+            padding:0;
+        }
     }
 }// End Block Four Banner
 
 .halo-block-custom{
     background:#f5f5f5;
-    padding:42px 0px;
-    margin: 40px 0;
+    padding:30px 0px;
+    margin: 25px 0;
     .halo-row-item{
         .wrapper-item{
             box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
@@ -17,7 +23,7 @@
             background:#ffffff;
             padding: 23px 0px 25px;
             .title{
-                font-size: 24px;
+                font-size: 20px;
                 letter-spacing:0;
                 font-weight: 900;
                 color:#00163a;
@@ -32,8 +38,97 @@
             }
         }
     }
+    .slick-dots{
+        margin-top: 35px;
+    }
     
 }// End Block Custom
+
+.halo-block-instagram{
+    .halo-block-header{
+        margin-bottom: 30px;
+        padding-top:3px;
+    }
+    .row{
+        margin-left: -5px;
+        margin-right: -5px;
+        .halo-row-item{
+            padding-left: 5px;
+            padding-right:5px;
+            width: 20%;
+        }
+        .slick-dots{
+            margin-top: 15px;
+            position: absolute;
+        }
+    }
+    
+    .halo-block-navigation{
+        width: 100%;
+        padding-top: 48px;
+        padding-bottom: 55px;
+        display: flex;
+        place-items: center;
+        .nav{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            .nav-item{
+                position: relative;
+                padding: 10px 25px 11px;
+                background:#f5f5f5;
+                margin: 0px 5px;
+                border-radius: 30px;
+                a{
+                    color: #202020;
+                    font-weight: 500;
+                    transition: color .35s ease-in-out;
+                }
+            }
+        }
+    }
+}// End Block instagram
+
+.halo-block-icon-with-text{
+    background: #f5f5f5;
+    padding: 32px 0px 33px;
+    .wrapper-item{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        .icon{
+            width: 25px;
+            height: 25px;
+            margin-right: 9px;
+            svg{
+                fill: #00163a;
+                width: 100%;
+                height: 100%;
+            }
+            &.shipping-fast{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .title{
+            font-weight: 900;
+            line-height:24px;
+            font-size: 14px;
+            color: #00163a;
+            font-style: italic;
+            margin: 0;
+        }
+    }
+}// End Block Icon Width Text
+
 
 @media(min-width:768px){
     .halo-block-four-banner{
@@ -45,9 +140,24 @@
             }
         }
     }// End Bloc Four Banner
+
+    .halo-block-custom{
+        padding:42px 0px;
+        margin: 40px 0;
+        .halo-row-item{
+            .content-box{
+                .title{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }
 
 @media(min-width:1025px){
+    .halo-block-slideshow{
+        margin-bottom:30px;
+    }// End Block Slide Show
     .halo-block-four-banner{
         .halo-row-item{
             .halo-row-2item{

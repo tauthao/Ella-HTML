@@ -3,30 +3,24 @@
   font-family: "Inter", "Arial", "sans-serif";
   line-height: 24px;
 }
-
 .skin-6 .desc {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0;
 }
-
 .skin-6 .slick-dots {
-  margin-top: 35px;
+  margin-top: 15px;
 }
-
 .skin-6 .slick-dots button {
   border-color: #abb2bd;
   background: #abb2bd;
 }
-
 .skin-6 .slick-dots li.slick-active button {
   border-color: #142849;
 }
-
 .skin-6 .halo-block-header {
   margin-bottom: 33px;
 }
-
 .skin-6 .halo-block-header .title {
   font-size: 24px;
   letter-spacing: 0;
@@ -34,16 +28,12 @@
   color: #00163a;
   font-style: italic;
 }
-
 .skin-6 .halo-block-header .title:before {
   display: none;
 }
-
 .skin-6 .halo-block-header .title span {
   background: transparent;
 }
-
 .skin-6 .halo-block-header .desc {
   color: #00163a;
-}
-/*# sourceMappingURL=skin-6.css.map */
+}/*# sourceMappingURL=skin-6.css.map */
