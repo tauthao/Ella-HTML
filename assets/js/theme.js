@@ -70,6 +70,10 @@
             this.initProductVariantChange();
             this.initStickyAddToCart();
 
+            if($body.hasClass('template-product')){
+               this.initShowCustomReview();
+            }
+
             if($body.hasClass('template-collection')){
                 this.initAddEventViewModeLayout();
                 this.initToolbar();
@@ -1569,6 +1573,26 @@
                 }
             });
 
+        },
+
+        initShowCustomReview: function () {
+            var btnWriteReview = $('#tab-review  [data-write-review]'),
+                btnSubmitreview = $('#tab-review  .spr-form-actions .button')
+                formWriteReview = $('#tab-review .spr-form');
+
+            formWriteReview.slideUp('slow');
+            btnWriteReview.on('click', (event) => {
+                event.stopPropagation();
+                event.preventDefault();
+
+                formWriteReview.slideDown('slow');
+            });
+            btnSubmitreview.on('click', (event) => {
+                event.stopPropagation();
+                event.preventDefault();
+                
+                formWriteReview.slideUp('slow');
+            });
         }
         
     }

@@ -927,22 +927,27 @@ svg {
     align-items: center;
 }
 
-.row .halo-row-item {
-    position: relative;
-}
+
 
 .row {
     margin-left: -5px;
     margin-right: -5px;
     padding: 0px;
+    & > * {
+        padding: 0;
+        margin: 0;
+    }
     .halo-item {
         padding: 0 5px;
     }
+    .halo-row-item {
+        position: relative;
+        padding: 0px 5px;
+    }
+    
+
 }
 
-.row .halo-row-item {
-    padding: 0px 5px;
-}
 
 .product-carousel {
     .product-item {
@@ -1108,7 +1113,7 @@ svg {
     display: block;
     width: 100%;
     padding: 0;
-    margin: 0 0 8px;
+    margin: 0 0 9px;
 }
 
 label {
@@ -2485,8 +2490,11 @@ label {
         }
     }
     .product-carousel {
-        .row .slick-list {
-            padding: 0;
+        .row {
+            flex-wrap: nowrap;
+            .slick-list {
+                padding: 0;
+            }
         }
         .product-item {
             padding: 0px 10px;

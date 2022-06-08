@@ -210,8 +210,6 @@
         width: 100%;
         position: relative;
         margin-bottom: 30px;
-        position: sticky;
-        top: 30px;
         .productView-images-wrapper{
             position: relative;
         }
@@ -992,6 +990,7 @@
     }
     .tab-content{
         padding: 18px 0px 15px;
+
         .toggle-title{
             font-size: 16px;
             font-weight: 600;
@@ -1031,6 +1030,8 @@
             }
         }
         .toggle-content{
+            overflow-y: auto!important;
+            overflow-x: hidden!important;
             h4{
                 margin-top: 25px;
                 font-size: 14px;
@@ -1086,8 +1087,13 @@
         }
         .halo-custom-banner{
             margin: 25px 0px 0px;
+            & > .row{
+                & > .halo-row-item{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
             .halo-row-item{
-                padding: 15px;
                 .item{
                     position: relative;
                 }
@@ -1179,7 +1185,168 @@
             }
         }
     }
+    &.layout-vertical{
+        .tab-content{
+            .toggle-title{
+                display: block;
+            }
+            &  > .tab-pane{
+                display: block;
+                opacity: 1;
+            }
+            .toggle-content{
+                margin-bottom: 10px;
+                -webkit-transition: max-height .5s ease-out;
+                transition: max-height .5s ease-out;
+                max-height: 0;
+                position: relative;
+                overflow-y: hidden!important;
+                overflow-x: hidden !important;
+            }
+            
+        } 
+    }
 }/* END: Product View Tab */
+
+#tab-review{
+    .productView-review{
+        .spr-header{
+            margin-top: 10px;
+        }
+        .spr-summary{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .spr-starrating{
+                display: block;
+                text-align: center;
+                margin-right: 0;
+                margin-bottom: 0px;
+            }
+            .spr-summary-caption{
+                margin-bottom: 17px;
+                letter-spacing: .02em;
+
+            }
+            .button{
+                width: 100%;
+                max-width: 218px;
+                font-size: 14px;
+            }
+        }
+    }
+    .spr-form{
+        width: 100%;
+        max-width: 570px;
+        .spr-form-title{
+            display: block;
+            text-align: left;
+            text-transform: uppercase;
+            margin: 42px 0 26px;
+            font-size: 14px;
+            letter-spacing: .05em;
+        }
+        .spr-form-contact-name, 
+        .spr-form-contact-email, 
+        .spr-form-contact-location, 
+        .spr-form-review-rating, 
+        .spr-form-review-title, 
+        .spr-form-review-body{
+            margin: 0 0 20px 0;
+        }
+        .spr-form-review-rating{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .spr-form-label{
+                width: 60px;
+                margin: 0;
+            }
+            .spr-badge-starrating{
+                    font-size: 38px;
+                    .spr-icon{
+                    &::before{
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+        .spr-form-input-textarea{
+            padding: 20px 17px;
+        }
+        .spr-form-actions{
+            margin-top: 5px;
+            .button{
+                width:100%;
+                max-width: 220px;
+                padding-bottom: 14px;
+                padding-top: 14px;
+            }
+        }
+    }
+    .spr-reviews{
+        margin: 35px 0 0 0;
+        .spr-review{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            margin-top: 15px;
+            padding: 25px 30px 35px;
+            border: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            position: relative;
+            .spr-review-header-title{
+                color: #232323;
+                font-size: 14px;
+                text-transform: capitalize;
+                margin: 8px 0 9px;
+                letter-spacing: .02em;
+                font-weight: 600;
+            }
+            .spr-review-header-byline{
+                display: block;
+                color: #999;
+                margin: 0 0 12px;
+                opacity: 1;
+                strong{
+                    font-weight: 400;
+                    letter-spacing: .02em;
+                }
+            }
+            .spr-review-content-body{
+                color: #232323;
+            }
+            .spr-review-footer{
+                position: absolute;
+                top: 53px;
+                right: 35px;
+                .spr-review-reportreview{
+                    display: inline-block;
+                    vertical-align: top;
+                    float: none;
+                    font-style: normal;
+                    text-decoration: underline;
+                    text-underline-offset: 0.3rem;
+                    font-size: var(--font-body-size);
+                    color: #e95144;
+                }
+            }
+        }
+    }
+}/* END: Product Tab Review */
+
+.image-zoom {
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
 
 @media(max-width: 992px){
     .productView-soldProduct{
@@ -1262,6 +1429,23 @@
             } 
         } 
     } 
+    .productView-tab{
+        .tab-content{
+            #tab-review {
+                .spr-reviews{
+                    .spr-review{
+                        padding: 25px 20px 35px;
+                        .spr-review-footer{
+                            position: relative;
+                            top: 0;
+                            right: 0;
+                            margin-top: 15px;
+                        }
+                    }
+                } 
+            }
+        } 
+    }
 }
 @media(min-width:768px) {
     .productView-information {
@@ -1338,6 +1522,12 @@
     } 
 }
 @media(min-width:1025px){
+    .productView-information {
+        .halo-productView-left{
+            position: sticky;
+            top: 30px;
+        }
+    }
     .productView-securityImage{
         ul{
             overflow: visible;
@@ -1506,12 +1696,3 @@
     }
 }
 /* END: Product Information */
-.image-zoom {
-    width: 100%;
-    height: 100%;
-    cursor: crosshair;
-    img {
-        max-width: 100%;
-        object-fit: cover;
-    }
-}
