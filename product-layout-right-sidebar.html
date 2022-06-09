@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./lib/fancybox/fancybox.css">
   <!-- Main CSS File -->
   <link rel="stylesheet" href="assets/sass/style.css">
-  <link rel="stylesheet" href="assets/sass/product/product-template-default.css">
+  <link rel="stylesheet" href="assets/sass/product/product-template-left-sidebar.css">
 </head>
 
 <body class="template-product">
@@ -30,9 +30,9 @@
     </header>
     <!-- End header -->
     <main class="main">
-        <div class="product-detail product-layout-default">
-            <div class="container container-1170">
-                <div class="page-header">
+        <div class="product-detail product-layout-left-sidebar">
+            <div class="page-header">
+                <div class="container container-1170">
                     <nav class="breadcrumb text-left ">
                         <a class="link-underline" href="#">
                             <span class="text">Home</span>
@@ -124,368 +124,490 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="container container-1170">
                 <div class="productView halo-productView ">
-                    <div class="page-content productView-information" id="ProductContent">
-                        <div class="halo-productView-left productView-images">
-                            <div class="productView-images-wrapper">
-                                <div class="card__badge badge-left">
-                                    <span class="badge sale-badge" aria-hidden="true">Sale</span>
-                                    <span class="badge custom-badge" aria-hidden="true">Must Have</span>
+                    <div class="page-sidebar page-sidebar-right page-sidebar--vertical">
+                        <div class="halo-sidebar-header text-left">
+                            <span class="title">Sidebar</span>
+                            <a href="javascript:void(0)" class="halo-page-sidebar-close" data-close-sidebar="" role="button">
+                                <span class="visually-hidden">Close</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false" role="presentation">
+                                    <path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="halo-sidebar-wrapper custom-scrollbar">
+                            <div class="sidebarBlock categories">
+                                <div class="sidebarBlock-headingWrapper">
+                                    <h3 class="sidebarBlock-heading is-clicked">
+                                        <span>Categories</span>
+                                    </h3>
                                 </div>
-                                <div class="productView-nav" data-arrow="false">
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/product-page/main-product.png" data-fancybox="gallery" data-src="./assets/images/product-page/main-product.png">
-                                            <img src="./assets/images/product-page/main-product.png" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-13.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-13.jpg">
-                                            <img src="./assets/images/card product/img-13.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-15.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-15.jpg">
-                                            <img src="./assets/images/card product/img-15.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-16.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-16.jpg">
-                                            <img src="./assets/images/card product/img-16.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-17.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-17.jpg">
-                                            <img src="./assets/images/card product/img-17.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-18.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-18.jpg">
-                                            <img src="./assets/images/card product/img-18.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-19.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-19.jpg">
-                                            <img src="./assets/images/card product/img-19.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
-                                    <div class="productView-image">
-                                        <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-20.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-20.jpg">
-                                            <img src="./assets/images/card product/img-20.jpg" alt="Product Image">
-                                        </div>
-                                    </div>
+                                <div class="sidebarBlock-content"  style="display: block;">
+                                    <ul class="nav">
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Cosmopolis</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Suitó</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Milancélos</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Blazéro</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Glamos</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Metropolis</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Valkyrio</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Scarvéro</span></a>
+                                        </li>        
+                                        <li class="sidebar-link-lv1 link-underline">
+                                            <a href="#"><span class="text">Congué</span></a>
+                                        </li>  
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="productView-thumbnail-wrapper">
-                                <div class="productView-for" data-vertical="false">
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-14.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-13.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-15.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-16.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-17.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-18.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-19.jpg" alt="Product Image">
-                                        </a>
-                                    </div>
-                                    <div class="productView-thumbnail">
-                                        <a class="productView-thumbnail-link" href="javascript:void(0)">
-                                            <img src="./assets/images/card product/img-20.jpg" alt="Product Image">
-                                        </a>
+                            <div class="sidebarBlock further-info">
+                                <div class="sidebarBlock-headingWrapper">
+                                    <h3 class="sidebarBlock-heading is-clicked">
+                                        <span>Further Info.</span>
+                                    </h3>
+                                </div>
+                                <div class="sidebarBlock-content"  style="display: block;">
+                                    <div class="policies-block">
+                                        <div class="halo-item">
+                                            <div class="img-box">
+                                                <img src="./assets/images/product-page/box.png" alt="Ella - HTML Template">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="title uppercase">
+                                                    Free Shipping
+                                                </h3>
+                                                <p class="desc">
+                                                    on orders over $99
+                                                </p>
+                                                <a href="#" class="link text-underline">
+                                                    <span class="text">Learn More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="halo-item">
+                                            <div class="img-box">
+                                                <img src="./assets/images/product-page/gift.png" alt="Ella - HTML Template">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="title uppercase">
+                                                    Student Discount
+                                                </h3>
+                                                <p class="desc">
+                                                    Student Discount
+                                                </p>
+                                                <a href="#" class="link text-underline">
+                                                    <span class="text">Learn More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="halo-item">
+                                            <div class="img-box">
+                                                <img src="./assets/images/product-page/return.png" alt="Ella - HTML Template">
+                                            </div>
+                                            <div class="content-box">
+                                                <h3 class="title uppercase">
+                                                    Student Discount
+                                                </h3>
+                                                <p class="desc">
+                                                    easy online returns
+                                                </p>
+                                                <a href="#" class="link text-underline">
+                                                    <span class="text">Learn More</span>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="halo-productView-right productView-details">
-                            <h2 class="productView-title">
-                                Loremour De Saliduar Cosmopolis
-                            </h2>
-                            <div class="productView-meta">
-                                <div class="productView-rating">
-                                    <span class="spr-badge" id="spr_badge_6617631752282" data-rating="0.0">
-                                        <span class="spr-starrating spr-badge-starrating">
-                                            <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                            <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                            <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
-                                            <i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i>
-                                            <i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i>
-                                        </span>
-                                    <span class="spr-badge-caption">2 reviews</span>
-                                    </span>
-                                </div>
-                                <div class="productView-soldProduct" data-sold-out-product="" data-item="3,5,6,7,8,10,12,15" data-hours="10,15,16,17,18,20,25,35">
-                                    <svg class="icon icon-fire-2" viewBox="0 0 384 512">
-                                        <path d="M216 23.858c0-23.802-30.653-32.765-44.149-13.038C48 191.851 224 200 224 288c0 35.629-29.114 64.458-64.85 63.994C123.98 351.538 96 322.22 96 287.046v-85.51c0-21.703-26.471-32.225-41.432-16.504C27.801 213.158 0 261.332 0 320c0 105.869 86.131 192 192 192s192-86.131 192-192c0-170.29-168-193.003-168-296.142z"></path>
+                    </div>
+                    <div class="page-content">
+                        <div class=" productView-information" id="ProductContent">
+                            <div class="toolbar-item toolbar-sidebar sidebar-toogle" data-sidebar>
+                                <span class="toolbar-icon icon-filter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368.167 368.167" aria-hidden="true" focusable="false" role="presentation" class="icon icon-sidebar">
+                                        <path d="M248.084,96.684h12c4.4,0,8-3.6,8-8c0-4.4-3.6-8-8-8h-12c-4.4,0-8,3.6-8,8C240.084,93.084,243.684,96.684,248.084,96.684     z"></path>
+                                        <path d="M366.484,25.484c-2.8-5.6-8.4-8.8-14.4-8.8h-336c-6,0-11.6,3.6-14.4,8.8c-2.8,5.6-2,12,1.6,16.8l141.2,177.6v115.6     c0,6,3.2,11.2,8.4,14c2.4,1.2,4.8,2,7.6,2c3.2,0,6.4-0.8,9.2-2.8l44.4-30.8c6.4-4.8,10-12,10-19.6v-78.8l140.8-177.2     C368.484,37.484,369.284,31.084,366.484,25.484z M209.684,211.884c-0.8,1.2-1.6,2.8-1.6,4.8v81.2c0,2.8-1.2,5.2-3.2,6.8     l-44.4,30.8v-118.8c0-2.8-1.2-5.2-3.2-6.4l-90.4-113.6h145.2c4.4,0,8-3.6,8-8c0-4.4-3.6-8-8-8h-156c-0.4,0-1.2,0-1.6,0l-38.4-48     h336L209.684,211.884z"></path>
                                     </svg>
-                                    <span class="text">
-                                        <span data-sold-out-number="">15</span> sold in last
-                                    <span data-sold-out-hours="">15</span> hours
-                                    </span>
-                                </div>
+                                </span>
                             </div>
-                            <div class="productView-short-desc desc">
-                                Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor lementum lobortis...
-                            </div>
-                            <div class="productView-info">
-                                <div class="productView-info-item">
-                                    <span class="productView-info-name">Brand:</span>
-                                    <span class="productView-info-value"><a href="#" title="Dkny">DKNY</a></span>
-                                </div>
-                                <div class="productView-info-item" data-sku="">
-                                    <span class="productView-info-name">SKU:</span>
-                                    <span class="productView-info-value">W0690042</span>
-                                </div>
-                                <div class="productView-info-item" data-inventory="">
-                                    <span class="productView-info-name"> Availability:</span>
-                                    <span class="productView-info-value">100 In Stock</span>
-                                </div>
-                            </div>
-                            <div class="productView-price card-price price__sale">
-                                <div class="price-item price-item--regular">
-                                    <span class="money ">$86.00</span>
-                                </div>
-                                <div class="price-item price__last">
-                                    <span class="money ">$68.80</span>
-                                </div>
-                            </div>
-                            <div class="productView-countDown" data-countdown="Dec 31, 2023 18:00:00">
-                                <span class="num">226<span>Day</span></span>
-                                <span class="num">3<span>Hrs</span></span>
-                                <span class="num">27<span>Min</span></span>
-                                <span class="num">2<span>Sec</span></span>
-                            </div>
-                            <div class="productView-variants halo-productOptions">
-                                <div class="product-form__input product-form__swatch">
-                                    <legend for="" class="form__label">
-                                        Color:
-                                        <span data-header-option="">Pink</span>
-                                    </legend>
-                                    <input class="product-form__radio" type="radio" checked id="option-661763149013840-color-pink" name="option-color" value="Pink">
-                                    <label class="product-form__label available" for="option-661763149013840-color-pink">
-                                        <span class="pattern" style="background-color: pink;"></span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-661763149013841-color-blue" name="option-color" value="Blue">
-                                    <label class="product-form__label available" for="option-661763149013841-color-blue">
-                                        <span class="pattern" style="background-color: #4b6cc0;"></span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-661763149013842-color-green" name="option-color" value="Green">
-                                    <label class="product-form__label available" for="option-661763149013842-color-green">
-                                        <span class="pattern" style="background-color: mediumseagreen;"></span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-661763149013843-color-moccasin" name="option-color" value="Moccasin">
-                                    <label class="product-form__label available" for="option-661763149013843-color-moccasin">
-                                        <span class="pattern" style="background-color: moccasin;"></span>
-                                    </label>
-                                </div>
-                                <div class="product-form__inputs">
-                                    <legend for="" class="form__label">
-                                        Size:
-                                        <span data-header-option="">XS</span>
-                                    </legend>
-                                    <input class="product-form__radio" type="radio" checked id="option-66176314901232-size-xs" name="option-size" value="Xs" >
-                                    <label class="product-form__label available " for="option-66176314901232-size-xs">
-                                        <span class="text">XS</span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-66176314901233-size-s" name="option-size" value="S">
-                                    <label class="product-form__label soldout" for="option-66176314901233-size-s">
-                                        <span class="text">S</span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-66176314901234-size-m" name="option-size" value="M">
-                                    <label class="product-form__label available" for="option-66176314901234-size-m">
-                                        <span class="text">M</span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-66176314901235-size-l" name="option-size" value="L">
-                                    <label class="product-form__label available" for="option-66176314901235-size-l">
-                                        <span class="text">L</span>
-                                    </label>
-                                </div>
-                                <div class="product-form__input">
-                                    <legend for="" class="form__label">
-                                        Material:
-                                        <span data-header-option="">Option 1</span>
-                                    </legend>
-                                    <input class="product-form__radio" type="radio" checked id="option-66176314901241-material-option-1" name="option-material" value="Option 1">
-                                    <label class="product-form__label available " for="option-66176314901241-material-option-1">
-                                        <span class="text">Option 1</span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-66176314901242-material-option-2" name="option-material" value="Option 2">
-                                    <label class="product-form__label available" for="option-66176314901242-material-option-2">
-                                        <span class="text">Option 2</span>
-                                    </label>
-                                    <input class="product-form__radio" type="radio" id="option-66176314901243-material-option-3" name="option-material" value="Option 3">
-                                    <label class="product-form__label available" for="option-66176314901243-material-option-3">
-                                        <span class="text">Option 3</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="quantity_selector">
-                                <label class="form-label quantity__label" for="">Quantity:</label>
-                                <cart-update-quantity class="previewCartItem-qty">
-                                    <label class="form-label hiddenLabel" for="upsell-update-39504888725594"></label>
-                                    <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
-                                    <input class="form-input quantity" name="quantity" id="upsell-update-39504901341274" data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
-                                    <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                </cart-update-quantity>
-                            </div>
-                            <div class="productView-subtotal">
-                                <span class="text">Subtotal: </span>
-                                <span class="money">$286.00</span>
-                            </div>
-                            <div class="productView-perks">
-                                <div class="productView-sizeChart">
-                                    <a class="link link-underline" href="javascript:void(0)" data-open-size-chart-popup="">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16">
-                                            <image width="25" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAAWElEQVQ4jWNUVlaexsDAkMlAOzCdCdmCO3fuMFCbDTKfiYY+gINRS6hjiYqKClY2qWrwWkJNAMon/2ltyWjqGsSWMDIy0t6S//9pl8hAlkynmekgwMAwHQD5bhxCu6stFwAAAABJRU5ErkJggg=="></image>
-                                        </svg>
-                                        <span class="text">Size Guide</span>
-                                    </a>
-                                </div>
-                                <div class="productView-compareColor style-1">
-                                    <a class="link link-underline" href="javascript:void(0)" aria-label="link" data-open-compare-color-popup="">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
-                                            <image width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAD10lEQVQ4jU2UT2xUVRTGf+e+9+ZNB2aw08G2aCpVkVpIsEBU8D+IqSVEgahLNQYXxsjCrUtduSHRxBhcYNSFIhghEQiKJCImNrVUYAimaKAwbanQ6Uw7fTPvvXvMawvxJCc3uTf3y/m+c74j7xxYRzmq8VBbxM5HM5SrEfUwenFpxu9dnks9rKrtYARxS3bwfL+9WjkqGflOjWBKiqkrxOCyEEaS1B5r5X3E6avWY6wFY5J3F22ErfGNWo84vKnIUYT3EAZu/58/LI2YrWnDSd/RPlVhNlKmwxgQFIOWK1CL5n+49KrHz1i2IfMILhYyjtfVP+5+XjhLbseqkCtlQyXU8Voc/5jDGxRE7VSlh5hncU0bHshVslqRfaT1CYGiG6cCX2Xx3iZo+XowxhWlt6t+KJji3VgZvlW6qE3o36cZPuQa2+UaqE8+js1njmM3max/Y3PKTDze4k9xd9by6RlzYLRuX7grx7DqLZg5qKT+Sya0O5zruh8fpGkObEPssdkUy1t2RtbHcyZoXzR2PdcU7/7jmsM/NwV3QcG5SEAXLWRWd2uzjpFWJExoOi87Fzf+8MHFSt+dV6pPETiN/etbfv9icES5GQRsWxFAIgg+asro8WnMRQ/GZVomTJec9daaP13kbyflilNuq4YtVGc7uRR1D1wIt1CPUqRDh8NHCny0cR+PTZzEfDKK+cvDVj3I2IToGWIBB0hrwTUmgNwUpCPiap4rxa3gWag3uFyr8OXbb1Ca6OaRlR/T0XkZUwixjTRoDI6AFWiIuGTCMeqpApM5nGL7Wjt0B1oARiu8de4Qq1jGIE9zadDwZLiXgjvDChmDVNMacjG6OBlr/dfVUyv7Gcuspuwngj6vHSzrKv5SckbHmGIJVpS01mheNMmZ0v0UpmZ4IDfSptn8Vkox4imyJOo3eqH5W6Z9SAF52siwp7U0TH56BDsnwELTVFjs1fDSFnLskUywDHeB2nXnG6PNnCCvv9olkOTyoaGXmmZmDlalcG9inf/3PyP1zvHU0v39dt0rUEH8BqT0N5z4J5c8gb0hu8SxpzrOncuvLp6gKvntMe4GRzgGDCV2UjVrPCd6LufPtp+eeTAxOD1+cdLUw1047qw7N2gRF5qHR1/rHj751SzZbICPQ6OtldSryY6wKLWwg8gafAKanSqng+7plsbk68vdkfM4XmLr+R1gbHw4JPNMg8wxJaQJw9I5TytCgyBspx4VUIlISXTcs+GmGPM9Mm//2/souVAxAyi9gUY7OiXdl0bWB2irKzWJbW68Vr+nP+MOHImUgwnbZMHMBfAfct24toplOLEAAAAASUVORK5CYII="></image>
-                                        </svg>
-                                        <span class="text">Compare Color</span>
-                                    </a>
-                                </div>
-                                <div class="productView-askAnExpert">
-                                    <a class="link link-underline" href="javascript:void(0)" data-open-ask-an-expert=""><svg class="icon" id="icon-mail" viewBox="0 0 512 512"> <path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path> </svg>
-                                        <span class="text">Ask An Expert</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="previewCartAction">
-                                <div class="previewCartGroup">
-                                    <form method="post" action="/cart/add" id="product-form-6617631490138" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-                                        <input type="hidden" name="form_type" value="product">
-                                        <input type="hidden" name="utf8" value="✓">
-                                        <div class="previewCartGroup-top">
-                                            <div class="productView-action">
-                                                <button type="submit" name="add" data-btn-addtocart class="button-view-cart text-centert button button-1">Add to cart</button>
+                            <div class="halo-productView-left productView-images">
+                                <div class="productView-images-wrapper">
+                                    <div class="card__badge badge-left">
+                                        <span class="badge sale-badge" aria-hidden="true">Sale</span>
+                                        <span class="badge custom-badge" aria-hidden="true">Must Have</span>
+                                    </div>
+                                    <div class="productView-nav" data-arrow="false">
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/product-page/main-product.png" data-fancybox="gallery" data-src="./assets/images/product-page/main-product.png">
+                                                <img src="./assets/images/product-page/main-product.png" alt="Product Image">
                                             </div>
-                                            <div class="productView-wishlist">
-                                                <a data-wishlist="" href="#" data-wishlist-handle="(Product 16) Sample - Clothing And Accessory Boutiques For Sale" data-product-id="6617631490138">
-                                                    <span class="visually-hidden">Add to wishlist</span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="icon icon-wishlist"><path d="M 9.5 5 C 5.363281 5 2 8.402344 2 12.5 C 2 13.929688 2.648438 15.167969 3.25 16.0625 C 3.851563 16.957031 4.46875 17.53125 4.46875 17.53125 L 15.28125 28.375 L 16 29.09375 L 16.71875 28.375 L 27.53125 17.53125 C 27.53125 17.53125 30 15.355469 30 12.5 C 30 8.402344 26.636719 5 22.5 5 C 19.066406 5 16.855469 7.066406 16 7.9375 C 15.144531 7.066406 12.933594 5 9.5 5 Z M 9.5 7 C 12.488281 7 15.25 9.90625 15.25 9.90625 L 16 10.75 L 16.75 9.90625 C 16.75 9.90625 19.511719 7 22.5 7 C 25.542969 7 28 9.496094 28 12.5 C 28 14.042969 26.125 16.125 26.125 16.125 L 16 26.25 L 5.875 16.125 C 5.875 16.125 5.390625 15.660156 4.90625 14.9375 C 4.421875 14.214844 4 13.273438 4 12.5 C 4 9.496094 6.457031 7 9.5 7 Z"></path></svg>
-                                                </a>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-13.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-13.jpg">
+                                                <img src="./assets/images/card product/img-13.jpg">
                                             </div>
-                                            <div class="productView-share">
-                                                <div class="share-content">
-                                                    <button class="share-button button">
-                                                        <svg class="icon" viewBox="0 0 227.216 227.216"> <path d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875C203.759,199.715,191.26,212.216,175.897,212.216z"></path> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
-                                                    </button>
-                                                    <div class="share-button__fallback">
-                                                        <a class="share-button__close" href="javascript:void(0)" title="Close">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                                                                <path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path>
-                                                            </svg>
-                                                        </a>
-                                                        <label class="form-label">Copy link</label>
-                                                        <div class="share-group">
-                                                            <div class="form-field">
-                                                                <input type="text" class="field__input" id="url" value="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6" placeholder="Link" data-url="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6">
-                                                                <label class="field__label hiddenLabel" for="url">Link</label>
-                                                            </div>
-                                                            <button class="button button-1 button-copy">
-                                                                <svg class="icon icon-clipboard" width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1a1 1 0 011-1h7a1 1 0 011 1v9a1 1 0 01-1 1V1H2zM1 2a1 1 0 00-1 1v9a1 1 0 001 1h7a1 1 0 001-1V3a1 1 0 00-1-1H1zm0 10V3h7v9H1z" fill="currentColor"></path>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-15.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-15.jpg">
+                                                <img src="./assets/images/card product/img-15.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-16.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-16.jpg">
+                                                <img src="./assets/images/card product/img-16.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-17.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-17.jpg">
+                                                <img src="./assets/images/card product/img-17.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-18.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-18.jpg">
+                                                <img src="./assets/images/card product/img-18.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-19.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-19.jpg">
+                                                <img src="./assets/images/card product/img-19.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                        <div class="productView-image">
+                                            <div class="media image-zoom" data-zoom-image="./assets/images/card product/img-20.jpg" data-fancybox="gallery" data-src="./assets/images/card product/img-20.jpg">
+                                                <img src="./assets/images/card product/img-20.jpg" alt="Product Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="productView-thumbnail-wrapper">
+                                    <div class="productView-for" data-vertical="false">
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-14.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-13.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-15.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-16.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-17.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-18.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-19.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                        <div class="productView-thumbnail">
+                                            <a class="productView-thumbnail-link" href="javascript:void(0)">
+                                                <img src="./assets/images/card product/img-20.jpg" alt="Product Image">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="halo-productView-right productView-details">
+                                <h2 class="productView-title">
+                                    Loremour De Saliduar Cosmopolis
+                                </h2>
+                                <div class="productView-meta">
+                                    <div class="productView-rating">
+                                        <span class="spr-badge" id="spr_badge_6617631752282" data-rating="0.0">
+                                            <span class="spr-starrating spr-badge-starrating">
+                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                <i class="spr-icon spr-icon-star" aria-hidden="true"></i>
+                                                <i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i>
+                                                <i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i>
+                                            </span>
+                                        <span class="spr-badge-caption">2 reviews</span>
+                                        </span>
+                                    </div>
+                                    <div class="productView-soldProduct" data-sold-out-product="" data-item="3,5,6,7,8,10,12,15" data-hours="10,15,16,17,18,20,25,35">
+                                        <svg class="icon icon-fire-2" viewBox="0 0 384 512">
+                                            <path d="M216 23.858c0-23.802-30.653-32.765-44.149-13.038C48 191.851 224 200 224 288c0 35.629-29.114 64.458-64.85 63.994C123.98 351.538 96 322.22 96 287.046v-85.51c0-21.703-26.471-32.225-41.432-16.504C27.801 213.158 0 261.332 0 320c0 105.869 86.131 192 192 192s192-86.131 192-192c0-170.29-168-193.003-168-296.142z"></path>
+                                        </svg>
+                                        <span class="text">
+                                            <span data-sold-out-number="">15</span> sold in last
+                                        <span data-sold-out-hours="">15</span> hours
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productView-short-desc desc">
+                                    Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor lementum lobortis...
+                                </div>
+                                <div class="productView-info">
+                                    <div class="productView-info-item">
+                                        <span class="productView-info-name">Brand:</span>
+                                        <span class="productView-info-value"><a href="#" title="Dkny">DKNY</a></span>
+                                    </div>
+                                    <div class="productView-info-item" data-sku="">
+                                        <span class="productView-info-name">SKU:</span>
+                                        <span class="productView-info-value">W0690042</span>
+                                    </div>
+                                    <div class="productView-info-item" data-inventory="">
+                                        <span class="productView-info-name"> Availability:</span>
+                                        <span class="productView-info-value">100 In Stock</span>
+                                    </div>
+                                </div>
+                                <div class="productView-price card-price price__sale">
+                                    <div class="price-item price-item--regular">
+                                        <span class="money ">$86.00</span>
+                                    </div>
+                                    <div class="price-item price__last">
+                                        <span class="money ">$68.80</span>
+                                    </div>
+                                </div>
+                                <div class="productView-countDown" data-countdown="Dec 31, 2023 18:00:00">
+                                    <span class="num">226<span>Day</span></span>
+                                    <span class="num">3<span>Hrs</span></span>
+                                    <span class="num">27<span>Min</span></span>
+                                    <span class="num">2<span>Sec</span></span>
+                                </div>
+                                <div class="productView-variants halo-productOptions">
+                                    <div class="product-form__input product-form__swatch">
+                                        <legend for="" class="form__label">
+                                            Color:
+                                            <span data-header-option="">Pink</span>
+                                        </legend>
+                                        <input class="product-form__radio" type="radio" checked id="option-661763149013840-color-pink" name="option-color" value="Pink">
+                                        <label class="product-form__label available" for="option-661763149013840-color-pink">
+                                            <span class="pattern" style="background-color: pink;"></span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-661763149013841-color-blue" name="option-color" value="Blue">
+                                        <label class="product-form__label available" for="option-661763149013841-color-blue">
+                                            <span class="pattern" style="background-color: #4b6cc0;"></span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-661763149013842-color-green" name="option-color" value="Green">
+                                        <label class="product-form__label available" for="option-661763149013842-color-green">
+                                            <span class="pattern" style="background-color: mediumseagreen;"></span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-661763149013843-color-moccasin" name="option-color" value="Moccasin">
+                                        <label class="product-form__label available" for="option-661763149013843-color-moccasin">
+                                            <span class="pattern" style="background-color: moccasin;"></span>
+                                        </label>
+                                    </div>
+                                    <div class="product-form__inputs">
+                                        <legend for="" class="form__label">
+                                            Size:
+                                            <span data-header-option="">XS</span>
+                                        </legend>
+                                        <input class="product-form__radio" type="radio" checked id="option-66176314901232-size-xs" name="option-size" value="Xs" >
+                                        <label class="product-form__label available " for="option-66176314901232-size-xs">
+                                            <span class="text">XS</span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-66176314901233-size-s" name="option-size" value="S">
+                                        <label class="product-form__label soldout" for="option-66176314901233-size-s">
+                                            <span class="text">S</span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-66176314901234-size-m" name="option-size" value="M">
+                                        <label class="product-form__label available" for="option-66176314901234-size-m">
+                                            <span class="text">M</span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-66176314901235-size-l" name="option-size" value="L">
+                                        <label class="product-form__label available" for="option-66176314901235-size-l">
+                                            <span class="text">L</span>
+                                        </label>
+                                    </div>
+                                    <div class="product-form__input">
+                                        <legend for="" class="form__label">
+                                            Material:
+                                            <span data-header-option="">Option 1</span>
+                                        </legend>
+                                        <input class="product-form__radio" type="radio" checked id="option-66176314901241-material-option-1" name="option-material" value="Option 1">
+                                        <label class="product-form__label available " for="option-66176314901241-material-option-1">
+                                            <span class="text">Option 1</span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-66176314901242-material-option-2" name="option-material" value="Option 2">
+                                        <label class="product-form__label available" for="option-66176314901242-material-option-2">
+                                            <span class="text">Option 2</span>
+                                        </label>
+                                        <input class="product-form__radio" type="radio" id="option-66176314901243-material-option-3" name="option-material" value="Option 3">
+                                        <label class="product-form__label available" for="option-66176314901243-material-option-3">
+                                            <span class="text">Option 3</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="quantity_selector">
+                                    <label class="form-label quantity__label" for="">Quantity:</label>
+                                    <cart-update-quantity class="previewCartItem-qty">
+                                        <label class="form-label hiddenLabel" for="upsell-update-39504888725594"></label>
+                                        <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
+                                        <input class="form-input quantity" name="quantity" id="upsell-update-39504901341274" data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
+                                        <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
+                                    </cart-update-quantity>
+                                </div>
+                                <div class="productView-subtotal">
+                                    <span class="text">Subtotal: </span>
+                                    <span class="money">$286.00</span>
+                                </div>
+                                <div class="productView-perks">
+                                    <div class="productView-sizeChart">
+                                        <a class="link link-underline" href="javascript:void(0)" data-open-size-chart-popup="">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="16" viewBox="0 0 25 16">
+                                                <image width="25" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAYAAADj5tSrAAAAWElEQVQ4jWNUVlaexsDAkMlAOzCdCdmCO3fuMFCbDTKfiYY+gINRS6hjiYqKClY2qWrwWkJNAMon/2ltyWjqGsSWMDIy0t6S//9pl8hAlkynmekgwMAwHQD5bhxCu6stFwAAAABJRU5ErkJggg=="></image>
+                                            </svg>
+                                            <span class="text">Size Guide</span>
+                                        </a>
+                                    </div>
+                                    <div class="productView-compareColor style-1">
+                                        <a class="link link-underline" href="javascript:void(0)" aria-label="link" data-open-compare-color-popup="">
+                                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                                                <image width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAD10lEQVQ4jU2UT2xUVRTGf+e+9+ZNB2aw08G2aCpVkVpIsEBU8D+IqSVEgahLNQYXxsjCrUtduSHRxBhcYNSFIhghEQiKJCImNrVUYAimaKAwbanQ6Uw7fTPvvXvMawvxJCc3uTf3y/m+c74j7xxYRzmq8VBbxM5HM5SrEfUwenFpxu9dnks9rKrtYARxS3bwfL+9WjkqGflOjWBKiqkrxOCyEEaS1B5r5X3E6avWY6wFY5J3F22ErfGNWo84vKnIUYT3EAZu/58/LI2YrWnDSd/RPlVhNlKmwxgQFIOWK1CL5n+49KrHz1i2IfMILhYyjtfVP+5+XjhLbseqkCtlQyXU8Voc/5jDGxRE7VSlh5hncU0bHshVslqRfaT1CYGiG6cCX2Xx3iZo+XowxhWlt6t+KJji3VgZvlW6qE3o36cZPuQa2+UaqE8+js1njmM3max/Y3PKTDze4k9xd9by6RlzYLRuX7grx7DqLZg5qKT+Sya0O5zruh8fpGkObEPssdkUy1t2RtbHcyZoXzR2PdcU7/7jmsM/NwV3QcG5SEAXLWRWd2uzjpFWJExoOi87Fzf+8MHFSt+dV6pPETiN/etbfv9icES5GQRsWxFAIgg+asro8WnMRQ/GZVomTJec9daaP13kbyflilNuq4YtVGc7uRR1D1wIt1CPUqRDh8NHCny0cR+PTZzEfDKK+cvDVj3I2IToGWIBB0hrwTUmgNwUpCPiap4rxa3gWag3uFyr8OXbb1Ca6OaRlR/T0XkZUwixjTRoDI6AFWiIuGTCMeqpApM5nGL7Wjt0B1oARiu8de4Qq1jGIE9zadDwZLiXgjvDChmDVNMacjG6OBlr/dfVUyv7Gcuspuwngj6vHSzrKv5SckbHmGIJVpS01mheNMmZ0v0UpmZ4IDfSptn8Vkox4imyJOo3eqH5W6Z9SAF52siwp7U0TH56BDsnwELTVFjs1fDSFnLskUywDHeB2nXnG6PNnCCvv9olkOTyoaGXmmZmDlalcG9inf/3PyP1zvHU0v39dt0rUEH8BqT0N5z4J5c8gb0hu8SxpzrOncuvLp6gKvntMe4GRzgGDCV2UjVrPCd6LufPtp+eeTAxOD1+cdLUw1047qw7N2gRF5qHR1/rHj751SzZbICPQ6OtldSryY6wKLWwg8gafAKanSqng+7plsbk68vdkfM4XmLr+R1gbHw4JPNMg8wxJaQJw9I5TytCgyBspx4VUIlISXTcs+GmGPM9Mm//2/souVAxAyi9gUY7OiXdl0bWB2irKzWJbW68Vr+nP+MOHImUgwnbZMHMBfAfct24toplOLEAAAAASUVORK5CYII="></image>
+                                            </svg>
+                                            <span class="text">Compare Color</span>
+                                        </a>
+                                    </div>
+                                    <div class="productView-askAnExpert">
+                                        <a class="link link-underline" href="javascript:void(0)" data-open-ask-an-expert=""><svg class="icon" id="icon-mail" viewBox="0 0 512 512"> <path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path> </svg>
+                                            <span class="text">Ask An Expert</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="previewCartAction">
+                                    <div class="previewCartGroup">
+                                        <form method="post" action="/cart/add" id="product-form-6617631490138" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+                                            <input type="hidden" name="form_type" value="product">
+                                            <input type="hidden" name="utf8" value="✓">
+                                            <div class="previewCartGroup-top">
+                                                <div class="productView-action">
+                                                    <button type="submit" name="add" data-btn-addtocart class="button-view-cart text-centert button button-1">Add to cart</button>
+                                                </div>
+                                                <div class="productView-wishlist">
+                                                    <a data-wishlist="" href="#" data-wishlist-handle="(Product 16) Sample - Clothing And Accessory Boutiques For Sale" data-product-id="6617631490138">
+                                                        <span class="visually-hidden">Add to wishlist</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" focusable="false" role="presentation" class="icon icon-wishlist"><path d="M 9.5 5 C 5.363281 5 2 8.402344 2 12.5 C 2 13.929688 2.648438 15.167969 3.25 16.0625 C 3.851563 16.957031 4.46875 17.53125 4.46875 17.53125 L 15.28125 28.375 L 16 29.09375 L 16.71875 28.375 L 27.53125 17.53125 C 27.53125 17.53125 30 15.355469 30 12.5 C 30 8.402344 26.636719 5 22.5 5 C 19.066406 5 16.855469 7.066406 16 7.9375 C 15.144531 7.066406 12.933594 5 9.5 5 Z M 9.5 7 C 12.488281 7 15.25 9.90625 15.25 9.90625 L 16 10.75 L 16.75 9.90625 C 16.75 9.90625 19.511719 7 22.5 7 C 25.542969 7 28 9.496094 28 12.5 C 28 14.042969 26.125 16.125 26.125 16.125 L 16 26.25 L 5.875 16.125 C 5.875 16.125 5.390625 15.660156 4.90625 14.9375 C 4.421875 14.214844 4 13.273438 4 12.5 C 4 9.496094 6.457031 7 9.5 7 Z"></path></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="productView-share">
+                                                    <div class="share-content">
+                                                        <button class="share-button button">
+                                                            <svg class="icon" viewBox="0 0 227.216 227.216"> <path d="M175.897,141.476c-13.249,0-25.11,6.044-32.98,15.518l-51.194-29.066c1.592-4.48,2.467-9.297,2.467-14.317c0-5.019-0.875-9.836-2.467-14.316l51.19-29.073c7.869,9.477,19.732,15.523,32.982,15.523c23.634,0,42.862-19.235,42.862-42.879C218.759,19.229,199.531,0,175.897,0C152.26,0,133.03,19.229,133.03,42.865c0,5.02,0.874,9.838,2.467,14.319L84.304,86.258c-7.869-9.472-19.729-15.514-32.975-15.514c-23.64,0-42.873,19.229-42.873,42.866c0,23.636,19.233,42.865,42.873,42.865c13.246,0,25.105-6.042,32.974-15.513l51.194,29.067c-1.593,4.481-2.468,9.3-2.468,14.321c0,23.636,19.23,42.865,42.867,42.865c23.634,0,42.862-19.23,42.862-42.865C218.759,160.71,199.531,141.476,175.897,141.476z M175.897,15c15.363,0,27.862,12.5,27.862,27.865c0,15.373-12.499,27.879-27.862,27.879c-15.366,0-27.867-12.506-27.867-27.879C148.03,27.5,160.531,15,175.897,15z M51.33,141.476c-15.369,0-27.873-12.501-27.873-27.865c0-15.366,12.504-27.866,27.873-27.866c15.363,0,27.861,12.5,27.861,27.866C79.191,128.975,66.692,141.476,51.33,141.476z M175.897,212.216c-15.366,0-27.867-12.501-27.867-27.865c0-15.37,12.501-27.875,27.867-27.875c15.363,0,27.862,12.505,27.862,27.875C203.759,199.715,191.26,212.216,175.897,212.216z"></path> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
+                                                        </button>
+                                                        <div class="share-button__fallback">
+                                                            <a class="share-button__close" href="javascript:void(0)" title="Close">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                                                    <path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path>
                                                                 </svg>
-                                                                <span>Copy link</span>
-                                                            </button>
+                                                            </a>
+                                                            <label class="form-label">Copy link</label>
+                                                            <div class="share-group">
+                                                                <div class="form-field">
+                                                                    <input type="text" class="field__input" id="url" value="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6" placeholder="Link" data-url="https://ko4dtz5389gx1c3c-8133050458.shopifypreview.com/products/naminos-dementus-a-dincidunto-6">
+                                                                    <label class="field__label hiddenLabel" for="url">Link</label>
+                                                                </div>
+                                                                <button class="button button-1 button-copy">
+                                                                    <svg class="icon icon-clipboard" width="11" height="13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1a1 1 0 011-1h7a1 1 0 011 1v9a1 1 0 01-1 1V1H2zM1 2a1 1 0 00-1 1v9a1 1 0 001 1h7a1 1 0 001-1V3a1 1 0 00-1-1H1zm0 10V3h7v9H1z" fill="currentColor"></path>
+                                                                    </svg>
+                                                                    <span>Copy link</span>
+                                                                </button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="previewCartGroup-bottom">
-                                            <div class="previewCartCheckbox global-checkbox">
-                                                <input class="global-checkbox--input" type="checkbox" name="product_conditions_2" id="product_conditions_2_conditions_2" data-target="#product-checkout">
-                                                <label class="global-checkbox--label form-label--checkbox" for="product_conditions_2_conditions_2">I agree with the</label>
-                                                <a href="javascript:void(0)" data-term-condition="">Terms Conditions</a>
-                                            </div>
-                                            <button class="button button-2 button-checkout" onclick="window.location='#'" disabled="disabled" id="cart-sidebar-checkout">Buy It Now</button>
-                                        </div>
-                                    </form>
-                                    <div class="productView-notifyMe halo-notifyMe" style="display: none;">
-                                        <form class="notifyMe-form" method="post" action="">
-                                            <input type="hidden" name="halo-notify-product-site" value="new-ella-demo">
-                                            <input type="hidden" name="halo-notify-product-site-url" value>
-                                            <input type="hidden" name="halo-notify-product-title" value="Loremour De Saliduar Cosmopolis">
-                                            <input type="hidden" name="halo-notify-product-link" value>
-                                            <input type="hidden" name="halo-notify-product-variant" value="Pink / XS / Option 1">
-                                            <div class="form-field">
-                                                <label class="form-label" for="halo-notify-email6617631490138">
-                                                    Leave your email and we will notify as soon as the product / variant is back in stock
-                                                </label>
-                                                <input class="form-input form-input-placeholder" type="email" name="email" required="" id="halo-notify-email6617631490138" placeholder="Insert your email">
-                                                <button type="button" class="button button-1" id="halo-btn-notify6617631490138" data-form-notify="">
-                                                    Subscribe
-                                                </button>
+                                            <div class="previewCartGroup-bottom">
+                                                <div class="previewCartCheckbox global-checkbox">
+                                                    <input class="global-checkbox--input" type="checkbox" name="product_conditions_2" id="product_conditions_2_conditions_2" data-target="#product-checkout">
+                                                    <label class="global-checkbox--label form-label--checkbox" for="product_conditions_2_conditions_2">I agree with the</label>
+                                                    <a href="javascript:void(0)" data-term-condition="">Terms Conditions</a>
+                                                </div>
+                                                <button class="button button-2 button-checkout" onclick="window.location='#'" disabled="disabled" id="cart-sidebar-checkout">Buy It Now</button>
                                             </div>
                                         </form>
-                                        <div class="notifyMe-text"></div>
+                                        <div class="productView-notifyMe halo-notifyMe" style="display: none;">
+                                            <form class="notifyMe-form" method="post" action="">
+                                                <input type="hidden" name="halo-notify-product-site" value="new-ella-demo">
+                                                <input type="hidden" name="halo-notify-product-site-url" value>
+                                                <input type="hidden" name="halo-notify-product-title" value="Loremour De Saliduar Cosmopolis">
+                                                <input type="hidden" name="halo-notify-product-link" value>
+                                                <input type="hidden" name="halo-notify-product-variant" value="Pink / XS / Option 1">
+                                                <div class="form-field">
+                                                    <label class="form-label" for="halo-notify-email6617631490138">
+                                                        Leave your email and we will notify as soon as the product / variant is back in stock
+                                                    </label>
+                                                    <input class="form-input form-input-placeholder" type="email" name="email" required="" id="halo-notify-email6617631490138" placeholder="Insert your email">
+                                                    <button type="button" class="button button-1" id="halo-btn-notify6617631490138" data-form-notify="">
+                                                        Subscribe
+                                                    </button>
+                                                </div>
+                                            </form>
+                                            <div class="notifyMe-text"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="productView-more">
-                                <div class="productView-ViewingProduct" data-customer-view="283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18" data-customer-view-time="5">
-                                    <svg class="icon" id="icon-eye" viewBox="0 0 511.626 511.626"> <g> <path d="M505.918,236.117c-26.651-43.587-62.485-78.609-107.497-105.065c-45.015-26.457-92.549-39.687-142.608-39.687 c-50.059,0-97.595,13.225-142.61,39.687C68.187,157.508,32.355,192.53,5.708,236.117C1.903,242.778,0,249.345,0,255.818 c0,6.473,1.903,13.04,5.708,19.699c26.647,43.589,62.479,78.614,107.495,105.064c45.015,26.46,92.551,39.68,142.61,39.68 c50.06,0,97.594-13.176,142.608-39.536c45.012-26.361,80.852-61.432,107.497-105.208c3.806-6.659,5.708-13.223,5.708-19.699 C511.626,249.345,509.724,242.778,505.918,236.117z M194.568,158.03c17.034-17.034,37.447-25.554,61.242-25.554 c3.805,0,7.043,1.336,9.709,3.999c2.662,2.664,4,5.901,4,9.707c0,3.809-1.338,7.044-3.994,9.704 c-2.662,2.667-5.902,3.999-9.708,3.999c-16.368,0-30.362,5.808-41.971,17.416c-11.613,11.615-17.416,25.603-17.416,41.971 c0,3.811-1.336,7.044-3.999,9.71c-2.667,2.668-5.901,3.999-9.707,3.999c-3.809,0-7.044-1.334-9.71-3.999 c-2.667-2.666-3.999-5.903-3.999-9.71C169.015,195.482,177.535,175.065,194.568,158.03z M379.867,349.04 c-38.164,23.12-79.514,34.687-124.054,34.687c-44.539,0-85.889-11.56-124.051-34.687s-69.901-54.2-95.215-93.222 c28.931-44.921,65.19-78.518,108.777-100.783c-11.61,19.792-17.417,41.207-17.417,64.236c0,35.216,12.517,65.329,37.544,90.362 s55.151,37.544,90.362,37.544c35.214,0,65.329-12.518,90.362-37.544s37.545-55.146,37.545-90.362 c0-23.029-5.808-44.447-17.419-64.236c43.585,22.265,79.846,55.865,108.776,100.783C449.767,294.84,418.031,325.913,379.867,349.04 z"></path> </g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
-                                    <span class="text">99 customers are viewing this product</span>
+                                <div class="productView-more">
+                                    <div class="productView-ViewingProduct" data-customer-view="283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18" data-customer-view-time="5">
+                                        <svg class="icon" id="icon-eye" viewBox="0 0 511.626 511.626"> <g> <path d="M505.918,236.117c-26.651-43.587-62.485-78.609-107.497-105.065c-45.015-26.457-92.549-39.687-142.608-39.687 c-50.059,0-97.595,13.225-142.61,39.687C68.187,157.508,32.355,192.53,5.708,236.117C1.903,242.778,0,249.345,0,255.818 c0,6.473,1.903,13.04,5.708,19.699c26.647,43.589,62.479,78.614,107.495,105.064c45.015,26.46,92.551,39.68,142.61,39.68 c50.06,0,97.594-13.176,142.608-39.536c45.012-26.361,80.852-61.432,107.497-105.208c3.806-6.659,5.708-13.223,5.708-19.699 C511.626,249.345,509.724,242.778,505.918,236.117z M194.568,158.03c17.034-17.034,37.447-25.554,61.242-25.554 c3.805,0,7.043,1.336,9.709,3.999c2.662,2.664,4,5.901,4,9.707c0,3.809-1.338,7.044-3.994,9.704 c-2.662,2.667-5.902,3.999-9.708,3.999c-16.368,0-30.362,5.808-41.971,17.416c-11.613,11.615-17.416,25.603-17.416,41.971 c0,3.811-1.336,7.044-3.999,9.71c-2.667,2.668-5.901,3.999-9.707,3.999c-3.809,0-7.044-1.334-9.71-3.999 c-2.667-2.666-3.999-5.903-3.999-9.71C169.015,195.482,177.535,175.065,194.568,158.03z M379.867,349.04 c-38.164,23.12-79.514,34.687-124.054,34.687c-44.539,0-85.889-11.56-124.051-34.687s-69.901-54.2-95.215-93.222 c28.931-44.921,65.19-78.518,108.777-100.783c-11.61,19.792-17.417,41.207-17.417,64.236c0,35.216,12.517,65.329,37.544,90.362 s55.151,37.544,90.362,37.544c35.214,0,65.329-12.518,90.362-37.544s37.545-55.146,37.545-90.362 c0-23.029-5.808-44.447-17.419-64.236c43.585,22.265,79.846,55.865,108.776,100.783C449.767,294.84,418.031,325.913,379.867,349.04 z"></path> </g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> <g></g> </svg>
+                                        <span class="text">99 customers are viewing this product</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="productView-pickupAvailable">
-                                <div class="icon">
-                                    <svg viewBox="0 0 512 512" class="icon icon-check" id="icon-check">
-                                        <path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" class=""></path>
-                                    </svg>
+                                <div class="productView-pickupAvailable">
+                                    <div class="icon">
+                                        <svg viewBox="0 0 512 512" class="icon icon-check" id="icon-check">
+                                            <path d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z" class=""></path>
+                                        </svg>
+                                    </div>
+                                    <div class="content">
+                                        <span class="uppercase">Pickup available at <b>Los Angeles</b></span>
+                                        <span>Usually ready in 24 hours</span>
+                                        <a href="#" class="text-underline">
+                                            <span class="text">Check availability at other stores</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <span class="uppercase">Pickup available at <b>Los Angeles</b></span>
-                                    <span>Usually ready in 24 hours</span>
-                                    <a href="#" class="text-underline">
-                                        <span class="text">Check availability at other stores</span>
-                                    </a>
+                                <div class="productView-securityImage">
+                                <ul class="list-unstyled clearfix">
+                                        <li>
+                                            <img src="./assets/images/Pages/page-cart/cart-security-1.png" loading="lazy" alt="Ella security">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/Pages/page-cart/cart-security-3.png" loading="lazy" alt="Ella security">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/Pages/page-cart/cart-security-2.png" loading="lazy" alt="Ella security">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/Pages/page-cart/cart-security-4.png" loading="lazy" alt="Ella security">
+                                        </li>
+                                </ul> 
                                 </div>
-                            </div>
-                            <div class="productView-securityImage">
-                               <ul class="list-unstyled clearfix">
-                                    <li>
-                                        <img src="./assets/images/Pages/page-cart/cart-security-1.png" loading="lazy" alt="Ella security">
-                                    </li>
-                                    <li>
-                                        <img src="./assets/images/Pages/page-cart/cart-security-3.png" loading="lazy" alt="Ella security">
-                                    </li>
-                                    <li>
-                                        <img src="./assets/images/Pages/page-cart/cart-security-2.png" loading="lazy" alt="Ella security">
-                                    </li>
-                                    <li>
-                                        <img src="./assets/images/Pages/page-cart/cart-security-4.png" loading="lazy" alt="Ella security">
-                                    </li>
-                               </ul> 
                             </div>
                         </div>
                     </div>
@@ -1019,78 +1141,121 @@
                                     <p class="desc">
                                         Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos. Donec pretium egestas sapien et mollis.
                                     </p>
-                                    <div class="halo-custom-banner">
-                                        <div class="row">
-                                            <div class="halo-row-item col-12">
-                                                <div class="row">
-                                                    <div class="col-banner halo-row-item item col-12 col-md-6">
-                                                        <div class="img-box">
-                                                            <a href="#" class="image image-adapt animate-scale" style="padding-top: 82.45614035%">
-                                                                <img src="./assets/images/product-page/banner-1.png" alt="Ella - HTML Template">
-                                                            </a>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="col-content halo-row-item item col-12 col-md-6">
-                                                        <div class="wrapper-content">
-                                                            <div class="content-box content-box--absolute text-center">
-                                                                <h2 class="banner-title">
-                                                                    <span>Daugué</span>
-                                                                </h2>
-                                                                <p class="desc text-center">
-                                                                    Nullam daliquet vestibulum augue non varius cras de cosmopolis congue melito duis tristique.
-                                                                </p>
-                                                                <a href="#" class="banner-button button button-1">
-                                                                    <span class="text text-uppercase">shop the looks</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
+                                    <div class="halo-block halo-block-banner block-banner-gallery" data-banner-carousel data-item-to-show="3" data-item-dots="true" data-item-arrows="true" data-item-dots-mb="true" data-item-arrows-mb="false">
+                                        <div class="block-header text-left">
+                                            <h3 class="title">
+                                                <span>Sample Image Gallery</span>
+                                            </h3>
+                                        </div>
+                                        <div class="halo-block-content">
+                                            <div class="row">
+                                                <div class="halo-row-item col-12 col-md-6 col-lg-4 ">
+                                                    <div class="img-box">
+                                                        <a class="animate-scale image image-adapt" data-fancybox="gallery-2" data-src="./assets/images/product-page/banner-3.png" style="padding-top: 133.243243243%">
+                                                            <img src="./assets/images/product-page/banner-3.png" alt="gallery-image">
+                                                            <span class="icon">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" title="Gallery Hover Icon"><g><path d="M494.933,38.4h-409.6c-9.412,0-17.067,7.654-17.067,17.067v17.067H51.2c-9.412,0-17.067,7.654-17.067,17.067v17.067
+                                                                    H17.067C7.654,106.667,0,114.321,0,123.733v332.8c0,9.412,7.654,17.067,17.067,17.067h409.6c9.412,0,17.067-7.654,17.067-17.067
+                                                                    v-17.067H460.8c9.412,0,17.067-7.654,17.067-17.067v-17.067h17.067c9.412,0,17.067-7.654,17.067-17.067v-332.8
+                                                                    C512,46.054,504.346,38.4,494.933,38.4z M17.067,123.733h409.6l0.009,190.635l-44.783-51.183c-3.251-3.721-9.6-3.721-12.851,0
+                                                                    l-54.067,61.79L167.799,194.159c-3.234-2.884-8.098-2.884-11.332,0L17.067,318.071V123.733z M426.684,431.01v25.523H17.067V340.89
+                                                                    l145.067-128.947l147.934,131.49c1.69,1.51,3.942,2.193,6.204,2.142c2.278-0.145,4.395-1.186,5.888-2.901l53.308-60.911
+                                                                    l51.209,58.53l0.008,90.573c0,0.017-0.017,0.043-0.017,0.068S426.684,430.985,426.684,431.01z M460.8,422.4h-17.067V123.733
+                                                                    c0-9.412-7.654-17.067-17.067-17.067H51.2V89.6h409.6V422.4z M494.933,388.267h-17.067V89.6c0-9.412-7.654-17.067-17.067-17.067
+                                                                    H85.333V55.467h409.6V388.267z"></path></g><g><path d="M307.2,174.933c-18.825,0-34.133,15.309-34.133,34.133S288.375,243.2,307.2,243.2s34.133-15.309,34.133-34.133
+                                                                    S326.025,174.933,307.2,174.933z M307.2,226.133c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067
+                                                                    s17.067,7.654,17.067,17.067C324.267,218.479,316.612,226.133,307.2,226.133z"></path> </g>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="halo-row-item style-2 col-12">
-                                                <div class="row">
-                                                    <div class="col-banner halo-row-item animate-scale  item col-12 col-md-6">
-                                                        <div class="img-box halo-block-video">
-                                                            <a href="#" class="image image-adapt" style="padding-top: 82.45614035%">
-                                                                <img src="./assets/images/product-page/banner-2.png" alt="Ella - HTML Template">
-                                                            </a>
-                                                            <a class="link video_icon video_youtube" href="javascript:void(0);" aria-label="link" data-open-video data-video-banner data-video="c7rA5i4Resc" role="button">
-                                                                <span class="visually-hidden">Play</span>
-                                                                <svg viewBox="0 0 200 200">
-                                                                    <circle cx="100" cy="100" r="90" fill="none" stroke-width="8"></circle>
-                                                                    <polygon points="70, 50 70, 145 155, 100"></polygon>
+                                                <div class="halo-row-item col-12 col-md-6 col-lg-4 ">
+                                                    <div class="img-box">
+                                                        <a class="animate-scale image image-adapt" data-fancybox="gallery-2" data-src="./assets/images/product-page/banner-4.png" style="padding-top: 133.243243243%">
+                                                            <img src="./assets/images/product-page/banner-4.png" alt="gallery-image">
+                                                            <span class="icon">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" title="Gallery Hover Icon"><g><path d="M494.933,38.4h-409.6c-9.412,0-17.067,7.654-17.067,17.067v17.067H51.2c-9.412,0-17.067,7.654-17.067,17.067v17.067
+                                                                    H17.067C7.654,106.667,0,114.321,0,123.733v332.8c0,9.412,7.654,17.067,17.067,17.067h409.6c9.412,0,17.067-7.654,17.067-17.067
+                                                                    v-17.067H460.8c9.412,0,17.067-7.654,17.067-17.067v-17.067h17.067c9.412,0,17.067-7.654,17.067-17.067v-332.8
+                                                                    C512,46.054,504.346,38.4,494.933,38.4z M17.067,123.733h409.6l0.009,190.635l-44.783-51.183c-3.251-3.721-9.6-3.721-12.851,0
+                                                                    l-54.067,61.79L167.799,194.159c-3.234-2.884-8.098-2.884-11.332,0L17.067,318.071V123.733z M426.684,431.01v25.523H17.067V340.89
+                                                                    l145.067-128.947l147.934,131.49c1.69,1.51,3.942,2.193,6.204,2.142c2.278-0.145,4.395-1.186,5.888-2.901l53.308-60.911
+                                                                    l51.209,58.53l0.008,90.573c0,0.017-0.017,0.043-0.017,0.068S426.684,430.985,426.684,431.01z M460.8,422.4h-17.067V123.733
+                                                                    c0-9.412-7.654-17.067-17.067-17.067H51.2V89.6h409.6V422.4z M494.933,388.267h-17.067V89.6c0-9.412-7.654-17.067-17.067-17.067
+                                                                    H85.333V55.467h409.6V388.267z"></path></g><g><path d="M307.2,174.933c-18.825,0-34.133,15.309-34.133,34.133S288.375,243.2,307.2,243.2s34.133-15.309,34.133-34.133
+                                                                    S326.025,174.933,307.2,174.933z M307.2,226.133c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067
+                                                                    s17.067,7.654,17.067,17.067C324.267,218.479,316.612,226.133,307.2,226.133z"></path> </g>
                                                                 </svg>
-                                                            </a>
-                                                            <div class="video-banner">
-                                                                <a href="javascript:void(0)" class="halo-modal-close clearfix" data-close-video="">
-                                                                    <span class="visually-hidden">Close</span>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true" focusable="false" role="presentation">
-                                                                        <path d="M 38.982422 6.9707031 A 2.0002 2.0002 0 0 0 37.585938 7.5859375 L 24 21.171875 L 10.414062 7.5859375 A 2.0002 2.0002 0 0 0 8.9785156 6.9804688 A 2.0002 2.0002 0 0 0 7.5859375 10.414062 L 21.171875 24 L 7.5859375 37.585938 A 2.0002 2.0002 0 1 0 10.414062 40.414062 L 24 26.828125 L 37.585938 40.414062 A 2.0002 2.0002 0 1 0 40.414062 37.585938 L 26.828125 24 L 40.414062 10.414062 A 2.0002 2.0002 0 0 0 38.982422 6.9707031 z"></path>
-                                                                    </svg>
-                                                                </a>
-                                                                <div class="modal-content-video"></div>
-                                                            </div>
-                                                        </div>
+                                                            </span>
+                                                        </a>
                                                     </div>
-                                                    <div class="col-content halo-row-item item col-12 col-md-6">
-                                                        <div class="wrapper-content">
-                                                            <div class="content-box content-box--absolute text-center">
-                                                                <h2 class="banner-title">
-                                                                    <span>Milance</span>
-                                                                </h2>
-                                                                <p class="desc text-center">
-                                                                    Nullam daliquet vestibulum augue non varius cras de cosmopolis congue melito duis tristique.
-                                                                </p>
-                                                                <a href="#" class="banner-button button button-1">
-                                                                    <span class="text text-uppercase">shop the looks</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                                <div class="halo-row-item col-12 col-md-6 col-lg-4 ">
+                                                    <div class="img-box">
+                                                        <a class="animate-scale image image-adapt" data-fancybox="gallery-2" data-src="./assets/images/product-page/banner-5.png" style="padding-top: 133.243243243%">
+                                                            <img src="./assets/images/product-page/banner-5.png" alt="gallery-image">
+                                                            <span class="icon">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" title="Gallery Hover Icon"><g><path d="M494.933,38.4h-409.6c-9.412,0-17.067,7.654-17.067,17.067v17.067H51.2c-9.412,0-17.067,7.654-17.067,17.067v17.067
+                                                                    H17.067C7.654,106.667,0,114.321,0,123.733v332.8c0,9.412,7.654,17.067,17.067,17.067h409.6c9.412,0,17.067-7.654,17.067-17.067
+                                                                    v-17.067H460.8c9.412,0,17.067-7.654,17.067-17.067v-17.067h17.067c9.412,0,17.067-7.654,17.067-17.067v-332.8
+                                                                    C512,46.054,504.346,38.4,494.933,38.4z M17.067,123.733h409.6l0.009,190.635l-44.783-51.183c-3.251-3.721-9.6-3.721-12.851,0
+                                                                    l-54.067,61.79L167.799,194.159c-3.234-2.884-8.098-2.884-11.332,0L17.067,318.071V123.733z M426.684,431.01v25.523H17.067V340.89
+                                                                    l145.067-128.947l147.934,131.49c1.69,1.51,3.942,2.193,6.204,2.142c2.278-0.145,4.395-1.186,5.888-2.901l53.308-60.911
+                                                                    l51.209,58.53l0.008,90.573c0,0.017-0.017,0.043-0.017,0.068S426.684,430.985,426.684,431.01z M460.8,422.4h-17.067V123.733
+                                                                    c0-9.412-7.654-17.067-17.067-17.067H51.2V89.6h409.6V422.4z M494.933,388.267h-17.067V89.6c0-9.412-7.654-17.067-17.067-17.067
+                                                                    H85.333V55.467h409.6V388.267z"></path></g><g><path d="M307.2,174.933c-18.825,0-34.133,15.309-34.133,34.133S288.375,243.2,307.2,243.2s34.133-15.309,34.133-34.133
+                                                                    S326.025,174.933,307.2,174.933z M307.2,226.133c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067
+                                                                    s17.067,7.654,17.067,17.067C324.267,218.479,316.612,226.133,307.2,226.133z"></path> </g>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="halo-row-item col-12 col-md-6 col-lg-4 ">
+                                                    <div class="img-box">
+                                                        <a class="animate-scale image image-adapt" data-fancybox="gallery-2" data-src="./assets/images/product-page/banner-6.png" style="padding-top: 133.243243243%">
+                                                            <img src="./assets/images/product-page/banner-6.png" alt="gallery-image">
+                                                            <span class="icon">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" title="Gallery Hover Icon"><g><path d="M494.933,38.4h-409.6c-9.412,0-17.067,7.654-17.067,17.067v17.067H51.2c-9.412,0-17.067,7.654-17.067,17.067v17.067
+                                                                    H17.067C7.654,106.667,0,114.321,0,123.733v332.8c0,9.412,7.654,17.067,17.067,17.067h409.6c9.412,0,17.067-7.654,17.067-17.067
+                                                                    v-17.067H460.8c9.412,0,17.067-7.654,17.067-17.067v-17.067h17.067c9.412,0,17.067-7.654,17.067-17.067v-332.8
+                                                                    C512,46.054,504.346,38.4,494.933,38.4z M17.067,123.733h409.6l0.009,190.635l-44.783-51.183c-3.251-3.721-9.6-3.721-12.851,0
+                                                                    l-54.067,61.79L167.799,194.159c-3.234-2.884-8.098-2.884-11.332,0L17.067,318.071V123.733z M426.684,431.01v25.523H17.067V340.89
+                                                                    l145.067-128.947l147.934,131.49c1.69,1.51,3.942,2.193,6.204,2.142c2.278-0.145,4.395-1.186,5.888-2.901l53.308-60.911
+                                                                    l51.209,58.53l0.008,90.573c0,0.017-0.017,0.043-0.017,0.068S426.684,430.985,426.684,431.01z M460.8,422.4h-17.067V123.733
+                                                                    c0-9.412-7.654-17.067-17.067-17.067H51.2V89.6h409.6V422.4z M494.933,388.267h-17.067V89.6c0-9.412-7.654-17.067-17.067-17.067
+                                                                    H85.333V55.467h409.6V388.267z"></path></g><g><path d="M307.2,174.933c-18.825,0-34.133,15.309-34.133,34.133S288.375,243.2,307.2,243.2s34.133-15.309,34.133-34.133
+                                                                    S326.025,174.933,307.2,174.933z M307.2,226.133c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067
+                                                                    s17.067,7.654,17.067,17.067C324.267,218.479,316.612,226.133,307.2,226.133z"></path> </g>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="halo-row-item col-12 col-md-6 col-lg-4 ">
+                                                    <div class="img-box">
+                                                        <a class="animate-scale image image-adapt" data-fancybox="gallery-2" data-src="./assets/images/product-page/banner-7.png" style="padding-top: 133.243243243%">
+                                                            <img src="./assets/images/product-page/banner-7.png" alt="gallery-image">
+                                                            <span class="icon">
+                                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" title="Gallery Hover Icon"><g><path d="M494.933,38.4h-409.6c-9.412,0-17.067,7.654-17.067,17.067v17.067H51.2c-9.412,0-17.067,7.654-17.067,17.067v17.067
+                                                                    H17.067C7.654,106.667,0,114.321,0,123.733v332.8c0,9.412,7.654,17.067,17.067,17.067h409.6c9.412,0,17.067-7.654,17.067-17.067
+                                                                    v-17.067H460.8c9.412,0,17.067-7.654,17.067-17.067v-17.067h17.067c9.412,0,17.067-7.654,17.067-17.067v-332.8
+                                                                    C512,46.054,504.346,38.4,494.933,38.4z M17.067,123.733h409.6l0.009,190.635l-44.783-51.183c-3.251-3.721-9.6-3.721-12.851,0
+                                                                    l-54.067,61.79L167.799,194.159c-3.234-2.884-8.098-2.884-11.332,0L17.067,318.071V123.733z M426.684,431.01v25.523H17.067V340.89
+                                                                    l145.067-128.947l147.934,131.49c1.69,1.51,3.942,2.193,6.204,2.142c2.278-0.145,4.395-1.186,5.888-2.901l53.308-60.911
+                                                                    l51.209,58.53l0.008,90.573c0,0.017-0.017,0.043-0.017,0.068S426.684,430.985,426.684,431.01z M460.8,422.4h-17.067V123.733
+                                                                    c0-9.412-7.654-17.067-17.067-17.067H51.2V89.6h409.6V422.4z M494.933,388.267h-17.067V89.6c0-9.412-7.654-17.067-17.067-17.067
+                                                                    H85.333V55.467h409.6V388.267z"></path></g><g><path d="M307.2,174.933c-18.825,0-34.133,15.309-34.133,34.133S288.375,243.2,307.2,243.2s34.133-15.309,34.133-34.133
+                                                                    S326.025,174.933,307.2,174.933z M307.2,226.133c-9.412,0-17.067-7.654-17.067-17.067c0-9.412,7.654-17.067,17.067-17.067
+                                                                    s17.067,7.654,17.067,17.067C324.267,218.479,316.612,226.133,307.2,226.133z"></path> </g>
+                                                                </svg>
+                                                            </span>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                     <div class="row">
                                         <div class="halo-row-item col-12 col-md-6 col-xl-6">

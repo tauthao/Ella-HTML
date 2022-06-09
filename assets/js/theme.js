@@ -997,45 +997,67 @@
                 iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
 
             if (!sliderFor.hasClass('slick-initialized') && !sliderNav.hasClass('slick-initialized')) {
-                sliderFor.slick({
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    asNavFor: sliderNav,
-                    arrows: true,
-                    dots: false,
-                    draggable: false,
-                    adaptiveHeight: false,
-                    focusOnSelect: true,
-                    vertical: vertical,
-                    verticalSwiping: false,
-                    infinite: false,
-                    nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
-                    prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                    responsive: [{
-                        breakpoint: 1280,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            vertical: false
-                        }
-                    }]
-                });
-                sliderNav.slick({
-                    fade: true,
-                    arrows: arrow,
-                    dots: false,
-                    infinite: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
-                    prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                    asNavFor: sliderFor
-                });
+                if(sliderNav.hasClass('productView-nav-gallery')) {
+                    sliderNav.slick({
+                        rows: 2,
+                        dots: true,
+                        arrows: false,
+                        infinite: true,
+                        speed: 300,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: true
+                                }
+                            }
+                        ]
+                    });
+                }else{
+                    sliderFor.slick({
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        asNavFor: sliderNav,
+                        arrows: true,
+                        dots: false,
+                        draggable: false,
+                        adaptiveHeight: false,
+                        focusOnSelect: true,
+                        vertical: vertical,
+                        verticalSwiping: false,
+                        infinite: false,
+                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                        responsive: [{
+                            breakpoint: 1280,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 1025,
+                            settings: {
+                                vertical: false
+                            }
+                        }]
+                    });
+                    sliderNav.slick({
+                        fade: true,
+                        arrows: arrow,
+                        dots: false,
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                        asNavFor: sliderFor
+                    });
+                }
 
             }
         },

@@ -1,3 +1,8 @@
+.template-product{
+    .footer{
+        padding-bottom: 70px;
+    }
+}
 .productView-variants {
     .form__label {
         display: block;
@@ -995,14 +1000,15 @@
             font-size: 16px;
             font-weight: 600;
             text-transform: none;
-            padding: 15px 0px 15px;
+            padding: 18px 0px 16px;
             margin: 0;
             color: #000000;
             letter-spacing: .02em;
             transition: all .5s ease;
             display: block;
             position: relative;
-            border-bottom: 1px solid #cbcbcb;
+            border-top: 1px solid #e6e6e6;
+            cursor: pointer;
             &::before,
             &::after{
                 content: "";
@@ -1030,8 +1036,6 @@
             }
         }
         .toggle-content{
-            overflow-y: auto!important;
-            overflow-x: hidden!important;
             h4{
                 margin-top: 25px;
                 font-size: 14px;
@@ -1195,13 +1199,24 @@
                 opacity: 1;
             }
             .toggle-content{
-                margin-bottom: 10px;
                 -webkit-transition: max-height .5s ease-out;
                 transition: max-height .5s ease-out;
                 max-height: 0;
                 position: relative;
                 overflow-y: hidden!important;
                 overflow-x: hidden !important;
+                border-bottom: 1px solid transparent;
+                .wrapper-content{
+                    padding: 15px 0px 30px;
+                    .custom-desc{
+                        margin: 0;
+                        dl{
+                            dt{
+                                max-width: 170px;
+                            }
+                        }
+                    }
+                }
             }
             
         } 
@@ -1348,6 +1363,17 @@
     }
 }
 
+@media(max-width:1024px){
+    .productView-tab{
+        .tab-content{
+            .toggle-content{
+                overflow-y: auto!important;
+                overflow-x: hidden!important;
+            }
+        }
+    } 
+}
+
 @media(max-width: 992px){
     .productView-soldProduct{
         display: block;
@@ -1383,9 +1409,8 @@
                 max-height: 0;
                 overflow: hidden;
                 position: relative;
-                margin-bottom: 10px;
-                &.is-active{
-                    padding: 35px 0px;
+                .wrapper-content{
+                    padding: 15px 0px 30px;
                 }
             }
 
@@ -1638,6 +1663,7 @@
         }
     }
     .frequently-bought-together-block{
+        clear: both;
         .bundle-product-wrapper{
             display:flex;
             align-items: center;

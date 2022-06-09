@@ -80,10 +80,13 @@
     margin-top: 0;
   }
   .product-layout-right-vertical .halo-product-block.related-products {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .product-layout-right-vertical .halo-product-block.related-products .product-item .product-card {
     padding: 15px;
+  }
+  .product-layout-right-vertical .productView-securityImage {
+    margin-bottom: 0;
   }
   .product-layout-right-vertical .halo-productView-left {
     display: -webkit-box;

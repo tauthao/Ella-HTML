@@ -85,13 +85,16 @@
         .halo-product-block {
             margin-top: 0;
             &.related-products{
-                margin-top: 50px;
+                margin-top: 40px;
                 .product-item{
                     .product-card{
                         padding: 15px;
                     }
                 }
             }
+        }
+        .productView-securityImage{
+            margin-bottom:0;
         }
     } 
     .product-layout-right-vertical{
