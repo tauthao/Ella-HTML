@@ -1,32 +1,26 @@
 .product-layout-left-vertical {
   padding: 0px 0px 50px;
 }
-
 .product-layout-left-vertical .breadcrumb {
   padding: 20px 0px 30px;
 }
-
 .product-layout-left-vertical .halo-productView-right .productView-title {
   margin: 0;
 }
-
 .product-layout-left-vertical .halo-productView-right .productView-rating .spr-badge-starrating {
   position: relative;
   top: 1px;
 }
-
 .product-layout-left-vertical .halo-product-block {
   clear: both;
 }
-
 .product-layout-left-vertical .halo-product-block .product-header {
   border-top: 1px solid #e6e6e6;
   padding: 30px 0px 12px;
 }
-
 .product-layout-left-vertical .halo-product-block .product-header .title {
   font-size: 18px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   font-weight: 600;
   color: #232323;
 }
@@ -47,18 +41,12 @@
   .product-layout-left-vertical .halo-product-block {
     margin-top: 50px;
   }
+
   .product-layout-left-vertical .halo-productView-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .product-layout-left-vertical .halo-productView-left .productView-images-wrapper {
     width: calc(100% - 80px);
@@ -69,9 +57,7 @@
     vertical-align: top;
     width: 80px;
     padding: 0px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-top: 30px;
   }
   .product-layout-left-vertical .halo-productView-left .productView-thumbnail-wrapper .productView-for {
@@ -86,16 +72,13 @@
   .product-layout-left-vertical .halo-productView-left .productView-thumbnail-wrapper .slick-arrow.slick-prev {
     top: -38px !important;
     left: 50% !important;
-    -webkit-transform: translate(-50%) rotate(90deg);
-            transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%) rotate(90deg);
   }
   .product-layout-left-vertical .halo-productView-left .productView-thumbnail-wrapper .slick-arrow.slick-next {
     top: auto !important;
     left: 50%;
     right: auto;
     bottom: -28px;
-    -webkit-transform: translate(-50%) rotate(90deg);
-            transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%) rotate(90deg);
   }
-}
-/*# sourceMappingURL=product-template-left-vertical.css.map */
+}/*# sourceMappingURL=product-template-left-vertical.css.map */

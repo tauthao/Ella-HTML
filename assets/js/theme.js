@@ -65,13 +65,13 @@
             this.initCollapseSidebarBlock();
             this.initBeforeYouLeave();
             this.initNotification();
-            this.initProductNextPrev();
-            this.initProductBUndle();
             this.initProductVariantChange();
-            this.initStickyAddToCart();
 
             if($body.hasClass('template-product')){
-               this.initShowCustomReview();
+                this.initProductNextPrev();
+                this.initProductBUndle();
+                this.initShowCustomReview();
+                this.initStickyAddToCart();
             }
 
             if($body.hasClass('template-collection')){

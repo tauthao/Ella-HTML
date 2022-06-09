@@ -1,57 +1,46 @@
 .product-layout-gallery {
   padding: 0px 0px 50px;
 }
-
 .product-layout-gallery .breadcrumb {
   padding: 20px 0px 30px;
 }
-
 .product-layout-gallery .halo-productView-left .productView-nav-gallery {
   margin: 0px -5px;
 }
-
 .product-layout-gallery .halo-productView-left .productView-image {
   padding-bottom: 10px;
   margin-top: 0;
   padding-right: 5px;
   padding-left: 5px;
 }
-
 .product-layout-gallery .halo-productView-left .slick-dots {
   margin-top: 5px;
 }
-
 .product-layout-gallery .halo-productView-left .slick-dots li button {
   border-color: #000000;
   background: #ffffff;
 }
-
 .product-layout-gallery .halo-productView-left .slick-dots li.slick-active button {
   background: #000000;
   border-color: #000000;
 }
-
 .product-layout-gallery .halo-productView-right .productView-title {
   margin: 0;
 }
-
 .product-layout-gallery .halo-productView-right .productView-rating .spr-badge-starrating {
   position: relative;
   top: 1px;
 }
-
 .product-layout-gallery .halo-product-block {
   clear: both;
 }
-
 .product-layout-gallery .halo-product-block .product-header {
   border-top: 1px solid #e6e6e6;
   padding: 30px 0px 12px;
 }
-
 .product-layout-gallery .halo-product-block .product-header .title {
   font-size: 18px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   font-weight: 600;
   color: #232323;
 }
@@ -70,8 +59,7 @@
   .product-layout-gallery .halo-productView-left .slick-arrow {
     border-radius: 0;
     border-color: #ffffff;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     top: auto;
     bottom: 23px;
   }
@@ -95,7 +83,6 @@
     fill: #232323;
   }
 }
-
 @media (min-width: 768px) {
   .product-layout-gallery .productView-information .halo-productView-right {
     width: 50%;
@@ -112,7 +99,6 @@
     margin-top: 50px;
   }
 }
-
 @media (min-width: 1025px) {
   .product-layout-gallery .productView-information .halo-productView-right {
     width: 450px;
@@ -121,7 +107,6 @@
     width: calc(100% - 450px);
   }
 }
-
 @media (min-width: 1200px) {
   .product-layout-gallery .productView-information .halo-productView-right {
     width: 500px;
@@ -130,5 +115,4 @@
   .product-layout-gallery .productView-information .halo-productView-left {
     width: calc(100% - 500px);
   }
-}
-/*# sourceMappingURL=product-template-gallery.css.map */
+}/*# sourceMappingURL=product-template-gallery.css.map */
