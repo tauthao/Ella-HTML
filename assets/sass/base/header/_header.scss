@@ -450,11 +450,11 @@
 .header-bottom {
     display: none;
     background: #232323;
-    .main-menu {
+}
+.main-menu {
+    position: static;
+    >.container {
         position: static;
-        >.container {
-            position: static;
-        }
     }
 }
 

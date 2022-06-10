@@ -322,10 +322,8 @@
 @media(max-width: 1024px) {
     .product-card{
         .card-product__group {
-            &.group-right{
-                right: 10px;
-                display: none;
-            }
+            right: 10px;
+            display: none;
         }
     } 
 }
