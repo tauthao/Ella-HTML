@@ -72,6 +72,7 @@
                 this.initProductBUndle();
                 this.initShowCustomReview();
                 this.initStickyAddToCart();
+                this.initOpenTabsProduct();
             }
 
             if($body.hasClass('template-collection')){
@@ -996,69 +997,86 @@
                 vertical = sliderFor.data('vertical'),
                 iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
 
-            if (!sliderFor.hasClass('slick-initialized') && !sliderNav.hasClass('slick-initialized')) {
-                if(sliderNav.hasClass('productView-nav-gallery')) {
-                    sliderNav.slick({
-                        rows: 2,
-                        dots: true,
-                        arrows: false,
-                        infinite: true,
-                        speed: 300,
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
-                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: true
-                                }
-                            }
-                        ]
-                    });
-                }else{
-                    sliderFor.slick({
-                        slidesToShow: 5,
-                        slidesToScroll: 1,
-                        asNavFor: sliderNav,
-                        arrows: true,
-                        dots: false,
-                        draggable: false,
-                        adaptiveHeight: false,
-                        focusOnSelect: true,
-                        vertical: vertical,
-                        verticalSwiping: false,
-                        infinite: false,
-                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
-                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                        responsive: [{
-                            breakpoint: 1280,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 1025,
-                            settings: {
-                                vertical: false
-                            }
-                        }]
-                    });
-                    sliderNav.slick({
-                        fade: true,
-                        arrows: arrow,
-                        dots: false,
-                        infinite: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
-                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
-                        asNavFor: sliderFor
-                    });
+            if(sliderNav.hasClass('productView-nav-fullwidth')){
+                if ($win.width() < 768) {
+                    if (!sliderNav.hasClass('slick-initialized')) {
+                        sliderNav.slick({
+                            dots: false,
+                            arrows: true,
+                            infinite: true,
+                            speed: 300,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                            prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>'
+                        });
+                    }
                 }
+            }else{
+                if (!sliderFor.hasClass('slick-initialized') && !sliderNav.hasClass('slick-initialized')) {
+                    if(sliderNav.hasClass('productView-nav-gallery')) {
+                        sliderNav.slick({
+                            rows: 2,
+                            dots: true,
+                            arrows: false,
+                            infinite: true,
+                            speed: 300,
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                            prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        arrows: true
+                                    }
+                                }
+                            ]
+                        });
+                    }else{
+                        sliderFor.slick({
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            asNavFor: sliderNav,
+                            arrows: true,
+                            dots: false,
+                            draggable: false,
+                            adaptiveHeight: false,
+                            focusOnSelect: true,
+                            vertical: vertical,
+                            verticalSwiping: false,
+                            infinite: false,
+                            nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                            prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                            responsive: [{
+                                breakpoint: 1280,
+                                settings: {
+                                    slidesToShow: 4,
+                                    slidesToScroll: 1
+                                }
+                            },
+                            {
+                                breakpoint: 1025,
+                                settings: {
+                                    vertical: false
+                                }
+                            }]
+                        });
+                        sliderNav.slick({
+                            fade: true,
+                            arrows: arrow,
+                            dots: false,
+                            infinite: false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                            prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                            asNavFor: sliderFor
+                        });
+                    }
 
+                }
             }
         },
 
@@ -1615,7 +1633,31 @@
                 
                 formWriteReview.slideUp('slow');
             });
-        }
+        },
+
+        initOpenTabsProduct: function (){
+            var wrapper = $('.product-layout-full-width'),
+                tabItem = wrapper.find('.productView-tabs [data-open-tab]'),
+                btnClose = wrapper.find('[data-close-tab]');
+            if(wrapper.length > 0){
+                tabItem.on('click', (event) =>{
+                    var self = $(event.currentTarget);
+    
+                    self.siblings().addClass('is-active');
+                });
+    
+                btnClose.on('click', (event) =>{
+    
+                    $('.productView-tab ').removeClass('is-active');
+                });
+    
+                $body.on('click', (event) => {
+                    if(($(event.target).closest('.productView-tab').length === 0) && ($(event.target).closest('.productView-tabs [data-open-tab]').length === 0)){
+                        $('.productView-tab ').removeClass('is-active');
+                    }
+                });
+            }
+        },
         
     }
 })(jQuery);

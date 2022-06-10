@@ -3,21 +3,26 @@
   font-family: "Inter", "Arial", "sans-serif";
   line-height: 24px;
 }
+
 .skin-6 .desc {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0;
 }
+
 .skin-6 .slick-dots {
   margin-top: 15px;
 }
+
 .skin-6 .slick-dots button {
   border-color: #abb2bd;
   background: #abb2bd;
 }
+
 .skin-6 .slick-dots li.slick-active button {
   border-color: #142849;
 }
+
 .skin-6 .slick-arrow {
   width: 47px;
   height: 47px;
@@ -26,6 +31,7 @@
   border-radius: 0;
   padding: 0 !important;
 }
+
 .skin-6 .slick-arrow svg {
   fill: #00163a;
   width: 100%;
@@ -33,9 +39,11 @@
   top: 0;
   left: 0;
 }
+
 .skin-6 .halo-block-header {
   margin-bottom: 33px;
 }
+
 .skin-6 .halo-block-header .title {
   font-size: 24px;
   letter-spacing: 0;
@@ -43,16 +51,20 @@
   color: #00163a;
   font-style: italic;
 }
+
 .skin-6 .halo-block-header .title:before {
   display: none;
 }
+
 .skin-6 .halo-block-header .title span {
   background: transparent;
 }
+
 .skin-6 .halo-block-header .desc,
 .skin-6 .halo-block-header .text {
   color: #00163a;
 }
+
 .skin-6 .button {
   font-size: 16px;
   letter-spacing: 0;
@@ -61,19 +73,23 @@
   padding: 14px 15px 14px;
   text-transform: capitalize;
 }
+
 .skin-6 .button.button-2 {
   background-color: #ffffff;
   border-color: #00163a;
   color: #00163a;
 }
+
 .skin-6 .button.button-2:hover {
   background-color: #00163a;
   border-color: #00163a;
   color: #ffffff;
 }
+
 .skin-6 .product-card .product-card-bottom {
   padding: 14px 0px 10px;
 }
+
 .skin-6 .product-card .product-card-information .card-vendor {
   font-size: 12px;
   font-weight: 900;
@@ -82,9 +98,11 @@
   font-style: italic;
   padding-bottom: 2px;
 }
+
 .skin-6 .product-card .product-card-information .card-vendor:hover {
   color: #232323;
 }
+
 .skin-6 .product-card .product-card-information .card-title {
   font-size: 14px;
   line-height: 24px;
@@ -92,43 +110,54 @@
   color: #00163a;
   margin-bottom: 3px;
 }
+
 .skin-6 .product-card .product-card-information .card-title:hover {
   color: #075ee2;
 }
+
 .skin-6 .product-card .product-card-information .card-price .price-item .money {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
   color: #00163a;
 }
+
 .skin-6 .product-card .product-card-information .card-price.price__sale .price-item--regular span {
   color: #969696;
 }
+
 .skin-6 .product-card .product-card-information .card-price.price__sale .price__last span {
   color: #e95144;
 }
+
 .skin-6 .product-card .card-action {
   background: #ffffff;
 }
+
 .skin-6 .product-card .card-action .button {
   background: #00163a;
   color: #ffffff;
   border-color: #00163a;
 }
+
 .skin-6 .product-card .card-action .button:hover {
   background: #ffffff;
   color: #00163a;
   border-color: #00163a;
 }
+
 .skin-6 .productView-rating {
   margin-bottom: 3px;
 }
+
 .skin-6 .productView-rating .spr-icon.spr-icon-star::before {
   color: #ffc50d;
 }
+
 .skin-6 .productView-rating .spr-icon.spr-icon-star-empty::before {
   color: #f0f0f0;
 }
+
 .skin-6 .productView-rating .count-review {
   font-size: 12px;
   color: #969696;
@@ -136,28 +165,36 @@
   position: relative;
   top: -1px;
 }
+
 .skin-6 .card-swatch {
   margin: 17px 0px 0px;
 }
+
 .skin-6 .halo-product-block .halo-block-header {
   margin-bottom: 28px !important;
 }
+
 .skin-6 .halo-product-block .halo-block-header .title {
   margin-bottom: 7px;
 }
+
 .skin-6 .halo-product-block .row {
   margin-left: -5px !important;
   margin-right: -5px !important;
 }
+
 .skin-6 .halo-product-block .row .halo-row-item {
   padding: 0px 5px !important;
 }
+
 .skin-6 .halo-product-block .product-infinite-scroll {
   margin: 24px 0px 70px;
 }
+
 .skin-6 .halo-product-block .product-infinite-scroll .button {
   max-width: 340px;
 }
+
 .skin-6 .card__badge .badge {
   border-radius: 3px;
   padding: 2px 8px 1px;
@@ -170,6 +207,7 @@
     border-radius: 0;
   }
 }
+
 @media (min-width: 1300px) {
   .skin-6 .slick-arrow.slick-next {
     right: -59px;
@@ -177,4 +215,5 @@
   .skin-6 .slick-arrow.slick-prev {
     left: -59px;
   }
-}/*# sourceMappingURL=skin-6.css.map */
+}
+/*# sourceMappingURL=skin-6.css.map */
