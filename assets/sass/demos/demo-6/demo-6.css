@@ -1,6 +1,12 @@
 .halo-block-slideshow {
   margin-bottom: 20px;
 }
+.halo-block-slideshow .halo-row-carousel .bannerCarousel-slide {
+  display: none;
+}
+.halo-block-slideshow .halo-row-carousel .bannerCarousel-slide:first-child {
+  display: block;
+}
 .halo-block-slideshow .halo-row-carousel .slick-dots {
   position: absolute;
   bottom: 14px;
@@ -13,6 +19,9 @@
 .halo-block-slideshow .halo-row-carousel .slick-dots li.slick-active button {
   border-color: #ffffff;
   background: transparent;
+}
+.halo-block-slideshow .halo-row-carousel.slick-initialized .bannerCarousel-slide {
+  display: block;
 }
 
 .halo-block-four-banner {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .skin-6 {
   font-size: 14px;
   font-family: "Inter", "Arial", "sans-serif";
@@ -247,6 +248,9 @@
 .skin-6 .halo-popup .halo-popup-header .halo-popup-close {
   background: #00163a;
 }
+.skin-6 .halo-popup .halo-popup-header .halo-popup-close.close-notify-popup {
+  background: transparent;
+}
 .skin-6 .halo-popup .button {
   border-radius: 0;
 }
@@ -287,6 +291,9 @@
 }
 .skin-6 .cart-count-bubble .text-count {
   color: #ffffff !important;
+}
+.skin-6 .halo-search-popup .quickSearchResultsWrap .halo-product-block .card-action .button {
+  border-radius: 30px;
 }
 
 @media (max-width: 1024px) {

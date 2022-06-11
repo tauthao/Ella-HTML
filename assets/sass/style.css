@@ -491,7 +491,6 @@ ol li {
 
 a {
   transition: all 0.3s ease;
-  color: #000000;
 }
 
 a:hover {
@@ -702,7 +701,7 @@ polyline:empty {
 
 a {
   transition: all ease 0.3s;
-  color: #000000;
+  color: #232323;
   cursor: pointer;
   border: none;
   box-shadow: none;
@@ -718,7 +717,7 @@ a {
 }
 
 .link .icon {
-  fill: #000000;
+  fill: #232323;
 }
 
 .link-underline .text {
@@ -1362,6 +1361,10 @@ label {
 .halo-popup.customPopup-small .halo-popup-header .halo-popup-close svg {
   fill: #5a5a5a;
   stroke: transparent;
+}
+.halo-popup.halo-popup-topDown {
+  top: 0;
+  transform: translate(-50%, -100px);
 }
 
 /* START: Sidebar */
@@ -2627,17 +2630,18 @@ body.open-mobile-sidebar .background-overlay {
 
 [data-header-sticky] {
   z-index: 9;
-  top: -100%;
+  top: -10px;
 }
 
 .header.animate {
-  transition: all ease 0.35s;
+  transition: all ease 0.4s;
 }
 
 .has-stickyHeader [data-header-sticky].sticky-down {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
 /* START: Header Top */
@@ -3991,6 +3995,11 @@ body.open-mobile-sidebar .background-overlay {
     pointer-events: auto;
     display: inline-block;
     width: auto;
+  }
+  .product-card .card-product__group.group-left .card-product__group-item .card-icon:hover .text {
+    left: calc(100% - 30px);
+    right: auto;
+    padding: 0 15px 0 30px;
   }
   .product-card .card-action {
     position: absolute;
@@ -6728,6 +6737,92 @@ body.notification-show .halo-notification-popup {
     -webkit-line-clamp: 1;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
+  }
+}
+body.search-popup-show {
+  overflow: hidden;
+}
+body.search-popup-show .halo-search-popup {
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+}
+body.search-popup-show .background-overlay-popup {
+  z-index: 9;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-search-popup {
+  max-width: 100%;
+}
+.halo-search-popup .halo-popup-header {
+  position: relative;
+}
+.halo-search-popup .halo-popup-header .halo-popup-close {
+  top: -4px;
+  right: 0;
+  background: transparent !important;
+  padding: 4px;
+}
+.halo-search-popup .halo-popup-header .halo-popup-close svg {
+  fill: #00163a;
+}
+.halo-search-popup .halo-popup-content {
+  max-width: 100%;
+}
+.halo-search-popup .halo-popup-content .search-bar {
+  margin-bottom: 50px;
+  background: transparent;
+}
+.halo-search-popup .halo-popup-content .input-group-field {
+  color: #00163a;
+  padding: 15px 0px 15px;
+  font-size: 14px;
+  width: calc(100% - 25px);
+}
+.halo-search-popup .halo-popup-content .icon-search {
+  width: 23px;
+  height: 23px;
+  min-width: 23px;
+  padding: 0;
+}
+.halo-search-popup .halo-popup-content .icon-search svg {
+  width: 100%;
+  height: 100%;
+  fill: #00163a;
+}
+.halo-search-popup .quickSearchResultsWrap {
+  position: relative;
+  z-index: 9;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: none;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  max-height: calc(80vh - 50px);
+}
+.halo-search-popup .quickSearchResultsWrap .search-block-title .text {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #00163a;
+  font-style: italic;
+  font-weight: 900;
+}
+.halo-search-popup .quickSearchResultsWrap .list-item .link {
+  padding: 13px 20px 10px 12px;
+  color: #00163a;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+@media (min-width: 1025px) {
+  body.search-popup-show {
+    padding-right: 10px;
   }
 }
 /* ===  Sidebar === */

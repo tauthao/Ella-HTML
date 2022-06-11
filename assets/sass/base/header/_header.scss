@@ -1,5 +1,4 @@
 /* START: Announcement */
-
 .announcement-bar {
     background-color: #ffe8e8;
     color: #b05d5d;
@@ -36,16 +35,18 @@
 
 [data-header-sticky] {
     z-index: 9;
-    top: -100%;
+    top: -10px;
 }
 
 .header.animate {
-    transition: all ease .35s;
+    transition: all ease .4s;
 }
 
 .has-stickyHeader [data-header-sticky].sticky-down {
-    position: sticky;
     top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0,0,0, .12);
 }
 
 

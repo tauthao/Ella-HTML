@@ -61,6 +61,7 @@
             this.initUpdateVlueQuantity();
             this.initMenuMobile();
             this.initShowPopupLookbook();
+            this.initShowPopupSearch();
             this.initToggleSidebarMobile();
             this.initPriceRangeFilter();
             this.initCollapseSidebarBlock();
@@ -108,7 +109,7 @@
                             nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
                             prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
                             responsive: [{
-                                    breakpoint: 1600,
+                                    breakpoint: 1300,
                                     settings: {
                                         dots: itemDots,
                                         arrows: itemRow,
@@ -1224,6 +1225,28 @@
                 $('[data-open-lookbook-popup]').removeClass('active');
                 $('[data-lookbook-popup]').removeClass('open');
             });
+        },
+
+        initShowPopupSearch: function(){
+            var btnLangCurrency = $("[data-open-search-popup]"),
+                btnClose = $(".background-overlay-popup, [data-close-search-popup]");
+
+            if (btnLangCurrency.length) {
+                btnLangCurrency.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    $body.addClass('search-popup-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('search-popup-show')) {
+                        $body.removeClass('search-popup-show');
+                    }
+                });
+
+            }
         },
 
         initToggleSidebarMobile: function() {

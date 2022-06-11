@@ -1,3 +1,48 @@
+.announcement-bar{
+    background: #f84248;
+    .message{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px 0px 5px;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: initial;
+        letter-spacing: 0;
+        img{
+            position: relative;
+            top: -4px;
+            margin-right: 25px;
+        }
+        .btn{
+            margin-left: 32px;
+            font-weight: 500;
+            padding: 4px 10px 3px;
+            border-radius: 3px;
+            min-width: 110px;
+            border: 1px solid;
+            color: #f84248;
+            background: #ffffff;
+            border-color: #ffffff;
+            font-size: 14px;
+            &:hover{
+                color: #ffffff;
+                background: #f84248;
+            }
+        }
+    }
+    .announcement-close{
+        svg{
+            fill:#ffffff;
+        }
+    }
+}//END: Announcement Bar
+
 .halo-block-fullwidth-banner{
     .content-box{
         width: 400px;
@@ -15,40 +60,148 @@
             color: #ffffff;
             margin-bottom: 43px;
         }
+        .button {
+            min-width:180px;
+        }
     }
 }// END: Full Width Banner
 
-.announcement-bar{
-    background: #f84248;
-    .message{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 7px 15px 7px;
-        position: relative;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0;
-        color: #ffffff;
-        font-size: 14px;
-        text-transform: initial;
-        letter-spacing: 0;
-        img{
-            position: relative;
-            top: -4px;
-            margin-right: 25px;
+.halo-block-brand{
+    padding: 35px 0px 60px;
+    margin-bottom: 40px;
+    background: #f8f8f8;
+    .halo-row-item{
+        &:hover{
+            .banner-title{
+                a{
+                    color: #f84248;
+                }
+            }
+            
         }
-        .btn{
-            margin-left: 32px;
+    }
+    .banner-title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 0px;
+        a{
+            color: #232323;
+        }
+    }
+    .desc{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}// END: Block brand
+
+.halo-block-sub-banner{
+    margin-bottom: 50px;
+    .halo-row-item{
+        margin-bottom: 15px;
+    }
+    .content-box{
+        .sub-title{
+            font-size: 14px;
+            line-height: 20px;
             font-weight: 500;
-            padding: 1px 10px;
-            border-radius: 3px;
-            min-width: 110px;
-            border: 1px solid;
-            color: #f84248;
-            background: #ffffff;
-            border-color: #ffffff;
+            color: #ffffff;
+            margin-bottom: 9px;
+        }
+        .banner-title{
+            font-size: 30px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 13px;
+            span{
+                position: relative;
+                &:before {
+                    content: "";
+                    height:3px;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    background:#f84248;
+                }
+            }
+        }
+        .desc{
+            font-size: 16px;
+            line-height:22px;
+            letter-spacing: .02em;
+            color: #ffffff;
+        }
+        .banner-button {
+            margin-top: 25px;
+            min-width:180px;
+        }
+    }
+    
+}// END: Block Sub Banner
+@media(max-width:580px){
+    .announcement-bar{
+        .message{
+            .btn{
+                display:none;
+            }
+        }
+    }
+}
+@media(max-width:420px){
+    .announcement-bar{
+        .message{
+            img{
+                display:none;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .halo-block-brand{
+        padding: 70px 0px 53px;
+    }
+}
+
+@media(min-width:1025px){
+    .halo-block-sub-banner{
+        .halo-row-item{
+            .banner-button {
+                transition: all 0.5s ease;
+                opacity: 0;
+                z-index: -1;
+                overflow:hidden;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &:hover{
+                .content-box{
+                    .banner-button {
+                        top: calc(100% - 16px);
+                        opacity: 1;
+                        z-index: 1;
+                        overflow:visible;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media(min-width:1200px){
+    .halo-block-fullwidth-banner{
+        .content-box{
+            &.content-box--left {
+                left: calc((100% - 1170px)/2);
+            }
+            &.content-box--right {
+                right: calc((100% - 1170px)/2);
+            }
         }
     }
 }

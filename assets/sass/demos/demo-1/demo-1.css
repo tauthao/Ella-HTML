@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* START: Section Full With Banner */
 .fullwidth-banner {
   margin-bottom: 30px;
@@ -50,10 +51,10 @@
 }
 
 /* START: Section Sub Banner */
-.halo-sub-banner .banner-title {
+.halo-block-sub-banner .banner-title {
   margin: 0;
 }
-.halo-sub-banner .banner-title a {
+.halo-block-sub-banner .banner-title a {
   color: #ffffff;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -193,10 +194,10 @@
   }
 
   /* START: Section Sub Banner */
-  .halo-sub-banner .halo-row-item {
+  .halo-block-sub-banner .halo-row-item {
     width: 100%;
   }
-  .halo-sub-banner .halo-row-item + .halo-row-item {
+  .halo-block-sub-banner .halo-row-item + .halo-row-item {
     margin-top: 15px;
   }
 
@@ -244,7 +245,7 @@
 }
 @media (min-Width: 1200px) {
   /* START: Section Sub Banner */
-  .halo-sub-banner .halo-row-item .banner-title {
+  .halo-block-sub-banner .halo-row-item .banner-title {
     font-size: 16px;
   }
 

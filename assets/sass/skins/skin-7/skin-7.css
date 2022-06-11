@@ -38,4 +38,16 @@
   background-color: #f84248;
   border-color: #f84248;
   color: #ffffff;
+}
+.skin-7 .slick-arrow {
+  border: 1px solid #dcdcdc;
+  color: #323232;
+}
+.skin-7 .slick-arrow svg {
+  fill: #323232;
+  top: -6px;
+}
+.skin-7 .slick-dots {
+  position: absolute;
+  bottom: -50px;
 }/*# sourceMappingURL=skin-7.css.map */

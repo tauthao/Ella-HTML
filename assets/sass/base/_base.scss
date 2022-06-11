@@ -498,7 +498,6 @@ ol li {
 
 a {
     transition: all 0.3s ease;
-    color: $color-link
 }
 
 a:hover {
@@ -1439,6 +1438,10 @@ label {
                 }
             }
         }
+    }
+    &.halo-popup-topDown{
+        top:0;
+        transform: translate(-50%,-100px);
     }
 }
 
