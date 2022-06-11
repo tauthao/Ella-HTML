@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.skin-7 {
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: #232323;
+}
+.skin-7 .desc {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #232323;
+}
+.skin-7 .button {
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 14px 15px 14px;
+}
+.skin-7 .button.button-1 {
+  background-color: #f84248;
+  border-color: #f84248;
+  color: #ffffff;
+}
+.skin-7 .button.button-1:hover {
+  background-color: #ffffff;
+  border-color: #f84248;
+  color: #f84248;
+}
+.skin-7 .button.button-2 {
+  background-color: #ffffff;
+  border-color: #f84248;
+  color: #f84248;
+}
+.skin-7 .button.button-2:hover {
+  background-color: #f84248;
+  border-color: #f84248;
+  color: #ffffff;
+}/*# sourceMappingURL=skin-7.css.map */

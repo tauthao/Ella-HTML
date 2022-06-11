@@ -1,0 +1,54 @@
+.halo-block-fullwidth-banner{
+    .content-box{
+        width: 400px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        .banner-title{
+            font-size: 40px;
+            line-height: 40px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        .desc{
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 43px;
+        }
+    }
+}// END: Full Width Banner
+
+.announcement-bar{
+    background: #f84248;
+    .message{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 7px 15px 7px;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        color: #ffffff;
+        font-size: 14px;
+        text-transform: initial;
+        letter-spacing: 0;
+        img{
+            position: relative;
+            top: -4px;
+            margin-right: 25px;
+        }
+        .btn{
+            margin-left: 32px;
+            font-weight: 500;
+            padding: 1px 10px;
+            border-radius: 3px;
+            min-width: 110px;
+            border: 1px solid;
+            color: #f84248;
+            background: #ffffff;
+            border-color: #ffffff;
+        }
+    }
+}

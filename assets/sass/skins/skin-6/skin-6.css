@@ -9,6 +9,10 @@
   line-height: 24px;
   letter-spacing: 0;
 }
+.skin-6 label {
+  font-size: 14px;
+  color: #00163a;
+}
 .skin-6 .slick-dots {
   margin-top: 15px;
 }
@@ -185,7 +189,7 @@
   padding: 14px 30px 0px;
 }
 .skin-6 .halo-sidebar .halo-sidebar-header .title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 900;
   color: #00163a;
   letter-spacing: 0;
@@ -240,8 +244,15 @@
   font-style: italic;
   letter-spacing: 0;
 }
+.skin-6 .halo-popup .halo-popup-header .halo-popup-close {
+  background: #00163a;
+}
 .skin-6 .halo-popup .button {
   border-radius: 0;
+}
+.skin-6 .halo-quickshop-popup .halo-productView-right .product-title {
+  color: #00163a;
+  font-weight: 600;
 }
 .skin-6 .halo-edit-cart-popup .product-edit-itemCenter .product-edit-title {
   font-size: 14px;
@@ -260,8 +271,7 @@
 .skin-6 .productView-information .halo-productView-right .productView-title a {
   color: #00163a;
 }
-.skin-6 .link,
-.skin-6 a {
+.skin-6 .link {
   font-size: 14px;
   letter-spacing: 0;
   color: #00163a;

@@ -36,6 +36,7 @@
             this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
             this.initSidebarLogin();
+            this.initSidebarLangCurrency();
             this.initSidebarCart();
             this.initSidebarSearch();
             this.initGlobalCheckbox();
@@ -446,6 +447,29 @@
                     event.stopPropagation();
                     if ($body.hasClass('auth-sidebar-show')) {
                         $body.removeClass('auth-sidebar-show');
+                    }
+                });
+
+            }
+        },
+
+        initSidebarLangCurrency: function() {
+            var btnLangCurrency = $("[data-show-language_currency]"),
+                btnClose = $(".background-overlay, .halo-sidebar-close");
+
+            if (btnLangCurrency.length) {
+                btnLangCurrency.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('lang-currency-sidebar-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('lang-currency-sidebar-show')) {
+                        $body.removeClass('lang-currency-sidebar-show');
                     }
                 });
 
