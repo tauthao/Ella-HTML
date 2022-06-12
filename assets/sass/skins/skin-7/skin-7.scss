@@ -7,16 +7,19 @@
     color:#232323;
     .desc{
         font-size:14px;
-        line-height: 24px;
+        line-height: 26px;
         letter-spacing:0;
         color:#232323;
     }
+    .link{
+        font-size: 14px;
+    }
     .button{
-        font-size:16px;
-        letter-spacing:0;
-        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
         border-radius: 4px;
-        padding: 14px 15px 14px;
+        padding: 15px 15px 14px;
         &.button-1{
             background-color: #f84248;
             border-color: #f84248;
@@ -49,6 +52,19 @@
     .slick-dots{
         position: absolute;
         bottom: -50px;
+    }
+    .halo-block-header{
+        margin-bottom: 34px;
+        .title{
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color:#232323;
+            text-transform: uppercase;
+            &:before{
+                display: none;
+            }
+        }
     }
 
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* START: Section Full With Banner */
-.fullwidth-banner {
+.halo-product-fullwidth-banner {
     margin-bottom: 30px;
     .banner-item {
         .banner-title {
@@ -66,7 +66,7 @@
 }
 
 /* START: Section  spotlight*/
-.spotlight-block {
+.halo-block-spotlight {
     padding-top: 24px;
     .content {
         padding-top: 28px;
@@ -88,7 +88,7 @@
 }
 /* START: Section  brands*/
 
-.brands-block {
+.halo-block-brands {
     border-top: 1px solid #ebebeb;
     padding: 15px 0px 15px;
     margin-top: 65px;
@@ -106,7 +106,7 @@
     }
 }
 /* START: Instagram*/
-.instagram-block {
+.halo-block-instagram {
     background-color: #fafafa;
     padding: 35px 0 40px;
     .halo-block-header {
@@ -165,7 +165,7 @@
         }
     }
     /* START: Section  spotlight*/
-    .spotlight-block {
+    .halo-block-spotlight {
         .content {
             .des {
                 min-width: 300px;
@@ -182,7 +182,7 @@
         width: 475px;
         padding-bottom: 30px;
     }
-    .fullwidth-banner {
+    .halo-product-fullwidth-banner {
         margin-bottom: 15px;
     }
     .halo-block-content {
@@ -279,19 +279,19 @@
             }
         }
     }
-    .fullwidth-banner .button {
+    .halo-product-fullwidth-banner .button {
         min-width: 237px;
     }
-    .instagram-block {
+    .halo-block-instagram {
         padding-bottom: 70px;
     }
-    .fullwidth-banner .button {
+    .halo-product-fullwidth-banner .button {
         min-width: 237px;
     }
 }
 
 @media(min-width:1600px) {
-    .instagram-block {
+    .halo-block-instagram {
         .halo-block-content {
             .slick-arrow {
                 &.slick-next {

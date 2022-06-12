@@ -8,16 +8,19 @@
 }
 .skin-7 .desc {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: 0;
   color: #232323;
+}
+.skin-7 .link {
+  font-size: 14px;
 }
 .skin-7 .button {
   font-size: 16px;
   letter-spacing: 0;
-  font-weight: bold;
+  line-height: normal;
   border-radius: 4px;
-  padding: 14px 15px 14px;
+  padding: 15px 15px 14px;
 }
 .skin-7 .button.button-1 {
   background-color: #f84248;
@@ -50,4 +53,17 @@
 .skin-7 .slick-dots {
   position: absolute;
   bottom: -50px;
+}
+.skin-7 .halo-block-header {
+  margin-bottom: 34px;
+}
+.skin-7 .halo-block-header .title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #232323;
+  text-transform: uppercase;
+}
+.skin-7 .halo-block-header .title:before {
+  display: none;
 }/*# sourceMappingURL=skin-7.css.map */

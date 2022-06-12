@@ -66,33 +66,38 @@
     }
 }// END: Full Width Banner
 
-.halo-block-brand{
-    padding: 35px 0px 60px;
-    margin-bottom: 40px;
-    background: #f8f8f8;
-    .halo-row-item{
-        &:hover{
-            .banner-title{
-                a{
-                    color: #f84248;
+.halo-block-brands{
+    &.style-1{
+        padding: 40px 0px 30px;
+    }
+    &.style-2{
+        padding: 35px 0px 60px;
+        margin-bottom: 40px;
+        background: #f8f8f8;
+        .halo-row-item{
+            &:hover{
+                .banner-title{
+                    a{
+                        color: #f84248;
+                    }
                 }
+                
             }
-            
         }
-    }
-    .banner-title{
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 25px;
-        margin-bottom: 0px;
-        a{
-            color: #232323;
+        .banner-title{
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            a{
+                color: #232323;
+            }
         }
-    }
-    .desc{
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
+        .desc{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 400;
+        }
     }
 }// END: Block brand
 
@@ -140,6 +145,78 @@
     }
     
 }// END: Block Sub Banner
+
+.halo-block-instagram{
+    padding: 30px 0px 40px;
+    .halo-block-header{
+        .title{
+            svg{
+                width: 23px;
+                height: 23px;
+                margin-right: 3px;
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+    .instagram-button{
+        margin-top:31px;
+        .button{
+            width: 100%;
+            max-width:207px;
+        }
+    }
+}// END: Block Instagram
+
+.halo-block-blog-post{
+    padding: 30px 0px 9px;
+    .article-details{
+        padding: 16px 28px 25px;
+        border: 1px solid #dbdbdb;
+        border-top:none;
+        .article-title{
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 2px;
+        }
+        .blog-info{
+            margin-bottom: 14px;
+            .blog-date{
+                line-height: 22px;
+                font-size: 14px;
+                color:#999999;
+            }
+        }
+        .desc{
+            color:#3c3c3c;
+            margin-bottom: 9px;
+        }
+        .actions{
+            .link{
+                color:#3c3c3c;
+                font-weight: 500;
+                
+            }
+        }
+    }
+    .halo-row-item{
+       &:hover{
+        .article-details{
+            box-shadow: 0 3px 7px #e1e1e1;
+        }
+        .article-title{
+            a{
+                color: #f84248;
+                .text{
+                    text-underline-offset: 0.3rem;
+                }
+            }
+        }
+       }
+    }
+}// END: Block Blog Posts
+
 @media(max-width:580px){
     .announcement-bar{
         .message{

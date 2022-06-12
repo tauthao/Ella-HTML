@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* START: Section Full With Banner */
-.fullwidth-banner {
+.halo-product-fullwidth-banner {
   margin-bottom: 30px;
 }
-.fullwidth-banner .banner-item .banner-title {
+.halo-product-fullwidth-banner .banner-item .banner-title {
   letter-spacing: 0.05em;
   font-weight: 700;
   margin-bottom: 24px;
@@ -13,7 +13,7 @@
   font-size: 40px;
   margin-bottom: 18px;
 }
-.fullwidth-banner .banner-item .banner-title .line {
+.halo-product-fullwidth-banner .banner-item .banner-title .line {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -23,7 +23,7 @@
   background: #232323;
   display: inline-block;
 }
-.fullwidth-banner .banner-item .banner-text {
+.halo-product-fullwidth-banner .banner-item .banner-text {
   margin-bottom: 33px;
   max-width: 425px;
   margin-left: auto;
@@ -32,17 +32,17 @@
   color: #232323;
   line-height: 22px;
 }
-.fullwidth-banner .button {
+.halo-product-fullwidth-banner .button {
   min-width: 195px;
 }
-.fullwidth-banner .content-box--left {
+.halo-product-fullwidth-banner .content-box--left {
   left: calc((100% - 1200px) / 2);
   padding: 25px 25px 30px;
   width: 475px;
   padding-top: 0;
   padding-bottom: 30px;
 }
-.fullwidth-banner .content-box--right {
+.halo-product-fullwidth-banner .content-box--right {
   right: calc((100% - 1200px) / 2);
   padding: 25px 25px 30px;
   width: 475px;
@@ -61,86 +61,86 @@
 }
 
 /* START: Section  spotlight*/
-.spotlight-block {
+.halo-block-spotlight {
   padding-top: 24px;
 }
-.spotlight-block .content {
+.halo-block-spotlight .content {
   padding-top: 28px;
 }
-.spotlight-block .content .title {
+.halo-block-spotlight .content .title {
   margin-bottom: 18px;
   font-size: 20px;
   letter-spacing: 0.05em;
 }
-.spotlight-block .content .des {
+.halo-block-spotlight .content .des {
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.02em;
   min-width: 350px;
 }
-.spotlight-block .content .spotlight-button {
+.halo-block-spotlight .content .spotlight-button {
   margin-top: 30px;
 }
 
 /* START: Section  brands*/
-.brands-block {
+.halo-block-brands {
   border-top: 1px solid #ebebeb;
   padding: 15px 0px 15px;
   margin-top: 65px;
 }
-.brands-block .halo-row-item {
+.halo-block-brands .halo-row-item {
   padding: 0px 15px;
   display: none;
 }
-.brands-block .halo-row-item a {
+.halo-block-brands .halo-row-item a {
   display: block;
 }
-.brands-block .slick-initialized .halo-row-item {
+.halo-block-brands .slick-initialized .halo-row-item {
   display: block;
 }
 
 /* START: Instagram*/
-.instagram-block {
+.halo-block-instagram {
   background-color: #fafafa;
   padding: 35px 0 40px;
 }
-.instagram-block .halo-block-header {
+.halo-block-instagram .halo-block-header {
   margin-bottom: 13px;
 }
-.instagram-block .halo-block-header .title {
+.halo-block-instagram .halo-block-header .title {
   display: flex;
   justify-content: center;
   margin-bottom: 13px;
 }
-.instagram-block .halo-block-header .title::before {
+.halo-block-instagram .halo-block-header .title::before {
   display: none;
 }
-.instagram-block .halo-block-header .title svg {
+.halo-block-instagram .halo-block-header .title svg {
   width: 22px;
   height: 22px;
   margin-right: 13px;
 }
-.instagram-block .halo-block-header .desc {
+.halo-block-instagram .halo-block-header .desc {
   padding-bottom: 22px;
 }
-.instagram-block .halo-block-content .row {
+.halo-block-instagram .halo-block-content .row {
   margin-left: -2.5px;
   margin-right: -2.5px;
 }
-.instagram-block .halo-block-content .row .halo-row-item {
+.halo-block-instagram .halo-block-content .row .halo-row-item {
   padding: 0px 2.5px;
   display: none;
 }
-.instagram-block .halo-block-content .row.slick-initialized .halo-row-item {
+.halo-block-instagram .halo-block-content .row.slick-initialized .halo-row-item {
   display: block;
 }
-.instagram-block .halo-block-content .row > * {
+.halo-block-instagram .halo-block-content .row > * {
   padding: 0;
 }
-.instagram-block .instagram-button {
+.halo-block-instagram .instagram-button {
   margin-top: 26px;
 }
-.instagram-block .instagram-button .button {
+.halo-block-instagram .instagram-button .button {
   min-width: 230px;
 }
 
@@ -152,7 +152,7 @@
   }
 
   /* START: Section  spotlight*/
-  .spotlight-block .content .des {
+  .halo-block-spotlight .content .des {
     min-width: 300px;
   }
 }
@@ -165,7 +165,7 @@
     padding-bottom: 30px;
   }
 
-  .fullwidth-banner {
+  .halo-product-fullwidth-banner {
     margin-bottom: 15px;
   }
 
@@ -249,23 +249,23 @@
     font-size: 16px;
   }
 
-  .fullwidth-banner .button {
+  .halo-product-fullwidth-banner .button {
     min-width: 237px;
   }
 
-  .instagram-block {
+  .halo-block-instagram {
     padding-bottom: 70px;
   }
 
-  .fullwidth-banner .button {
+  .halo-product-fullwidth-banner .button {
     min-width: 237px;
   }
 }
 @media (min-width: 1600px) {
-  .instagram-block .halo-block-content .slick-arrow.slick-next {
+  .halo-block-instagram .halo-block-content .slick-arrow.slick-next {
     right: -15px;
   }
-  .instagram-block .halo-block-content .slick-arrow.slick-prev {
+  .halo-block-instagram .halo-block-content .slick-arrow.slick-prev {
     left: -15px;
   }
 }/*# sourceMappingURL=demo-1.css.map */

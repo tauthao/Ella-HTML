@@ -118,28 +118,18 @@
                                     }
                                 },
                                 {
-                                    breakpoint: 768,
+                                    breakpoint: 767,
                                     settings: {
                                         dots: itemDots,
                                         arrows: itemRow,
-                                        slidesToShow: 4,
-                                        slidesToScroll: 2
-                                    }
-                                },
-                                {
-                                    breakpoint: 552,
-                                    settings: {
-                                        dots: itemDots_mb,
-                                        arrows: itemRow_mb,
                                         slidesToShow: 3,
-                                        slidesToScroll: 3
+                                        slidesToScroll: 1
                                     }
                                 }
                             ]
                         });
                     }
                 }
-
             });
         },
 
