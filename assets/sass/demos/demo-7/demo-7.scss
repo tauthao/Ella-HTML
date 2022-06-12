@@ -217,6 +217,57 @@
     }
 }// END: Block Blog Posts
 
+.halo-block-product-tab{
+    .nav-tabs{
+        justify-content: center;
+        border:none;
+        .nav-link{
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color:#969696;
+            position: relative;
+            text-transform: uppercase;
+            padding:8px 0;
+            border:none;
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                transition: all 0.5s ease;
+                background: #f84248;
+            }
+            &.active{
+                color:#232323;
+                border:none;
+                &:before{
+                    width: 100%;
+                }
+            }
+            &:hover{
+                border:none;
+                right:0;
+                left:auto;
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
+        .line{
+            color: #969696;
+            font-size: 17px;
+            padding:8px 22px;
+            text-align: center;
+            display: block;
+        }
+    }
+    .product-tab-content{
+        margin-top: 25px;
+    }
+}
 @media(max-width:580px){
     .announcement-bar{
         .message{
