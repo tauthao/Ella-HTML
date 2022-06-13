@@ -1000,6 +1000,12 @@ svg {
     padding-right: 0!important;
     overflow-x: hidden;
 }
+
+.container-1920{
+    max-width: 1992px;
+    padding-left: 0;
+    padding-right: 0;
+}
 /* END: Container */
 
 /* START: Banner Image */
@@ -1753,9 +1759,15 @@ label {
 
 @media (min-width: 1920px) {
     /* START: Container */
+    .container,
+    .container.container-1770{
+        padding-left: calc((100% - 1770px)/2);
+        padding-right: calc((100% - 1770px)/2);
+    }
     .container.container-1860 {
         padding-left: calc((100% - 1860px)/2);
         padding-right: calc((100% - 1860px)/2);
     }
+    
     /* END: Container */
 }

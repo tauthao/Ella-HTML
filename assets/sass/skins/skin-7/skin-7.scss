@@ -44,6 +44,7 @@
     .slick-arrow{
         border: 1px solid #dcdcdc;
         color:#323232;
+        background:#ffffff!important;
         svg{
             fill:#323232;
             top: -6px;
@@ -51,7 +52,7 @@
     }
     .slick-dots{
         position: absolute;
-        bottom: -50px;
+        bottom: -45px;
     }
     .halo-block-header{
         margin-bottom: 34px;
@@ -64,6 +65,34 @@
             &:before{
                 display: none;
             }
+        }
+    }
+    .product-card{
+        .card-price{
+            justify-content: flex-start;
+        }
+        .card-vendor {
+            font-size:14px;
+            font-weight:700;
+            letter-spacing: 0;
+            color:#232323;
+            padding-bottom: 3px;
+        }
+        .card-title{
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0;
+            padding-bottom: 4px;
+        }
+        .card-price{
+            .money{
+                font-size:16px;
+                line-height: 22px;
+                font-weight: 500;
+            }
+        }
+        .card-swatch{
+            margin: 14px 0px 0px;
         }
     }
 

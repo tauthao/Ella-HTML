@@ -1,11 +1,9 @@
 .footer-7 .footer-top {
   background: #232830;
 }
-
 .footer-7 .footer-top .footer-newsletter {
   padding: 22px 0px 16px;
 }
-
 .footer-7 .footer-top .footer-newsletter .footer-block__heading {
   color: #ffffff;
   font-size: 20px;
@@ -13,21 +11,17 @@
   font-weight: 700;
   padding-bottom: 5px;
 }
-
 .footer-7 .footer-top .footer-newsletter .desc {
   color: rgba(255, 255, 255, 0.7);
 }
-
 .footer-7 .footer-top .footer-newsletter .footer-block__newsletter-form {
   margin: 24px auto 30px;
   max-width: 640px;
 }
-
 .footer-7 .footer-top .footer-newsletter .footer-block__newsletter-form .newsletter-form__button {
   width: 100%;
   max-width: 150px;
 }
-
 .footer-7 .footer-top .footer-newsletter .footer-block__newsletter-form .field__input {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -36,11 +30,9 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .footer-7 .footer-top .footer-newsletter .footer-block__newsletter-form .field {
   margin-right: 15px;
 }
-
 .footer-7 .footer-top .footer-nav .footer-block__heading {
   font-size: 16px;
   line-height: 28px;
@@ -49,7 +41,6 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .footer-7 .footer-top .footer-nav .footer-link,
 .footer-7 .footer-top .footer-nav .contact-info p,
 .footer-7 .footer-top .footer-nav .contact-info a {
@@ -58,35 +49,28 @@
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .footer-7 .footer-top .footer-nav .footer-logo {
   margin: 7px 0px 10px;
 }
-
 .footer-7 .footer-top .footer-nav .contact-info .icon {
   width: 33px;
   display: inline-block;
   vertical-align: top;
 }
-
 .footer-7 .footer-top .footer-nav .contact-info .icon svg {
   height: 22px;
   width: 22px;
 }
-
 .footer-7 .footer-top .footer-nav .contact-info .icon + span {
   width: calc(100% - 40px);
   display: inline-block;
 }
-
 .footer-7 .footer-top .footer-nav .list-social {
   margin-top: 30px;
 }
-
 .footer-7 .footer-top .footer-nav .list-social .list-social__item {
   margin: 10px 10px 0px 0;
 }
-
 .footer-7 .footer-top .footer-nav .list-social .list-social__link {
   width: 38px;
   height: 38px;
@@ -94,74 +78,54 @@
   background: #a5a8ab;
   border: 1px solid #a5a8ab;
 }
-
 .footer-7 .footer-top .footer-nav .list-social .list-social__link svg {
   width: 15px;
   height: 15px;
   fill: #232830;
 }
-
 .footer-7 .footer-top .footer-securityImage {
   padding: 30px 0px 19px;
 }
-
 .footer-7 .footer-top .footer-securityImage ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .footer-7 .footer-top .footer-securityImage ul li {
   padding: 0px 15px;
 }
-
 .footer-7 .footer-bottom {
   background: #3a3e45;
   border-top: 0;
   padding-top: 25px;
   padding-bottom: 45px;
 }
-
 .footer-7 .footer-bottom .copyright__content {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .footer-7 .footer-bottom .copyright__content span {
   display: block;
 }
-
 .footer-7 .footer-bottom .footer__payment {
   position: relative;
   top: -5px;
 }
-
 .footer-7 .footer-bottom .footer__payment .list-payment {
   text-align: right;
 }
 
 @media (max-width: 992px) {
   .footer-7 .footer-nav .col-custom-text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%;
   }
   .footer-7 .footer-top .footer-securityImage ul {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     margin: 0px -15px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .footer-7 .footer-top .footer-securityImage ul li {
     padding: 0px 15px 10px;
@@ -174,5 +138,4 @@
   .footer-7 .footer__payment .list-payment li {
     margin: 5px 15px 5px 0px !important;
   }
-}
-/*# sourceMappingURL=footer-7.css.map */
+}/*# sourceMappingURL=footer-7.css.map */

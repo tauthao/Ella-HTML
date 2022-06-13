@@ -3,9 +3,8 @@
 .halo-product-fullwidth-banner {
   margin-bottom: 30px;
 }
-
 .halo-product-fullwidth-banner .banner-item .banner-title {
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   font-weight: 700;
   margin-bottom: 24px;
   text-transform: uppercase;
@@ -14,19 +13,16 @@
   font-size: 40px;
   margin-bottom: 18px;
 }
-
 .halo-product-fullwidth-banner .banner-item .banner-title .line {
   position: absolute;
   left: 50%;
   bottom: 0;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   height: 2px;
   width: 40px;
   background: #232323;
   display: inline-block;
 }
-
 .halo-product-fullwidth-banner .banner-item .banner-text {
   margin-bottom: 33px;
   max-width: 425px;
@@ -36,21 +32,18 @@
   color: #232323;
   line-height: 22px;
 }
-
 .halo-product-fullwidth-banner .button {
   min-width: 195px;
 }
-
 .halo-product-fullwidth-banner .content-box--left {
-  left: calc((100% - 1200px)/2);
+  left: calc((100% - 1200px) / 2);
   padding: 25px 25px 30px;
   width: 475px;
   padding-top: 0;
   padding-bottom: 30px;
 }
-
 .halo-product-fullwidth-banner .content-box--right {
-  right: calc((100% - 1200px)/2);
+  right: calc((100% - 1200px) / 2);
   padding: 25px 25px 30px;
   width: 475px;
   padding-top: 0;
@@ -61,35 +54,30 @@
 .halo-block-sub-banner .banner-title {
   margin: 0;
 }
-
 .halo-block-sub-banner .banner-title a {
   color: #ffffff;
   font-size: 16px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 /* START: Section  spotlight*/
 .halo-block-spotlight {
   padding-top: 24px;
 }
-
 .halo-block-spotlight .content {
   padding-top: 28px;
 }
-
 .halo-block-spotlight .content .title {
   margin-bottom: 18px;
   font-size: 20px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
-
 .halo-block-spotlight .content .des {
   font-size: 12px;
   line-height: 22px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   min-width: 350px;
 }
-
 .halo-block-spotlight .content .spotlight-button {
   margin-top: 30px;
 }
@@ -100,16 +88,13 @@
   padding: 15px 0px 15px;
   margin-top: 65px;
 }
-
 .halo-block-brands .halo-row-item {
   padding: 0px 15px;
   display: none;
 }
-
 .halo-block-brands .halo-row-item a {
   display: block;
 }
-
 .halo-block-brands .slick-initialized .halo-row-item {
   display: block;
 }
@@ -119,57 +104,42 @@
   background-color: #fafafa;
   padding: 35px 0 40px;
 }
-
 .halo-block-instagram .halo-block-header {
   margin-bottom: 13px;
 }
-
 .halo-block-instagram .halo-block-header .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 13px;
 }
-
 .halo-block-instagram .halo-block-header .title::before {
   display: none;
 }
-
 .halo-block-instagram .halo-block-header .title svg {
   width: 22px;
   height: 22px;
   margin-right: 13px;
 }
-
 .halo-block-instagram .halo-block-header .desc {
   padding-bottom: 22px;
 }
-
 .halo-block-instagram .halo-block-content .row {
   margin-left: -2.5px;
   margin-right: -2.5px;
 }
-
 .halo-block-instagram .halo-block-content .row .halo-row-item {
   padding: 0px 2.5px;
   display: none;
 }
-
 .halo-block-instagram .halo-block-content .row.slick-initialized .halo-row-item {
   display: block;
 }
-
 .halo-block-instagram .halo-block-content .row > * {
   padding: 0;
 }
-
 .halo-block-instagram .instagram-button {
   margin-top: 26px;
 }
-
 .halo-block-instagram .instagram-button .button {
   min-width: 230px;
 }
@@ -180,31 +150,32 @@
     font-size: 30px;
     margin-bottom: 15px;
   }
+
   /* START: Section  spotlight*/
   .halo-block-spotlight .content .des {
     min-width: 300px;
   }
 }
-
 @media (max-width: 767px) {
   /* START: Section Full With Banner-1 */
   .content-box--left,
-  .content-box--right {
+.content-box--right {
     padding-top: 0;
     width: 475px;
     padding-bottom: 30px;
   }
+
   .halo-product-fullwidth-banner {
     margin-bottom: 15px;
   }
+
   .halo-block-content .content-box--left {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1;
     padding: 25px 25px 30px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     max-width: 100%;
   }
   .halo-block-content .content-box--left .banner-title {
@@ -221,6 +192,7 @@
     font-size: 12px !important;
     line-height: 22px;
   }
+
   /* START: Section Sub Banner */
   .halo-block-sub-banner .halo-row-item {
     width: 100%;
@@ -228,6 +200,7 @@
   .halo-block-sub-banner .halo-row-item + .halo-row-item {
     margin-top: 15px;
   }
+
   /* START: Section Sub Banner-2 */
   .halo-block-content .content-box--right {
     position: absolute;
@@ -235,7 +208,6 @@
     left: auto;
     right: 50%;
     padding: 25px 25px 30px;
-    -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
     max-width: 100%;
   }
@@ -249,46 +221,46 @@
     line-height: 22px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   /* START: Section Sub Banner */
   .halo-block-content .content-box--left {
-    left: calc((100% - 730px)/2);
+    left: calc((100% - 730px) / 2);
     width: 475px;
     padding-top: 25px;
     padding-bottom: 30px;
   }
+
   .halo-block-content .content-box--right {
-    right: calc((100% - 730px)/2);
+    right: calc((100% - 730px) / 2);
     width: 475px;
     padding-top: 25px;
     padding-bottom: 30px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   /* START: Section Sub Banner */
   .halo-block-content .content-box--left {
-    left: calc( (100% - 950px) / 2);
+    left: calc((100% - 950px) / 2);
   }
 }
-
 @media (min-Width: 1200px) {
   /* START: Section Sub Banner */
   .halo-block-sub-banner .halo-row-item .banner-title {
     font-size: 16px;
   }
+
   .halo-product-fullwidth-banner .button {
     min-width: 237px;
   }
+
   .halo-block-instagram {
     padding-bottom: 70px;
   }
+
   .halo-product-fullwidth-banner .button {
     min-width: 237px;
   }
 }
-
 @media (min-width: 1600px) {
   .halo-block-instagram .halo-block-content .slick-arrow.slick-next {
     right: -15px;
@@ -296,5 +268,4 @@
   .halo-block-instagram .halo-block-content .slick-arrow.slick-prev {
     left: -15px;
   }
-}
-/*# sourceMappingURL=demo-1.css.map */
+}/*# sourceMappingURL=demo-1.css.map */

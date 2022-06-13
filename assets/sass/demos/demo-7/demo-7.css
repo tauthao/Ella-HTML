@@ -1,19 +1,11 @@
 .announcement-bar {
   background: #f84248;
 }
-
 .announcement-bar .message {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 5px 0px 5px;
   position: relative;
   font-size: 14px;
@@ -24,13 +16,11 @@
   text-transform: initial;
   letter-spacing: 0;
 }
-
 .announcement-bar .message img {
   position: relative;
   top: -4px;
   margin-right: 25px;
 }
-
 .announcement-bar .message .btn {
   margin-left: 32px;
   font-weight: 500;
@@ -43,12 +33,10 @@
   border-color: #ffffff;
   font-size: 14px;
 }
-
 .announcement-bar .message .btn:hover {
   color: #ffffff;
   background: #f84248;
 }
-
 .announcement-bar .announcement-close svg {
   fill: #ffffff;
 }
@@ -58,7 +46,6 @@
   padding-top: 25px;
   padding-bottom: 30px;
 }
-
 .halo-block-fullwidth-banner .content-box .banner-title {
   font-size: 40px;
   line-height: 40px;
@@ -66,13 +53,11 @@
   margin-bottom: 25px;
   font-weight: 700;
 }
-
 .halo-block-fullwidth-banner .content-box .desc {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 43px;
 }
-
 .halo-block-fullwidth-banner .content-box .button {
   min-width: 180px;
 }
@@ -80,28 +65,22 @@
 .halo-block-brands.style-1 {
   padding: 40px 0px 30px;
 }
-
 .halo-block-brands.style-2 {
   padding: 35px 0px 60px;
-  margin-bottom: 40px;
   background: #f8f8f8;
 }
-
 .halo-block-brands.style-2 .halo-row-item:hover .banner-title a {
   color: #f84248;
 }
-
 .halo-block-brands.style-2 .banner-title {
   font-size: 16px;
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 0px;
 }
-
 .halo-block-brands.style-2 .banner-title a {
   color: #232323;
 }
-
 .halo-block-brands.style-2 .desc {
   text-transform: uppercase;
   font-size: 16px;
@@ -110,12 +89,12 @@
 
 .halo-block-sub-banner {
   margin-bottom: 50px;
+  padding: 100px 0px 75px;
+  background: #f8f8f8;
 }
-
 .halo-block-sub-banner .halo-row-item {
   margin-bottom: 15px;
 }
-
 .halo-block-sub-banner .content-box .sub-title {
   font-size: 14px;
   line-height: 20px;
@@ -123,18 +102,15 @@
   color: #ffffff;
   margin-bottom: 9px;
 }
-
 .halo-block-sub-banner .content-box .banner-title {
   font-size: 30px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 13px;
 }
-
 .halo-block-sub-banner .content-box .banner-title span {
   position: relative;
 }
-
 .halo-block-sub-banner .content-box .banner-title span:before {
   content: "";
   height: 3px;
@@ -144,14 +120,12 @@
   bottom: -5px;
   background: #f84248;
 }
-
 .halo-block-sub-banner .content-box .desc {
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   color: #ffffff;
 }
-
 .halo-block-sub-banner .content-box .banner-button {
   margin-top: 25px;
   min-width: 180px;
@@ -160,7 +134,6 @@
 .halo-block-instagram {
   padding: 30px 0px 40px;
 }
-
 .halo-block-instagram .halo-block-header .title svg {
   width: 23px;
   height: 23px;
@@ -168,73 +141,64 @@
   position: relative;
   top: -2px;
 }
-
 .halo-block-instagram .instagram-button {
   margin-top: 31px;
 }
-
 .halo-block-instagram .instagram-button .button {
   width: 100%;
   max-width: 207px;
 }
 
 .halo-block-blog-post {
-  padding: 30px 0px 9px;
+  padding: 25px 0px 9px;
 }
-
 .halo-block-blog-post .article-details {
   padding: 16px 28px 25px;
   border: 1px solid #dbdbdb;
   border-top: none;
 }
-
 .halo-block-blog-post .article-details .article-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 2px;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
-
 .halo-block-blog-post .article-details .blog-info {
   margin-bottom: 14px;
 }
-
 .halo-block-blog-post .article-details .blog-info .blog-date {
   line-height: 22px;
   font-size: 14px;
   color: #999999;
 }
-
 .halo-block-blog-post .article-details .desc {
   color: #3c3c3c;
   margin-bottom: 9px;
 }
-
 .halo-block-blog-post .article-details .actions .link {
   color: #3c3c3c;
   font-weight: 500;
 }
-
 .halo-block-blog-post .halo-row-item:hover .article-details {
-  -webkit-box-shadow: 0 3px 7px #e1e1e1;
-          box-shadow: 0 3px 7px #e1e1e1;
+  box-shadow: 0 3px 7px #e1e1e1;
 }
-
 .halo-block-blog-post .halo-row-item:hover .article-title a {
   color: #f84248;
 }
-
 .halo-block-blog-post .halo-row-item:hover .article-title a .text {
   text-underline-offset: 0.3rem;
 }
 
 .halo-block-product-tab .nav-tabs {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border: none;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link {
   font-size: 20px;
   font-weight: 700;
@@ -245,7 +209,6 @@
   padding: 8px 0;
   border: none;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link:before {
   content: "";
   position: absolute;
@@ -253,30 +216,24 @@
   left: 0;
   width: 0;
   height: 3px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   background: #f84248;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link.active {
   color: #232323;
   border: none;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link.active:before {
   width: 100%;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link:hover {
   border: none;
   right: 0;
   left: auto;
 }
-
 .halo-block-product-tab .nav-tabs .nav-link:hover:before {
   width: 100%;
 }
-
 .halo-block-product-tab .nav-tabs .line {
   color: #969696;
   font-size: 17px;
@@ -284,32 +241,114 @@
   text-align: center;
   display: block;
 }
-
 .halo-block-product-tab .product-tab-content {
-  margin-top: 25px;
+  margin-top: 27px;
+}
+.halo-block-product-tab .product-tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.halo-block-product-tab .product-tab-content > .tab-pane.active {
+  height: auto;
+  overflow: visible;
+}
+.halo-block-product-tab .product-tab-content .slick-dots {
+  bottom: -30px;
 }
 
+.halo-block-product-width-banner {
+  overflow: hidden;
+}
+.halo-block-product-width-banner .col-banner .halo-block-item,
+.halo-block-product-width-banner .col-banner .img-box,
+.halo-block-product-width-banner .col-banner .image {
+  height: 100%;
+}
+.halo-block-product-width-banner .col-banner .image img {
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+.halo-block-product-width-banner .col-banner .content-box .banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.halo-block-product-width-banner .col-banner .content-box .sub-title {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+.halo-block-product-width-banner .col-banner .content-box .desc {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #ffffff;
+  line-height: 18px;
+  margin-bottom: 37px;
+}
+.halo-block-product-width-banner .col-banner .content-box .button {
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+}
+.halo-block-product-width-banner .col-product {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  padding-left: 6%;
+}
+.halo-block-product-width-banner .col-product .halo-row-header {
+  margin-bottom: 35px;
+}
+.halo-block-product-width-banner .col-product .halo-row-header .title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #232323;
+  margin-bottom: 10px;
+}
+.halo-block-product-width-banner .col-product .halo-row-header .title .view_all {
+  font-size: 14px;
+}
+
+@media (max-width: 1300px) {
+  .halo-block-brands.style-1 {
+    padding-bottom: 70px;
+  }
+}
 @media (max-width: 580px) {
   .announcement-bar .message .btn {
     display: none;
   }
 }
-
 @media (max-width: 420px) {
   .announcement-bar .message img {
     display: none;
   }
 }
-
+@media (max-width: 551px) {
+  .halo-block-product-tab .nav-tabs {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+}
 @media (min-width: 768px) {
   .halo-block-brand {
     padding: 70px 0px 53px;
   }
-}
 
+  .halo-block-product-width-banner .col-product {
+    padding-right: calc((100% - 1170px) / 2);
+  }
+}
 @media (min-width: 1025px) {
   .halo-block-sub-banner .halo-row-item .banner-button {
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     opacity: 0;
     z-index: -1;
@@ -317,8 +356,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .halo-block-sub-banner .halo-row-item:hover .content-box .banner-button {
     top: calc(100% - 16px);
@@ -327,22 +365,19 @@
     overflow: visible;
   }
 }
-
 @media (min-width: 1200px) {
   .halo-block-fullwidth-banner .content-box.content-box--left {
-    left: calc((100% - 1170px)/2);
+    left: calc((100% - 1170px) / 2);
   }
   .halo-block-fullwidth-banner .content-box.content-box--right {
-    right: calc((100% - 1170px)/2);
+    right: calc((100% - 1170px) / 2);
   }
 }
-
 @media (min-width: 1600px) {
   .halo-block-fullwidth-banner .content-box.content-box--left {
-    left: calc((100% - 1370px)/2);
+    left: calc((100% - 1370px) / 2);
   }
   .halo-block-fullwidth-banner .content-box.content-box--right {
-    right: calc((100% - 1370px)/2);
+    right: calc((100% - 1370px) / 2);
   }
-}
-/*# sourceMappingURL=demo-7.css.map */
+}/*# sourceMappingURL=demo-7.css.map */
