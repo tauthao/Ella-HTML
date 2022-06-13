@@ -1,5 +1,20 @@
 @charset "UTF-8";
-/* ===  Main Css === */
+
+/*-_-_-_-_-_-_-_-_-_- TABLE OF CONTENTS -_-_-_-_-_-_-_-_-_- */
+
+    /*--------------------- 1. Main Styles ------------- */
+    /*--------------------- 2. General Styles  --------- */
+    /*--------------------- 3. Header Styles  ---------- */
+    /*--------------------- 4. Footer Styles  ---------- */
+    /*--------------------- 5. Product Card Styles  ---- */
+    /*--------------------- 6. Product Styles  --------- */
+    /*--------------------- 7. Popup Styles  ----------- */
+    /*--------------------- 8. Sidebar Styles  --------- */
+    
+/*-_-_-_-_-_-_-_-_-_- END TABLE OF CONTENTS -_-_-_-_-_-_-_-_-_- */
+
+
+/* ===  Main Style === */
 @import 'config/fonts';
 @import 'config/variables';
 
@@ -14,29 +29,33 @@
 @import 'base/footer/footer';
 @import 'base/footer/toolbar-bottom-mobile';
 
-/* ===  Product Card === */
+/* ===  Product Card Styles === */
 @import 'base/card/component-card';
 
 /* ===  Product Styles === */
 @import 'base/product/component-product';
 
 /* ===  Popup === */
-@import 'popup/component-recently-viewed';
-@import 'popup/component-notify-me';
-@import 'popup/component-quick-card';
-@import 'popup/component-newsletter';
-@import 'popup/component-quickshop';
-@import 'popup/component-quickview';
-@import 'popup/component-sizechart';
-@import 'popup/componet-ask-an-expert';
-@import 'popup/component-compare-color';
-@import 'popup/component-notification';
-@import 'popup/component-search-popup';
+@import 'popup/base-popup';
+@import 'popup/component-popup-compare-color';
+@import 'popup/component-popup-newsletter';
+@import 'popup/component-popup-notification';
+@import 'popup/component-popup-notify-me';
+@import 'popup/component-popup-quick-card';
+@import 'popup/component-popup-quickshop';
+@import 'popup/component-popup-quickview';
+@import 'popup/component-popup-recently-viewed';
+@import 'popup/component-popup-search';
+@import 'popup/component-popup-sizechart';
+@import 'popup/componet-popup-ask-an-expert';
+@import 'popup/component-accept-cookie-popup';
 
 /* ===  Sidebar === */
-@import 'sidebar/component-auth';
-@import 'sidebar/component-quick-cart';
-@import 'sidebar/component-search-sidebar';
-@import 'sidebar/componet-menu-sidebar';
-@import 'sidebar/component-before-you-leave';
-@import 'sidebar/component-lang-currency';
+@import 'sidebar/base-sidebar';
+@import 'sidebar/component-sidebar-page';
+@import 'sidebar/component-sidebar-auth';
+@import 'sidebar/component-sidebar-before-you-leave';
+@import 'sidebar/component-sidebar-lang-currency';
+@import 'sidebar/component-sidebar-menu';
+@import 'sidebar/component-sidebar-quick-cart';
+@import 'sidebar/component-sidebar-search';

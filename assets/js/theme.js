@@ -52,15 +52,15 @@
             this.initCountdown();
             this.initProductCustomerViewing();
             this.initProductSizeChart();
-            this.initProducQuickView();
-            this.initProducAskAnExpert();
+            this.initProductQuickView();
+            this.initProductAskAnExpert();
             this.initCardSwatch();
             this.initZoomImage();
             this.initProductImageGallery();
             this.initWishlistActive();
-            this.initUpdateVlueQuantity();
+            this.initUpdateValueQuantity();
             this.initMenuMobile();
-            this.initShowPopupLookbook();
+            this.initShowPopupLookBook();
             this.initShowPopupSearch();
             this.initToggleSidebarMobile();
             this.initPriceRangeFilter();
@@ -68,6 +68,7 @@
             this.initBeforeYouLeave();
             this.initNotification();
             this.initProductVariantChange();
+            this.initCloseAcceptCookie();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -920,7 +921,7 @@
             }
         },
 
-        initProducQuickView: function() {
+        initProductQuickView: function() {
             var btnSizeChart = $('[data-open-quick-view-popup]'),
                 btnClose = $(".background-overlay-popup, [data-close-quickView-popup]");
 
@@ -943,7 +944,7 @@
             }
         },
 
-        initProducAskAnExpert: function() {
+        initProductAskAnExpert: function() {
             var btnNotify = $('[data-open-ask-an-expert]'),
                 btnClose = $(".background-overlay, .halo-popup-close");
 
@@ -1116,7 +1117,7 @@
             });
         },
 
-        initUpdateVlueQuantity: function() {
+        initUpdateValueQuantity: function() {
             var btnQuantity = $('.previewCartItem-qty .btn-quantity');
 
             btnQuantity.on('click', (event) => {
@@ -1191,7 +1192,7 @@
                 }
         },
 
-        initShowPopupLookbook: function() {
+        initShowPopupLookBook: function() {
             $doc.on('click', '[data-open-lookbook-popup]', (event) => {
                 event.preventDefault();
                 var $target = $(event.currentTarget),
@@ -1695,6 +1696,16 @@
                 });
             }
         },
+
+        initCloseAcceptCookie: function () {
+            $doc.on('click', '[data-close-accept]', (event) => {
+                event.preventDefault();
+                
+                if ($(event.currentTarget).find(".halo-accept-cookie-popup")) {
+                    $('.halo-accept-cookie-popup ').addClass('is-hidden')
+                }
+            });
+        }
         
     }
 })(jQuery);

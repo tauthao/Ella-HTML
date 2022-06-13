@@ -333,3 +333,16 @@
         }
     }
 }
+
+@media(min-width:1600px){
+    .halo-block-fullwidth-banner{
+        .content-box{
+            &.content-box--left {
+                left: calc((100% - 1370px)/2);
+            }
+            &.content-box--right {
+                right: calc((100% - 1370px)/2);
+            }
+        }
+    }
+}

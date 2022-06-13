@@ -1,6 +1,9 @@
 .halo-block-slideshow{
     margin-bottom:20px;
+    line-height: 1;
+    font-size: 0;
     .halo-row-carousel{
+        line-height: 1;
         .bannerCarousel-slide{
             display:none;
             &:first-child{

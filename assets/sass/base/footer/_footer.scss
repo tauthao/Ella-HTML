@@ -1,5 +1,6 @@
 .footer {
     background: #232323;
+    padding-bottom: 70px;
     .footer-top {
         padding: 37px 0 22px;
     }
@@ -205,6 +206,10 @@
 }
 
 @media (min-width:1025px) {
+    .footer {
+        padding-bottom: 70px;
+    }
+    
     .list-social__link:before {
         content: "";
         position: absolute;
@@ -218,11 +223,6 @@
         left: -7px;
         padding: 7px;
         pointer-events: none;
-        -webkit-transition: -webkit-transform .2s, opacity .2s;
-        -webkit-transform: scale(.8);
-        -moz-transition: -moz-transform .2s, opacity .2s;
-        -moz-transform: scale(.8);
-        -ms-transform: scale(.8);
         transition: transform .2s, opacity .2s;
         transform: scale(.8);
         opacity: 0;
