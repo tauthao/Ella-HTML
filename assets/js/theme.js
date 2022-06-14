@@ -30,7 +30,7 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            // this.initCloseAnnouncementBar();
+            this.initCloseAnnouncementBar();
             // this.initHeaderSticky();
             this.initDropdown();
             this.initOpenSearchForm();
@@ -44,7 +44,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            // this.initNewsLetterPopup();
+            this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
