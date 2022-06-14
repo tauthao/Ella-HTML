@@ -2,6 +2,121 @@
     .header-top{
         background: #232830;
         padding: 30px 0px 30px;
+        .header-top--wrapper{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-top--left{
+            flex: 0 0 calc(22% - 10px);
+            max-width: calc(22% - 10px);
+            display: block;
+            position: relative;
+            .header__heading{
+                position: relative;
+                top: 4px;
+            }
+        }
+        .header-top-center{
+            position: relative;
+            flex: 0 0 calc(44.666667% + 20px);
+            max-width: calc(44.666667% + 20px);
+            .search-bar{
+                border-radius: 5px;
+                .input-group-field{
+                    padding: 15px 20px 13px;
+                    font-size: 14px;
+                    color:#808080;
+                    letter-spacing: 0;
+                    width: calc(100% - 42px);
+                }
+                .icon-search{
+                    padding: 0;
+                    width:42px;
+                    svg{
+                        width: 28px;
+                        height: 28px;
+                        fill:#232830;
+                    }
+                }
+            }
+            .quickSearchResultsWrap{
+                width:100%;
+                border-radius: 5px;
+                overflow: hidden;
+                &.show{
+                    top: calc(100% + 10px);
+                }
+                padding: 0;
+                .quickSearchResult{
+                    padding: 18px 30px 0;
+                    max-height: calc(80vh - 150px);
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
+            }
+        }
+        .header-top--right{
+            flex: 0 0 calc(33.3333% - 10px);
+            max-width: calc(33.3333% - 10px);
+            .header__group{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .customer-service-text{
+                font-size: 14px;
+                text-align: left;
+                margin-right: 22px;
+                position: relative;
+                top: 5px;
+                color: #ffffff;
+                a{
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #ffffff;
+                }
+            }
+            .header__icon{
+                position: relative;
+                text-align: center;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    margin: 0;
+                    position: relative;
+                    top: 2px;
+                    fill:#ffffff;
+                }
+                & > span{
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 400;
+                    display: block!important;
+                    height: auto;
+                    margin-top: 10px;
+                    margin-left: 0;
+                    letter-spacing: 0;
+                    color:#ffffff;
+                }
+                .cart-count-bubble{
+                    position: absolute;
+                    right: -8px;
+                    top: -7px;
+                    width:24px;
+                    height: 24px;
+                    line-height: 24px;
+                    background: #f84248;
+                    span{
+                        color: #ffffff;
+                    }
+                }
+                & + .header__icon{
+                    margin-left: 40px;
+                }
+            }
+        }
     }
     
 }
