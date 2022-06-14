@@ -11,12 +11,23 @@ masonry-items {
   background-attachment: fixed;
 }
 
+.page-content {
+  padding-bottom: 70px;
+}
+
 .portfolio-tabs .tabs {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -26,19 +37,24 @@ masonry-items {
   padding-right: 10px;
   background-color: #fafafa;
 }
+
 .portfolio-tabs .tabs .tab {
   position: relative;
   padding: 0px 25px;
 }
+
 .portfolio-tabs .tabs .tab .tab-title {
   color: #232323;
   font-weight: 500;
-  transition: color 0.35s ease-in-out;
+  -webkit-transition: color .35s ease-in-out;
+  transition: color .35s ease-in-out;
 }
+
 .portfolio-tabs .tabs .tab.is-active .tab-title span {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
+
 .portfolio-tabs .haloPortfolioContent .desc {
   max-width: 470px;
   width: 100%;
@@ -52,18 +68,22 @@ masonry-items {
   font-size: 0;
   letter-spacing: 0;
 }
+
 .tabs-contents .masonry-item {
   padding: 5px;
   display: inline-block;
   vertical-align: top;
   width: 100%;
 }
+
 .tabs-contents .masonry-item.sizer-element {
   padding: 0 !important;
 }
+
 .tabs-contents .masonry-item .item {
   position: relative;
 }
+
 .tabs-contents .masonry-item .item .icon {
   width: 60px;
   height: 60px;
@@ -73,18 +93,22 @@ masonry-items {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, calc(-50% + 10px));
+  -webkit-transform: translate(-50%, calc(-50% + 10px));
+          transform: translate(-50%, calc(-50% + 10px));
   padding: 18px;
-  transition: all ease 0.7s;
+  -webkit-transition: all ease .7s;
+  transition: all ease .7s;
   z-index: -1;
   opacity: 0;
   visibility: hidden;
 }
+
 .tabs-contents .masonry-item .item .icon svg {
   width: 100%;
   height: 100%;
   fill: #ffffff;
 }
+
 .tabs-contents .masonry-item .item .content-box {
   position: absolute;
   left: 0;
@@ -92,25 +116,37 @@ masonry-items {
   height: 146px;
   width: 100%;
   padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 7px;
 }
+
 .tabs-contents .masonry-item .item .content-box .title {
   display: block;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   color: #ffffff;
   margin: 0;
 }
+
 .tabs-contents .masonry-item .item .content-box .desc {
   color: #ffffff;
 }
+
 .tabs-contents .masonry-item .item .content-box::after {
   content: "";
   position: absolute;
@@ -119,23 +155,29 @@ masonry-items {
   right: 0;
   bottom: 0;
   background-color: transparent;
-  opacity: 0.9;
+  opacity: .9;
   z-index: -1;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
 }
+
 .tabs-contents .masonry-item .item:hover .icon {
   z-index: 5;
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
+
 .tabs-contents .masonry-item .item:hover .content-box::after {
   background: #232323;
 }
+
 .tabs-contents .portfolio-showmore-btn {
   padding: 45px 15px 45px;
   text-align: center;
 }
+
 .tabs-contents .portfolio-showmore-btn .button {
   width: 100%;
   max-width: 290px;
@@ -147,9 +189,10 @@ masonry-items {
 
 @media (min-width: 768px) {
   .portfolio-tabs .tabs {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .tabs-contents .masonry-row {
     margin-left: -10px;
     margin-right: -10px;
@@ -163,18 +206,21 @@ masonry-items {
     padding: 15px;
   }
 }
+
 /* START: Portfolio With Sidebar */
 .portfolio-with-sidebar .portfolio-tabs .tabs {
   display: block;
   background: transparent;
   margin-top: 5px;
 }
+
 .portfolio-with-sidebar .portfolio-tabs .tabs .tab {
   padding: 11px 0px;
   width: 100%;
   color: #232323;
   border-top: 1px solid #787878;
 }
+
 .portfolio-with-sidebar .portfolio-tabs .tabs .tab:last-child {
   border-bottom: 1px solid #787878;
 }
@@ -185,6 +231,7 @@ masonry-items {
     padding: 15px 15px 25px;
   }
 }
+
 @media (min-width: 1025px) {
   .tabs-contents .masonry-row {
     margin-left: -15px;
@@ -198,8 +245,8 @@ masonry-items {
     width: 50%;
     padding: 15px;
   }
-
   .portfolio .page-sidebar + .page-content {
     padding-left: 20px;
   }
-}/*# sourceMappingURL=portfolio.css.map */
+}
+/*# sourceMappingURL=portfolio.css.map */

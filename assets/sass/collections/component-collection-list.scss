@@ -1,3 +1,4 @@
+
 .halo-collection-content{
     .collection-banner{
         position: relative;
@@ -281,7 +282,9 @@
     }
 }
 /* START: List Collection Layout Mansonry */
-
+.page-collections-masonry{
+    padding-bottom: 50px;
+}
 
 @media(max-width:767px){
     .list-categories-2{

@@ -1002,7 +1002,7 @@ svg {
 }
 
 .container-1920{
-    max-width: 1992px;
+    max-width: 1920px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -1079,7 +1079,7 @@ svg {
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    padding: 20px 0px 11px;
+    padding: 18px 0px 11px;
     a {
         font-size: 12px;
         line-height: 24px;
@@ -1759,11 +1759,6 @@ label {
 
 @media (min-width: 1920px) {
     /* START: Container */
-    .container,
-    .container.container-1770{
-        padding-left: calc((100% - 1770px)/2);
-        padding-right: calc((100% - 1770px)/2);
-    }
     .container.container-1860 {
         padding-left: calc((100% - 1860px)/2);
         padding-right: calc((100% - 1860px)/2);

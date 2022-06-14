@@ -12,6 +12,10 @@
     }
 }
 
+.collection-template{
+    padding-bottom: 50px;
+}
+
 .collection-wrapper{
     margin-bottom: 50px;
     .breadcrumb{
@@ -32,7 +36,7 @@
 
 .collection-header,
 .page-header{
-    padding-bottom: 25px;
+    padding-bottom: 17px;
     .collection-title{
         font-size: 20px;
         letter-spacing:.05em;

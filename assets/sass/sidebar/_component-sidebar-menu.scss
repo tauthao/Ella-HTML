@@ -31,6 +31,9 @@ body {
                     border-bottom: 1px solid #e6e6e6;
                     overflow: hidden;
                     position: relative;
+                    &:last-child{
+                        border: none;
+                    }
                 }
             }
             .menu-lv-item{
@@ -67,7 +70,7 @@ body {
                 .menu-lv-2__action, 
                 .menu-lv-3__action {
                     display: block;
-                    padding: 14px 30px;
+                    padding: 11px 30px 12px;
                     width: 100%;
                     font-weight: 400;
                     letter-spacing: .02em;

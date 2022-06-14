@@ -1,5 +1,6 @@
 .footer {
     background: #232323;
+    clear: both;
     padding-bottom: 70px;
     .footer-top {
         padding: 37px 0 22px;
@@ -207,7 +208,7 @@
 
 @media (min-width:1025px) {
     .footer {
-        padding-bottom: 70px;
+        padding-bottom: 0;
     }
     
     .list-social__link:before {

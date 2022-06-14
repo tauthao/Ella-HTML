@@ -199,7 +199,7 @@
                     iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
                 if (productItems.length > 0) {
                     if (!productItems.hasClass('slick-initialized')) {
-                        if(productBlock.hasClass('product-carousel-cusstom-banner')){
+                        if(productBlock.hasClass('product-carousel-custom-banner')){
                             productItems.slick({
                                 mobileFirst: true,
                                 adaptiveHeight: false,
@@ -223,7 +223,6 @@
                                 ]
                             });
                         }else{
-                            console.log("ngoai")
                             productItems.slick({
                                 mobileFirst: true,
                                 adaptiveHeight: false,
