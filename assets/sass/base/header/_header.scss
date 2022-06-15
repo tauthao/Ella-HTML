@@ -629,6 +629,7 @@
     position: relative;
     bottom: -17px;
     margin-top: 3px;
+    margin-top: -5px;
     &::before{
         content: " ";
         width: calc( 100% + 200%);

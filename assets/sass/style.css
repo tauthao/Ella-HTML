@@ -2583,6 +2583,7 @@ label {
   position: relative;
   bottom: -17px;
   margin-top: 3px;
+  margin-top: -5px;
 }
 
 .wrapper-mega-banner::before {
