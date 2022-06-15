@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.skin-9 {
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.skin-9 .desc,
+.skin-9 .link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.skin-9 .button {
+  padding: 14px 15px 14px;
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.skin-9 .button.button-1 {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.skin-9 .button.button-1:hover {
+  background: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+
+.skin-9 .button.button-2 {
+  background: #ffffff;
+  border-color: #000000;
+  color: #000000;
+}
+
+.skin-9 .button.button-2:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.skin-9 .slick-dots {
+  position: absolute;
+  bottom: -60px;
+}
+
+.skin-9 .slick-dots li button {
+  border: 1px solid #000000;
+  background: transparent;
+}
+
+.skin-9 .slick-dots li.slick-active button {
+  border: 1px solid #000000;
+  background: #000000;
+}
+/*# sourceMappingURL=skin-9.css.map */

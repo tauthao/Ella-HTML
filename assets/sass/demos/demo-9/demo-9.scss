@@ -1,0 +1,127 @@
+.halo-block-banner{
+    margin-bottom: 30px;
+    .content-box{
+        max-width: 340px;
+        .banner-title{
+            font-size: 50px;
+            font-weight: 700;
+            color:#000000;
+            margin-bottom: 8px;
+            letter-spacing: 0;;
+        }
+        .banner-sub-title{
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            letter-spacing: 0;
+            margin-bottom: 30px;
+        }
+        .banner-button{
+            margin-top: 48px;
+            width:100%;
+            max-width: 178px;
+        }
+    }
+}//END: Block Banner.
+
+.halo-block-icon-with-text{
+    background: #f6f6f6;
+    padding: 50px 0px 80px;
+    margin-bottom: 30px;
+    .row{
+        &:not(.slick-slider){
+            flex-wrap: nowrap;
+            overflow: hidden;
+        }
+    }
+    .wrapper-item{
+        .icon{
+            margin: 0px auto 25px;
+            width: 50px;
+        }
+        .content-box{
+            margin-left: 28px;
+            text-align: center;
+            .title{
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .desc{
+                margin-bottom: 2px;
+            }
+        }
+    }
+}//END: Block Icon Width Text
+
+@media(max-width:991px){
+    .halo-block-banner{
+        .content-box{
+            .banner-title{
+                font-size: 30px;
+                margin-bottom: 8px;
+            }
+            .banner-sub-title{
+                margin-bottom: 20px;
+            }
+            .banner-button{
+                margin-top: 25px;
+            }
+            &.content-box--right{
+                padding-right: 15px;
+                max-width: 350px;
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .halo-block-banner{
+        .content-box{
+            padding: 0px 15px;
+            left: 15px;
+            .banner-title{
+                color: #ffffff;
+            }
+            .banner-sub-title,
+            .desc{
+                color: #ffffff;
+            }
+            .banner-button{
+                background: #ffffff;
+                color: #000000;
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    .halo-block-icon-with-text{
+        padding: 80px 0px 80px;
+        .wrapper-item{
+            display: flex;
+            justify-content: center;
+            .icon{
+                position: relative;
+                 top: 3px;
+                 margin: 0;
+            }
+            .content-box{
+                text-align: left;
+            }
+        }
+    }
+    .halo-block-banner{
+        .content-box{
+            &.content-box--right{
+                right: 9%;
+            }
+        }
+    }
+}
+@media(min-width:1800px){
+    .halo-block-banner{
+        .content-box{
+            left: calc((100% - 1770px) / 2);
+        }
+    }
+}
