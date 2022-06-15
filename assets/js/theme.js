@@ -44,7 +44,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            this.initNewsLetterPopup();
+            // this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();

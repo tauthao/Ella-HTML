@@ -365,6 +365,12 @@
   border-radius: 30px;
 }
 
+@media (max-width: 767px) {
+  .skin-6 .halo-sidebar .halo-sidebar-header {
+    padding: 9px 20px 9px;
+  }
+}
+
 @media (max-width: 1024px) {
   .skin-6 .halo-product-block .halo-row-item .button {
     border-radius: 0;
