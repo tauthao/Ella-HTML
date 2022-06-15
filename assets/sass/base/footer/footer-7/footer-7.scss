@@ -156,3 +156,17 @@
     }
     
 }
+
+@media(max-width:767px){
+    .footer-7{
+        .footer-newsletter{
+            .footer-block__heading{
+                border:none;
+                &::before,
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

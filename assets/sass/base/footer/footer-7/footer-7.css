@@ -175,4 +175,13 @@
     margin: 5px 15px 5px 0px !important;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-7 .footer-newsletter .footer-block__heading {
+    border: none;
+  }
+  .footer-7 .footer-newsletter .footer-block__heading::before, .footer-7 .footer-newsletter .footer-block__heading::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=footer-7.css.map */

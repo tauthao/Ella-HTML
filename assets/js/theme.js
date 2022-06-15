@@ -30,7 +30,7 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            this.initCloseAnnouncementBar();
+            // this.initCloseAnnouncementBar();
             // this.initHeaderSticky();
             this.initDropdown();
             this.initOpenSearchForm();

@@ -1,6 +1,6 @@
 .header-7 .header-top {
   background: #232830;
-  padding: 30px 0px 30px;
+  padding: 17px 0px 23px;
 }
 
 .header-7 .header-top .header-top--wrapper {
@@ -57,8 +57,8 @@
 }
 
 .header-7 .header-top .header-top-center .search-bar .icon-search svg {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   fill: #232830;
 }
 
@@ -69,15 +69,25 @@
   padding: 0;
 }
 
-.header-7 .header-top .header-top-center .quickSearchResultsWrap.show {
-  top: calc(100% + 10px);
-}
-
 .header-7 .header-top .header-top-center .quickSearchResultsWrap .quickSearchResult {
-  padding: 18px 30px 0;
+  padding: 30px 30px 30px;
   max-height: calc(80vh - 150px);
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.header-7 .header-top .header-top-center .quickSearchResultsWrap .search-block-title span {
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+.header-7 .header-top .header-top-center .quickSearchResultsWrap .item .link {
+  border-radius: 5px;
+}
+
+.header-7 .header-top .header-top-center .quickSearchResultsWrap.show {
+  top: calc(100% + 10px);
 }
 
 .header-7 .header-top .header-top--right {
@@ -156,5 +166,79 @@
 
 .header-7 .header-top .header-top--right .header__icon + .header__icon {
   margin-left: 40px;
+}
+
+.header-7 .header-bottom {
+  background: #232830;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .menu-lv-1__action {
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .label {
+  font-size: 12px;
+  border-radius: 3px;
+  line-height: 18px;
+  height: 18px;
+  padding: 0 9px;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .label.new-label {
+  background: #3dc781;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .label.hot-label {
+  background: #ff750f;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .label.sale-label {
+  background: #e52f69;
+}
+
+.header-7 .header-bottom .list-menu .menu-lv-1 .label::before {
+  display: none;
+}
+
+.header-7 .header-bottom .list-menu .site-nav-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.header-7 .header-bottom .list-menu .product-card .card-price {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-mobile {
+  background: #232830;
+}
+
+.header-mobile .header-mobile--icon .mobileMenu-toggle {
+  color: #ffffff;
+}
+
+.header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon {
+  background-color: #ffffff;
+}
+
+.header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon::before, .header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon::after {
+  background-color: #ffffff;
+}
+
+.header-mobile .header-mobile--icon svg {
+  fill: #ffffff;
+}
+
+.header-mobile .header-mobile--icon .cart-count-bubble {
+  background-color: #f84248 !important;
+}
+
+.header-mobile .header-mobile--icon .cart-count-bubble span {
+  color: #ffffff;
 }
 /*# sourceMappingURL=header-7.css.map */

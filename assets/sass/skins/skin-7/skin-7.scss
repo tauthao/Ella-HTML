@@ -13,6 +13,12 @@
     }
     .link{
         font-size: 14px;
+        letter-spacing: 0;
+    }
+    input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+        padding: 13px 12px 13px;
+        font-size: 14px;
+        border-radius: 5px;
     }
     .button{
         font-size: 16px;
@@ -21,6 +27,27 @@
         border-radius: 4px;
         padding: 15px 15px 14px;
         &.button-1{
+            background-color: #232323;
+            border-color: #232323;
+            color: #ffffff;
+            &:hover{
+                background-color: #ffffff;
+                border-color: #232323;
+                color: #232323;
+            }
+        }
+        
+        &.button-2{
+            background-color: #ffffff;
+            border-color: #232323;
+            color: #232323;
+            &:hover{
+                background-color: #232323;
+                border-color: #232323;
+                color: #ffffff;
+            }
+        }
+        &.button-3{
             background-color: #f84248;
             border-color: #f84248;
             color: #ffffff;
@@ -28,16 +55,6 @@
                 background-color: #ffffff;
                 border-color: #f84248;
                 color: #f84248;
-            }
-        }
-        &.button-2{
-            background-color: #ffffff;
-            border-color: #f84248;
-            color: #f84248;
-            &:hover{
-                background-color: #f84248;
-                border-color: #f84248;
-                color: #ffffff;
             }
         }
     }
@@ -95,5 +112,126 @@
             margin: 14px 0px 0px;
         }
     }
+    .halo-sidebar{
+        .halo-sidebar-header{
+            padding: 24px 30px 0;
+            .title{
+                font-weight: 700;
+            }
+        }
+        .haloCalculatorShipping{
+            .message   {
+                font-size: 14px;
+            }
+            .progress-meter{
+                background-color: #f84248!important;
+            }
+        }
+        .previewCartItem-name{
+            font-size: 14px;
+            letter-spacing: 0;
+            font-weight: 500;
+        }
+        .previewCartItem-options{
+            span{
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+        }
+        .previewCartItem-price{
+            font-size: 16px;
+        }
+        .previewCartInfo{
+            .item{
+                font-size: 14px;
+                letter-spacing: 0;
+                text-transform: uppercase;
+                .money{
+                    font-size: 16px; 
+                }
+            }
+        }
+        &.halo-sidebar_menu {
+            .nav-currency-language{
+                .title{
+                    font-weight: 700;
+                    color: #ffffff;
+                    letter-spacing: 0;
+                    background: #3a3e45;
+                    padding: 12px 20px 10px;
+                }
+            } 
+        }
+    }
+    .previewCartCheckbox{
+        input[type=checkbox]{
+            & + label{
+                font-size: 14px;
+            }
+        } 
+    } 
+    .halo-popup{
+        border-radius: 5px;
+        .wrapper-content{
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .halo-popup-close{
+            border-radius: 5pxs;
+        }
+        &.halo-edit-cart-popup{
+            .product-edit-action{
+                padding: 0 50px 30px;
+            }
+            .product-edit-title,
+            .product-edit-title-variant,
+            .form__label{
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+            .card-price{
+                font-size: 16px;
+            }
+            .product-form__label{
+                line-height: 39px;
+            }
+        }
+    }
+    .halo-toolbar-bottom-mobile{
+        padding: 10px;
+        .halo-toolbar-item{
+            .label{
+                display: none;
+            }
+        } 
+        .cart-count-bubble{
+            background-color: #f84248!important;
+            span{
+                color: #ffffff;
+            }
+        }
+    }
+    .previewCartItem-qty{
+        .btn-quantity{
+            height: 50px;
+        }
+        .quantity{
+            padding: 12px 14px 15px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    } 
+}
 
+@media(max-width:767px){
+    .skin-7{
+        .halo-sidebar{
+            .halo-sidebar-header{
+                padding: 9px 20px 9px;
+            }
+            .title{
+                font-size: 14px;
+            }
+        } 
+    } 
 }
