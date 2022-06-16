@@ -56,4 +56,43 @@
             }
         }
     }
+    .halo-block-header{
+        position: relative;
+        .title{
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #000000;
+            &::before{
+                display: none;
+            }
+            span{
+                width: 100%;
+                background: transparent;
+            }
+        }
+        .view_all{
+            font-size: 15px;
+            color:#000000;
+        }
+    }
+}
+
+@media(min-width: 552px){
+    .halo-block-header{
+        .view_all{
+            position: absolute;
+            right: 0;
+            top: 10px;
+            z-index: 9;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .skin-9{
+        .halo-block-header {
+            margin-bottom: 60px;
+        }
+    }
 }

@@ -299,7 +299,7 @@
                 iconBackToTop = $(".recently-viewed-icon.scroll-to-top"),
                 iconPopupNewsletter = $("[data-open-newsletter-popup]");
 
-            iconPopup.off('click').on('click', (event) => {
+            iconPopup.on('click', (event) => {
                 event.preventDefault();
                 event.stopPropagation();
                 var self = $(event.currentTarget),
@@ -316,7 +316,7 @@
                 }
             });
 
-            iconPopupNewsletter.off('click').on('click', (event) => {
+            iconPopupNewsletter.on('click', (event) => {
                 event.preventDefault();
                 event.stopPropagation();
 
@@ -328,11 +328,20 @@
                 $(".recently-viewed-tab").removeClass('is-visible');
             });
 
-            iconBackToTop.off('click').on('click', (event) => {
+            iconBackToTop.on('click.scrollTop', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
                 $('html, body').animate({
                     scrollTop: 0
-                }, 700);
+                }, 0);
+                return false;
             });
+
+            // iconBackToTop.addEventListener('click', (event) => {
+            //     event.preventDefault();
+            //     event.stopPropagation();
+            //     window.scrollTo({top: 0, behavior: 'smooth'});
+            // });
         },
 
         initCloseAnnouncementBar: function() {

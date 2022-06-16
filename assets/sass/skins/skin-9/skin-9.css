@@ -61,4 +61,44 @@
   border: 1px solid #000000;
   background: #000000;
 }
+
+.skin-9 .halo-block-header {
+  position: relative;
+}
+
+.skin-9 .halo-block-header .title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.skin-9 .halo-block-header .title::before {
+  display: none;
+}
+
+.skin-9 .halo-block-header .title span {
+  width: 100%;
+  background: transparent;
+}
+
+.skin-9 .halo-block-header .view_all {
+  font-size: 15px;
+  color: #000000;
+}
+
+@media (min-width: 552px) {
+  .halo-block-header .view_all {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: 768px) {
+  .skin-9 .halo-block-header {
+    margin-bottom: 60px;
+  }
+}
 /*# sourceMappingURL=skin-9.css.map */

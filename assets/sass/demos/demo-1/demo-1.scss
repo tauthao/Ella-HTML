@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* START: Section Full With Banner */
-.halo-product-fullwidth-banner {
+.halo-block-fullwidth-banner {
     margin-bottom: 30px;
     .banner-item {
         .banner-title {
@@ -182,7 +182,7 @@
         width: 475px;
         padding-bottom: 30px;
     }
-    .halo-product-fullwidth-banner {
+    .halo-block-fullwidth-banner {
         margin-bottom: 15px;
     }
     .halo-block-content {
@@ -279,13 +279,13 @@
             }
         }
     }
-    .halo-product-fullwidth-banner .button {
+    .halo-block-fullwidth-banner .button {
         min-width: 237px;
     }
     .halo-block-instagram {
         padding-bottom: 70px;
     }
-    .halo-product-fullwidth-banner .button {
+    .halo-block-fullwidth-banner .button {
         min-width: 237px;
     }
 }

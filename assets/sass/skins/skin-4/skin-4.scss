@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.skin-4{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: .02em;
+    color: #232323;
+    h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{
+        font-family: 'Playfair Display', serif;
+        letter-spacing: .02em;
+    }
+    .desc{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: .02em;
+        color: #3c3c3c;
+    }
+    .button{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: .05em;
+        padding: 14px 15px 14px;
+        &.button-1{
+            background: #000000;
+            border-color:#000000;
+            color: #ffffff;
+            box-shadow: 5px 5px 0 0px #a1decd;
+            &:hover{
+                background: #a1decd;
+                border-color:#a1decd;
+                color: #000000;
+                box-shadow: 5px 5px 0 0px #000000;
+            }
+        }
+        &.button-2{
+            background: #a1decd;
+            border-color:#a1decd;
+            color: #000000;
+            &:hover{
+                background: #000000;
+                border-color:#a1decd;
+                color: #a1decd;
+            }
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: -40px;
+        li{
+            button{
+                border-color: #232323;
+                background: #232323;
+            }
+            &.slick-active{
+                button{
+                    border-color: #232323;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .halo-block-header{
+        margin-bottom: 30px;
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: .02em;
+            color: #000000;
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .skin-4{
+        .halo-block-header {
+            margin-bottom: 42px;
+        }
+    }
+}

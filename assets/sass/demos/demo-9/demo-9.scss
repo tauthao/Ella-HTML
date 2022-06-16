@@ -52,7 +52,109 @@
             }
         }
     }
+    &.style-2{
+        background: transparent;
+        padding: 27px 0px 30px;
+        .row{
+            justify-content: center;
+        }
+        .wrapper-item{
+            flex-wrap: wrap;
+            .icon{
+                width: 100%;
+                margin-bottom: 35px;
+                img{
+                    margin: 0 auto;
+                }
+            }
+            .content-box{
+                width: 100%;
+                margin: 0;
+                .title{
+                    font-size: 18px;
+                    margin-bottom: 13px;
+                }
+                .desc{
+                    line-height: 26px;
+                }
+                .button{
+                    width: 100%;
+                    max-width: 178px;
+                    margin: 23px auto 0;
+                }
+            }
+        }
+    }
 }//END: Block Icon Width Text
+
+.halo-block-where-ride{
+    margin: 115px 0px 100px;
+    .halo-wrapper{
+        background: #72d1c6;
+        padding: 0px 0px 70px;
+    }
+    .halo-block-header{
+        top: -19px;
+        margin-bottom: 22px!important;
+        padding-left: 15px;
+        padding-right: 15px;
+        .title{
+            .text{
+                font-size: 50px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 25px;
+            }
+            .desc{
+                font-size: 28px;
+                line-height: 28px;
+                color: #000000;
+            }
+        }
+    }
+    .wrapper-content{
+        max-width: 1170px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        .content-box{
+            background: #ffffff;
+            padding: 27px 15px 26px;
+            .title{
+                margin: 0;
+                a{
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 17px;
+                    color: #000000;
+                    display: block;
+                }
+                .desc{
+                    color: #000000;
+                }
+            }
+        }
+        .button-booking{
+            width: 100%;
+            max-width: 370px;
+            margin: 70px auto 10px;
+        }
+        .slick-arrow{
+            display: none!important;
+            width: 70px;
+            height: 70px;
+            background: transparent;
+            border: none;
+            padding: 0!important;
+            &.slick-next{
+                right: -105px;
+            }
+            &.slick-prev{
+                left: -105px;
+            }
+        }
+    }
+}
 
 @media(max-width:991px){
     .halo-block-banner{
@@ -74,6 +176,7 @@
         }
     }
 }
+
 @media(max-width:767px){
     .halo-block-banner{
         .content-box{
@@ -92,6 +195,16 @@
             }
         }
     }
+
+    .halo-block-where-ride{
+        .halo-block-header{
+            .title{
+                .text{
+                    font-size: 40px;
+                }
+            } 
+        } 
+    } 
 }
 
 @media(min-width:992px){
@@ -113,15 +226,22 @@
     .halo-block-banner{
         .content-box{
             &.content-box--right{
-                right: 9%;
+                right: 8%;
             }
         }
     }
 }
-@media(min-width:1800px){
-    .halo-block-banner{
-        .content-box{
-            left: calc((100% - 1770px) / 2);
+
+@media(min-width:1600px){
+    .halo-block-where-ride{
+        .wrapper-content{
+            padding-left: 0;
+            padding-right: 0;
         }
-    }
+        .halo-wrapper{
+            .slick-arrow{
+                display: inline-block!important;
+            }
+        }
+    } 
 }
