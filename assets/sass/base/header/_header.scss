@@ -133,6 +133,12 @@
             letter-spacing: .02em;
             display: inline-block!important;
             vertical-align: middle;
+            .text-count{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
         }
     }
     .header__icon--wishlist {
@@ -274,7 +280,7 @@
         z-index: -1;
         overflow: hidden;
         transition: all .5s ease;
-        box-shadow: 0 1px 4px #00000026;
+        box-shadow: 0 1px 4px rgba(0,0,0, .15%);
         &.show {
             top: calc(100% + 10px);
             opacity: 1;

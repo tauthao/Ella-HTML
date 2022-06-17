@@ -97,17 +97,20 @@
 }
 
 /* END: Product Varint */
-.productView-rating {
+.productView-rating,
+.review-rating {
   display: inline-block;
   vertical-align: bottom;
   margin-left: -2px;
 }
 
-.productView-rating .spr-badge-starrating {
+.productView-rating .spr-badge-starrating,
+.review-rating .spr-badge-starrating {
   font-size: 18px;
 }
 
-.productView-rating .spr-icon::before {
+.productView-rating .spr-icon::before,
+.review-rating .spr-icon::before {
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -121,17 +124,20 @@
   text-transform: none;
 }
 
-.productView-rating .spr-icon.spr-icon-star::before {
+.productView-rating .spr-icon.spr-icon-star::before,
+.review-rating .spr-icon.spr-icon-star::before {
   content: "\2605";
   color: #232323;
 }
 
-.productView-rating .spr-icon.spr-icon-star-empty::before {
+.productView-rating .spr-icon.spr-icon-star-empty::before,
+.review-rating .spr-icon.spr-icon-star-empty::before {
   content: "\2605";
   color: #c8c8c8;
 }
 
-.productView-rating .spr-badge-caption {
+.productView-rating .spr-badge-caption,
+.review-rating .spr-badge-caption {
   display: inline-block;
   vertical-align: middle;
   font-size: 12px;

@@ -62,7 +62,7 @@
 
 .halo-block-icon-with-text.style-2 {
   background: transparent;
-  padding: 27px 0px 30px;
+  padding: 24px 0px 30px;
 }
 
 .halo-block-icon-with-text.style-2 .row {
@@ -106,7 +106,7 @@
 }
 
 .halo-block-where-ride {
-  margin: 115px 0px 100px;
+  margin: 115px 0px 75px;
 }
 
 .halo-block-where-ride .halo-wrapper {
@@ -185,6 +185,119 @@
   left: -105px;
 }
 
+.halo-block-where-ride .wrapper-content .slick-arrow:hover {
+  background: transparent;
+}
+
+.halo-block-customer-review {
+  margin-bottom: 56px;
+  padding-bottom: 110px;
+  border-bottom: 5px solid #f6f6f6;
+}
+
+.halo-block-customer-review .halo-block-header .title {
+  margin-bottom: 13px;
+}
+
+.halo-block-customer-review .slick-dots {
+  bottom: -70px !important;
+}
+
+.halo-block-customer-review .img-box {
+  margin-bottom: 44px;
+}
+
+.halo-block-customer-review .img-box img {
+  margin: 0 auto;
+}
+
+.halo-block-customer-review .content-box {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.halo-block-customer-review .content-box .review-rating {
+  margin-bottom: 12px;
+}
+
+.halo-block-customer-review .content-box .review-rating .spr-icon.spr-icon-star::before {
+  color: #f8c646;
+}
+
+.halo-block-customer-review .content-box .review-rating .spr-icon::before,
+.halo-block-customer-review .content-box .review-rating .spr-icon ::after {
+  font-size: 32px;
+}
+
+.halo-block-customer-review .content-box .desc {
+  color: #000000;
+  line-height: 26px;
+}
+
+.halo-block-customer-review .content-box .name {
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #787878;
+}
+
+.halo-product-block .halo-block-header {
+  margin-bottom: 40px !important;
+}
+
+.halo-product-block .halo-block-header .title {
+  color: #282f36;
+}
+
+.halo-product-block .slick-arrow {
+  top: 35%;
+}
+
+.halo-product-block .slick-dots {
+  bottom: -37px !important;
+}
+
+.halo-product-block .product-infinite-scroll {
+  margin: 23px 0px 80px;
+}
+
+.halo-product-block .product-infinite-scroll .button {
+  max-width: 248px;
+}
+
+.halo-block-brands {
+  background: #000000;
+  padding: 30px 0px 27px;
+  margin-top: 93px;
+}
+
+.halo-block-brands .halo-block-content .img-box img {
+  margin: 0 auto;
+}
+
+.halo-block-brands .halo-block-content .slick-arrow {
+  background: transparent;
+  top: 45%;
+}
+
+.halo-block-brands .halo-block-content .slick-arrow svg {
+  fill: #ffffff;
+}
+
+.halo-block-brands .halo-block-content .slick-dots {
+  bottom: -20px;
+}
+
+.halo-block-brands .halo-block-content .slick-dots li button {
+  background: transparent;
+  border-color: #ffffff;
+}
+
+.halo-block-brands .halo-block-content .slick-dots li.slick-active button {
+  background: #ffffff;
+}
+
 @media (max-width: 991px) {
   .halo-block-banner .content-box .banner-title {
     font-size: 30px;
@@ -199,6 +312,12 @@
   .halo-block-banner .content-box.content-box--right {
     padding-right: 15px;
     max-width: 350px;
+  }
+  .halo-block-brands .halo-block-content .slick-arrow.slick-next {
+    right: 0;
+  }
+  .halo-block-brands .halo-block-content .slick-arrow.slick-prev {
+    left: 0;
   }
 }
 
@@ -225,7 +344,7 @@
 
 @media (min-width: 992px) {
   .halo-block-icon-with-text {
-    padding: 80px 0px 80px;
+    padding: 80px 0px 73px;
   }
   .halo-block-icon-with-text .wrapper-item {
     display: -webkit-box;

@@ -111,5 +111,11 @@
   .footer-4 .footer-bottom .halo-row-item.halo-row-item {
     margin-top: 20px;
   }
+  .footer-4 .footer-bottom .footer__payment .list-payment {
+    text-align: left !important;
+  }
+  .footer-4 .footer-bottom .footer__payment .list-payment li {
+    margin: 5px 10px 5px 0px;
+  }
 }
 /*# sourceMappingURL=footer-4.css.map */

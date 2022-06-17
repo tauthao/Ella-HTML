@@ -32,6 +32,7 @@
             this.initPopupRecentlyViewed();
             // this.initCloseAnnouncementBar();
             // this.initHeaderSticky();
+            this.initSliderAnnouncementBar();
             this.initDropdown();
             this.initOpenSearchForm();
             this.initDynamicBrowserTabTitle();
@@ -365,6 +366,30 @@
                 });
             });
 
+        },
+
+        initSliderAnnouncementBar: function(){
+            var announcement_bar = $('[data-announcement-bar-carousel]'),
+                announcement_item = announcement_bar.find('.message');
+                iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
+
+            if(announcement_bar.length > 0){
+                if(!announcement_item.hasClass('slick-initialized')){
+                    console.log("announcement_item",announcement_item)
+                    announcement_item.slick({
+                        infinite: true,
+                        vertical: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                        arrows: true,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                        prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                    });
+                }
+            }
         },
 
         initHeaderSticky: function() {
@@ -1019,7 +1044,11 @@
 
                     self.parents('.card-swatch').find('.swatch-label').removeClass('is-active');
                     label.addClass('is-active');
-                    self.parents(".product-card-bottom").find('.card-title [data-change-title]').text( ' - ' + value);
+                    if($body.hasClass('skin-9')){
+                        self.parents(".product-card-bottom").find('.card-title [data-change-title]').text(value);
+                    }else{
+                        self.parents(".product-card-bottom").find('.card-title [data-change-title]').text( ' - ' + value);
+                    }
 
                 })  
             }

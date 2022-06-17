@@ -565,7 +565,7 @@ button.disabled,
 .button[aria-disabled=true],
 .button.disabled {
   opacity: .6;
-  pointer-events: none;
+  cursor: default !important;
 }
 
 .button {
@@ -2007,6 +2007,14 @@ label {
   vertical-align: middle;
 }
 
+.header__iconItem .header__icon--cart .cart-count-bubble .text-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .header__iconItem .header__icon--wishlist {
   margin-left: 25px;
 }
@@ -2167,8 +2175,8 @@ label {
   overflow: hidden;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  -webkit-box-shadow: 0 1px 4px #00000026;
-          box-shadow: 0 1px 4px #00000026;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .header-language_currency .dropdown-language.show,
@@ -3087,6 +3095,7 @@ label {
 
 .product-card .card-product__group.group-left {
   left: 0px;
+  right: auto;
 }
 
 .product-card .card-product__group .card-icon {
