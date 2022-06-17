@@ -284,17 +284,13 @@ body.newsletter-show .background-overlay-popup {
   font-size: 20px;
   margin: 0 0 10px;
   letter-spacing: .05em;
-  color: #232323;
 }
 
 .halo-newsletter-popup .halo-popup-content .header-content .desc {
   display: block;
-  font-size: 12px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: .02em;
   padding: 2px 0 22px;
-  color: #232323;
 }
 
 .halo-newsletter-popup .halo-popup-content .newsletter {
@@ -330,10 +326,6 @@ body.newsletter-show .background-overlay-popup {
 
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__item {
   margin-right: 0;
-}
-
-.halo-newsletter-popup .halo-popup-content .list-social .list-social__link {
-  padding: 12px;
 }
 
 .halo-newsletter-popup .halo-popup-content .list-social .list-social__link::before {
