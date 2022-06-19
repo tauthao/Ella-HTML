@@ -1,0 +1,41 @@
+.announcement-bar{
+    background: #ffffff;
+    color: #051c42;
+    .message{
+        padding: 13px 15px;
+        font-size: 18px;
+        color: #051c42;
+        text-transform: initial;
+        letter-spacing: 0;
+        font-weight: 400;
+        a{
+            color: #051c42; 
+        }
+        .text{
+            position: relative;
+            top: 2px;
+        }
+        b{
+            text-decoration: underline;
+            text-underline-offset: 0.2rem;
+            text-decoration-color: #b4bac6;
+        }
+        .button{
+            font-size: 18px;
+            font-weight: 700;
+            max-width: 126px;
+            padding: 8px 15px 10px;
+            display: none;
+        }
+    }
+}
+@media(min-width:767px){
+    .announcement-bar{
+        .message{
+            padding: 5px 15px;
+            .button{
+                display: inline-block;
+            }
+        }
+    } 
+}

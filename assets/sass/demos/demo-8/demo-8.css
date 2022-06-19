@@ -1,0 +1,47 @@
+.announcement-bar {
+  background: #ffffff;
+  color: #051c42;
+}
+
+.announcement-bar .message {
+  padding: 13px 15px;
+  font-size: 18px;
+  color: #051c42;
+  text-transform: initial;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.announcement-bar .message a {
+  color: #051c42;
+}
+
+.announcement-bar .message .text {
+  position: relative;
+  top: 2px;
+}
+
+.announcement-bar .message b {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  -webkit-text-decoration-color: #b4bac6;
+          text-decoration-color: #b4bac6;
+}
+
+.announcement-bar .message .button {
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 126px;
+  padding: 8px 15px 10px;
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .announcement-bar .message {
+    padding: 5px 15px;
+  }
+  .announcement-bar .message .button {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=demo-8.css.map */
