@@ -33,4 +33,127 @@
             }
         }
     }
+    .desc{
+        font-size: 16px;
+        line-height: 26px;
+        color: #051c42;
+        letter-spacing: 0;
+    }
+    .slick-arrow{
+        border-color: #234bbb;
+        svg{
+            fill: #234bbb;
+            top: -7.5px;
+        }
+        &:hover{
+            background: #ffffff;
+            border-color: #e1732c;
+            svg{
+                fill: #e1732c;
+            }
+        }
+    }
+    .slick-dots{
+        margin-top: 24px;
+        li{
+            button{
+                border-color: #d0d0d0;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+            }
+            &.slick-active {
+                button{
+                    background: #051c42;
+                    border-color: #051c42;
+                }
+            }
+        }
+    } 
+    .link-underline{
+        &:hover{
+            .text {
+                text-underline-offset: 0.3rem;
+            }
+        }
+    }
+    .text-underline{
+        .text {
+            text-underline-offset: 0.3rem;
+        }
+    }
+    .halo-block-header{
+        position: relative;
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: #051c42;
+            span{
+                width: 100%;
+                background: transparent;
+            }
+            &::before{
+                display: none;
+            }
+        }
+        .view_all{
+            font-size: 16px;
+            color: #234bbb;
+            letter-spacing: 0;
+            font-weight: 400;
+        }
+        &.style-2{
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .skin-8{
+        .halo-block-header {
+            margin-bottom: 33px;
+            .title{
+                font-size: 40px;
+            }
+            .view_all{
+                position: absolute;
+                right: 0;
+                bottom: -13px;
+                z-index: 9;
+                &:hover{
+                    color: #e1732c;
+                }
+            }
+            &.style-2{
+                padding-bottom: 11px;
+                border-bottom: 1px solid #051c42;
+                margin-bottom: 35px;
+                text-align: left;
+                .title{
+                    font-size: 30px;
+                    span{
+                        padding-left: 0px;
+                    }
+                }
+                .view_all{
+                    bottom: auto;
+                    top: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1600px){
+    .skin-8{
+        .slick-arrow{
+            &.slick-next{
+                right: -60px;
+            }
+            &.slick-prev{
+                left: -60px;
+            }
+        }
+    }
 }

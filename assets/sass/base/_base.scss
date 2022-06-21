@@ -903,6 +903,13 @@ svg {
         padding: 0;
         margin: 0;
     }
+    &.column-5{
+        .halo-row-item{
+            width: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    } 
     .halo-item {
         padding: 0 5px;
     }
@@ -932,6 +939,7 @@ svg {
     margin: 0px;
     font-weight: 400;
 }
+
 /* END: Layout */
 
 
@@ -1560,8 +1568,17 @@ label {
         .halo-item {
             padding: 0 10px;
         }
+        &.column-5{
+            .halo-row-item{
+                width: 33.333333%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        } 
     }
-    .product-carousel {
+    
+    .product-carousel,
+    [data-banner-text-carousel] {
         .row {
             &:not(.slick-slider){
                 flex-wrap: nowrap;
@@ -1623,13 +1640,63 @@ label {
             }
         }
     }
+    .view-abs{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+        opacity: 0;
+        transition: all .5s ease;
+        .view{
+            width: 40px;
+            height: 40px;
+            border: 1px solid #232323;
+            position: relative;
+            display: block;
+            transition: all .5s ease;
+            &::before,
+            &::after{
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-color: #000;
+                transition: all .4s ease;
+            }
+            &::before{
+                width: 2px;
+                height: 20px
+            }
+            &::after{
+                width: 20px;
+                height: 2px;
+            }
+        }
+    }
+    .img-box{
+        &:hover{
+            .view-abs{
+                opacity: 1;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
     .row {
         margin-left: -15px;
         margin-right: -15px;
         .halo-item {
             padding: 0 15px;
         }
+        &.column-5{
+            .halo-row-item{
+                width: 20%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        } 
     }
+    
     .row .halo-row-item {
         padding: 0px 15px;
     }

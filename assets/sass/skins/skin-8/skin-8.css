@@ -38,4 +38,127 @@
   border-color: #051c42;
   background: #ffffff;
 }
+
+.skin-8 .desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: #051c42;
+  letter-spacing: 0;
+}
+
+.skin-8 .slick-arrow {
+  border-color: #234bbb;
+}
+
+.skin-8 .slick-arrow svg {
+  fill: #234bbb;
+  top: -7.5px;
+}
+
+.skin-8 .slick-arrow:hover {
+  background: #ffffff;
+  border-color: #e1732c;
+}
+
+.skin-8 .slick-arrow:hover svg {
+  fill: #e1732c;
+}
+
+.skin-8 .slick-dots {
+  margin-top: 24px;
+}
+
+.skin-8 .slick-dots li button {
+  border-color: #d0d0d0;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+.skin-8 .slick-dots li.slick-active button {
+  background: #051c42;
+  border-color: #051c42;
+}
+
+.skin-8 .link-underline:hover .text {
+  text-underline-offset: 0.3rem;
+}
+
+.skin-8 .text-underline .text {
+  text-underline-offset: 0.3rem;
+}
+
+.skin-8 .halo-block-header {
+  position: relative;
+}
+
+.skin-8 .halo-block-header .title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #051c42;
+}
+
+.skin-8 .halo-block-header .title span {
+  width: 100%;
+  background: transparent;
+}
+
+.skin-8 .halo-block-header .title::before {
+  display: none;
+}
+
+.skin-8 .halo-block-header .view_all {
+  font-size: 16px;
+  color: #234bbb;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.skin-8 .halo-block-header.style-2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .skin-8 .halo-block-header {
+    margin-bottom: 33px;
+  }
+  .skin-8 .halo-block-header .title {
+    font-size: 40px;
+  }
+  .skin-8 .halo-block-header .view_all {
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    z-index: 9;
+  }
+  .skin-8 .halo-block-header .view_all:hover {
+    color: #e1732c;
+  }
+  .skin-8 .halo-block-header.style-2 {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #051c42;
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  .skin-8 .halo-block-header.style-2 .title {
+    font-size: 30px;
+  }
+  .skin-8 .halo-block-header.style-2 .title span {
+    padding-left: 0px;
+  }
+  .skin-8 .halo-block-header.style-2 .view_all {
+    bottom: auto;
+    top: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .skin-8 .slick-arrow.slick-next {
+    right: -60px;
+  }
+  .skin-8 .slick-arrow.slick-prev {
+    left: -60px;
+  }
+}
 /*# sourceMappingURL=skin-8.css.map */

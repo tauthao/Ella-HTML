@@ -87,38 +87,6 @@
   -webkit-transition: transform .3s linear .1s;
 }
 
-.list-categories .collection-list-item .view-abs .view {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #232323;
-  position: relative;
-  display: block;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
-}
-
-.list-categories .collection-list-item .view-abs .view::before, .list-categories .collection-list-item .view-abs .view::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #000;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-}
-
-.list-categories .collection-list-item .view-abs .view::before {
-  width: 2px;
-  height: 20px;
-}
-
-.list-categories .collection-list-item .view-abs .view::after {
-  width: 20px;
-  height: 2px;
-}
-
 .list-categories .collection-infinite-scroll .button {
   width: 100%;
   max-width: 300px;
