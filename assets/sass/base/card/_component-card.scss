@@ -280,6 +280,10 @@
             color: #ffffff;
             background-color: #c1c1c1;
         }
+        &.new-badge {
+            color: #0a6cdc;
+            background-color: #d2e7ff;
+        }
         +.badge {
             margin-top: 5px;
         }

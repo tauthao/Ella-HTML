@@ -184,4 +184,10 @@
     display: none;
   }
 }
+
+@media (max-width: 552px) {
+  .footer-7 .newsletter-form__button {
+    border-radius: 5px;
+  }
+}
 /*# sourceMappingURL=footer-7.css.map */

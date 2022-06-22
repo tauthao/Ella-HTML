@@ -205,6 +205,29 @@
     }
 }
 
+@media(max-width:551px){
+    .footer-block__newsletter-form{
+        max-width: 100%!important;
+    }
+    .newsletter-form{
+        .newsletter-form__field-wrapper{
+            flex-wrap: wrap;
+            .field{
+                flex: initial;
+                width: 100%;
+                margin: 0px 0px 15px!important;
+            }
+            .newsletter-form__button{
+                max-width: 100%!important;
+                width: 100%!important;
+            }
+            .field__input{
+                text-align: center;
+            }
+        } 
+    }
+}
+
 @media (min-width:1025px) {
     .footer {
         padding-bottom: 0;

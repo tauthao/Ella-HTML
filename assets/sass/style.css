@@ -3343,6 +3343,11 @@ label {
   background-color: #c1c1c1;
 }
 
+.card__badge .badge.new-badge {
+  color: #0a6cdc;
+  background-color: #d2e7ff;
+}
+
 .card__badge .badge + .badge {
   margin-top: 5px;
 }
@@ -3703,6 +3708,30 @@ label {
   .footer-bottom .footer__payment .list-payment .list-payment__item {
     margin-left: 0px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 551px) {
+  .footer-block__newsletter-form {
+    max-width: 100% !important;
+  }
+  .newsletter-form .newsletter-form__field-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .newsletter-form .newsletter-form__field-wrapper .field {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    width: 100%;
+    margin: 0px 0px 15px !important;
+  }
+  .newsletter-form .newsletter-form__field-wrapper .newsletter-form__button {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .newsletter-form .newsletter-form__field-wrapper .field__input {
+    text-align: center;
   }
 }
 

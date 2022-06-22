@@ -33,12 +33,54 @@
     }
 }//END: Block Announcement bar
 
+.halo-block-slideshow{
+    line-height: 1;
+    font-size: 0;
+    .halo-row-carousel{
+        line-height: 1;
+        .bannerCarousel-slide{
+            display:none;
+            &:first-child{
+                display: block;
+            }
+        }
+        .slick-dots{
+            position:absolute;
+            bottom:4px;
+            width: 100%;
+            li{
+                button{
+                    background:transparent;
+                    border-color:#ffffff;
+                }
+                &.slick-active{
+                    button{
+                        border-color: #ffffff;
+                        background:#ffffff;
+                    }
+                } 
+            }
+        }
+        &.slick-initialized {
+            .bannerCarousel-slide{
+                display:block;
+            }
+        }
+    }
+}// End Block Slide Show
+
 .halo-block-custom-image{
     padding: 20px 0 20px;
     .halo-row-item{
-        img{
-            margin: 0 auto;
+        .img-box{
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            img{
+                margin: 0 auto;
+            }
         }
+        
         .content-box{
             padding: 15px;
             .title,
@@ -62,7 +104,7 @@
     .slick-arrow{
         top: calc(50% - 20px);
     }
-}//END: Block Block Icon Width Text
+}//END: Block Custom Image
 
 .halo-block-banner-tab{
     padding: 0 0 14px;
@@ -128,6 +170,7 @@
 }//END: Block Banner tab
 
 .halo-block-three-banner{
+    padding: 0px 0px 24px;
     .halo-row-item{
         .content-box{
             padding: 15px 15px 26px;
@@ -202,7 +245,7 @@
 }//END: Block Icon Width Text
 
 .halo-block-brands{
-    padding: 35px 0 35px;
+    padding: 38px 0 35px;
     .halo-row-item{
         margin-bottom: 10px;
         .wrapper-content{
@@ -271,12 +314,77 @@
     }
 }//END: Block Custom text
 
+.halo-block-custom-service{
+    position: relative;
+    background-image: url(../../../images/banners/home/home-8/banner-23.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    .halo-block-header{
+        .title{
+            padding-bottom: 10px;
+        }
+    }
+    .content-box{
+        .img-box{
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 26px;
+            .view-abs{
+               a{
+                    border-radius: 50%;
+                    border-color: #e1732c;
+                    &::before,
+                    &::after{
+                        background-color: #e1732c;
+                    }
+               }
+            }
+        }
+        .title{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .desc{
+            line-height: 28px;
+            margin-bottom: 17px;
+        }
+        .link{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #051c42;
+            letter-spacing: 0;
+        }
+    }
+}//END: Block Custom Service
+
 .halo-block-instagram{
-    margin-bottom: 32px;
+    margin: 53px 0px 40px;
     .halo-block-header{
         .title{
             margin-bottom: 13px;
         }
+    }
+    .view-abs{
+        -moz-transform: translate(-50%,-50%) rotateX(90deg);
+        -o-transform: translate(-50%,-50%) rotateX(90deg);
+        -ms-transform: translate(-50%,-50%) rotateX(90deg);
+        -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+        transform: translate(-50%,-50%) rotateX(90deg);
+        -webkit-transition: transform .3s linear .1s;
+        a{
+            border-color: #051c42;
+            &::before,
+            &::after{
+                background-color: #051c42;
+            }
+       }
     }
     .instagram-button{
         margin: 33px 0px 33px;
@@ -288,6 +396,16 @@
         }
     }
 }//END: Block Instagram
+
+.halo-product-block{
+    margin: 0;
+    .halo-block-header{
+        margin-bottom: 35px!important;
+    }
+    .product-item{
+        margin-top: 0!important;
+    }
+}
 
 @media(max-width: 767px){
     .halo-block-banner-tab{
@@ -316,7 +434,7 @@
         }
     }
     .halo-block-icon-with-text{
-        padding: 43px 0 36px;
+        padding: 3px 0 32px;
         .image {
             min-height: 300px;
         }
@@ -372,7 +490,7 @@
     }// End Bloc Four Banner
 
     .halo-block-custom-text{
-        padding: 34px 0px 34px;
+        padding: 34px 0px 60px;
         .halo-block-content{
             text-align: left;
         }
