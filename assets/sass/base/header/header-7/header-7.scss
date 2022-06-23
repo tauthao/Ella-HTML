@@ -9,8 +9,8 @@
             justify-content: space-between;
         }
         .header-top--left{
-            flex: 0 0 calc(22% - 10px);
-            max-width: calc(22% - 10px);
+            flex: 0 0 calc(20% - 10px);
+            max-width: calc(20% - 10px);
             display: block;
             position: relative;
             .header__heading{
@@ -132,6 +132,11 @@
     }
     .header-bottom{
         background: #232830;
+        .header-bottom--wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         .list-menu{
             .menu-lv-1{
                 .menu-lv-1__action{
@@ -169,6 +174,158 @@
                     justify-content: center;
                 }
             } 
+        }
+        .header-language_currency{
+            display: inline-block;
+            position: relative;
+            text-align: right;
+            padding: 0;
+            .halo-language_currency{
+                .disclosure__button {
+                    padding: 0;
+                    .icon {
+                        width: 16px;
+                        height: 16px;
+                        position: relative;
+                        top: -1px;
+                        svg{
+                            width: 16px;
+                            height: 16px;
+                            
+                        }
+                    }
+                    .text {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #ffffff;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        & + svg{
+                            fill: #ffffff;
+                            width: 11px;
+                            height: 11px;
+                        }
+                        &.text-language{
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "/";
+                                top: 0px;
+                                right: -14px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+            .dropdown-language_currency{
+                display: flex;
+                justify-content: center;
+                background: #fafafa;
+                position: absolute;
+                right: 0;
+                top: 10px;
+                opacity: 0;
+                z-index: -1;
+                overflow: hidden;
+                transition: all .5s ease;
+                box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+                width: 100%;
+                min-width: 300px;
+                border-radius: 5px;
+                padding-bottom: 19px;
+                &.show {
+                    top: calc(100% + 9px);
+                    opacity: 1;
+                    z-index: 9;
+                }
+                .dropdown-item{
+                    width: 50%;
+                    padding: 0;
+                    text-align: left;
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+                .title{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #232830;
+                    padding: 13px 30px 13px;
+                    font-weight: 600;
+                    background: #fafafa;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+                .text{
+                    position: relative;
+                    color: #232830;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .currency-item {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #000000;
+                    line-height: 22px;
+                    letter-spacing: .02em;
+                    padding: 7px 15px 8px 30px;
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        svg {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    &.active {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
+                .disclosure__list{
+                    background: transparent;
+                }
+                .disclosure__link {
+                    display: flex;
+                    align-items: center;
+                    padding: 7px 15px 4px 30px;
+                    text-decoration: none;
+                    line-height: 1.8;
+                    .icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        position: relative;
+                        top: -1px;
+                        svg {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                    &.disclosure__link--active {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                    }
+                }
+            }
         }
     }
     

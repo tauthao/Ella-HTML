@@ -760,6 +760,8 @@
                             slidesToScroll: 1,
                             dots: itemDots_mb,
                             arrows: itemRow_mb,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
                             nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
                             prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
                             responsive: [{
@@ -1574,24 +1576,17 @@
                 var slickInterval = setInterval(() => {
                     timerIncrement();
                 }, time);
-
-                $body.on('mousemove keydown scroll', () => {
-                    resetTimer();
-                });
             }
 
             function timerIncrement() {
                 idleTime = idleTime + 1;
+
                 if (idleTime >= 1 && !$body.hasClass('notification-show')) {
                     $body.addClass('notification-show');
                 } else {
                     $body.removeClass('notification-show');
                 } 
             }
-
-            function resetTimer() {
-                idleTime = -1;
-            }; 
 
             btnClose.on('click', (event) => {
                 if ($body.hasClass('notification-show')) {

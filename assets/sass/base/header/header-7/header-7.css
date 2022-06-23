@@ -19,9 +19,9 @@
 
 .header-7 .header-top .header-top--left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(22% - 10px);
-          flex: 0 0 calc(22% - 10px);
-  max-width: calc(22% - 10px);
+      -ms-flex: 0 0 calc(20% - 10px);
+          flex: 0 0 calc(20% - 10px);
+  max-width: calc(20% - 10px);
   display: block;
   position: relative;
 }
@@ -172,6 +172,18 @@
   background: #232830;
 }
 
+.header-7 .header-bottom .header-bottom--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header-7 .header-bottom .list-menu .menu-lv-1 .menu-lv-1__action {
   font-size: 16px;
   letter-spacing: 0;
@@ -212,6 +224,196 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header-7 .header-bottom .header-language_currency {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  padding: 0;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button {
+  padding: 0;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -1px;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .text + svg {
+  fill: #ffffff;
+  width: 11px;
+  height: 11px;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .text.text-language {
+  position: relative;
+}
+
+.header-7 .header-bottom .header-language_currency .halo-language_currency .disclosure__button .text.text-language::after {
+  position: absolute;
+  content: "/";
+  top: 0px;
+  right: -14px;
+  color: #ffffff;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fafafa;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  opacity: 0;
+  z-index: -1;
+  overflow: hidden;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  min-width: 300px;
+  border-radius: 5px;
+  padding-bottom: 19px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency.show {
+  top: calc(100% + 9px);
+  opacity: 1;
+  z-index: 9;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .dropdown-item {
+  width: 50%;
+  padding: 0;
+  text-align: left;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .dropdown-item:hover {
+  background: transparent;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #232830;
+  padding: 13px 30px 13px;
+  font-weight: 600;
+  background: #fafafa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .text {
+  position: relative;
+  color: #232830;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 22px;
+  letter-spacing: .02em;
+  padding: 7px 15px 8px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item.active {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item.active span {
+  font-weight: 600;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .currency-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__list {
+  background: transparent;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 15px 4px 30px;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link.disclosure__link--active {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link.disclosure__link--active span {
+  font-weight: 700;
+}
+
+.header-7 .header-bottom .header-language_currency .dropdown-language_currency .disclosure__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .header-mobile {

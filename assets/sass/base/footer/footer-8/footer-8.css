@@ -30,12 +30,11 @@
 }
 
 .footer-8 .footer-top .footer-newsletter .footer-block__newsletter-form .field__input {
-  padding-top: 13px;
-  padding-bottom: 13px;
   background: #ffffff;
   border-radius: 4px;
   font-size: 16px;
   color: #808080;
+  padding: 13px 23px 13px;
 }
 
 .footer-8 .footer-top .footer-newsletter .footer-block__newsletter-form .field {
