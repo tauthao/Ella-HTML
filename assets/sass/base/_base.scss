@@ -917,7 +917,6 @@ svg {
         position: relative;
         padding: 0px 5px;
     }
-    
 
 }
 .product-carousel {
@@ -1672,6 +1671,36 @@ label {
                 width: 20px;
                 height: 2px;
             }
+        }
+    }
+    .animate-border{
+        position: relative;
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            background: rgba(255,255,255,.1);
+            width: 0;
+            height: 0;
+            transition: all .4s ease;
+            visibility: hidden;
+            z-index: 999;
+        }
+        &::before{
+            top: 0;
+            left: 0;
+        }
+        &::after{
+            bottom: 0;
+            right: 0;
+        }
+        &:hover{
+            &::before,
+            &::after{
+                width: 100%;
+                height: 100%;
+                visibility: visible;
+            } 
         }
     }
     .img-box{

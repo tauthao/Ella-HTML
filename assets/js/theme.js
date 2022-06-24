@@ -161,11 +161,27 @@
                             nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
                             prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
                             responsive: [{
-                                    breakpoint: 1024,
+                                    breakpoint: 1300,
                                     settings: {
                                         dots: itemDots,
                                         arrows: itemRow,
                                         slidesToShow: itemShow,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        get slidesToShow() {
+                                            if (itemShow > 4) {
+                                                return this.slidesToShow = itemShow - 1;
+                                            } else {
+                                                return this.slidesToShow = itemShow;
+                                            }
+                                        },
+
+                                        dots: itemDots,
+                                        arrows: itemRow,
                                         slidesToScroll: 1
                                     }
                                 },
