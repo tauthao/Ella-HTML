@@ -156,7 +156,7 @@
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding: 21px 0px 19px;
+  padding: 20px 0px 20px;
   position: relative;
 }
 
@@ -277,8 +277,17 @@
   color: #0a6cdc;
 }
 
+.halo-block-product-width-banner {
+  padding: 58px 0px 70px;
+}
+
+.halo-block-product-width-banner .halo-block-header {
+  margin-bottom: 30px;
+}
+
 .halo-block-custom-service {
   padding: 65px 0 50px;
+  margin: 30px 0px 65px;
   background: #f5f5f5;
 }
 
@@ -322,6 +331,109 @@
   color: #0a6cdc;
 }
 
+.halo-block-two-banner {
+  padding: 68px 0px 14px;
+}
+
+.halo-block-two-banner .halo-row-item {
+  padding-bottom: 15px;
+}
+
+.halo-block-banner {
+  padding: 70px 0px 43px;
+}
+
+.halo-block-banner.block-2 {
+  padding: 69px 0px 46px;
+}
+
+.halo-block-brands {
+  padding: 60px 0 60px;
+  margin-bottom: 48px;
+}
+
+.halo-block-brands .halo-block-header .title {
+  font-size: 20px;
+}
+
+.halo-block-brands .halo-row-item .img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  max-width: 170px;
+  max-height: 170px;
+  margin: 0 auto;
+}
+
+.halo-block-brands .halo-row-item .img-box img {
+  margin: 0 auto;
+}
+
+.halo-block-icon-with-text-2 {
+  position: relative;
+  background-image: url(../../../images/banners/home/home-10/banner-25.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 35px;
+  padding-bottom: 61px;
+  margin: 84px 0 0;
+}
+
+.halo-block-icon-with-text-2 .halo-block-header {
+  margin-bottom: 39px;
+}
+
+.halo-block-icon-with-text-2 .halo-block-header .title {
+  font-size: 40px;
+  letter-spacing: -.02em;
+  color: #ffffff;
+}
+
+.halo-block-icon-with-text-2 .halo-block-header .title .custom-color {
+  color: #10ffda;
+}
+
+.halo-block-icon-with-text-2 .img-box img {
+  margin: 0 auto;
+}
+
+.halo-block-icon-with-text-2 .content-box {
+  padding: 11px 0px 12px;
+}
+
+.halo-block-icon-with-text-2 .content-box .title {
+  font-size: 20px;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.halo-block-icon-with-text-2 .content-box .desc {
+  color: #ffffff;
+}
+
+.halo-block-icon-with-text-2 .content-box .link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.halo-block-icon-with-text-2 .halo-row-item:hover .content-box .link {
+  color: #10ffda;
+}
+
+.halo-product-block {
+  padding: 0 0 21px;
+  margin: 0;
+}
+
+.halo-product-block .halo-block-header {
+  margin-bottom: 31px !important;
+}
+
 @media (max-width: 580px) {
   .announcement-bar .message .btn {
     display: none;
@@ -337,6 +449,15 @@
   }
   .halo-block-custom-banner .halo-block-footer .desc {
     padding-bottom: 15px;
+  }
+  .halo-block-product-width-banner .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .halo-block-product-width-banner .row .col-banner {
+    margin-bottom: 30px;
   }
 }
 
@@ -370,11 +491,13 @@
   .halo-block-Categories .halo-block-header {
     margin-bottom: 40px;
   }
-  .halo-block-custom-service .row {
+  .halo-block-custom-service .row,
+  .halo-block-product-width-banner .row {
     margin-left: -7.5px !important;
     margin-right: -7.5px !important;
   }
-  .halo-block-custom-service .row .halo-row-item {
+  .halo-block-custom-service .row .halo-row-item,
+  .halo-block-product-width-banner .row .halo-row-item {
     padding-left: 7.5px !important;
     padding-right: 7.5px !important;
   }
@@ -410,11 +533,14 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .halo-block-Categories .halo-row-item .view-abs .view {
+  .halo-block-Categories .halo-row-item .view-abs .view,
+  .halo-block-brands .halo-row-item .view-abs .view {
     border: 1px solid #161880;
     border-radius: 50%;
   }
-  .halo-block-Categories .halo-row-item .view-abs .view::before, .halo-block-Categories .halo-row-item .view-abs .view::after {
+  .halo-block-Categories .halo-row-item .view-abs .view::before, .halo-block-Categories .halo-row-item .view-abs .view::after,
+  .halo-block-brands .halo-row-item .view-abs .view::before,
+  .halo-block-brands .halo-row-item .view-abs .view::after {
     background-color: #161880;
   }
 }
@@ -445,6 +571,9 @@
   .halo-block-five-banner .halo-row-item {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .halo-block-brands .slick-dots {
+    bottom: -60px;
   }
 }
 /*# sourceMappingURL=demo-10.css.map */

@@ -173,7 +173,7 @@
                                     breakpoint: 1024,
                                     settings: {
                                         get slidesToShow() {
-                                            if (itemShow > 4) {
+                                            if (itemShow > 3) {
                                                 return this.slidesToShow = itemShow - 1;
                                             } else {
                                                 return this.slidesToShow = itemShow;
