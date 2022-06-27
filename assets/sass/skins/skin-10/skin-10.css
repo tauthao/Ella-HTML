@@ -227,6 +227,14 @@
   font-weight: 700;
 }
 
+.skin-10 .product-card .card-swatch {
+  margin: 13px 0px 10px;
+}
+
+.skin-10 .product-card .card-swatch .swatch {
+  margin-bottom: 0;
+}
+
 .skin-10 .product-card .card-action {
   position: relative;
   z-index: 10;

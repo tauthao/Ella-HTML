@@ -183,6 +183,7 @@
 .halo-block-five-banner {
   background: #f5f5f5;
   padding: 40px 0px 40px;
+  margin-bottom: 66px;
 }
 
 .halo-block-five-banner .row {
@@ -204,6 +205,7 @@
   padding-top: 35px;
   padding-bottom: 52px;
   margin-bottom: 27px;
+  margin-top: 83px;
 }
 
 .halo-block-custom-banner .halo-block-header {
@@ -432,6 +434,11 @@
 
 .halo-product-block .halo-block-header {
   margin-bottom: 31px !important;
+}
+
+.halo-product-block.flash-sale .halo-block-header .title {
+  letter-spacing: -.02em;
+  color: #e10600;
 }
 
 @media (max-width: 580px) {

@@ -248,6 +248,26 @@
   display: inline-block;
 }
 
+.productView-countDown.product-countdown-flash-sale {
+  margin-bottom: 11px;
+}
+
+.productView-countDown.product-countdown-flash-sale .num,
+.productView-countDown.product-countdown-flash-sale span {
+  border: none;
+  padding: 0;
+  color: #e10600;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: auto;
+  text-transform: lowercase;
+}
+
+.productView-countDown.product-countdown-flash-sale span {
+  padding-left: 5px;
+}
+
 /* END: Product Countdown */
 .product-quantity .form__label {
   display: block;
