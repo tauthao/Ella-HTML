@@ -441,6 +441,10 @@
   color: #e10600;
 }
 
+.halo-product-block.flash-sale .card-swatch {
+  margin: 13px 0px 10px;
+}
+
 @media (max-width: 580px) {
   .announcement-bar .message .btn {
     display: none;

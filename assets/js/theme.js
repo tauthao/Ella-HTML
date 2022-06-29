@@ -942,7 +942,7 @@
                                 minutes = `0${Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))}`.slice(-2),
                                 seconds = `0${Math.floor((distance % (1000 * 60)) / 1000)}`.slice(-2),
                                 strCountDown = '';
-                            if (self.hasClass('product-countdown-flash-sale')) {
+                            if (self.hasClass('style-3')) {
                                 strCountDown = '<span class="num">' + days + '<span class="text">days</span></span>\
                                 <span class="num">' + hours + ' : </span>\
                                 <span class="num">' + minutes + ' : </span>\
