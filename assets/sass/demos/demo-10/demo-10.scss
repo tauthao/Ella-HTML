@@ -348,7 +348,7 @@
     .halo-block-header{
         margin-bottom: 39px;
         .title{
-            font-size: 40px;
+            font-size: 40px!important;
             letter-spacing: -.02em;
             color: #ffffff;
             .custom-color{
@@ -397,6 +397,11 @@
     margin: 0;
     .halo-block-header{
         margin-bottom: 31px !important;
+    }
+    .slick-arrow{
+        svg{
+            top: -4px;
+        }
     }
     &.flash-sale{
         .halo-block-header{

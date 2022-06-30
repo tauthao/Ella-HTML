@@ -1784,14 +1784,24 @@
         },
 
         initCloseAcceptCookie: function () {
-            $doc.on('click', '[data-close-accept]', (event) => {
-                event.preventDefault();
+            var cookieElm =  $('.halo-accept-cookie-popup'),
+                btnClose = cookieElm.find('[data-close-accept]');
                 
-                if ($(event.currentTarget).find(".halo-accept-cookie-popup")) {
-                    $('.halo-accept-cookie-popup ').addClass('is-hidden')
-                }
+            if ($.cookie('acceptcookie') == 'closed') {
+                cookieElm.addClass('is-hidden')
+            }
+
+            btnClose.on('click.closecookie', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                cookieElm.addClass('is-hidden')
+                // cookieElm.remove();
+                $.cookie('acceptcookie', 'closed', {
+                    expires: 1,
+                    path: '/'
+                });
             });
         }
-        
     }
 })(jQuery);

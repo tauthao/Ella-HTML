@@ -554,7 +554,7 @@ button.disabled,
     text-overflow: ellipsis;
     white-space: nowrap;
     border-radius: 0;
-    border: 1px solid rgba(255, 255, 255, 0);
+    border: 1px solid transparent;
     min-width: 160px;
     max-width: 100%;
     transition: all .3s ease;

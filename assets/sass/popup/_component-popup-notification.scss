@@ -6,6 +6,9 @@ body {
             visibility: visible;
             z-index: 9;
             bottom: 50px;
+            &.halo-notification-left{
+                bottom: 40px;
+            }
         }
     
     } 
@@ -57,14 +60,33 @@ body {
             }
         }
     }
+    &.halo-notification-left{
+        right: auto;
+        left: 40px;
+    }
 } 
 
+@media (max-width: 1024px) {
+    body {
+        &.notification-show {
+            .halo-notification-popup  {
+                bottom: 84px!important;
+            }
+        }
+    }
+    .halo-notification-popup {
+        right: 15px!important;
+        &.halo-notification-left{
+            left: 15px!important;
+        }
+    }
+}
 
 @media (max-width: 551px) {
     body {
         &.notification-show {
             .halo-notification-popup  {
-                bottom: 69px;
+                bottom: 69px!important;
             }
         }
     }
@@ -74,6 +96,11 @@ body {
         box-shadow: none;
         border-top: 1px solid #dadada;
         border-bottom: 1px solid #dadada;
+        right: 0!important;
+        box-shadow: none!important;
+        &.halo-notification-left{
+            left: 0px!important;
+        }
         &.halo-popup {
             right: auto;
             left: 0;

@@ -387,7 +387,7 @@
 }
 
 .halo-block-icon-with-text-2 .halo-block-header .title {
-  font-size: 40px;
+  font-size: 40px !important;
   letter-spacing: -.02em;
   color: #ffffff;
 }
@@ -434,6 +434,10 @@
 
 .halo-product-block .halo-block-header {
   margin-bottom: 31px !important;
+}
+
+.halo-product-block .slick-arrow svg {
+  top: -4px;
 }
 
 .halo-product-block.flash-sale .halo-block-header .title {

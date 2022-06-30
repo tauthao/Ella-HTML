@@ -380,6 +380,10 @@ body.notification-show .halo-notification-popup {
   bottom: 50px;
 }
 
+body.notification-show .halo-notification-popup.halo-notification-left {
+  bottom: 40px;
+}
+
 .halo-notification-popup {
   width: 100%;
   max-width: 367px;
@@ -442,9 +446,26 @@ body.notification-show .halo-notification-popup {
   margin-top: 10px;
 }
 
+.halo-notification-popup.halo-notification-left {
+  right: auto;
+  left: 40px;
+}
+
+@media (max-width: 1024px) {
+  body.notification-show .halo-notification-popup {
+    bottom: 84px !important;
+  }
+  .halo-notification-popup {
+    right: 15px !important;
+  }
+  .halo-notification-popup.halo-notification-left {
+    left: 15px !important;
+  }
+}
+
 @media (max-width: 551px) {
   body.notification-show .halo-notification-popup {
-    bottom: 69px;
+    bottom: 69px !important;
   }
   .halo-notification-popup {
     max-width: 100%;
@@ -452,6 +473,11 @@ body.notification-show .halo-notification-popup {
             box-shadow: none;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
+    right: 0 !important;
+    box-shadow: none !important;
+  }
+  .halo-notification-popup.halo-notification-left {
+    left: 0px !important;
   }
   .halo-notification-popup.halo-popup {
     right: auto;
@@ -1561,7 +1587,6 @@ body.ask-an-expert-show .background-overlay {
   left: 15px;
   width: 100%;
   max-width: 370px;
-  height: 124px;
   background: rgba(20, 20, 20, 0.9);
   padding: 10px 15px;
   z-index: 99;
