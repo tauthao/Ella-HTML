@@ -187,6 +187,14 @@
   font-family: 'Rubik', sans-serif;
 }
 
+.halo-toolbar-bottom-mobile .halo-toolbar-wrapper .halo-toolbar-item .icon--cart .cart-count-bubble {
+  background-color: #0a6cdc;
+}
+
+.halo-toolbar-bottom-mobile .halo-toolbar-wrapper .halo-toolbar-item .icon--cart .text-count {
+  color: #ffffff;
+}
+
 @media (max-width: 992px) {
   .footer-10 .footer-nav .col-custom-text {
     -webkit-box-flex: 0;

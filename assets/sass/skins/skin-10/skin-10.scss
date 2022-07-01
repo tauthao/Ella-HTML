@@ -16,6 +16,7 @@
     .link{
         color: #051c42;
         letter-spacing: 0;
+
     }
     .desc{
         font-size: 16px;
@@ -375,6 +376,16 @@
                 }
             } 
         }
+    }
+    .halo-sidebar{
+        .halo-sidebar-header{
+            .title{
+                font-family: 'Rubik', sans-serif;
+                letter-spacing: 0;
+                color: #202020;
+                font-size: 14px;
+            }
+        } 
     }
     .desc{
         font-size: 14px;
@@ -951,6 +962,118 @@
             }
         }
         
+    }
+    .halo-sidebar_menu{
+        .site-nav-mobile{
+            &.nav{
+                .menu-lv-1__action{
+                    font-size: 14px!important;
+                    color: #202020!important;
+                }
+                .menu-lv-2__action,
+                .menu-lv-3__action{
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    color: #202020;
+                }
+            } 
+            .nav-title-mobile{
+                background: #e6e6e6!important ;
+                span{
+                    color: #202020!important;
+                    letter-spacing: 0!important;
+                }
+            }
+        }
+        .nav-currency-language{
+            .title{
+                background: #e6e6e6 ;
+                color: #202020;
+                letter-spacing: 0;
+            }
+        }
+        .nav-currency-language{
+            .text{
+                font-size: 14px!important;
+                color: #202020!important;
+            }
+            .currency-item{
+                .icon{
+                    svg{
+                        position: relative;
+                        top: -5px;
+                    }
+                }
+            } 
+        }
+    }
+    .halo-sidebar_search{
+        .search-bar {
+          .input-group-field{
+              font-size: 14px;
+              color: #808080;
+          }
+          .icon-search{
+            padding: 4px!important;
+            position: relative;
+            right: 5px;
+          }
+          .form_search_type{
+            width: 100%;
+            position: relative;
+            max-width: 85px;
+            background: #f5f5f5;
+                .srch_type{
+                    border: none;
+                    padding: 11px 27px 8px 11px;
+                    color: #808080;
+                    letter-spacing: 0;
+                    background: transparent;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .icon-dropdown{
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 20px;
+                    right: 5px;
+                    background-color: transparent;
+                    top: 1px;
+                    z-index: 0;
+                    height: auto;
+                    cursor: pointer;
+                    svg{
+                        fill:#808080;
+                    }
+                }
+            }
+        }
+    }
+    .quickSearchResultsWrap{
+        .search-block-title{
+            span{
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0;
+                color: #202020;
+            }
+        }
+        .list-item{
+            .item{
+                .link{
+                    font-size: 14px;
+                    color: #202020;
+                    padding: 9px 14px 9px 9px;
+                }
+            } 
+        }
+        .product-card{
+            .card-action{
+                .button{
+                    width: 100%!important;
+                }
+            } 
+        } 
     }
 }
 

@@ -162,6 +162,7 @@
         .menu-dropdown{
             padding: 33px 0 16px;
             background: #f5f5f5;
+            box-shadow: 0px 3px 9.1px 0.9px rgba(0, 0, 0, 0.2);
         }
         .list-menu{
             .menu-lv-1{
@@ -215,31 +216,6 @@
                     color: #161880;
                 } 
             }
-            .product-card{
-                .card-vendor{
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #051c42;
-                    letter-spacing: 0;
-                }
-                .card-title{
-                    font-size: 16px;
-                    color: #051c42;
-                    letter-spacing: 0;
-                    padding: 3px 0px 0px;
-                }
-                .card-price{
-                    justify-content: center;
-                    span{
-                        font-size: 16px;
-                    }
-                }
-                .card-swatch{
-                    .item{
-                        margin: 0px 7.5px;
-                    }
-                }
-            }
             .megamenu_style_2{
                 .site-nav-banner{
                     .site-nav-banner--item {
@@ -250,38 +226,58 @@
                     }
                 }
                 .wrapper-mega-banner{
+                    padding: 33px 0px;
+                    .img-box img{
+                        border-radius: 3px;
+                        overflow: hidden;
+                    }
                     .content-box{
                         .sub-title{
                             font-size: 16px;
-                            color: #051c42;
+                            color: #505050;
                             font-weight: 400;
+                            font-family: 'DM Sans', sans-serif;
                         }
                         .title{
-                            font-size: 30px;
-                            color: #051c42;
+                            font-size: 20px;
+                            color: #202020;
+                            font-weight: 700;
+                            font-family: 'DM Sans', sans-serif;
+                            font-style: normal;
+                            text-transform: initial;
+                            margin-bottom: 10px;
                         }
-                        .link{
-                            font-size: 16px;
-                            color: #234bbb;
+                        .button{
+                            padding:9px 15px 9px;
+                            min-width: 108px;
+                            margin-top: 17px;
+                            font-size: 14px;
                         }
                     }
                     .col-brands{
                         .title{
                             font-size: 16px;
-                            color: #051c42;
-                            font-weight: 600;
+                            color: #202020;
+                            font-weight: 700;
+                            font-family: 'DM Sans', sans-serif;
+                            margin-bottom: 19px;
                         }
                         .azbrandstable{
                             a{
                                 font-size: 16px;
-                                color: #051c42;
-                                font-weight: 500;
+                                color: #202020;
+                                font-weight: 400;
+                                letter-spacing: .05em;
                             }
                         }
                         .link-brands{
-                            font-size: 16px;
-                            color: #234bbb;
+                            font-size: 14px;
+                            color: #202020;
+                            margin-top: 10px
                         }
+                    }
+                    &::before{
+                       background: #ffffff;
                     }
                 }
             }
@@ -309,7 +305,7 @@
                 }
             }
         }
-        .col-right{
+        .header-col-right{
             display: flex;
             align-items: center;
             position: relative;
@@ -499,25 +495,25 @@
 }
 
 .header-mobile{
-    background: #234bbb;
+    background: #161880;
     .header-mobile--icon{
         .mobileMenu-toggle{
-            color: #ffffff;
+            color: #fdc525;
             .mobileMenu-toggle__Icon{
-                background-color: #ffffff;
+                background-color: #fdc525;
                 &::before,
                 &::after{
-                    background-color: #ffffff;
+                    background-color: #fdc525;
                 }
             }
         }
         svg{
-            fill: #ffffff;
+            fill: #fdc525;
         }
         .cart-count-bubble{
-            background-color: #f7c947!important;
+            background-color: #0a6cdc!important;
             span{
-                color: #234bbb;
+                color: #ffffff;
             }
         }
         &.item-mobile-logo{

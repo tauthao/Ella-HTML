@@ -1589,7 +1589,7 @@ body.ask-an-expert-show .background-overlay {
   max-width: 370px;
   background: rgba(20, 20, 20, 0.9);
   padding: 10px 15px;
-  z-index: 99;
+  z-index: 9;
 }
 
 .halo-accept-cookie-popup.is-hidden {

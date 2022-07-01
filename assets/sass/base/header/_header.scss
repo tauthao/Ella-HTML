@@ -498,6 +498,18 @@
     }
 }
 
+.list-menu{
+    .list-nav-title{
+        .site-nav-title{
+            margin: 0 0 12px;
+            &.sale{
+                color: #e10600;
+            }
+        }
+    }
+}
+
+
 .menu-lv-1__action {
     color: #ffffff;
     padding: 11px 20px 12px;
@@ -627,6 +639,33 @@
     top: 0px!important;
 }
 
+.megamenu-custom-product-width-banner{
+    position: relative;
+    padding: 40px 0px;
+    bottom: -17px;
+    &::before{
+        content: " ";
+        width: calc( 100% + 200%);
+        height: 100%;
+        position: absolute;
+        left: -100%;
+        bottom: 0;
+        z-index: -1;
+        background: #ffffff;
+    }
+    .product-card{
+        .product-card-bottom{
+            padding: 0!important;
+        }
+        .card-vendor-title{
+            padding: 0!important;
+        }
+    }
+    
+    .banner{
+        padding-left: 23px;
+    }
+}
 .wrapper-mega-banner{
     display: flex;
     flex-wrap: nowrap;
@@ -746,6 +785,7 @@
     display: block;
 }
 
+
 .site-nav-link {
     font-size: 12px;
     font-weight: 400;
@@ -798,6 +838,68 @@
     margin-top: 13px;
     margin-bottom: 10px;
 }
+.header{
+    .header-bottom{
+        .megamenu_style_4{
+            padding: 0;
+            .row{
+                margin: 0;
+                align-items: center;
+            }
+            .halo-row-item{
+                padding: 0;
+                .site-banner{
+                    .img-box{
+                        border-radius: 0;
+                    }
+                }
+            }
+            .site-nav-list{
+                text-align: center;
+                padding: 32px 15px;
+            }
+        }
+        .megamenu_style_5{
+            .megamenu-product-custom{
+                position: relative;
+                bottom: -17px;
+                margin-top: 11px;
+                padding: 28px 0px 52px;
+                &::before{
+                    content: " ";
+                    width: calc( 100% + 200%);
+                    height: 100%;
+                    position: absolute;
+                    left: -100%;
+                    bottom: 0;
+                    z-index: -1;
+                    background: #ffffff;
+                }
+                .halo-row-item{
+                    .product-card{
+                        .product-card-top{
+                            width: 200px;
+                            height: auto;
+                        }
+                        .card-vendor-title{
+                            line-height: 15px;
+                            padding: 7px 0px 10px;
+                            a{
+                                line-height: 15px;
+                            }
+                        }
+                        .product-card-bottom{
+                            width: calc(100% - 200px);
+                            padding-left: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @media (min-width: 1025px) {
     .header-top {

@@ -215,6 +215,8 @@
 .header-10 .header-bottom .menu-dropdown {
   padding: 33px 0 16px;
   background: #f5f5f5;
+  -webkit-box-shadow: 0px 3px 9.1px 0.9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 9.1px 0.9px rgba(0, 0, 0, 0.2);
 }
 
 .header-10 .header-bottom .list-menu .menu-lv-1 .menu-lv-1__action {
@@ -275,34 +277,6 @@
   color: #161880;
 }
 
-.header-10 .header-bottom .list-menu .product-card .card-vendor {
-  font-size: 16px;
-  font-weight: 600;
-  color: #051c42;
-  letter-spacing: 0;
-}
-
-.header-10 .header-bottom .list-menu .product-card .card-title {
-  font-size: 16px;
-  color: #051c42;
-  letter-spacing: 0;
-  padding: 3px 0px 0px;
-}
-
-.header-10 .header-bottom .list-menu .product-card .card-price {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-10 .header-bottom .list-menu .product-card .card-price span {
-  font-size: 16px;
-}
-
-.header-10 .header-bottom .list-menu .product-card .card-swatch .item {
-  margin: 0px 7.5px;
-}
-
 .header-10 .header-bottom .list-menu .megamenu_style_2 .site-nav-banner .site-nav-banner--item {
   width: 100%;
 }
@@ -311,37 +285,62 @@
   margin-bottom: 20px;
 }
 
+.header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner {
+  padding: 33px 0px;
+}
+
+.header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .img-box img {
+  border-radius: 3px;
+  overflow: hidden;
+}
+
 .header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .content-box .sub-title {
   font-size: 16px;
-  color: #051c42;
+  color: #505050;
   font-weight: 400;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .content-box .title {
-  font-size: 30px;
-  color: #051c42;
+  font-size: 20px;
+  color: #202020;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  text-transform: initial;
+  margin-bottom: 10px;
 }
 
-.header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .content-box .link {
-  font-size: 16px;
-  color: #234bbb;
+.header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .content-box .button {
+  padding: 9px 15px 9px;
+  min-width: 108px;
+  margin-top: 17px;
+  font-size: 14px;
 }
 
 .header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .col-brands .title {
   font-size: 16px;
-  color: #051c42;
-  font-weight: 600;
+  color: #202020;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 19px;
 }
 
 .header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .col-brands .azbrandstable a {
   font-size: 16px;
-  color: #051c42;
-  font-weight: 500;
+  color: #202020;
+  font-weight: 400;
+  letter-spacing: .05em;
 }
 
 .header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner .col-brands .link-brands {
-  font-size: 16px;
-  color: #234bbb;
+  font-size: 14px;
+  color: #202020;
+  margin-top: 10px;
+}
+
+.header-10 .header-bottom .list-menu .megamenu_style_2 .wrapper-mega-banner::before {
+  background: #ffffff;
 }
 
 .header-10 .header-bottom .list-menu--disclosure {
@@ -372,7 +371,7 @@
   right: 10px;
 }
 
-.header-10 .header-bottom .col-right {
+.header-10 .header-bottom .header-col-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,31 +606,31 @@
 }
 
 .header-mobile {
-  background: #234bbb;
+  background: #161880;
 }
 
 .header-mobile .header-mobile--icon .mobileMenu-toggle {
-  color: #ffffff;
+  color: #fdc525;
 }
 
 .header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon {
-  background-color: #ffffff;
+  background-color: #fdc525;
 }
 
 .header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon::before, .header-mobile .header-mobile--icon .mobileMenu-toggle .mobileMenu-toggle__Icon::after {
-  background-color: #ffffff;
+  background-color: #fdc525;
 }
 
 .header-mobile .header-mobile--icon svg {
-  fill: #ffffff;
+  fill: #fdc525;
 }
 
 .header-mobile .header-mobile--icon .cart-count-bubble {
-  background-color: #f7c947 !important;
+  background-color: #0a6cdc !important;
 }
 
 .header-mobile .header-mobile--icon .cart-count-bubble span {
-  color: #234bbb;
+  color: #ffffff;
 }
 
 .header-mobile .header-mobile--icon.item-mobile-logo .header__heading-link {

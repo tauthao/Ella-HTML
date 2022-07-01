@@ -406,6 +406,13 @@
   right: 20px;
 }
 
+.skin-10 .halo-sidebar .halo-sidebar-header .title {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0;
+  color: #202020;
+  font-size: 14px;
+}
+
 .skin-10 .desc {
   font-size: 14px;
   letter-spacing: 0;
@@ -1016,6 +1023,104 @@
 
 .skin-10 .halo-accept-cookie-popup .group-action-links .link:hover .text {
   color: #0a6cdc;
+}
+
+.skin-10 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-1__action {
+  font-size: 14px !important;
+  color: #202020 !important;
+}
+
+.skin-10 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-2__action,
+.skin-10 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-3__action {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #202020;
+}
+
+.skin-10 .halo-sidebar_menu .site-nav-mobile .nav-title-mobile {
+  background: #e6e6e6 !important;
+}
+
+.skin-10 .halo-sidebar_menu .site-nav-mobile .nav-title-mobile span {
+  color: #202020 !important;
+  letter-spacing: 0 !important;
+}
+
+.skin-10 .halo-sidebar_menu .nav-currency-language .title {
+  background: #e6e6e6;
+  color: #202020;
+  letter-spacing: 0;
+}
+
+.skin-10 .halo-sidebar_menu .nav-currency-language .text {
+  font-size: 14px !important;
+  color: #202020 !important;
+}
+
+.skin-10 .halo-sidebar_menu .nav-currency-language .currency-item .icon svg {
+  position: relative;
+  top: -5px;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .input-group-field {
+  font-size: 14px;
+  color: #808080;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .icon-search {
+  padding: 4px !important;
+  position: relative;
+  right: 5px;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .form_search_type {
+  width: 100%;
+  position: relative;
+  max-width: 85px;
+  background: #f5f5f5;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .form_search_type .srch_type {
+  border: none;
+  padding: 11px 27px 8px 11px;
+  color: #808080;
+  letter-spacing: 0;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .form_search_type .icon-dropdown {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  right: 5px;
+  background-color: transparent;
+  top: 1px;
+  z-index: 0;
+  height: auto;
+  cursor: pointer;
+}
+
+.skin-10 .halo-sidebar_search .search-bar .form_search_type .icon-dropdown svg {
+  fill: #808080;
+}
+
+.skin-10 .quickSearchResultsWrap .search-block-title span {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #202020;
+}
+
+.skin-10 .quickSearchResultsWrap .list-item .item .link {
+  font-size: 14px;
+  color: #202020;
+  padding: 9px 14px 9px 9px;
+}
+
+.skin-10 .quickSearchResultsWrap .product-card .card-action .button {
+  width: 100% !important;
 }
 
 @media (max-width: 1024px) {
