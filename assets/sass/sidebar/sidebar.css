@@ -1801,16 +1801,22 @@ body.cart-sidebar-show .background-overlay {
   color: #232323;
 }
 
-.previewCartInfo .previewCartTotals-label {
-  width: 120px;
+.previewCartInfo .previewCartTotals-label,
+.previewCartInfo .previewCartShipping-label {
+  width: 115px;
   text-align: left;
 }
 
-.previewCartInfo .previewCartTotals-value {
+.previewCartInfo .previewCartTotals-value,
+.previewCartInfo .previewCartShipping-text {
   width: calc(100% - 120px);
   font-size: 16px;
   text-align: right;
   letter-spacing: 0;
+}
+
+.previewCartInfo .previewCartShipping {
+  padding-bottom: 33px;
 }
 
 .previewCart {

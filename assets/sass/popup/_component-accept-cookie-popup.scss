@@ -1,11 +1,12 @@
 .halo-accept-cookie-popup {
     position: fixed;
-    bottom: 15px;
-    left: 15px;
+    bottom: 50px;
+    left: 50px;
     width: 100%;
-    max-width: 370px;
-    background: rgba(20, 20, 20, 0.9);
-    padding: 10px 15px;
+    max-width: 440px;
+    background: #000000;
+    padding: 20px 23px 24px;
+    border-radius: 3px;
     z-index: 9;
     &.is-hidden {
         opacity: 0;
@@ -14,29 +15,37 @@
     }
     .desc {
         color: #ffffff;
-        line-height: 24px;
+        line-height: 26px;
+        letter-spacing: .02em;
     }
     .group-action-links {
         text-align: right;
-        padding-top: 10px;
-        .notification {
-            color: #818181;
+        padding-top: 22px;
+        .accept-cookie {
+            color: #aaaaaa;
+            font-size: 15px;
             line-height: 22px;
             font-weight: 400;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .02em;
             &:hover {
                 color: #ffffff;
             }
         }
         .accept {
-            margin-left: 10px;
-            font-weight: 600;
+            margin-left: 30px;
+            font-size: 15px;
             color: #ffffff;
+            font-weight: 500;
+            letter-spacing: .02em;
         }
     } 
 } 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .halo-accept-cookie-popup { 
         bottom:83px;
+        left: 15px;
     }
 }
 

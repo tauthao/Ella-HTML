@@ -34,9 +34,10 @@
 
 .skin-10 label {
   font-size: 16px;
-  color: #808080;
+  color: #202020;
   letter-spacing: 0;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
+  margin: 0 0 11px;
 }
 
 .skin-10 input[type="text"], .skin-10 input[type="password"], .skin-10 input[type="datetime"], .skin-10 input[type="datetime-local"], .skin-10 input[type="date"], .skin-10 input[type="month"], .skin-10 input[type="time"], .skin-10 input[type="week"], .skin-10 input[type="number"], .skin-10 input[type="email"], .skin-10 input[type="url"], .skin-10 input[type="search"], .skin-10 input[type="tel"], .skin-10 input[type="color"] {
@@ -406,11 +407,16 @@
   right: 20px;
 }
 
+.skin-10 .halo-sidebar .halo-sidebar-header {
+  padding: 12px 30px 6px;
+}
+
 .skin-10 .halo-sidebar .halo-sidebar-header .title {
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0;
   color: #202020;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .skin-10 .desc {
@@ -1123,10 +1129,215 @@
   width: 100% !important;
 }
 
+.skin-10 .halo-auth-sidebar .halo-sidebar-header .desc {
+  font-size: 16px;
+  color: #505050;
+  letter-spacing: 0;
+  padding: 15px 0px 15px;
+}
+
+.skin-10 .halo-auth-sidebar .form-input {
+  border-radius: 30px;
+}
+
+.skin-10 .halo-auth-sidebar .auth-form .form-field + .form-field {
+  margin-top: 22px;
+}
+
+.skin-10 .halo-auth-sidebar .auth-actions {
+  margin: 17px 0 0;
+}
+
+.skin-10 .halo-auth-sidebar .auth-actions .auth-link {
+  color: #0a6cdc;
+  letter-spacing: 0;
+  font-size: 16px;
+  text-underline-offset: 0.3rem;
+  margin: 22px 0 28px;
+}
+
+.skin-10 .halo-auth-sidebar .auth-actions .text-create-acc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #505050;
+  padding: 29px 0px 27px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.skin-10 .halo-cart-sidebar .haloCalculatorShipping .progress {
+  border-radius: 20px;
+  margin: 0px 0 3px;
+}
+
+.skin-10 .halo-cart-sidebar .haloCalculatorShipping .progress .progress-meter {
+  background-color: #ff9c00 !important;
+}
+
+.skin-10 .halo-cart-sidebar .haloCalculatorShipping .message {
+  color: #505050;
+}
+
+.skin-10 .halo-cart-sidebar .haloCalculatorShipping .message .text {
+  color: #202020;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.skin-10 .halo-cart-sidebar .previewCart {
+  padding: 20px 20px 0 30px;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-name {
+  font-size: 16px;
+  letter-spacing: -.02em;
+  color: #202020;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-remove svg {
+  fill: #b2b2b2;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-remove:hover svg {
+  fill: #000000;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-options {
+  margin: 0 0 10px;
+  padding: 0 25px 0 0;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-options span {
+  font-size: 14px;
+  color: #505050;
+  letter-spacing: -.02em;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-price {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #202020;
+  font-family: 'Rubik', sans-serif;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-edit svg {
+  fill: #b2b2b2;
+  stroke: none;
+  width: 18px;
+  height: 18px;
+  top: 0;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartItem-edit:hover svg {
+  fill: #000000;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartCollection .previewCartTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.skin-10 .halo-cart-sidebar .slick-arrow.slick-next {
+  right: 0;
+}
+
+.skin-10 .halo-cart-sidebar .slick-arrow svg {
+  top: -6px;
+}
+
+.skin-10 .halo-cart-sidebar .slick-dots {
+  bottom: initial;
+  top: -63px;
+  right: 0;
+  text-align: right;
+}
+
+.skin-10 .halo-cart-sidebar .product-card .product-card-bottom {
+  padding: 0px 0px 0px 20px;
+}
+
+.skin-10 .halo-cart-sidebar .product-card .product-card-bottom .productView-rating {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.skin-10 .halo-cart-sidebar .product-card .product-card-bottom .card-title {
+  display: block;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartTotals {
+  padding-bottom: 6px;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartTotals-label,
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartShipping-label {
+  font-size: 14px;
+  letter-spacing: -.02em;
+  color: #202020;
+  font-weight: 500;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartTotals-value,
+.skin-10 .halo-cart-sidebar .previewCartInfo .money {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartShipping-text {
+  font-size: 14px;
+  color: #808080;
+  letter-spacing: -.02em;
+  font-style: italic;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartCheckbox input[type=checkbox] + label {
+  font-size: 14px;
+  color: #808080;
+  letter-spacing: 0;
+  font-weight: 400 !important;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartCheckbox input[type=checkbox] ~ a {
+  color: #202020;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 14px -5px 0px;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartGroup .button {
+  margin: 0px 5px;
+}
+
+.skin-10 .halo-cart-sidebar .previewCartInfo .previewCartGroup .button + .button {
+  margin-top: 0;
+}
+
 @media (max-width: 1024px) {
   .skin-10 .halo-accept-cookie-popup {
     left: 15px;
     bottom: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skin-10 .halo-cart-sidebar .previewCartInfo .previewCartGroup {
+    display: block;
+  }
+  .skin-10 .halo-cart-sidebar .previewCartInfo .previewCartGroup .button + .button {
+    margin-top: 15px;
   }
 }
 
@@ -1155,25 +1366,6 @@
 @media (min-width: 992px) {
   .halo-quick-view-popup {
     min-width: 1270px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .skin-10 .productView-information .halo-productView-left {
-    width: 570px;
-  }
-  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for {
-    padding: 0px 70px;
-  }
-  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for .slick-arrow.slick-next {
-    right: 15px;
-  }
-  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for .slick-arrow.slick-prev {
-    left: 15px;
-  }
-  .skin-10 .productView-information .halo-productView-right {
-    width: calc(100% - 570px);
-    padding-left: 50px;
   }
 }
 
@@ -1209,11 +1401,65 @@
     opacity: 1;
     visibility: visible;
   }
+  .skin-10 .halo-sidebar {
+    max-width: 400px;
+  }
+  .skin-10 .halo-sidebar .halo-sidebar-header {
+    padding: 33px 30px 0;
+  }
+  .skin-10 .halo-sidebar .halo-sidebar-header .halo-sidebar-close {
+    top: 29px;
+    right: 30px;
+    background: #7f7f7f;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+  }
+  .skin-10 .halo-sidebar .halo-sidebar-header .halo-sidebar-close svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff;
+  }
+  .skin-10 .halo-sidebar .halo-sidebar-header .halo-sidebar-close:hover {
+    background: #ef6454;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar {
+    max-width: 500px;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .haloCalculatorShipping {
+    margin-top: 24px;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .previewCartItem-image {
+    width: 100px;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .previewCartItem-content {
+    width: calc(100% - 100px);
+  }
 }
 
 @media (min-width: 1300px) {
   .halo-quick-view-popup {
     min-width: 1270px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skin-10 .productView-information .halo-productView-left {
+    width: 570px;
+  }
+  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for {
+    padding: 0px 70px;
+  }
+  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for .slick-arrow.slick-next {
+    right: 15px;
+  }
+  .skin-10 .productView-information .halo-productView-left .productView-thumbnail-wrapper .productView-for .slick-arrow.slick-prev {
+    left: 15px;
+  }
+  .skin-10 .productView-information .halo-productView-right {
+    width: calc(100% - 570px);
+    padding-left: 50px;
   }
 }
 

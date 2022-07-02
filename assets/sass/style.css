@@ -2197,16 +2197,16 @@ label {
   cursor: pointer;
 }
 
-.header-language_currency .halo-language .localization-form {
+.header-language_currency .halo-language .div {
   min-width: 100px;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__list {
+.header-language_currency .halo-language .div .disclosure__list {
   padding: 8px 0;
   margin: 0;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__link {
+.header-language_currency .halo-language .div .disclosure__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2218,23 +2218,23 @@ label {
   line-height: 1.8;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__link .icon {
+.header-language_currency .halo-language .div .disclosure__link .icon {
   width: 22px;
   height: 22px;
   margin-right: 6px;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__link .icon svg {
+.header-language_currency .halo-language .div .disclosure__link .icon svg {
   width: 22px;
   height: 22px;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__link.disclosure__link--active {
+.header-language_currency .halo-language .div .disclosure__link.disclosure__link--active {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.header-language_currency .halo-language .localization-form .disclosure__link:hover {
+.header-language_currency .halo-language .div .disclosure__link:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -2518,14 +2518,6 @@ label {
 .menu-lv-item .site-nav-list-dropdown > a {
   display: block;
   position: relative;
-}
-
-.list-menu .list-nav-title .site-nav-title {
-  margin: 0 0 12px;
-}
-
-.list-menu .list-nav-title .site-nav-title.sale {
-  color: #e10600;
 }
 
 .menu-lv-1__action {
@@ -2821,6 +2813,14 @@ label {
   webkit-transition: all 350ms ease;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
+}
+
+.header .menu-dropdown .list-nav-title .site-nav-title {
+  margin: 0 0 12px;
+}
+
+.header .menu-dropdown .list-nav-title .site-nav-title.sale {
+  color: #e10600;
 }
 
 .site-nav-title {

@@ -126,15 +126,20 @@ body {
         font-weight: 600;
         color: #232323;
     }
-    .previewCartTotals-label {
-        width: 120px;
+    .previewCartTotals-label,
+    .previewCartShipping-label {
+        width: 115px;
         text-align: left;
     }
-    .previewCartTotals-value {
+    .previewCartTotals-value,
+    .previewCartShipping-text {
         width: calc(100% - 120px);
         font-size: 16px;
         text-align: right;
         letter-spacing: 0;
+    }
+    .previewCartShipping{
+        padding-bottom: 33px;
     }
 }
 

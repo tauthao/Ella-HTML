@@ -230,7 +230,7 @@
         }
     }
     .halo-language {
-        .localization-form {
+        .div {
             min-width: 100px;
             .disclosure__list {
                 padding: 8px 0;
@@ -498,17 +498,6 @@
     }
 }
 
-.list-menu{
-    .list-nav-title{
-        .site-nav-title{
-            margin: 0 0 12px;
-            &.sale{
-                color: #e10600;
-            }
-        }
-    }
-}
-
 
 .menu-lv-1__action {
     color: #ffffff;
@@ -771,6 +760,14 @@
         transition: transform 350ms ease, visibility 350ms ease;
         webkit-transition: all 350ms ease;
         transition: all 350ms ease;
+        .list-nav-title{
+            .site-nav-title{
+                margin: 0 0 12px;
+                &.sale{
+                    color: #e10600;
+                }
+            }
+        }
     }
 }
 

@@ -1313,7 +1313,7 @@
 
         initShowPopupSearch: function(){
             var btnLangCurrency = $("[data-open-search-popup]"),
-                btnClose = $(".background-overlay-popup, [data-close-search-popup]");
+                btnClose = $(".background-overlay, [data-close-search-popup]");
 
             if (btnLangCurrency.length) {
                 btnLangCurrency.on('click', (event) => {

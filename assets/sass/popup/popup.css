@@ -376,7 +376,7 @@ body.notification-show .halo-notification-popup {
   pointer-events: auto;
   opacity: 1;
   visibility: visible;
-  z-index: 9;
+  z-index: 2;
   bottom: 50px;
 }
 
@@ -1047,6 +1047,11 @@ body.quick-view-show .background-overlay-popup {
   z-index: 100;
 }
 
+.halo-recently-viewed-popup .recently-viewed-icon.ask-icon {
+  padding: 9px;
+  opacity: .8;
+}
+
 .halo-recently-viewed-popup .recently-viewed-tab {
   position: fixed;
   top: 0;
@@ -1301,7 +1306,7 @@ body.search-popup-show .halo-search-popup {
   z-index: 9;
 }
 
-body.search-popup-show .background-overlay-popup {
+body.search-popup-show .background-overlay {
   z-index: 9;
   opacity: 1;
   visibility: visible;
@@ -1583,12 +1588,13 @@ body.ask-an-expert-show .background-overlay {
 
 .halo-accept-cookie-popup {
   position: fixed;
-  bottom: 15px;
-  left: 15px;
+  bottom: 50px;
+  left: 50px;
   width: 100%;
-  max-width: 370px;
-  background: rgba(20, 20, 20, 0.9);
-  padding: 10px 15px;
+  max-width: 440px;
+  background: #000000;
+  padding: 20px 23px 24px;
+  border-radius: 3px;
   z-index: 9;
 }
 
@@ -1601,33 +1607,41 @@ body.ask-an-expert-show .background-overlay {
 
 .halo-accept-cookie-popup .desc {
   color: #ffffff;
-  line-height: 24px;
+  line-height: 26px;
+  letter-spacing: .02em;
 }
 
 .halo-accept-cookie-popup .group-action-links {
   text-align: right;
-  padding-top: 10px;
+  padding-top: 22px;
 }
 
-.halo-accept-cookie-popup .group-action-links .notification {
-  color: #818181;
+.halo-accept-cookie-popup .group-action-links .accept-cookie {
+  color: #aaaaaa;
+  font-size: 15px;
   line-height: 22px;
   font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .02em;
 }
 
-.halo-accept-cookie-popup .group-action-links .notification:hover {
+.halo-accept-cookie-popup .group-action-links .accept-cookie:hover {
   color: #ffffff;
 }
 
 .halo-accept-cookie-popup .group-action-links .accept {
-  margin-left: 10px;
-  font-weight: 600;
+  margin-left: 30px;
+  font-size: 15px;
   color: #ffffff;
+  font-weight: 500;
+  letter-spacing: .02em;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .halo-accept-cookie-popup {
     bottom: 83px;
+    left: 15px;
   }
 }
 

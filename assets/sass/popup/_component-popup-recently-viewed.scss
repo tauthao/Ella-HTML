@@ -51,6 +51,10 @@
                 z-index: 100;
             }
         }
+        &.ask-icon{
+            padding: 9px;
+            opacity: .8;
+        }
     }
     .recently-viewed-tab {
         position: fixed;
