@@ -248,15 +248,6 @@
                 font-size: 15px;
                 font-weight: 700;
             }
-            .halo-popup-close{
-                top: -6px;
-                right: -40px;
-                padding: 4px;
-                background: transparent;
-                &:hover{
-                    background:transparent;
-                }
-            }
         }
     }
     .halo-recently-viewed-popup{
@@ -571,7 +562,7 @@
     .halo-sidebar {
         .halo-sidebar-header{
             .title{
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 700;
                 letter-spacing: 0;
                 color: #202020;
@@ -800,7 +791,6 @@
         }
     }
     .halo-edit-cart-popup{
-        max-width: 870px;
         .cart-edit{
             padding: 0;
             .wrapper-content{
@@ -891,6 +881,58 @@
             }
         }
     }
+    .halo-sidebar_search{
+        .search-bar {
+            .input-group-field{
+                font-size: 15px;
+            }
+        }
+    }
+    .halo-sidebar_menu{
+        .site-nav-mobile{
+            &.nav{
+                .menu-lv-1__action{
+                    font-size: 15px!important;
+                    color: #000000!important;
+                    font-weight: 700;
+                }
+                .menu-lv-2__action,
+                .menu-lv-3__action{
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    color: #000000;
+                }
+            } 
+            .nav-title-mobile{
+                background: #e6e6e6!important ;
+                span{
+                    color: #000000!important;
+                    letter-spacing: 0!important;
+                }
+            }
+        }
+        .nav-currency-language{
+            .title{
+                background: #e6e6e6 ;
+                color: #000000;
+                letter-spacing: 0;
+            }
+        }
+        .nav-currency-language{
+            .text{
+                font-size: 15px!important;
+                color: #000000!important;
+            }
+            .currency-item{
+                .icon{
+                    svg{
+                        position: relative;
+                        top: -5px;
+                    }
+                }
+            } 
+        }
+    }
 }
 
 @media(min-width: 552px){
@@ -942,6 +984,9 @@
             max-width: 430px;
             .halo-sidebar-header {
                 padding: 27px 30px 8px;
+                .title{
+                    font-size: 24px;
+                }
                 .halo-sidebar-close{
                     top: 2px;
                     right: initial;
@@ -958,9 +1003,23 @@
             }
         }
         .halo-edit-cart-popup{
+            max-width: 870px;
             .halo-popup-header {
                 padding: 28px 40px 30px;
             }
         } 
+        .halo-popup {
+            .halo-popup-header{
+                .halo-popup-close{
+                    top: -6px;
+                    right: -40px;
+                    padding: 4px;
+                    background: transparent;
+                    &:hover{
+                        background:transparent;
+                    }
+                }
+            }
+        }
     }
 }

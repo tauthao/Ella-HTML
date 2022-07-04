@@ -408,14 +408,15 @@
 }
 
 .skin-10 .halo-sidebar .halo-sidebar-header {
-  padding: 12px 30px 6px;
+  padding: 25px 30px 6px;
+  border: none;
 }
 
 .skin-10 .halo-sidebar .halo-sidebar-header .title {
   font-family: 'Rubik', sans-serif;
   letter-spacing: 0;
   color: #202020;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -623,6 +624,7 @@
   border-radius: 3px;
   margin-top: 9px;
   margin-right: 12px;
+  background: #ffffff;
 }
 
 .skin-10 .productView-variants .product-form__label .text {
@@ -656,6 +658,7 @@
   border-color: transparent;
   border-width: 2px;
   margin-right: -2px;
+  background: transparent;
 }
 
 .skin-10 .productView-variants .product-form__swatch .product-form__label:hover {
@@ -1424,11 +1427,27 @@
   .skin-10 .halo-sidebar .halo-sidebar-header .halo-sidebar-close:hover {
     background: #ef6454;
   }
+  .skin-10 .halo-sidebar.halo-edit-option-sidebar .halo-sidebar-header {
+    padding: 33px 40px 0;
+  }
   .skin-10 .halo-sidebar.halo-cart-sidebar {
     max-width: 500px;
   }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .halo-sidebar-header {
+    padding: 33px 40px 0;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .halo-sidebar-header .halo-sidebar-close {
+    right: 40px;
+  }
   .skin-10 .halo-sidebar.halo-cart-sidebar .haloCalculatorShipping {
     margin-top: 24px;
+    padding: 0 40px;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .previewCart {
+    padding: 20px 40px 0 40px;
+  }
+  .skin-10 .halo-sidebar.halo-cart-sidebar .previewCartInfo {
+    padding: 5px 40px 125px;
   }
   .skin-10 .halo-sidebar.halo-cart-sidebar .previewCartItem-image {
     width: 100px;

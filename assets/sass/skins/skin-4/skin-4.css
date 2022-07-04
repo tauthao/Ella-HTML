@@ -273,7 +273,7 @@
 }
 
 .skin-4 .halo-edit-cart-popup .product-edit-itemCenter .price-item .money {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .skin-4 .halo-edit-cart-popup .add-more {
@@ -285,7 +285,19 @@
 }
 
 .skin-4 .productView-variants .form__label {
+  font-size: 16px !important;
+}
+
+.skin-4 .productView-variants .form__label [data-header-option] {
+  font-size: 16px !important;
+}
+
+.skin-4 .productView-variants .product-form__label .text {
   font-size: 14px;
+}
+
+.skin-4 .halo-quickshop-popup .halo-productView-right .card-price .price-item .money {
+  font-size: 18px;
 }
 
 .skin-4 .halo-newsletter-popup .newsletter-popup-title {

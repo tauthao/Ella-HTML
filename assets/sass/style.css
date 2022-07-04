@@ -824,7 +824,7 @@ body:hover::-webkit-scrollbar-thumb {
 }
 
 .custom-scrollbar-x::-webkit-scrollbar {
-  height: 5px;
+  height: 3px;
 }
 
 .custom-scrollbar-x::-webkit-scrollbar-track {
@@ -3820,6 +3820,13 @@ label {
     overflow: hidden;
     pointer-events: none;
     position: relative;
+  }
+  .footer-block-newsletter .footer-block__heading {
+    padding: 0;
+    border-bottom: none;
+  }
+  .footer-block-newsletter .footer-block__heading::after, .footer-block-newsletter .footer-block__heading::before {
+    display: none;
   }
   .footer .footer-block__newsletter-form {
     max-width: 100%;

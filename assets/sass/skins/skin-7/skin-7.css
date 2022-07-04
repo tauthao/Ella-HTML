@@ -20,9 +20,13 @@
 }
 
 .skin-7 input[type="text"], .skin-7 input[type="password"], .skin-7 input[type="datetime"], .skin-7 input[type="datetime-local"], .skin-7 input[type="date"], .skin-7 input[type="month"], .skin-7 input[type="time"], .skin-7 input[type="week"], .skin-7 input[type="number"], .skin-7 input[type="email"], .skin-7 input[type="url"], .skin-7 input[type="search"], .skin-7 input[type="tel"], .skin-7 input[type="color"] {
-  padding: 13px 12px 13px;
+  padding: 13px 23px 13px;
   font-size: 14px;
   border-radius: 5px;
+}
+
+.skin-7 label {
+  font-size: 14px;
 }
 
 .skin-7 .button {
@@ -99,6 +103,10 @@
 
 .skin-7 .halo-block-header .title:before {
   display: none;
+}
+
+.skin-7 .product-card .card-product__group .card-icon .text {
+  font-size: 14px;
 }
 
 .skin-7 .product-card .card-price {
@@ -181,7 +189,56 @@
   padding: 12px 20px 10px;
 }
 
-.skin-7 .previewCartCheckbox input[type=checkbox] + label {
+.skin-7 .card__badge .badge {
+  font-size: 12px;
+  letter-spacing: 0;
+  font-weight: 500;
+  border-radius: 1px;
+}
+
+.skin-7 .productView-information .productView-subtotal .text {
+  font-size: 14px;
+}
+
+.skin-7 .productView-information .productView-more .text {
+  font-size: 14px;
+}
+
+.skin-7 .productView-rating .spr-badge-caption {
+  font-size: 14px;
+}
+
+.skin-7 .productView-soldProduct .text {
+  font-size: 14px;
+}
+
+.skin-7 .productView-countDown .num {
+  font-size: 14px;
+}
+
+.skin-7 .review-rating .spr-badge-caption {
+  font-size: 14px;
+}
+
+.skin-7 .halo-recently-viewed-popup .recently-viewed-tab.recently-viewed-list .no-products .text {
+  font-size: 11px !important;
+}
+
+.skin-7 .halo-recently-viewed-popup .recently-viewed-tab .list-social-2 .list-social__info a {
+  font-size: 12px;
+}
+
+.skin-7 .productView-variants .form__label {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.skin-7 .productView-variants .product-form__label .text {
+  font-size: 14px;
+}
+
+.skin-7 .previewCartCheckbox input[type=checkbox] + label,
+.skin-7 .previewCartCheckbox input[type=checkbox] ~ a {
   font-size: 14px;
 }
 
@@ -209,7 +266,7 @@
   letter-spacing: 0;
 }
 
-.skin-7 .halo-popup.halo-edit-cart-popup .card-price {
+.skin-7 .halo-popup.halo-edit-cart-popup .card-price .money {
   font-size: 16px;
 }
 
@@ -240,6 +297,17 @@
 .skin-7 .previewCartItem-qty .quantity {
   padding: 12px 14px 15px 20px;
   border-radius: 5px;
+  font-size: 14px;
+}
+
+.skin-7 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .text,
+.skin-7 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .heading,
+.skin-7 .halo-ask-an-expert-popup .wrapper-content .ask-an-expert .intro {
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.skin-7 .auth-actions .auth-link {
   font-size: 14px;
 }
 

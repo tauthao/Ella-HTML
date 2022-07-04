@@ -231,7 +231,7 @@ body.newsletter-show .halo-newsletter-popup {
 }
 
 body.newsletter-show .background-overlay-popup {
-  z-index: 9;
+  z-index: 99;
   opacity: 1;
   visibility: visible;
 }
@@ -836,16 +836,6 @@ body.quickshop-popup-show .background-overlay-popup {
 
 .halo-quickshop-popup .halo-productView-right .productView-variants [data-header-option] {
   font-size: 12px;
-}
-
-.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__label {
-  min-width: 35px;
-  height: 35px;
-  line-height: 35px;
-}
-
-.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__label .text {
-  font-size: 11px;
 }
 
 .halo-quickshop-popup .halo-productView-right .wrapper-action {

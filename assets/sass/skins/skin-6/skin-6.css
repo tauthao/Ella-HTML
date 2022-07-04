@@ -105,6 +105,15 @@
   color: #ffffff;
 }
 
+.skin-6 input[type="text"], .skin-6 input[type="password"], .skin-6 input[type="datetime"], .skin-6 input[type="datetime-local"], .skin-6 input[type="date"], .skin-6 input[type="month"], .skin-6 input[type="time"], .skin-6 input[type="week"], .skin-6 input[type="number"], .skin-6 input[type="email"], .skin-6 input[type="url"], .skin-6 input[type="search"], .skin-6 input[type="tel"], .skin-6 input[type="color"] {
+  padding: 13px 15px 13px;
+  font-size: 14px;
+}
+
+.skin-6 .product-card .card-product__group .card-icon .text {
+  font-size: 14px;
+}
+
 .skin-6 .product-card .product-card-bottom {
   padding: 14px 0px 10px;
 }
@@ -229,12 +238,20 @@
   letter-spacing: 0;
 }
 
+.skin-6 .halo-recently-viewed-popup .recently-viewed-tab.recently-viewed-list .no-products .text {
+  font-size: 11px !important;
+}
+
+.skin-6 .halo-recently-viewed-popup .recently-viewed-tab .list-social-2 .list-social__info a {
+  font-size: 12px;
+}
+
 .skin-6 .halo-sidebar .halo-sidebar-header {
   padding: 14px 30px 0px;
 }
 
 .skin-6 .halo-sidebar .halo-sidebar-header .title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 900;
   color: #00163a;
   letter-spacing: 0;
@@ -280,7 +297,8 @@
   letter-spacing: 0;
 }
 
-.skin-6 .previewCartCheckbox input[type=checkbox] + label {
+.skin-6 .previewCartCheckbox input[type=checkbox] + label,
+.skin-6 .previewCartCheckbox input[type=checkbox] ~ a {
   color: #00163a;
   font-size: 14px;
   letter-spacing: 0;
@@ -363,6 +381,75 @@
 
 .skin-6 .halo-search-popup .quickSearchResultsWrap .halo-product-block .card-action .button {
   border-radius: 30px;
+}
+
+.skin-6 .productView-rating .spr-badge-caption {
+  font-size: 14px;
+}
+
+.skin-6 .productView-soldProduct .text {
+  font-size: 14px;
+}
+
+.skin-6 .productView-countDown .num {
+  font-size: 14px;
+}
+
+.skin-6 .productView-information .productView-rating {
+  margin: 0;
+}
+
+.skin-6 .productView-information .productView-rating .spr-badge-starrating {
+  position: relative;
+  top: 1px;
+}
+
+.skin-6 .productView-information .productView-subtotal .text {
+  font-size: 14px;
+}
+
+.skin-6 .productView-information .productView-more .text {
+  font-size: 14px;
+}
+
+.skin-6 .previewCartInfo .item {
+  font-size: 14px;
+}
+
+.skin-6 .previewCartInfo .item .money {
+  font-size: 18px;
+}
+
+.skin-6 .auth-actions .auth-link {
+  font-size: 14px;
+}
+
+.skin-6 .productView-variants .product-form__label .text {
+  font-size: 14px !important;
+}
+
+.skin-6 .productView-variants [data-header-option] {
+  font-size: 14px !important;
+}
+
+.skin-6 .halo-cart-sidebar .previewCartItem-options span {
+  font-size: 14px;
+}
+
+.skin-6 .halo-cart-sidebar .product-card .product-card-bottom {
+  padding: 0 0 0 20px;
+}
+
+.skin-6 .halo-cart-sidebar .halo-product-block .slick-arrow.slick-next {
+  right: 0;
+}
+
+.skin-6 .halo-edit-cart-popup .product-edit-itemCenter .product-edit-title-variant {
+  font-size: 14px;
+}
+
+.skin-6 .halo-edit-cart-popup .product-edit-itemCenter .card-price .price-item .money {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {

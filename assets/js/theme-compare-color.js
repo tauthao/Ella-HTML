@@ -67,7 +67,7 @@ class CompareColor extends HTMLElement {
         if (input.checked) {
             var title = label.getAttribute('title'),
                 image = label.getAttribute('data-variant-img'),
-                item = `<div class="item col-6 col-md-4 col-lg-3 item-${id} item-compare-color"><span class="image"><img src="${image}" alt="${title}"></span><span class="title text-center">${title}</span></div>`;
+                item = `<div class="halo-row-item item col-6 col-md-4 col-lg-3 item-${id} item-compare-color"><span class="image"><img src="${image}" alt="${title}"></span><span class="title text-center">${title}</span></div>`;
 
             this.imageList.append(item);
         } else {

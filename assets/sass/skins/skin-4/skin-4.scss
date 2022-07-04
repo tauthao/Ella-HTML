@@ -294,7 +294,7 @@
             }
             .price-item {
                 .money{
-                    font-size: 16px;  
+                    font-size: 18px;  
                 }
             }
         }
@@ -307,7 +307,26 @@
     }
     .productView-variants{
         .form__label{
-            font-size: 14px;
+            font-size: 16px!important;
+            [data-header-option]{
+                font-size: 16px!important;
+            }
+        }
+        .product-form__label {
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
+    .halo-quickshop-popup {
+        .halo-productView-right{
+            .card-price {
+                .price-item {
+                    .money{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
     .halo-newsletter-popup{

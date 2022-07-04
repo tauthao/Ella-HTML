@@ -186,6 +186,16 @@
             position: relative;
         }
     }
+    .footer-block-newsletter{
+        .footer-block__heading {
+            padding: 0;
+            border-bottom: none;
+            &::after,
+            &::before {
+                display:none;
+            }
+        }
+    }
     .footer .footer-block__newsletter-form {
         max-width: 100%;
     }

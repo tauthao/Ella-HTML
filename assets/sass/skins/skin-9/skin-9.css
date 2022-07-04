@@ -293,17 +293,6 @@
   font-weight: 700;
 }
 
-.skin-9 .halo-popup .halo-popup-header .halo-popup-close {
-  top: -6px;
-  right: -40px;
-  padding: 4px;
-  background: transparent;
-}
-
-.skin-9 .halo-popup .halo-popup-header .halo-popup-close:hover {
-  background: transparent;
-}
-
 .skin-9 .halo-recently-viewed-popup .recently-viewed-tab.recently-viewed-list .no-products .text {
   font-size: 11px !important;
 }
@@ -580,7 +569,7 @@
 }
 
 .skin-9 .halo-sidebar .halo-sidebar-header .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0;
   color: #202020;
@@ -811,10 +800,6 @@
   margin-top: 0;
 }
 
-.skin-9 .halo-edit-cart-popup {
-  max-width: 870px;
-}
-
 .skin-9 .halo-edit-cart-popup .cart-edit {
   padding: 0;
 }
@@ -908,6 +893,48 @@
   background-color: #3385f6;
 }
 
+.skin-9 .halo-sidebar_search .search-bar .input-group-field {
+  font-size: 15px;
+}
+
+.skin-9 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-1__action {
+  font-size: 15px !important;
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+.skin-9 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-2__action,
+.skin-9 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-3__action {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.skin-9 .halo-sidebar_menu .site-nav-mobile .nav-title-mobile {
+  background: #e6e6e6 !important;
+}
+
+.skin-9 .halo-sidebar_menu .site-nav-mobile .nav-title-mobile span {
+  color: #000000 !important;
+  letter-spacing: 0 !important;
+}
+
+.skin-9 .halo-sidebar_menu .nav-currency-language .title {
+  background: #e6e6e6;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.skin-9 .halo-sidebar_menu .nav-currency-language .text {
+  font-size: 15px !important;
+  color: #000000 !important;
+}
+
+.skin-9 .halo-sidebar_menu .nav-currency-language .currency-item .icon svg {
+  position: relative;
+  top: -5px;
+}
+
 @media (min-width: 552px) {
   .halo-block-header .view_all {
     position: absolute;
@@ -951,6 +978,9 @@
   .skin-9 .halo-sidebar .halo-sidebar-header {
     padding: 27px 30px 8px;
   }
+  .skin-9 .halo-sidebar .halo-sidebar-header .title {
+    font-size: 24px;
+  }
   .skin-9 .halo-sidebar .halo-sidebar-header .halo-sidebar-close {
     top: 2px;
     right: initial;
@@ -964,8 +994,20 @@
   .skin-9 .halo-sidebar.halo-cart-sidebar {
     max-width: 480px;
   }
+  .skin-9 .halo-edit-cart-popup {
+    max-width: 870px;
+  }
   .skin-9 .halo-edit-cart-popup .halo-popup-header {
     padding: 28px 40px 30px;
+  }
+  .skin-9 .halo-popup .halo-popup-header .halo-popup-close {
+    top: -6px;
+    right: -40px;
+    padding: 4px;
+    background: transparent;
+  }
+  .skin-9 .halo-popup .halo-popup-header .halo-popup-close:hover {
+    background: transparent;
   }
 }
 /*# sourceMappingURL=skin-9.css.map */

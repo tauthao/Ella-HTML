@@ -92,7 +92,18 @@
             }
         }
     }
+    input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+        padding: 13px 15px 13px;
+        font-size: 14px;
+    }
     .product-card{
+        .card-product__group {
+            .card-icon {
+                .text{
+                    font-size: 14px;
+                }
+            }
+        }
         .product-card-bottom{
             padding: 14px 0px 10px;
         }
@@ -219,12 +230,30 @@
             font-size: 14px;
             letter-spacing: 0;
         }
-    } 
+    }
+    .halo-recently-viewed-popup{
+        .recently-viewed-tab{
+            &.recently-viewed-list{
+                .no-products{
+                    .text{
+                        font-size: 11px!important;
+                    }
+                } 
+            }
+            .list-social-2{
+                .list-social__info{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
     .halo-sidebar {
         .halo-sidebar-header{
             padding: 14px 30px 0px;
             .title{
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 900;
                 color: #00163a;
                 letter-spacing: 0;
@@ -266,10 +295,14 @@
         }
     }
     .previewCartCheckbox{
-        input[type=checkbox] + label{
-            color:#00163a;
-            font-size: 14px;
-            letter-spacing: 0;
+        input[type=checkbox] {
+            & + label,
+            & ~ a{
+                color:#00163a;
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+            
         }
     }
     .halo-cart-sidebar {
@@ -376,7 +409,97 @@
                 } 
             } 
         }
-    } 
+    }
+    .productView-rating{
+        .spr-badge-caption{
+            font-size: 14px; 
+        }
+    }
+    .productView-soldProduct {
+        .text{
+            font-size: 14px; 
+        }
+    }
+    .productView-countDown {
+        .num{
+            font-size: 14px;
+        }
+    }
+    .productView-information {
+        .productView-rating{
+            margin: 0;
+            .spr-badge-starrating{
+                position: relative;
+                top: 1px;
+            }
+        }
+        .productView-subtotal {
+            .text{
+                font-size: 14px;
+            }
+        }
+        .productView-more {
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
+    .previewCartInfo{
+        .item{
+            font-size: 14px;
+            .money{
+                font-size: 18px;
+            }
+        }
+    }
+    .auth-actions {
+        .auth-link {
+            font-size: 14px;
+        }
+    }
+    .productView-variants {
+        .product-form__label {
+            .text {
+                font-size: 14px!important;
+            }
+        }
+        [data-header-option]{
+            font-size: 14px!important;
+        }
+    }
+    .halo-cart-sidebar{
+        .previewCartItem-options{
+            span{
+                font-size: 14px;
+            }
+        }
+        .product-card {
+            .product-card-bottom{
+                padding: 0 0 0 20px;
+            }
+        }
+        .halo-product-block {
+            .slick-arrow{
+                &.slick-next{
+                    right: 0;
+                }
+            }
+        }
+    }
+    .halo-edit-cart-popup{
+        .product-edit-itemCenter {
+            .product-edit-title-variant{
+                font-size: 14px;
+            }
+            .card-price {
+                .price-item {
+                    .money{
+                        font-size: 16px;  
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 767px){

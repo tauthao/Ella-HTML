@@ -16,9 +16,12 @@
         letter-spacing: 0;
     }
     input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-        padding: 13px 12px 13px;
+        padding: 13px 23px 13px;
         font-size: 14px;
         border-radius: 5px;
+    }
+    label{
+        font-size: 14px;
     }
     .button{
         font-size: 16px;
@@ -85,6 +88,13 @@
         }
     }
     .product-card{
+        .card-product__group {
+            .card-icon {
+                .text{
+                    font-size: 14px;
+                }
+            }
+        }
         .card-price{
             justify-content: flex-start;
         }
@@ -163,9 +173,79 @@
             } 
         }
     }
+    .card__badge{
+        .badge{
+            font-size: 12px;
+            letter-spacing: 0;
+            font-weight: 500;
+            border-radius: 1px;
+        }
+    }
+    .productView-information {
+        .productView-subtotal {
+            .text{
+                font-size: 14px;
+            }
+        }
+        .productView-more {
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
+    .productView-rating{
+        .spr-badge-caption{
+            font-size: 14px; 
+        }
+    }
+    .productView-soldProduct {
+        .text{
+            font-size: 14px;
+        }
+    }
+    .productView-countDown {
+        .num{
+            font-size: 14px;
+        }
+    }
+    .review-rating {
+        .spr-badge-caption{
+            font-size: 14px;
+        }
+    }
+    .halo-recently-viewed-popup{
+        .recently-viewed-tab{
+            &.recently-viewed-list{
+                .no-products{
+                    .text{
+                        font-size: 11px!important;
+                    }
+                } 
+            }
+            .list-social-2{
+                .list-social__info{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .productView-variants {
+        .form__label{
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+        .product-form__label {
+            .text{
+                font-size: 14px;
+            }
+        }
+    }
     .previewCartCheckbox{
         input[type=checkbox]{
-            & + label{
+            & + label,
+            & ~ a{
                 font-size: 14px;
             }
         } 
@@ -190,7 +270,9 @@
                 letter-spacing: 0;
             }
             .card-price{
-                font-size: 16px;
+                .money {
+                    font-size: 16px;
+                }   
             }
             .product-form__label{
                 line-height: 39px;
@@ -220,7 +302,24 @@
             border-radius: 5px;
             font-size: 14px;
         }
-    } 
+    }
+    .halo-ask-an-expert-popup{
+        .wrapper-content {
+            .ask-an-expert {
+                .text,
+                .heading,
+                .intro{
+                    font-size: 14px;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+    .auth-actions {
+        .auth-link{
+            font-size: 14px;
+        }
+    }
 }
 
 @media(max-width:767px){
