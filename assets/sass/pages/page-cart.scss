@@ -1,3 +1,10 @@
+body {
+    &.edit-cart-show {
+        .background-overlay-popup {
+            background-color: rgba(35, 35, 35, 0.8)!important;
+        }
+    }
+}
 .page-cart {
     padding-bottom: 50px;
     .haloCalculatorShipping {
@@ -5,11 +12,6 @@
         .progress-meter {
             background-color: #f44336 !important;
         }
-        .progress {
-            .progress_shipping {
-                margin-top: -2px;
-            }
-        } 
         .message {
             color: #3c3c3c;
         }

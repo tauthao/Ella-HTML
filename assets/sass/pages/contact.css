@@ -2,6 +2,10 @@
   padding-bottom: 0;
 }
 
+.halo-googlemap iframe {
+  width: 100% !important;
+}
+
 .page-heading {
   margin-bottom: 20px;
   -webkit-box-pack: justify;

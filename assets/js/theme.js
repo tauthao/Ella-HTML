@@ -30,7 +30,7 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            this.initCloseAnnouncementBar();
+            // this.initCloseAnnouncementBar();
             // this.initHeaderSticky();
             this.initSliderAnnouncementBar();
             this.initDropdown();
@@ -45,7 +45,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            this.initNewsLetterPopup();
+            // this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
@@ -69,7 +69,7 @@
             this.initBeforeYouLeave();
             this.initNotification();
             this.initProductVariantChange();
-            this.initCloseAcceptCookie();
+            // this.initCloseAcceptCookie();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -902,7 +902,6 @@
                     document.execCommand("copy");
                     $temp.remove();
                     wrapper.find(".field__input").val("URL copied!");
-
                 });
 
                 $doc.on('click', '.share-button__close', (event) => {
