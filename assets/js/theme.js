@@ -30,8 +30,8 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            // this.initCloseAnnouncementBar();
-            // this.initHeaderSticky();
+            this.initCloseAnnouncementBar();
+            this.initHeaderSticky();
             this.initSliderAnnouncementBar();
             this.initDropdown();
             this.initOpenSearchForm();
@@ -45,7 +45,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            // this.initNewsLetterPopup();
+            this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
@@ -69,7 +69,7 @@
             this.initBeforeYouLeave();
             this.initNotification();
             this.initProductVariantChange();
-            // this.initCloseAcceptCookie();
+            this.initCloseAcceptCookie();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -216,7 +216,29 @@
                     iconArrow = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="presentation"><path d="M 7.75 1.34375 L 6.25 2.65625 L 14.65625 12 L 6.25 21.34375 L 7.75 22.65625 L 16.75 12.65625 L 17.34375 12 L 16.75 11.34375 Z"/></svg>';
                 if (productItems.length > 0) {
                     if (!productItems.hasClass('slick-initialized')) {
-                        if(productBlock.hasClass('product-carousel-custom-banner')){
+                        if(self.hasClass('custom-product-carousel')) {
+                            console.log("vao")
+                            productItems.slick({
+                                mobileFirst: true,
+                                adaptiveHeight: false,
+                                infinite: false,
+                                vertical: false,
+                                slidesToShow: 1,
+                                slidesToScroll: 1,  
+                                dots: itemDots_mb,
+                                arrows: itemRow_mb,
+                                nextArrow: '<button type="button" class="slick-arrow slick-next" aria-label="Slide Next">' + iconArrow + '</button>',
+                                prevArrow: '<button type="button" class="slick-arrow slick-prev" aria-label="Slide Prev">' + iconArrow + '</button>',
+                                responsive: [{
+                                    breakpoint: 552,
+                                        settings: {
+                                            dots: itemDots,
+                                            arrows: itemRow,
+                                        }
+                                    },
+                                ]
+                            });
+                        }else if(productBlock.hasClass('product-carousel-custom-banner')){
                             productItems.slick({
                                 mobileFirst: true,
                                 adaptiveHeight: false,
@@ -239,7 +261,7 @@
                                     }
                                 ]
                             });
-                        }else{
+                        }else {
                             productItems.slick({
                                 mobileFirst: true,
                                 adaptiveHeight: false,
@@ -428,6 +450,8 @@
             $win.on('scroll load', () => {
                 var scroll = $win.scrollTop();
 
+                $('.dropdown-language_currency').removeClass('show');
+
                 if (Math.abs(lastScrollTop - scroll) <= delta) {
                     return;
                 }
@@ -438,7 +462,6 @@
                 } else {
                     if (scroll + $win.height() < $doc.height()) {
                         sticky.removeClass('sticky-up').addClass('sticky-down');
-
                         if (scroll > position) {
                             $body.addClass(activeClass);
                         } else {
@@ -593,12 +616,13 @@
 
         initGlobalCheckbox: function() {
             $doc.on('change', '.global-checkbox--input', (event) => {
-                var targetId = event.target.getAttribute('data-target');
-                
+                var $this = $(event.currentTarget)
+                    btnCheckout = $this.parents('.previewCartAction').find('.button-checkout');
+
                 if (event.target.checked) {
-                    $(targetId).attr('disabled', false);
+                    $(btnCheckout).attr('disabled', false);
                 } else {
-                    $(targetId).attr('disabled', true);
+                    $(btnCheckout).attr('disabled', true);
                 }
             });
         },

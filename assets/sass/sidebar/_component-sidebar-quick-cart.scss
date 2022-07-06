@@ -317,7 +317,7 @@ body {
                 transform: translateY(0);
                 &.slick-prev {
                     left: auto;
-                    right: 43px;
+                    right: 55px;
                 }
             }
         }
@@ -339,6 +339,20 @@ body {
     body {
         &.cart-sidebar-show {
             padding-right: 10px;
+        }
+    }
+}
+
+@media(min-width:1600px){
+    .previewCartCollection {
+        .halo-product-block {
+            .row {
+                .slick-arrow{
+                    &.slick-prev{
+                        right: 43px;
+                    }
+                }
+            }
         }
     }
 }

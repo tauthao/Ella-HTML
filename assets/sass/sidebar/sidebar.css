@@ -2026,7 +2026,7 @@ body.cart-sidebar-show .background-overlay {
 
 .previewCartCollection .halo-product-block .row .slick-arrow.slick-prev {
   left: auto;
-  right: 43px;
+  right: 55px;
 }
 
 @media (min-width: 552px) {
@@ -2041,6 +2041,12 @@ body.cart-sidebar-show .background-overlay {
   }
   body.cart-sidebar-show {
     padding-right: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .previewCartCollection .halo-product-block .row .slick-arrow.slick-prev {
+    right: 43px;
   }
 }
 

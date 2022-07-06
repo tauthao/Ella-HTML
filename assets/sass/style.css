@@ -1975,22 +1975,29 @@ label {
   color: #b05d5d;
 }
 
-[data-header-sticky] {
-  z-index: 9;
-  top: -10px;
-}
-
-.header.animate {
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
-}
-
-.has-stickyHeader [data-header-sticky].sticky-down {
+.has-stickyHeader [data-header-sticky] {
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  position: fixed;
-  width: 100%;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.header .animate {
+  -webkit-transition: -webkit-transform .15s ease-out;
+  transition: -webkit-transform .15s ease-out;
+  transition: transform .15s ease-out;
+  transition: transform .15s ease-out, -webkit-transform .15s ease-out;
+}
+
+.has-stickyHeader [data-header-sticky] {
+  z-index: 20;
+  will-change: transform;
+}
+
+.has-stickyHeader [data-header-sticky].sticky-up {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 /* START: Header Top */
@@ -2793,7 +2800,7 @@ label {
   top: auto;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: -1;
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 70vh;
