@@ -391,11 +391,13 @@
     max-height: calc(80vh - 150px);
     overflow-x: hidden;
     overflow-y: auto;
+    visibility: hidden;
     transition: all ease .7s;
     &.show {
         top: calc(100% + 5px);
         z-index: 5;
         opacity: 1;
+        visibility: visible;
     }
     .search-block-title {
         line-height: 22px;

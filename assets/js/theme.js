@@ -70,6 +70,7 @@
             this.initNotification();
             this.initProductVariantChange();
             this.initCloseAcceptCookie();
+            this.intiShowItemGallery();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -1825,6 +1826,43 @@
                     path: '/'
                 });
             });
-        }
+        },
+        intiShowItemGallery: function () {
+            var elm = $('.block-custom-instagram'),
+            btnLoadMore = elm.find('[data-load-item]'),
+            itemShow = elm.find('.halo-row-item');
+
+            if(elm.length > 0){
+                if ($win.width() < 768) {
+                    itemShow.slice(0, 2).show();
+                    btnLoadMore.on("click", function(e){
+                        e.preventDefault();
+                        elm.find('.halo-row-item:hidden').slice(0, 2).slideDown();
+                        if(elm.find('.halo-row-item:hidden').length === 0){
+                            btnLoadMore.hide();
+                        }
+                    });
+                }else if ($win.width() < 1025) {
+                    itemShow.slice(0, 3).show();
+                    btnLoadMore.on("click", function(e){
+                        e.preventDefault();
+                        elm.find('.halo-row-item:hidden').slice(0, 3).slideDown();
+                        if(elm.find('.halo-row-item:hidden').length === 0){
+                            btnLoadMore.hide();
+                        }
+                    });
+                }else{
+                    itemShow.slice(0, 5).show();
+                    btnLoadMore.on("click", function(e){
+                        e.preventDefault();
+                        elm.find('.halo-row-item:hidden').slice(0, 5).slideDown();
+                        if(elm.find('.halo-row-item:hidden').length === 0){
+                            btnLoadMore.hide();
+                        }
+                    });
+                }
+            }
+            
+        },
     }
 })(jQuery);

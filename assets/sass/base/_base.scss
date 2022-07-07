@@ -628,7 +628,7 @@ button.disabled,
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 2;
+    z-index: 9;
     transform: translateY(-50%);
     padding: 15px;
     margin: 0 auto;
@@ -1684,7 +1684,7 @@ label {
             height: 0;
             transition: all .4s ease;
             visibility: hidden;
-            z-index: 999;
+            z-index: 5;
         }
         &::before{
             top: 0;

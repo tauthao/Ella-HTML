@@ -660,7 +660,7 @@ button.disabled,
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: 2;
+  z-index: 9;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   padding: 15px;
@@ -1818,7 +1818,7 @@ label {
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
     visibility: hidden;
-    z-index: 999;
+    z-index: 5;
   }
   .animate-border::before {
     top: 0;
@@ -2386,6 +2386,7 @@ label {
   max-height: calc(80vh - 150px);
   overflow-x: hidden;
   overflow-y: auto;
+  visibility: hidden;
   -webkit-transition: all ease .7s;
   transition: all ease .7s;
 }
@@ -2394,6 +2395,7 @@ label {
   top: calc(100% + 5px);
   z-index: 5;
   opacity: 1;
+  visibility: visible;
 }
 
 .quickSearchResultsWrap .search-block-title {
