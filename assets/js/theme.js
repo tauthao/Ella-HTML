@@ -50,6 +50,7 @@
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
             this.initShowPopupShare();
+            this.initShowPopup();
             this.initCountdown();
             this.initProductCustomerViewing();
             this.initProductSizeChart();
@@ -218,7 +219,6 @@
                 if (productItems.length > 0) {
                     if (!productItems.hasClass('slick-initialized')) {
                         if(self.hasClass('custom-product-carousel')) {
-                            console.log("vao")
                             productItems.slick({
                                 mobileFirst: true,
                                 adaptiveHeight: false,
@@ -943,6 +943,29 @@
                     }
                 });
             }
+        },
+
+        initShowPopup: function () {
+            $(document).on('click', '[data-open]', (event) => {
+                event.preventDefault();
+                btnClose = $(".background-overlay");
+
+                var $target = $(event.currentTarget),
+                    $popup = $target.siblings('.show-popup');
+                if (!$target.hasClass('active')) {
+                    $target.addClass('active');
+                    $popup.addClass('open');
+                } else {
+                    $target.removeClass('active');
+                    $popup.removeClass('open');
+                }
+            });
+            $(document).on('click', (event) => {
+                if (!event.target.closest('[data-open]') && !event.target.closest('[data-popup]')) {
+                    $('[data-open]').removeClass('active');
+                    $('[data-popup]').removeClass('open');
+                }
+            });  
         },
 
         initCountdown: function() {
