@@ -183,11 +183,18 @@
         }
         .card-action {
             background-color: #ffffff;
-            padding: 15px;
             .button {
                 height:45px;
             }
         } 
+    }
+    &.quickSearchResult-show {
+        overflow: hidden;
+        .background-header-search {
+            z-index: 99;
+            opacity: 1;
+            visibility: visible;
+        }
     }
     .halo-compare-color-popup {
         .halo-popup-header {
@@ -236,7 +243,6 @@
             height:50px;
         }
     }
-    //  
     .slick-arrow {
         width: 40px;
         height: 40px;
@@ -459,7 +465,6 @@
         visibility: hidden;
         transition: all ease .5s;
     }
-
     .halo-sidebar_search {
         .search-bar {
             .input-group-field {
@@ -481,7 +486,6 @@
             }
         }
     }
-
     .halo-toolbar-bottom-mobile {
         .halo-toolbar-wrapper {
             .halo-toolbar-item {
@@ -498,7 +502,6 @@
             }
         }
     }
-    
     .halo-quick-view-popup {
         input[type=text] {
             padding: 16px 12px 15px;
@@ -760,17 +763,50 @@
             margin-left: -5px;
             margin-right: -5px;
         }
+        .container {
+            &.container-1640 {
+                .row {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                }
+            }
+        }
     }
     
+
 }
 @media (min-width: 1025px) {
     .skin-2 {
+        .custom-magamenu-1 {
+            .row {
+                margin: 0 -15px !important;
+            }
+        }
         .row {
             margin-left: 0;
             margin-right: 0;
         }
+        &.quickSearchResult-show {
+            padding-right: 10px;
+        }
+        .product-card {
+            .card-action{
+                padding: 15px;
+            }
+        }
     }
 }
-
+@media (min-width: 1670px) {
+    .skin-2 {
+        .container {
+            &.container-1640 {
+                max-width: 1670px!important;
+                .row {
+                    margin: 0 -15px;
+                }
+            }
+        }
+    }
+}
 
 

@@ -170,7 +170,7 @@
   padding: 4px 1px;
   border-radius: 6px;
   position: absolute;
-  bottom: 48px;
+  bottom: 25px;
   margin: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -211,34 +211,10 @@
 }
 
 .halo-banner .halo-block-header {
-  margin-top: 56px;
-}
-
-.halo-banner .halo-block-header .title {
-  margin-bottom: 22px;
-}
-
-.halo-banner.halo-banner-2 {
-  margin-top: 56px;
-}
-
-.halo-banner.halo-banner-2 .halo-block-header .title {
-  margin-bottom: 22px;
-}
-
-.halo-banner.halo-banner-3 {
   margin-top: 30px;
 }
 
-.halo-banner.halo-banner-3 .halo-block-header {
-  margin-bottom: 23px;
-}
-
-.halo-banner.halo-banner-4 {
-  margin-top: 54px;
-}
-
-.halo-banner.halo-banner-4 .halo-block-header .title {
+.halo-banner .halo-block-header .title {
   margin-bottom: 22px;
 }
 
@@ -330,12 +306,11 @@
 }
 
 .halo-tab-category .content .img-box {
-  width: 120px;
+  width: 100%;
 }
 
 .halo-tab-category .content .link {
   width: 100%;
-  width: calc(100% - 120px);
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0;
@@ -427,7 +402,7 @@
 }
 
 .halo-product .halo-block-header {
-  margin-top: 56px;
+  margin-top: 30px;
   margin-bottom: 29px;
 }
 
@@ -669,9 +644,6 @@
   .halo-block-product-tab .slick-dots {
     margin-top: -10px;
   }
-  .halo-product .slick-dots {
-    margin-top: -10px;
-  }
   .halo-block-instagram .slick-dots {
     margin-top: 20px;
   }
@@ -715,7 +687,8 @@
     margin-top: 30px;
   }
   .halo-tab-category {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .halo-tab-category .content {
     -webkit-box-orient: vertical;
@@ -751,7 +724,7 @@
     padding-bottom: 0;
   }
   .halo-block-instagram .slick-dots {
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .halo-product .row {
     margin: 0px -10px;
@@ -781,10 +754,26 @@
 }
 
 @media (min-width: 768px) {
-  .halo-block-slideshow.style-1 .content-box--left {
-    left: 4%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+  .halo-block-slideshow .slick-dots {
+    bottom: 48px;
+  }
+  .halo-tab-category .content:hover {
+    -webkit-box-shadow: 5px 9px 20px #00000026;
+            box-shadow: 5px 9px 20px #00000026;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .halo-tab-category .content .img-box {
+    width: 120px;
+  }
+  .halo-tab-category .content .link {
+    width: calc(100% - 120px);
+  }
+  .halo-banner .halo-block-header {
+    margin-top: 56px;
+  }
+  .halo-product .halo-block-header {
+    margin-top: 56px;
   }
 }
 /*# sourceMappingURL=demo-2.css.map */

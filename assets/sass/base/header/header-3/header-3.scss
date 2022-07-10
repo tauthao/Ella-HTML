@@ -1,13 +1,9 @@
-.header-2 {
-    box-shadow: 0 1px 6px 1px #0000000d;
-    background: #ffffff;
+.header-3 {
+    box-shadow: 0 1px 6px 1px #000000;
+    background: #ffffff; 
     .header-top {
         background-color: #000000;
         padding: 0;
-        .container{
-            padding-right: 0;
-            padding-left: 0;
-        }
         .header-language_currency {
             position: absolute;
             right: 40px;
@@ -20,7 +16,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s;
-            box-shadow: 0 5px 7px #00000026;
+            box-shadow: 0 5px 7px #000000;
             display:flex;
             flex-direction: column;
             padding: 0;
@@ -150,7 +146,7 @@
                 } 
                 .halo-dropdown {
                     box-shadow: 0 5px 7px #00000026; 
-                    width: calc(100% + 6px);
+                    width: calc(100% + 7px);
                     margin-left: -5px;
                     &.show {
                         top: 100%;
@@ -179,6 +175,9 @@
             .content-left {
                 display: flex;
                 align-items: center;
+                a {
+                    padding: 19px 22px !important;
+                }
                 .header__list{
                     display: flex;
                     align-items: center;
@@ -193,6 +192,9 @@
                         }
                         &.is-active{
                             background: #ffffff;
+                            .text{
+                                color: #000000;
+                            }
                         }
                         &:hover{
                             background: #ffffff;
@@ -203,21 +205,15 @@
                     }
                 }
                 .link {
-                    font-size:16px;
-                    font-weight:700;
+                    font-size:14px;
+                    font-weight:800;
                     color:#000000;
                     letter-spacing: 0;
-                    &.gentleman {
-                        font-family: 'Oswald', sans-serif;
+                    &.men {
+                        background: #3854b0;
                     }
-                    &.Bell-Doll {
-                        font-family: 'Playfair Display', serif;
-                    }
-                    &.logo {
-                        padding: 23px 24px 22px;
-                        img {
-                            max-width:40px;
-                        }
+                    &.kids {
+                        background-color: #fa7758;
                     }
                 }
                 a{
@@ -276,7 +272,7 @@
                     position: relative;
                     .wishlist-quantity {
                         position: absolute;
-                        top: -7px;
+                        top: -4px;
                         right: 7px;
                         width: 22px;
                         height: 22px;
@@ -285,21 +281,13 @@
                         z-index: 99;
                         text-align: center;
                         color: #000000;
+                        .text {
+                            position: relative;
+                            top:-6px;
+                            font-size: 14px;
+                        }
                     }
-                }
-                .cart {
-                    .wishlist-quantity {
-                        right: 9px;
-                    }
-                }
-                
-            }
-        }
-        .wishlist-quantity {
-            .text {
-                position: relative;
-                top:-3px;
-                font-size: 14px;
+                } 
             }
         }
         .global {
@@ -337,20 +325,32 @@
                 padding-left: 135px;
             }
         }
-        .product-card {
-            .product-card-bottom {
-                padding: 11px 0px 0px;
-            }
-            .card-swatch {
-                margin: 4px 0;
-                .swatch-label {
-                    width: 24px !important;
-                    height: 24px !important;
+        .megamenu_style_2 {
+            .product-card {
+                .product-card-bottom {
+                    padding: 10px 0 0 10px;
                 }
             }
         }
-        .menu-lv-1__action {
-            font-size:14px !important;
+        .product-card {
+            .product-card-bottom {
+                padding: 10px 0px 0px;
+                .product-card-information {
+                    .card-vender {
+                        line-height: 17px;
+                    }
+                    .card-price {
+                        line-height:22px;
+                    }
+                   
+                }
+            }
+            .card-swatch {
+                margin-top:15px;
+                .swatch {
+                    line-height:0;
+                }
+            }
         }
         .custom-magamenu-1 {
             .hola-row-item-left {
@@ -383,7 +383,7 @@
         }
         .menu-lv-1__action {
             color: #202020;
-            padding: 21px 20px 21px;
+            padding: 24px 13px 24px;
             font-size: 12px;
             font-weight: 600;
             letter-spacing:0;
@@ -393,14 +393,21 @@
                 .col-brands {
                     padding-top: 9  px;
                     .title {
-                        font-size:14px;
+                        font-size:12px;
                         font-weight:400;
                         color: #232323;
                         margin-bottom: 12px;
                     }
                     .azbrandstable {
+                        line-height:0;
                         li {
-                            line-height:0;
+                            width: 26px;
+                            a {
+                                font-size:13px;
+                                font-weight:500;
+                                letter-spacing:.05em;
+                                line-height:26px;
+                            }
                         }
                     }
                     .link-brands {
@@ -425,7 +432,7 @@
         .logo-home {
             display: flex;
             align-items: center;
-            margin-right: 52px;
+            margin-right: 57px;
             .img-box {
                 width: 68px;
                 img {
@@ -442,7 +449,7 @@
             position:static;
             .product-card {
                 .card-price {
-                    justify-content: center;
+                    justify-content: start;
                 }
             }
             .quickSearchResultsWrap {
@@ -668,7 +675,7 @@
                         justify-content:center;
                         align-items: center;
                         .sub-title {
-                            font-size:16px;
+                            font-size:14px;
                             font-weight:400;
                             color: #202020;
                             margin-bottom:10px;
@@ -689,7 +696,7 @@
                             margin-bottom: 5px;
                         }
                         .link {
-                            font-size: 14px;
+                            font-size: 12px;
                             font-weight:400;
                             color: #202020;
                         }
@@ -741,7 +748,7 @@
 }
 
 @media (max-width: 1200px) {
-    .header-2 {
+    .header-3 {
         .header-bottom {
             .header-search__form {
                 display: none;
@@ -751,7 +758,7 @@
 }
 
 @media (max-width: 1024px) {
-    .header-2 {
+    .header-3 {
         .header-top {
             .content-right {
                 display: none;
@@ -767,7 +774,7 @@
 }
 
 @media (max-width: 992px) {
-    .header-2 {
+    .header-3 {
         .content-left {
             .text {
                 &.logo {
@@ -780,7 +787,7 @@
 }
 
 @media (max-width: 767px) {
-    .header-2 {
+    .header-3 {
         .header-top {
             .content-left {
                 white-space: nowrap;
@@ -817,7 +824,7 @@
 }
 
 @media(min-width:1600px){
-    .header-2 {
+    .header-3 {
         .header-bottom {
             .header-bottom--wrapper{
                 padding: 0px 30px;

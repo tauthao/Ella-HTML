@@ -846,11 +846,15 @@
     }
 }
 
-.megamenu_style_3 .site-nav-list .image {
-    display: block;
-    margin-top: 13px;
-    margin-bottom: 10px;
-}
+.megamenu_style_3 {
+    .site-nav-list {
+        .image{
+            display: block;
+            margin-top: 13px;
+            margin-bottom: 10px;
+        }
+    }
+} 
 .header{
     .header-bottom{
         .megamenu_style_4{
@@ -869,7 +873,7 @@
             }
             .site-nav-list{
                 text-align: center;
-                padding: 32px 15px;
+                padding: 0px 15px;
             }
         }
         .megamenu_style_5{

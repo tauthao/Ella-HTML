@@ -496,17 +496,28 @@
         initOpenSearchForm: function() {
             var inputSearch = $(".header-search__form .header-search__input"),
                 quickSearchResul = inputSearch.parents(".header-search").find(".quickSearchResultsWrap");
+                btnClose = $(".background-header-search, .halo-sidebar-close");
 
             inputSearch.focus(function() {
                 quickSearchResul.addClass("show");
+                $body.addClass("quickSearchResult-show");
             });
 
             $doc.on('click', (event) => {
                 if ($('.quickSearchResultsWrap').hasClass('show') && ($(event.target).closest('.header-search').length === 0)) {
                     $('.quickSearchResultsWrap').removeClass('show');
+                    $body.removeClass('quickSearchResult-show');
                 }
             });
 
+            btnClose.on('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                if ($body.hasClass('quickSearchResult-show')) {
+                    $body.removeClass('quickSearchResult-show');
+                    $('.quickSearchResultsWrap').removeClass('show');
+                }
+            });
         },
 
         initDynamicBrowserTabTitle: function() {

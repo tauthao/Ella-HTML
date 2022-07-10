@@ -2109,6 +2109,7 @@ body.search_sidebar-show .background-overlay {
   margin: 20px 0px;
   padding: 0px 20px;
   max-height: calc(100vh - 150px);
+  visibility: visible;
 }
 
 .halo-sidebar_search .halo-sidebar-wrapper .quickSearchResultsWrap .halo-product-block .halo-row--swipe {
