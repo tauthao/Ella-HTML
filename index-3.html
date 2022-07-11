@@ -41,7 +41,7 @@
                 <div class="container container-1920">
                     <div class="header-top-wrapper">
                         <div class="content-left">
-                            <div class="header__list list-unstyled disable-srollbar">
+                            <ul class="header__list list-unstyled disable-srollbar">
                                 <li class="item is-active">
                                     <a href="#" class="link uppercase women">
                                         <span class="text">women</span>
@@ -57,7 +57,7 @@
                                         <span class="text">kids</span>
                                     </a>
                                 </li>
-                            </div>
+                            </ul>
                         </div>
                         <div class="content-right">
                             <div class="cus-ser-text uppercase">
@@ -179,7 +179,7 @@
                                             </span>
                                         </div>
                                         <div class="dropdown-language halo-dropdown">
-                                            <localization-form>
+                                            <div>
                                                 <form method="post" action="/localization" id="HeaderLanguageForm" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="return_to" value="/">
                                                     <div class="no-js-hidden">
                                                         <div class="disclosure">
@@ -229,7 +229,7 @@
                                                         <input type="hidden" name="locale_code" value="en">
                                                     </div>
                                                 </form>
-                                            </localization-form>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="halo-currency" data-dropdown-toggle>
@@ -978,12 +978,13 @@
                                                                             </a>
                                                                         </li>
                                                                         <li class="site-nav-item text-left">
-                                                                            <a href="#" class="site-nav-link link link-underline" aria-current="page">
+                                                                           <a href="product-layout-full-width.html" class="site-nav-link link link-underline" aria-current="page">
                                                                                 <span class="text">Layout 02 - Full Width</span>
                                                                             </a>
                                                                         </li>
                                                                         <li class="site-nav-item text-left">
-                                                                            <a href="#" class="site-nav-link link link-underline" aria-current="page">
+                                                                             <li class="site-nav-item text-left">
+                                                                            <a href="product-layout-image-gallery.html" class="site-nav-link link link-underline" aria-current="page">
                                                                                 <span class="text">Layout 03 - Grid View</span>
                                                                             </a>
                                                                         </li>
@@ -992,18 +993,18 @@
                                                                                 <span class="text">Layout 04 - Left Thumb</span>
                                                                             </a>
                                                                         </li>
-                                                                        <li class="site-nav-item text-left">
-                                                                            <a href="#" class="site-nav-link link link-underline" aria-current="page">
+                                                                         <li class="site-nav-item text-left">
+                                                                            <a href="product-layout-right-vertical.html" class="site-nav-link link link-underline" aria-current="page">
                                                                                 <span class="text">Layout 05 - Right Thumb</span>
                                                                             </a>
                                                                         </li>
                                                                         <li class="site-nav-item text-left">
-                                                                            <a href="#" class="site-nav-link link link-underline" aria-current="page">
+                                                                            <a href="product-layout-left-sidebar.html" class="site-nav-link link link-underline" aria-current="page">
                                                                                 <span class="text">Layout 06 - Left Sidebar</span>
                                                                             </a>
                                                                         </li>
                                                                         <li class="site-nav-item text-left">
-                                                                            <a href="#" class="site-nav-link link link-underline" aria-current="page">
+                                                                            <a href="product-layout-right-sidebar.html" class="site-nav-link link link-underline" aria-current="page">
                                                                                 <span class="text">Layout 07 - Right Sidebar</span>
                                                                             </a>
                                                                         </li>
@@ -2440,8 +2441,8 @@
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="compare-product">
-                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-21" id="compare-product-21" data-target="#cart-sidebar-checkout">
-                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-21">Add to compare</label>
+                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-212" id="compare-product-212">
+                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-212">Add to compare</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2569,8 +2570,8 @@
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="compare-product">
-                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-22" id="compare-product-22" data-target="#cart-sidebar-checkout">
-                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-22">Add to compare</label>
+                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-222" id="compare-product-222">
+                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-222">Add to compare</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2664,8 +2665,8 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card-action-bottom">
-                                                                                <form  method="post" class="variants" data-product-id="" enctype="multipart/form-data">
-                                                                                    <a class="button button-ATC text-center" href="javascript:void(0)" data-quickshop-popup="">Add To BAG</a>
+                                                                                <form action="/cart/add" method="post" class="variants" data-product-id="" enctype="multipart/form-data">
+                                                                                    <a class="button button-ATC is-notify-me text-center" href="#" data-btn-addtocart="">Notify me</a>
                                                                                 </form>
                                                                                 <div class="card-wrapper">
                                                                                     <div class="card-wishlist">
@@ -2695,8 +2696,8 @@
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="compare-product">
-                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-13" id="compare-product-13" data-target="#cart-sidebar-checkout">
-                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-13">Add to compare</label>
+                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-123" id="compare-product-134">
+                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-134">Add to compare</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2816,8 +2817,8 @@
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="compare-product">
-                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-13" id="compare-product-13" data-target="#cart-sidebar-checkout">
-                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-13">Add to compare</label>
+                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-131" id="compare-product-131">
+                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-131">Add to compare</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2934,8 +2935,8 @@
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="compare-product">
-                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-24" id="compare-product-24" data-target="#cart-sidebar-checkout">
-                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-24">Add to compare</label>
+                                                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-244" id="compare-product-244">
+                                                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-244">Add to compare</label>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -3176,7 +3177,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product" id="compare-product-2" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product" id="compare-product-2">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product-2">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3302,7 +3303,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-16" id="compare-product-16" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-16" id="compare-product-16">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product-16">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3421,7 +3422,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-4" id="compare-product-4" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-4" id="compare-product-4">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product-4">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3573,7 +3574,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product" id="compare-product" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product" id="compare-product">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3693,7 +3694,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-17" id="compare-product-17" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-17" id="compare-product-17">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product-17">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3812,7 +3813,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="compare-product">
-                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-3" id="compare-product-3" data-target="#cart-sidebar-checkout">
+                                                                <input class="global-checkbox--input" type="checkbox" name="compare-product-3" id="compare-product-3">
                                                                 <label class="global-checkbox--label form-label--checkbox" for="compare-product-3">Add to compare</label>
                                                             </div>
                                                         </div>
@@ -3968,7 +3969,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-10" id="compare-product-10" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-10" id="compare-product-10">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-10">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -4108,7 +4109,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-11" id="compare-product-11" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-11" id="compare-product-11">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-11">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -4246,7 +4247,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-12" id="compare-product-12" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-12" id="compare-product-12">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-12">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -4384,7 +4385,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-30" id="compare-product-30" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-30" id="compare-product-30">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-30">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -4522,7 +4523,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-14" id="compare-product-14" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-14" id="compare-product-14">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-14">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -4660,7 +4661,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-15" id="compare-product-15" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-15" id="compare-product-15">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-15">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -5005,8 +5006,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-21" id="compare-product-21" data-target="#cart-sidebar-checkout">
-                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-21">Add to compare</label>
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-211" id="compare-product-211">
+                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-211">Add to compare</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5134,8 +5135,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-22" id="compare-product-22" data-target="#cart-sidebar-checkout">
-                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-22">Add to compare</label>
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-221" id="compare-product-221">
+                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-221">Add to compare</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5229,8 +5230,8 @@
                                                 </div>
                                             </div>
                                             <div class="card-action-bottom">
-                                                <form  method="post" class="variants" data-product-id="" enctype="multipart/form-data">
-                                                    <a class="button button-ATC text-center" href="javascript:void(0)" data-quickshop-popup="">Add To BAG</a>
+                                                <form action="/cart/add" method="post" class="variants" data-product-id="" enctype="multipart/form-data">
+                                                    <a class="button button-ATC is-notify-me text-center" href="#" data-btn-addtocart="">Notify me</a>
                                                 </form>
                                                 <div class="card-wrapper">
                                                     <div class="card-wishlist">
@@ -5260,8 +5261,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-13" id="compare-product-13" data-target="#cart-sidebar-checkout">
-                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-13">Add to compare</label>
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-132" id="compare-product-132">
+                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-132">Add to compare</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5381,8 +5382,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-13" id="compare-product-13" data-target="#cart-sidebar-checkout">
-                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-13">Add to compare</label>
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-133" id="compare-product-133">
+                                                        <label class="global-checkbox--label form-label--checkbox" for="compare-product-133">Add to compare</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -5499,7 +5500,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-24" id="compare-product-24" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-24" id="compare-product-24">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-24">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -5617,7 +5618,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-25" id="compare-product-25" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-25" id="compare-product-25">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-25">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -5735,7 +5736,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-26" id="compare-product-26" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-26" id="compare-product-26">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-26">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -5853,7 +5854,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-27" id="compare-product-27" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-27" id="compare-product-27">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-27">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -5971,7 +5972,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-28" id="compare-product-28" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-28" id="compare-product-28">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-28">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -6089,7 +6090,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="compare-product">
-                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-29" id="compare-product-29" data-target="#cart-sidebar-checkout">
+                                                        <input class="global-checkbox--input" type="checkbox" name="compare-product-29" id="compare-product-29">
                                                         <label class="global-checkbox--label form-label--checkbox" for="compare-product-29">Add to compare</label>
                                                     </div>
                                                 </div>
@@ -6943,12 +6944,12 @@
                                 <form method="post"  id="product-form-66176314454590138" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
                                     <div class="previewCartGroup-top">
                                         <div class="quantity_selector">
-                                            <cart-update-quantity class="previewCartItem-qty">
+                                            <div class="previewCartItem-qty">
                                                 <label class="form-label hiddenLabel" ></label>
                                                 <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
                                                 <input class="form-input quantity" name="quantity"  data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
                                                 <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                            </cart-update-quantity>
+                                            </div>
                                         </div>
                                         <div class="productView-action">
                                             <button type="submit" name="add" data-btn-addtocart="" class="button-view-cart text-centert button button-1">Add to cart</button>
@@ -7006,27 +7007,27 @@
                     <div class="halo-productView-left" data-banner-carousel data-item-to-show="1" data-item-dots="true" data-item-arrows="false" data-item-dots-mb="true" data-item-arrows-mb="false">
                         <div class="row">
                             <div class="productView-image">
-                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-10.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
+                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-14.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
                                     <img src="./assets/images/banners/home/home-3/img-14.jpg" alt="Product Image">
                                 </div>
                             </div>
                             <div class="productView-image">
-                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-10.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
+                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-16.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
                                     <img src="./assets/images/banners/home/home-3/img-16.jpg" alt="Product Image">
                                 </div>
                             </div>
                             <div class="productView-image">
-                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-10.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
+                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-14.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
                                     <img src="./assets/images/banners/home/home-3/img-14.jpg" alt="Product Image">
                                 </div>
                             </div>
                             <div class="productView-image">
-                                <div class="media image-zoom" data-zoom-image="../assets/images/banners/home/home-3/img-10.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
+                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-18.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
                                     <img src="./assets/images/banners/home/home-3/img-18.jpg" alt="Product Image">
                                 </div>
                             </div>
                             <div class="productView-image">
-                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-10.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
+                                <div class="media image-zoom" data-zoom-image="./assets/images/banners/home/home-3/img-16.jpg" data-fancybox="gallery-qv" data-src="./assets/images/card-product/img-20.jpg">
                                     <img src="./assets/images/banners/home/home-3/img-16.jpg" alt="Product Image">
                                 </div>
                             </div>
@@ -7341,12 +7342,12 @@
                         </div>
                         <div class="product-options previewCartAction">
                             <div class="wrapper-action">
-                                <cart-update-quantity class="previewCartItem-qty">
+                                <div class="previewCartItem-qty">
                                     <label class="form-label hiddenLabel" ></label>
                                     <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
                                     <input class="form-input quantity" name="quantity" id="upsell-update-2" data-qtt-id1="quantity2" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
                                     <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                </cart-update-quantity>
+                                </div>
                                 <div class="btn-card-action">
                                     <button type="submit" name="add" data-btn-quickShop-addtocart class="button button-3 button-ATC button-view-cart text-center1">Add to cart</button>
                                 </div>
@@ -7955,8 +7956,8 @@
                     </ul>
                 </div>
                 <div class="site-nav-mobile nav-currency-language">
-                    <localization-form>
-                        <form method="post" action="/localization" id="HeaderLanguageForm" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="return_to" value="/">
+                    <div>
+                        <form method="post" action="/localization" id="HeaderLanguageForm-mb" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="return_to" value="/">
                             <div class="no-js-hidden">
                             <div class="disclosure">
                                 <p class="title" id="HeaderLanguageLabel">Language</p>
@@ -8004,7 +8005,7 @@
                                 <input type="hidden" name="locale_code" value="en">
                             </div>
                         </form>
-                    </localization-form>
+                    </div>
                     <div class="currency-menu" id="currencies-mobile">
                         <p class="title title-sidebar">Currency</p>
                         <div class="wrapper-currencies">
@@ -8461,12 +8462,12 @@
                                                     <span class="money">$99.00</span>
                                             </span>
                                         </div>
-                                        <cart-update-quantity class="previewCartItem-qty">
+                                        <div class="previewCartItem-qty">
                                             <label class="form-label hiddenLabel" for="upsell-update-2"></label>
                                             <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
                                             <input class="form-input quantity" name="quantity"  data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
                                             <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                        </cart-update-quantity>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" class="previewCartItem-remove" data-cart-remove="" data-cart-remove-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1" aria-label="Remove Naminos demen dincidunto - Cadetblue / XS / Option 1">
@@ -8496,12 +8497,12 @@
                                                     <span class="money">$289.00</span>
                                             </span>
                                         </div>
-                                        <cart-update-quantity class="previewCartItem-qty">
+                                        <div class="previewCartItem-qty">
                                             <label class="form-label hiddenLabel"></label>
                                             <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
                                             <input class="form-input quantity" name="quantity"  data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
                                             <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                        </cart-update-quantity>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" class="previewCartItem-remove" data-cart-remove="" data-cart-remove-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1" aria-label="Remove Naminos demen dincidunto - Cadetblue / XS / Option 1">
@@ -8532,12 +8533,12 @@
                                                     <span class="money">$289.00</span>
                                             </span>
                                         </div>
-                                        <cart-update-quantity class="previewCartItem-qty">
+                                        <div class="previewCartItem-qty">
                                             <label class="form-label hiddenLabel" ></label>
                                             <a href="#" data-minus-quantity-cart="" class="minus btn-quantity"></a>
                                             <input class="form-input quantity" name="quantity"  data-qtt-id1="quantity39504901341274" value="1" type="number" data-inventory-quantity="4" data-cart-quantity="" data-cart-quantity-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1">
                                             <a href="#" data-plus-quantity-cart="" class="plus btn-quantity"></a>
-                                        </cart-update-quantity>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="javascript:void(0)" class="previewCartItem-remove" data-cart-remove="" data-cart-remove-id="39504901341274" data-line="39504901341274:6317036bb7e9264dc5231958196b34f1" aria-label="Remove Naminos demen dincidunto - Cadetblue / XS / Option 1">
@@ -8865,7 +8866,7 @@
     <!-- Global JS File -->
     <script src="assets/js/theme-compare-color.js"></script>
     <!-- Main JS File -->
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/theme.min.js"></script>
 
 </body>
 

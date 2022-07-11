@@ -1,5 +1,4 @@
 .header-2 {
-    box-shadow: 0 1px 6px 1px #0000000d;
     background: #ffffff;
     .header-top {
         background-color: #000000;
@@ -20,7 +19,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s;
-            box-shadow: 0 5px 7px #00000026;
+            box-shadow: 0 5px 7px rgba(0,0,0, .15);
             display:flex;
             flex-direction: column;
             padding: 0;
@@ -34,7 +33,7 @@
                 }
             }
             .text {
-                font-size:11px;
+                font-size:14px;
                 letter-spacing:0;
                 font-weight: 500;
             }
@@ -57,13 +56,13 @@
                         align-items:center;
                         gap: 2px;
                         .icon {
-                            margin-right: -3px;
+                            margin-right: 2px;
                         }
                     }
                 }
                 .dropdown-language {
-                    box-shadow: 0 5px 7px #00000026;
                     padding: 0 11px;
+                    justify-content: center;
                     &.show {
                         top: 100%;
                         left: 0;
@@ -71,7 +70,7 @@
                     .currency-menu {
                         .currency-item  {
                             &.text {
-                                font-size:11;
+                                font-size:14px;
                                 letter-spacing:.05em;
                                 font-weight:500;
                                 padding-left:0;
@@ -105,7 +104,7 @@
                     .disclosure__list {
                         .disclosure__item {
                             &.text {
-                                font-size:11px;
+                                font-size:14px;
                                 letter-spacing:.05em;
                                 font-weight:500;
                                 padding-left:0;
@@ -124,7 +123,7 @@
             .halo-currency {
                 .btn-group {
                     .icon {
-                        top: 1px;
+                        top: 0;
                     }
                 }
                 .down-icon {
@@ -137,7 +136,7 @@
                     .icon {
                         width: 18px;
                         height: 18px;
-                        margin-right: 4px;
+                        margin-right: 9px;
                     }
                 }
                 .currency-item {
@@ -182,6 +181,8 @@
                 .header__list{
                     display: flex;
                     align-items: center;
+                    margin-bottom: 0;
+                    font-size: 0;
                     li{
                         &.separation{
                             display: block;
@@ -323,11 +324,13 @@
     .header-bottom {
         background-color: #ffffff;
         position: relative;
+        box-shadow: 0 1px 6px 1px rgba(0,0,0,.05);
         .header-bottom--wrapper{
             padding: 0px 15px;
         }
         .menu-dropdown {
-            padding: 0;
+            border-top: 1px solid #e0e0e1;
+            padding: 30px 0 2px;
         }
         .menu-lv-1:hover > a:hover {
             color: #000000;
@@ -391,12 +394,13 @@
         .megamenu_style_3 {
             .wrapper-mega-banner {
                 .col-brands {
-                    padding-top: 9  px;
+                    padding-top: 9px;
                     .title {
-                        font-size:14px;
+                        font-size:16px;
                         font-weight:400;
                         color: #232323;
                         margin-bottom: 12px;
+                        letter-spacing: .05em;
                     }
                     .azbrandstable {
                         li {
@@ -405,6 +409,8 @@
                     }
                     .link-brands {
                         margin-top: 3px;
+                        font-size: 14px;
+                        color: #202020;
                     }
                 }
                 .halo-col-product {
@@ -448,14 +454,10 @@
             .quickSearchResultsWrap {
                 .search-block-title {
                     .text {
-                        font-weight: 500;
-                        letter-spacing:.05em;
+                        font-weight: 600;
+                        letter-spacing:.02em;
                         color: #202020;
-                    }
-                }
-                .header-search__trending {
-                    .title {
-                        font-weight: 500 !important;
+                        font-size: 18px;
                     }
                 }
                 .wrapper-quickSearchResult {
@@ -507,8 +509,8 @@
                     padding: 0 140px;
                     position: relative;
                     .title {
-                        font-size:12px;
-                        letter-spacing:.05em;
+                        font-size:18px;
+                        letter-spacing:.02em;
                         color: #202020;
                         font-weight: 600;
                         margin:28px 0 16px 0;
@@ -637,6 +639,9 @@
             }
         }
         .megamenu_style_2 {
+            .site-nav{
+                margin-bottom: 0;
+            }
             .row-style_2 {
                 margin:0 10px;
                 padding-right: 140px;

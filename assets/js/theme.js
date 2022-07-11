@@ -30,7 +30,7 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            this.initCloseAnnouncementBar();
+            // this.initCloseAnnouncementBar();
             this.initHeaderSticky();
             this.initSliderAnnouncementBar();
             this.initDropdown();
@@ -742,6 +742,14 @@
                     });
                     $body.removeClass('newsletter-show');
                 });
+
+                $doc.on('change', '#dismiss', (event) => {
+                    var $this = $(event.currentTarget);
+
+                    if (event.target.checked) {
+                        btnClose.trigger('click');
+                    }
+                });
             }
         },
 
@@ -948,7 +956,6 @@
                 });
 
                 $doc.on('click', (event) => {
-
                     if ($(event.target).closest('.share-button__fallback').length === 0) {
                         $(".share-button__fallback").removeClass("is-open");
                     }

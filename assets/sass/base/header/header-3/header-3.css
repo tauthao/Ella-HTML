@@ -1,6 +1,4 @@
 .header-3 {
-  -webkit-box-shadow: 0 1px 6px 1px #000000;
-          box-shadow: 0 1px 6px 1px #000000;
   background: #ffffff;
 }
 
@@ -22,8 +20,8 @@
   visibility: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 0 5px 7px #000000;
-          box-shadow: 0 5px 7px #000000;
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,8 +76,8 @@
 }
 
 .header-3 .header-top .header-language_currency .halo-language .dropdown-language {
-  -webkit-box-shadow: 0 5px 7px #00000026;
-          box-shadow: 0 5px 7px #00000026;
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
   padding: 0 11px;
 }
 
@@ -168,8 +166,8 @@
 }
 
 .header-3 .header-top .header-language_currency .halo-currency .halo-dropdown {
-  -webkit-box-shadow: 0 5px 7px #00000026;
-          box-shadow: 0 5px 7px #00000026;
+  -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
   width: calc(100% + 7px);
   margin-left: -5px;
 }
@@ -231,6 +229,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0;
+  font-size: 0;
 }
 
 .header-3 .header-top .header-top-wrapper .content-left .header__list li.separation {
@@ -378,6 +378,8 @@
 .header-3 .header-bottom {
   background-color: #ffffff;
   position: relative;
+  -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.05);
 }
 
 .header-3 .header-bottom .header-bottom--wrapper {
@@ -385,7 +387,8 @@
 }
 
 .header-3 .header-bottom .menu-dropdown {
-  padding: 0;
+  border-top: 1px solid #e0e0e1;
+  padding: 30px 0 2px;
 }
 
 .header-3 .header-bottom .menu-lv-1:hover > a:hover {
@@ -466,7 +469,7 @@
 }
 
 .header-3 .header-bottom .megamenu_style_3 .wrapper-mega-banner .col-brands {
-  padding-top: 9  px;
+  padding-top: 9px;
 }
 
 .header-3 .header-bottom .megamenu_style_3 .wrapper-mega-banner .col-brands .title {
@@ -474,6 +477,7 @@
   font-weight: 400;
   color: #232323;
   margin-bottom: 12px;
+  letter-spacing: .05em;
 }
 
 .header-3 .header-bottom .megamenu_style_3 .wrapper-mega-banner .col-brands .azbrandstable {
@@ -493,6 +497,8 @@
 
 .header-3 .header-bottom .megamenu_style_3 .wrapper-mega-banner .col-brands .link-brands {
   margin-top: 3px;
+  font-size: 12px;
+  color: #202020;
 }
 
 .header-3 .header-bottom .megamenu_style_3 .wrapper-mega-banner .halo-col-product .text-center .sub-title {
@@ -768,6 +774,10 @@
 .header-3 .header-bottom .row-header-product .image-adapt img {
   width: 170px;
   height: 255px;
+}
+
+.header-3 .header-bottom .megamenu_style_2 .site-nav {
+  margin-bottom: 0;
 }
 
 .header-3 .header-bottom .megamenu_style_2 .row-style_2 {
