@@ -223,6 +223,10 @@ input[type=radio]+.form-label--radio:after {
     transform: scale(0);
     opacity: 0;
 }
+/* Hide arrow Firefox */
+input[type=number] {
+    -moz-appearance: textfield!important;
+}
 
 blockquote {
     border: none;

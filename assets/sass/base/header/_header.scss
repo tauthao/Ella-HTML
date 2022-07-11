@@ -148,10 +148,9 @@
             display: inline-block!important;
             vertical-align: middle;
             .text-count{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
+                position: relative;
+                top: -1px;
+                left: 0;
             }
         }
     }
@@ -189,7 +188,7 @@
         .text {
             +svg {
                 position: relative;
-                top: -1px;
+                top: 0px;
             }
         }
         .btn-group {
@@ -513,7 +512,6 @@
         }
     }
 }
-
 
 .menu-lv-1__action {
     color: #ffffff;
@@ -919,6 +917,22 @@
     }
 }
 
+.header-default{
+    .header-language_currency {
+        .halo-currency {
+            .btn-group {
+                .text{
+                    margin-left: 1px;
+                }
+            }
+        }
+        .halo-language{
+            .text-language{
+                margin-right: 9px;
+            }
+        }
+    }
+}
 
 
 @media (min-width: 1025px) {

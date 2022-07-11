@@ -144,6 +144,7 @@
                     background: #0a6cdc;
                     span{
                         color: #ffffff;
+                        top: 0;
                     }
                 }
                 & + .header__icon{
@@ -514,6 +515,7 @@
             background-color: #0a6cdc!important;
             span{
                 color: #ffffff;
+                top: 0!important;
             }
         }
         &.item-mobile-logo{

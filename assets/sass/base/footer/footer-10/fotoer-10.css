@@ -193,6 +193,7 @@
 
 .halo-toolbar-bottom-mobile .halo-toolbar-wrapper .halo-toolbar-item .icon--cart .text-count {
   color: #ffffff;
+  top: 0 !important;
 }
 
 @media (max-width: 992px) {

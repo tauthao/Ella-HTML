@@ -190,6 +190,7 @@
 
 .header-10 .header-top .header-top--right .header__icon .cart-count-bubble span {
   color: #ffffff;
+  top: 0;
 }
 
 .header-10 .header-top .header-top--right .header__icon + .header__icon {
@@ -631,6 +632,7 @@
 
 .header-mobile .header-mobile--icon .cart-count-bubble span {
   color: #ffffff;
+  top: 0 !important;
 }
 
 .header-mobile .header-mobile--icon.item-mobile-logo .header__heading-link {
