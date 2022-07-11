@@ -2690,6 +2690,10 @@ label {
   background: #ffffff;
 }
 
+.megamenu-custom-product-width-banner .product-card .card-action {
+  visibility: hidden;
+}
+
 .megamenu-custom-product-width-banner .product-card .product-card-bottom {
   padding: 0 !important;
 }
@@ -2989,6 +2993,9 @@ label {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+  .menu-lv-item.has-megamenu:hover > .menu-dropdown .megamenu-custom-product-width-banner .product-card .card-action {
+    visibility: visible;
   }
   .menu-lv-item.menu-lv-2:hover .list-menu--disclosure-2 {
     right: calc(-100% + 10px);

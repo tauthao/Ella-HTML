@@ -659,6 +659,9 @@
         background: #ffffff;
     }
     .product-card{
+        .card-action{
+            visibility: hidden
+        }
         .product-card-bottom{
             padding: 0!important;
         }
@@ -949,6 +952,13 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        .megamenu-custom-product-width-banner{
+            .product-card{
+                .card-action{
+                    visibility: visible;
+                }
+            }
+        }
     }
     .menu-lv-item.menu-lv-2:hover .list-menu--disclosure-2 {
         right: calc(-100% + 10px);
