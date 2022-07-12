@@ -11,11 +11,9 @@ masonry-items{
         background-attachment: fixed;
     }
 }
-
 .page-content{
     padding-bottom: 70px;
 }
-
 .portfolio-tabs{  
     .tabs{
         list-style-type: none;
@@ -225,6 +223,10 @@ masonry-items{
     }
 }
 @media(min-width:1025px){
+    .portfolio-page{
+        padding-bottom: 57px;
+    }
+    
     .tabs-contents{
         .masonry-row{
             margin-left: -15px;

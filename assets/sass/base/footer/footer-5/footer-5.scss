@@ -104,6 +104,12 @@
                 background-color: transparent;
                 border: none;
                 padding:0;
+                &::before{
+                    box-shadow: 0 0 0 2px #282828 !important;
+                }
+                &:hover{
+                    box-shadow: none;
+                }
                 svg {
                     width:23px;
                     height:23px;

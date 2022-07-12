@@ -1045,11 +1045,8 @@ svg {
   display: block;
 }
 
-[data-banner-carousel]:not(.slick-slider) {
+[data-banner-carousel] .row:not(.slick-slider) {
   overflow: hidden;
-}
-
-[data-banner-carousel]:not(.slick-slider) .row {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }

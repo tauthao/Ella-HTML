@@ -1,4 +1,15 @@
+.announcement-bar{
+    background: #232323;
+    .message{
+        color: #ffffff;
+        font-weight: 400;
+        a{
+            color: #ffffff;
+        }
+    }
+}
 .page-contact-2{
+    padding-bottom: 0;
     .contact-banner{
         position: relative;
         background-image: url(../../images/Pages/contact-us/about-bg-image.png);

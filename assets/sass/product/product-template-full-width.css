@@ -1,3 +1,43 @@
+.announcement-bar {
+  background: #232323;
+}
+
+.announcement-bar .message {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.announcement-bar .message a {
+  color: #ffffff;
+}
+
+.header-page {
+  background: transparent;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+}
+
+.header-page .header-mobile {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.has-stickyHeader .header-page {
+  background: #ffffff;
+}
+
+.has-stickyHeader .header-page .header-mobile {
+  background: transparent;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.has-stickyHeader .product-layout-full-width .productView-information .halo-productView-right {
+  padding-top: 0px;
+}
+
 .product-layout-full-width {
   padding: 0px 0px 50px;
 }
@@ -12,6 +52,9 @@
 
 .product-layout-full-width .halo-productView-right {
   position: relative;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  padding: 0px 15px;
 }
 
 .product-layout-full-width .halo-productView-right .wrapper-title {
@@ -352,7 +395,7 @@
   }
   .product-layout-full-width .halo-productView-right .productView-tabs .productView-tab {
     position: absolute;
-    top: -30px;
+    top: 0;
     padding: 0;
     padding-left: 30px;
   }
@@ -365,7 +408,7 @@
   .product-layout-full-width .productView-information .halo-productView-right {
     width: 50%;
     padding-left: 60px;
-    padding-top: 15px;
+    padding-top: 80px;
   }
   .product-layout-full-width .productView-information .halo-productView-left {
     width: 50%;
@@ -391,6 +434,18 @@
   }
   .product-layout-full-width .frequently-bought-together-block .bundle-product-right .bundle-product-action .button {
     max-width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-layout-full-width .productView-information .halo-productView-right {
+    padding-top: 115px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .product-layout-full-width .productView-information .halo-productView-right {
+    padding-right: calc((100% - 1770px)/2);
   }
 }
 /*# sourceMappingURL=product-template-full-width.css.map */

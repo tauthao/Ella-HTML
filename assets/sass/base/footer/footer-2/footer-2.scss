@@ -120,6 +120,12 @@
                 background: none;
                 border: none;
                 padding:0;
+                &::before{
+                    display: none;
+                }
+                &:hover{
+                    box-shadow: none;
+                }
                 svg {
                     width:24px;
                     height:24px;

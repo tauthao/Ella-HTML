@@ -991,9 +991,9 @@ svg {
 }
 
 [data-banner-carousel]{
-    &:not(.slick-slider){
-        overflow: hidden;
-        .row{
+    .row{
+        &:not(.slick-slider){
+            overflow: hidden;
             flex-wrap: nowrap;
         }
     }

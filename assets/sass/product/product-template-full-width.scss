@@ -1,3 +1,41 @@
+.announcement-bar{
+    background: #232323;
+    .message{
+        color: #ffffff;
+        font-weight: 400;
+        a{
+            color: #ffffff;
+        }
+    }
+}
+.header-page{
+    background: transparent;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    .header-mobile{
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.has-stickyHeader{
+    .header-page{
+        background: #ffffff;
+        .header-mobile{
+            background: transparent;
+            box-shadow: 0 1px 3px rgba(0, 0, 0,.1);
+        }
+    }
+    .product-layout-full-width {
+        .productView-information {
+            .halo-productView-right{
+                padding-top: 0px;
+            }
+        }
+    }
+}
+
 .product-layout-full-width{
     padding: 0px 0px 50px;
     .breadcrumb{
@@ -10,6 +48,8 @@
     }
     .halo-productView-right{
         position: relative;
+        transition: all ease .5s;
+        padding: 0px 15px;
         .wrapper-title{
             position: relative;
             .productView-title{
@@ -332,7 +372,7 @@
             .productView-tabs{
                 .productView-tab{
                     position: absolute;
-                    top: -30px;
+                    top: 0;
                     padding: 0;
                     padding-left: 30px;
                     .halo-tab-title{
@@ -349,7 +389,7 @@
             .halo-productView-right{
                 width:50%;
                 padding-left: 60px;
-                padding-top: 15px;
+                padding-top: 80px;
             }
             .halo-productView-left{
                 width:50%;
@@ -391,4 +431,24 @@
             }
         }
     } 
+}
+
+@media(min-width:1600px){
+    .product-layout-full-width {
+        .productView-information {
+            .halo-productView-right{
+                padding-top: 115px;
+            }
+        }
+    }
+}
+
+@media(min-width:1800px){
+    .product-layout-full-width {
+        .productView-information {
+            .halo-productView-right{
+                padding-right: calc((100% - 1770px)/2);
+            }
+        }
+    }
 }

@@ -1,3 +1,16 @@
+.announcement-bar {
+  background: #232323;
+}
+
+.announcement-bar .message {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.announcement-bar .message a {
+  color: #ffffff;
+}
+
 .product-layout-left-sidebar {
   padding: 0px 0px 50px;
 }

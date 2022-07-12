@@ -1,3 +1,7 @@
+.collections-list {
+  padding-bottom: 50px;
+}
+
 .halo-collection-content .collection-banner {
   position: relative;
   background-image: url(../../images/collection/banner-top.png);
@@ -348,7 +352,7 @@
     top: 13px;
   }
   .collection-description {
-    margin: 70px auto 72px;
+    margin: 74px auto 74px;
   }
   .page-collections-masonry .collection-description {
     margin: 52px auto 72px;

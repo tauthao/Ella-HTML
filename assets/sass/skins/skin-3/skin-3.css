@@ -401,8 +401,11 @@
 }
 
 .skin-3 .product-card .card-action .card-wrapper .card-wishlist svg {
-  width: 14px;
-  height: 13px;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: -1px;
+  margin-right: 4px;
 }
 
 .skin-3 .product-card .card-action .card-wrapper .compare-product {

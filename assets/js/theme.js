@@ -45,7 +45,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            this.initNewsLetterPopup();
+            // this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
@@ -1465,7 +1465,6 @@
                 if($('.page-sidebar.page-sidebar--horizontal').length > 0){
                     $body.on('click', (event) => {
                         if(($(event.target).closest('.sidebarBlock-headingWrapper').length === 0) && ($(event.target).closest('.sidebarBlock-content').length === 0)){
-                            event.preventDefault();
                             if(headingSidebar.hasClass('is-clicked')){
                                 headingSidebar.removeClass('is-clicked');
                                 blockWrapper.slideUp('slow'); 

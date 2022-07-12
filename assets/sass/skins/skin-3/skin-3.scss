@@ -338,8 +338,11 @@
                     display: flex;
                     align-items: center;
                     svg {
-                        width:14px;
-                        height:13px;
+                        width: 17px;
+                        height: 17px;
+                        position: relative;
+                        top: -1px;
+                        margin-right: 4px;
                     }
                 }
                 .compare-product {
