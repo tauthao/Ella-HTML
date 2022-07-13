@@ -231,7 +231,6 @@
                     color: #ffffff;
                     position: relative;
                 }
-        
                 .hidde-before {
                     .text::before {
                         width: 0;
@@ -746,6 +745,67 @@
         
     }
     .header-mobile {
+        .header-mobile--top{
+            background: #000000;
+            .header__list{
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+                font-size: 0;
+                margin-right: 0px;
+                li{
+                    &.separation{
+                        display: block;
+                        width: 1px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0.5px;
+                        background-color: #4d4d4d;
+                    }
+                    &.is-active{
+                        background: #ffffff;
+                        .text{
+                            color: #000000;
+                        }
+                    }
+                    &:hover{
+                        background: #ffffff;
+                        .text{
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .link {
+                font-size:14px;
+                font-weight:800;
+                color:#000000;
+                letter-spacing: 0;
+                &.men {
+                    background: #3854b0;
+                }
+                &.kids {
+                    background-color: #fa7758;
+                }
+            }
+            a{
+                padding: 16px 24px;
+                &.logo-text {
+                    font-size:20px;
+                    background-color: #ffffff;
+                    color:#000000;
+                    font-weight: 700;
+                    letter-spacing:0;
+                }
+            }
+            .text {
+                color: #ffffff;
+                position: relative;
+            }
+        }
+        .header-mobile--wrapper{
+            padding: 5px 0px;
+        }
         .header__iconItem {
             .header__icon--cart {
                 .cart-count-bubble {

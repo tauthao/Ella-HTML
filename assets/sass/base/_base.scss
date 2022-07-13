@@ -1495,25 +1495,23 @@ label {
 }
 
 @media (max-width:992px) {
-    .halo-block {
-        .halo-row--swipe {
-            white-space: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding: 0 15px 0 15px;
-            margin-left: -15px;
-            margin-right: -15px;
-            flex-wrap: nowrap;
-            .halo-row-item {
-                margin-top: 0;
-                padding-left: 0;
-                padding-right: 0;
-                margin-right: 15px;
-                white-space: normal;
-                width: 350px;
-                &:last-child {
-                    margin-right: 0;
-                }
+    .halo-row--swipe {
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 15px 0 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        flex-wrap: nowrap;
+        .halo-row-item {
+            margin-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 15px;
+            white-space: normal;
+            width: 350px;
+            &:last-child {
+                margin-right: 0;
             }
         }
     }
@@ -1521,14 +1519,18 @@ label {
 }
 
 @media (max-width:768px) {
-    .halo-block .halo-row--swipe .halo-row-item {
-        width: 330px;
+    .halo-row--swipe  {
+        .halo-row-item{
+            width: 330px;
+        }
     }
 }
 
 @media (max-width:551px) {
-    .halo-block .halo-row--swipe .halo-row-item {
-        width: 300px;
+    .halo-row--swipe {
+        .halo-row-item{
+            width: 300px;
+        }
     }
 }
 

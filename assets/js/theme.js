@@ -45,7 +45,7 @@
             this.initQuickShop();
             this.initQuickAddToCard();
             this.initEditQuickCart();
-            // this.initNewsLetterPopup();
+            this.initNewsLetterPopup();
             this.initSliderAboutUs();
             this.initSlideShow();
             this.initClickedActiveVideoBanner();
@@ -72,6 +72,7 @@
             this.initProductVariantChange();
             this.initCloseAcceptCookie();
             this.intiShowItemGallery();
+            this.initProductCompareColor();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -1068,6 +1069,40 @@
                     if ($body.hasClass('size-chart-show')) {
                         $body.removeClass('size-chart-show');
                     }
+                });
+            }
+        },
+
+        initProductCompareColor: function (){
+            var btnColorCompare = $('[data-open-compare-color-popup]'),
+                btnClose = $(".background-overlay, .halo-popup-close"),
+                imageList = $('.halo-compareColors-image .row');
+
+            if(btnColorCompare.length > 0){
+                btnColorCompare.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('compare-color-show');
+                });
+
+                $doc.on('change', '.swatch-compare-color-option', (event) => {
+                    var $this = $(event.currentTarget)
+                        id = $this.val();
+                        title = $this.siblings().attr('title'),
+                        image = $this.siblings().attr('data-variant-img');
+                        item = `<div class="halo-row-item item col-6 col-md-4 col-lg-3 item-${id} item-compare-color"><span class="image"><img src="${image}" alt="${title}"></span><span class="title text-center">${title}</span></div>`;
+    
+                    if (event.target.checked) {
+                        imageList.append(item);
+                    } else {
+                        imageList.find(`.item-${id}`).remove();
+                    }
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
                     if ($body.hasClass('compare-color-show')) {
                         $body.removeClass('compare-color-show');
                     }
@@ -1318,8 +1353,8 @@
                     });
 
                     itemDropdown.on('click', (event) => {
-                        event.preventDefault();
-                        event.stopPropagation();
+                        // event.preventDefault();
+                        // event.stopPropagation();
         
                         var $target = $(event.target);
                         $target.parent().siblings().removeClass('is-open').addClass('is-hidden');
@@ -1867,6 +1902,7 @@
                 });
             });
         },
+
         intiShowItemGallery: function () {
             var elm = $('.block-custom-instagram'),
             btnLoadMore = elm.find('[data-load-item]'),
@@ -1903,6 +1939,6 @@
                 }
             }
             
-        },
+        }
     }
 })(jQuery);

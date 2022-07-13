@@ -889,6 +889,79 @@
   margin-bottom: 0;
 }
 
+.header-2 .header-mobile .header-mobile--top {
+  background: #000000;
+}
+
+.header-2 .header-mobile .header-mobile--top .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  font-size: 0;
+  margin-right: 0px;
+}
+
+.header-2 .header-mobile .header-mobile--top .header__list li.separation {
+  display: block;
+  width: 1px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0.5px;
+  background-color: #4d4d4d;
+}
+
+.header-2 .header-mobile .header-mobile--top .header__list li.is-active {
+  background: #ffffff;
+}
+
+.header-2 .header-mobile .header-mobile--top .link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.header-2 .header-mobile .header-mobile--top .link.gentleman {
+  font-family: 'Oswald', sans-serif;
+}
+
+.header-2 .header-mobile .header-mobile--top .link.Bell-Doll {
+  font-family: 'Playfair Display', serif;
+}
+
+.header-2 .header-mobile .header-mobile--top .link.logo {
+  padding: 15px;
+}
+
+.header-2 .header-mobile .header-mobile--top .link.logo img {
+  max-width: 40px;
+}
+
+.header-2 .header-mobile .header-mobile--top a {
+  padding: 8px 24px 9px;
+}
+
+.header-2 .header-mobile .header-mobile--top a.logo-text {
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.header-2 .header-mobile .header-mobile--top .text {
+  color: #ffffff;
+  position: relative;
+}
+
+.header-2 .header-mobile .header-mobile--wrapper {
+  padding: 5px 0px;
+}
+
 .header-2 .header-mobile .header__iconItem .header__icon--cart .cart-count-bubble {
   background-color: #000000;
 }

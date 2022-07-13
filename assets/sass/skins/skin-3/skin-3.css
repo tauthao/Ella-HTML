@@ -749,17 +749,19 @@
 .skin-3 .halo-newsletter-popup.halo-popup {
   top: auto;
   left: auto;
-  right: 0;
+  right: -50px;
   bottom: 0;
   -webkit-transform: initial;
           transform: initial;
   max-width: 460px;
-  height: 570px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .skin-3 .halo-newsletter-popup .halo-popup-header .halo-popup-close {
   top: 0px;
   right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .skin-3 .halo-newsletter-popup .halo-popup-header .halo-popup-close:hover {
@@ -797,6 +799,10 @@
   letter-spacing: -.04em;
 }
 
+.skin-3 .halo-newsletter-popup .halo-popup-content .desc {
+  color: #232323;
+}
+
 .skin-3 .halo-newsletter-popup .halo-popup-content .newsletter {
   width: 100%;
   max-width: 100%;
@@ -821,6 +827,10 @@
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   color: #808080;
+}
+
+.skin-3.newsletter-show .halo-newsletter-popup {
+  right: 0;
 }
 
 .skin-3 .newsletter-toolbar {

@@ -652,16 +652,17 @@
         &.halo-popup {
             top: auto;
             left: auto;
-            right: 0;
+            right: -50px;
             bottom: 0;
             transform:initial;
             max-width: 460px;
-            height:570px;
+            transition: all ease 0.5s;
         }
         .halo-popup-header {
             .halo-popup-close {
                 top: 0px;
                 right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
                 &:hover {
                     background-color: #8463d8; 
                 }
@@ -687,6 +688,9 @@
                     font-weight: 400;
                     letter-spacing:-.04em;
                 }
+            }
+            .desc{
+                color: #232323;
             }
             .newsletter {
                 width: 100%;
@@ -714,6 +718,11 @@
                     }
                 }
             }
+        }
+    }
+    &.newsletter-show{
+        .halo-newsletter-popup{
+            right: 0;
         }
     }
     .newsletter-toolbar {

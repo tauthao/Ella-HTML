@@ -235,7 +235,6 @@
                     color: #ffffff;
                     position: relative;
                 }
-        
                 .hidde-before {
                     .text::before {
                         width: 0;
@@ -735,6 +734,64 @@
         
     }
     .header-mobile {
+        .header-mobile--top{
+            background: #000000;
+            .header__list{
+                display: flex;
+                align-items: center;
+                margin-bottom: 0;
+                font-size: 0;
+                margin-right: 0px;
+                li{
+                    &.separation{
+                        display: block;
+                        width: 1px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0.5px;
+                        background-color: #4d4d4d;
+                    }
+                    &.is-active{
+                        background: #ffffff;
+                    }
+                }
+            }
+            .link {
+                font-size:16px;
+                font-weight:700;
+                color:#000000;
+                letter-spacing: 0;
+                &.gentleman {
+                    font-family: 'Oswald', sans-serif;
+                }
+                &.Bell-Doll {
+                    font-family: 'Playfair Display', serif;
+                }
+                &.logo {
+                    padding: 15px;
+                    img {
+                        max-width:40px;
+                    }
+                }
+            }
+            a{
+                padding: 8px 24px 9px;
+                &.logo-text {
+                    font-size:20px;
+                    background-color: #ffffff;
+                    color:#000000;
+                    font-weight: 700;
+                    letter-spacing:0;
+                }
+            }
+            .text {
+                color: #ffffff;
+                position: relative;
+            }
+        }
+        .header-mobile--wrapper{
+            padding: 5px 0px;
+        }
         .header__iconItem {
             .header__icon--cart {
                 .cart-count-bubble {
