@@ -1593,6 +1593,8 @@ body.ask-an-expert-show .background-overlay {
   bottom: 45px;
   -webkit-transition: all ease .7s;
   transition: all ease .7s;
+  z-index: -1;
+  visibility: hidden;
 }
 
 .halo-accept-cookie-popup .desc {

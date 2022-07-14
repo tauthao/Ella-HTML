@@ -12,6 +12,8 @@
         opacity: 0;
         bottom: 45px;
         transition: all ease .7s;
+        z-index: -1;
+        visibility: hidden;
     }
     .desc {
         color: #ffffff;

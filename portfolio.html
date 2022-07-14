@@ -1576,7 +1576,7 @@
         </header><!-- END: Header -->
         
         <main class="main">
-            <div is="masonry-items" class="page portfolio-page">
+            <div class="page portfolio-page">
                 <div class="halo-page-content halo-portfolio-content">
                     <div class="page-header">
                             <div class="content-box--absolute">
@@ -1590,40 +1590,40 @@
                                 </h3>
                             </div>
                     </div>
-                    <div class="portfolio">
-                        <div class="portfolio-tabs">
-                            <ul class="tabs disable-scrollbar" data-gallery-tab id="haloPortfolioTabs" >
-                                <li class="tab tab-all is-active" data-gallery="all">
+                    <div class="portfolio shuffle-filter">
+                        <div class="shuffle-tabs">
+                            <ul class="tabs disable-scrollbar" data-filter-tab id="haloPortfolioTabs" >
+                                <li class="tab tab-all is-active" data-filter="all">
                                     <a class="tab-title link-underline" href="#portfolio-tab-all" role="button">
                                         <span class="text">All</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="cosmopolis">
+                                <li class="tab" data-filter="cosmopolis">
                                     <a class="tab-title link-underline" href="#portfolio-tab-cosmopolis" role="button">
                                         <span class="text">Cosmopolis</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="suito">
+                                <li class="tab" data-filter="suito">
                                     <a class="tab-title link-underline" href="#portfolio-tab-suito" role="button">
                                         <span class="text">Suitó</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="milancelos">
+                                <li class="tab" data-filter="milancelos">
                                     <a class="tab-title link-underline" href="#portfolio-tab-milancelos" role="button">
                                         <span class="text">Milancélos</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="blazero">
+                                <li class="tab" data-filter="blazero">
                                     <a class="tab-title link-underline" href="#portfolio-tab-blazero" role="button">
                                         <span class="text">Blazéro</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="glamos">
+                                <li class="tab" data-filter="glamos">
                                     <a class="tab-title link-underline" href="#portfolio-tab-glamos" role="button">
                                         <span class="text">Glamos</span>
                                     </a>
                                 </li>
-                                <li class="tab" data-gallery="metropolis">
+                                <li class="tab" data-filter="metropolis">
                                     <a class="tab-title link-underline" href="#portfolio-tab-metropolis" role="button">
                                         <span class="text">Metropolis</span>
                                     </a>
@@ -1633,10 +1633,10 @@
                                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque non nulla nulla de tincidunt risus morbi ultricies est ditae odio mmultrices.</p>
                             </div>
                             <div class="container container-1770">
-                                <div class="tabs-contents" data-gallery-tab-content id="haloPortfolioTabContents">
+                                <div class="tabs-contents" data-filter-tab-content id="haloPortfolioTabContents">
                                     <div class="tab-content is-active" id="portfolio-tab-all">
-                                        <div class="masonry-row masonry--wide shuffle-container column-3">
-                                            <div class="masonry-item portfolio-item" data-gallery-item="cosmopolis">
+                                        <div class="masonry-row masonry--wide shuffle-container column-3" data-layout="masonry" data-isotope='{ "itemSelector": "[data-gridItem]", "layoutMode": "masonry" }'>
+                                            <div class="masonry-item portfolio-item" data-filter-item="cosmopolis" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-1.png">
@@ -1659,7 +1659,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="suito">
+                                            <div class="masonry-item portfolio-item" data-filter-item="suito" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-1.png">
@@ -1682,7 +1682,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="milancelos">
+                                            <div class="masonry-item portfolio-item" data-filter-item="milancelos" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-1.png">
@@ -1705,7 +1705,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="cosmopolis">
+                                            <div class="masonry-item portfolio-item" data-filter-item="cosmopolis" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-6.png">
@@ -1728,7 +1728,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="cosmopolis">
+                                            <div class="masonry-item portfolio-item" data-filter-item="cosmopolis" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-4.png">
@@ -1757,7 +1757,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="blazero">
+                                            <div class="masonry-item portfolio-item" data-filter-item="blazero" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-5.png">
@@ -1780,7 +1780,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="milancelos">
+                                            <div class="masonry-item portfolio-item" data-filter-item="milancelos" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-9.png">
@@ -1809,7 +1809,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="milancelos">
+                                            <div class="masonry-item portfolio-item" data-filter-item="milancelos" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-8.png">
@@ -1832,7 +1832,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="blazero">
+                                            <div class="masonry-item portfolio-item" data-filter-item="blazero" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-7.png">
@@ -1855,7 +1855,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="metropolis">
+                                            <div class="masonry-item portfolio-item" data-filter-item="metropolis" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-12.png">
@@ -1878,7 +1878,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="glamos">
+                                            <div class="masonry-item portfolio-item" data-filter-item="glamos" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-10.png">
@@ -1901,7 +1901,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="masonry-item portfolio-item" data-gallery-item="suito">
+                                            <div class="masonry-item portfolio-item" data-filter-item="suito" data-gridItem>
                                                 <div class="item">
                                                     <div class="img-box">
                                                         <a href="#" class="image animate-scale" data-fancybox="gallery-portfolio" data-src="./assets/images/Pages/portfolio/Image-Item-11.png">
@@ -1943,7 +1943,7 @@
                         </div>
                     </div>
                 </div>
-            </div is="masonry-items">
+            </div >
         </main>
         <!-- End main -->
         <footer class="footer footer-page">
@@ -3668,8 +3668,8 @@
     <!-- Plugins fancybox JS File -->
     <script src="./lib/fancybox/fancybox.umd.js"></script>
     <!-- Plugins masonry JS File -->
-    <script src="./lib/masonry/Masonry.js"></script>
-    <script src="assets/js/custom-masonry.js"></script>
+    <script src="./lib/masonry/shuffle.min.js"></script>
+    <script src="./lib/masonry/isotope-masonry.pkgd.min.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/theme.js"></script>
     

@@ -30,7 +30,7 @@
             this.initSliderProduct();
             this.initDropdownColumns();
             this.initPopupRecentlyViewed();
-            // this.initCloseAnnouncementBar();
+            this.initCloseAnnouncementBar();
             this.initHeaderSticky();
             this.initSliderAnnouncementBar();
             this.initDropdown();
@@ -73,6 +73,7 @@
             this.initCloseAcceptCookie();
             this.intiShowItemGallery();
             this.initProductCompareColor();
+            this.initShuffleFilter();
 
             if($body.hasClass('template-product')){
                 this.initProductNextPrev();
@@ -389,21 +390,23 @@
             var announcementBar = $('.announcement-bar__message'),
                 closeAnnouncement = announcementBar.find('[data-close-announcement');
 
-            if ($.cookie('AnnouncementBar') == 'closed') {
-                announcementBar.remove();
-            } else {
-                announcementBar.css('opacity', 1);
-            };
+            // if ($.cookie('AnnouncementBar') == 'closed') {
+            //     announcementBar.remove();
+            // } else {
+            //     announcementBar.css('opacity', 1);
+            // };
+
+            announcementBar.css('opacity', 1);
 
             closeAnnouncement.off('click.closeHeaderTop').on('click.closeHeaderTop', function(e) {
                 e.preventDefault();
                 e.stopPropagation();
 
                 announcementBar.remove();
-                $.cookie('AnnouncementBar', 'closed', {
-                    expires: 1,
-                    path: '/'
-                });
+                // $.cookie('AnnouncementBar', 'closed', {
+                //     expires: 1,
+                //     path: '/'
+                // });
             });
 
         },
@@ -730,17 +733,18 @@
                     expiresDate = newstterPopup.data('expire'),
                     btnClose = $("[data-close-newsletter-popup],.background-overlay-popup");
 
-                if ($.cookie('newsletter-popup') != 'closed') {
+                // if ($.cookie('newsletter-popup') != 'closed') {
                     setTimeout(function() {
                         $body.addClass('newsletter-show');
                     }, timeToShow);
-                };
+                // };
 
+                
                 btnClose.click(function(e) {
-                    $.cookie('newsletter-popup', 'closed', {
-                        expires: 1,
-                        path: '/'
-                    });
+                    // $.cookie('newsletter-popup', 'closed', {
+                    //     expires: 1,
+                    //     path: '/'
+                    // });
                     $body.removeClass('newsletter-show');
                 });
 
@@ -1886,9 +1890,9 @@
             var cookieElm =  $('.halo-accept-cookie-popup'),
                 btnClose = cookieElm.find('[data-close-accept]');
                 
-            if ($.cookie('acceptcookie') == 'closed') {
-                cookieElm.addClass('is-hidden')
-            }
+            // if ($.cookie('acceptcookie') == 'closed') {
+            //     cookieElm.addClass('is-hidden')
+            // }
 
             btnClose.on('click.closecookie', function (e) {
                 e.preventDefault();
@@ -1896,10 +1900,10 @@
                 
                 cookieElm.addClass('is-hidden')
                 // cookieElm.remove();
-                $.cookie('acceptcookie', 'closed', {
-                    expires: 1,
-                    path: '/'
-                });
+                // $.cookie('acceptcookie', 'closed', {
+                //     expires: 1,
+                //     path: '/'
+                // });
             });
         },
 
@@ -1939,6 +1943,41 @@
                 }
             }
             
+        },
+
+        initShuffleFilter: function (){
+            var wrapperElm = $('.shuffle-filter');
+            if(wrapperElm.length > 0){
+                var Shuffle = window.Shuffle;
+                element = $('.shuffle-container');
+                sizer = $('.sizer-element'),
+                tab = $('.shuffle-tabs .tabs .tab');
+        
+                var shuffleInstance = new Shuffle(element, {
+                itemSelector: '.masonry-item',
+                sizer: sizer
+                });
+            
+                tab.find('a').on('click', function(event){
+                    event.preventDefault();
+                
+                    var $this = $(event.currentTarget),
+                        tabActiver = $this.parents('.tab');
+                        filterVal = tabActiver.data("filter");
+
+                        tab.removeClass('is-active');
+                        tabActiver.addClass('is-active');
+
+                    if(filterVal == 'all'){
+                        shuffleInstance.filter();
+                    }else{
+                        shuffleInstance.filter(function (element) {
+                            if($(element).data('filter-item') != undefined)
+                            return $(element).data('filter-item').indexOf(filterVal) != -1;
+                        });
+                    }
+                })
+            }
         }
     }
 })(jQuery);

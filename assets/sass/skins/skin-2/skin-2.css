@@ -471,10 +471,7 @@
 .skin-2 .halo-toolbar-bottom-mobile .halo-toolbar-wrapper .halo-toolbar-item .icon--cart .cart-count-bubble {
   background-color: #000000;
   color: #ffffff;
-  right: -10px;
-  top: -7px;
-  min-width: 28px;
-  min-height: 25px;
+  line-height: 22px;
 }
 
 .skin-2 .halo-quick-view-popup input[type=text] {

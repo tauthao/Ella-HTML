@@ -14,7 +14,7 @@ masonry-items{
 .page-content{
     padding-bottom: 70px;
 }
-.portfolio-tabs{  
+.shuffle-tabs{  
     .tabs{
         list-style-type: none;
         display: flex;
@@ -170,7 +170,7 @@ masonry-items{
 
 @media(min-width:768px){
 
-    .portfolio-tabs{  
+    .shuffle-tabs{  
         .tabs{
             justify-content:center;   
         }
@@ -198,7 +198,7 @@ masonry-items{
 
 /* START: Portfolio With Sidebar */
 .portfolio-with-sidebar{
-    .portfolio-tabs{
+    .shuffle-tabs{
         .tabs{
             display: block;
             background:transparent;
@@ -218,7 +218,7 @@ masonry-items{
 
 /* END: Portfolio With Sidebar */
 @media(max-width:767px){
-    .portfolio-tabs .haloPortfolioContent .desc{
+    .shuffle-tabs .haloPortfolioContent .desc{
         padding: 15px 15px 25px;
     }
 }

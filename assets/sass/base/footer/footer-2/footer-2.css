@@ -81,10 +81,17 @@
   letter-spacing: 0;
   font-weight: 800;
   padding-bottom: 6px;
-  margin: 0;
   line-height: 28px;
   color: #000000;
-  margin-bottom: 0;
+}
+
+.footer-2 .list-unstyled {
+  margin-bottom: 5px;
+}
+
+.footer-2 .list-social {
+  max-height: inherit;
+  margin-top: 25px;
 }
 
 .footer-2 .desc {
@@ -171,6 +178,7 @@
 @media (max-width: 992px) {
   .footer-2 .footer-bottom .col-left {
     padding-right: 0;
+    padding-top: 10px;
   }
 }
 
