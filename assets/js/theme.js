@@ -52,6 +52,7 @@
             this.initShowPopupShare();
             this.initShowPopup();
             this.initCountdown();
+            this.initCartCountDown();
             this.initProductCustomerViewing();
             this.initProductSizeChart();
             this.initProductQuickView();
@@ -1037,6 +1038,39 @@
             }
         },
 
+        initCartCountDown: function() {
+            if (!$('.cart-countdown').length)
+                return;
+
+            var timer,
+                elCountDown = $('.cart-countdown .count_down'),
+                minute = elCountDown.data('time');
+
+            function startTimer(duration, display) {
+                timer = duration;
+                var minutes, seconds;
+                setInterval(function() {
+                    minutes = parseInt(timer / 60, 10)
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    display.textContent = minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        timer = duration;
+                    }
+                }, 1000);
+            }
+
+            $( document ).ready(function() {
+                fiveMinutes = 60 * minute,
+                display = document.querySelector('#time');
+                startTimer(fiveMinutes, display);
+            })
+        },
+
         initProductCustomerViewing: function() {
             var wrapper = $(".productView-more").find('[data-customer-view]');
 
@@ -1621,10 +1655,15 @@
                 
                 $(window).scroll(function () {
                     var h = $('.sticky-wrapper.is-sticky').outerHeight();
+                    var checkHeaderSticky = $('.header.sticky-down');
                     if ($(this).scrollTop() > top) {
                         wrapper.addClass("toolbar-fix");
-                    }
-                    else {
+                        if(checkHeaderSticky.length > 0){
+                            wrapper.css('top', '50px');
+                        }else{
+                            wrapper.css('top', 0);
+                        }
+                    }else {
                         $('[data-section-type="collection-template"]').css('padding-top', 0);
                         wrapper.removeClass("toolbar-fix");
                         wrapper.css('top', 0);

@@ -31,14 +31,11 @@ body {
             stroke: currentColor;
             color: #9d8766;
         }
-        .desc {
+        .count_down {
             color: #9d8766; 
         }
-        .time {
+        #time {
             font-weight: bold;
-            width: 36px;
-            display: inline-flex;
-            text-align: center;
         }
     }   //End cart countdown
     .cart-page-wrapper {

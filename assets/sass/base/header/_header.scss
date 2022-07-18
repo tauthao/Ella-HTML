@@ -358,9 +358,8 @@
         align-items: center;
         .input-group-field {
             color: #323232;
-            padding: 5px 12px 5px;
-            ;
-            width: calc(100% - 36px);
+            padding: 5px 11px 5px;
+            width: calc(100% - 30px);
             border: none;
             background-color: #fff0;
             margin: 0;
@@ -371,7 +370,7 @@
             background: rgba(255, 255, 255, 0);
             min-width: 30px;
             display: inline-flex;
-            padding: 8px 12px 8px;
+            padding: 8px 10px 8px;
         }
     }
 }
