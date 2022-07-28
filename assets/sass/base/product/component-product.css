@@ -16,7 +16,7 @@
 }
 
 .productView-variants .form__label [data-header-option] {
-  color: #969696;
+  color: #3c3c3c;
   font-weight: 400;
   margin-left: 2px;
 }
@@ -196,7 +196,7 @@
   display: inline-block;
   vertical-align: middle;
   border: 1px solid #232323;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   border-radius: 4px;
   padding: 13px 10px 10px;
@@ -213,6 +213,7 @@
 .productView-countDown .num span {
   color: #3c3c3c;
   font-weight: 400;
+  font-size: 12px;
   display: block;
   text-transform: capitalize;
 }
@@ -665,6 +666,10 @@
   margin: 14px 0px 12px;
 }
 
+.productView-information .previewCartAction .previewCartGroup-bottom .button {
+  padding: 14px 15px;
+}
+
 .productView-information .share-button__fallback {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -844,16 +849,18 @@
 }
 
 .frequently-bought-together-block .bundle-product-wrapper .slick-arrow {
-  top: -57px;
+  top: -51px;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   border: none;
   background: transparent;
   padding: 4px !important;
+  width: 28px;
+  height: 28px;
 }
 
 .frequently-bought-together-block .bundle-product-wrapper .slick-arrow.slick-next {
-  right: 2px;
+  right: 5px;
 }
 
 .frequently-bought-together-block .bundle-product-wrapper .slick-arrow.slick-prev {
@@ -928,10 +935,11 @@
 .frequently-bought-together-block .bundle-product-left .bundlePdItem .bundle-product-content .product-title {
   overflow: hidden;
   white-space: normal;
-  display: -webkit-box;
+  display: inline;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
+  font-weight: 400;
 }
 
 .frequently-bought-together-block .bundle-product-left .bundlePdItem .bundle-product-content .card-price {
@@ -945,6 +953,9 @@
   width: 100%;
   max-width: 100%;
   min-width: 100%;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 12px;
 }
 
 .frequently-bought-together-block .bundle-product-left .bundlePdItem .bundle-product-options {
@@ -1218,6 +1229,10 @@
   width: 210px;
 }
 
+.show-sticky-cart.notification-show .halo-notification-popup {
+  bottom: 150px !important;
+}
+
 /* END: Product stickyCart */
 .productView-notifyMe {
   padding: 30px 0 2px;
@@ -1395,7 +1410,7 @@
 }
 
 .productView-tab .tab-content .blockQuote .blockQuote-content.has-bg {
-  padding: 20px;
+  padding: 30px 40px;
   background-color: #fafafa;
 }
 
@@ -1557,7 +1572,7 @@
 
 /* END: Product View Tab */
 #tab-review .productView-review .spr-header {
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 #tab-review .productView-review .spr-summary {
@@ -1701,7 +1716,7 @@
 
 #tab-review .spr-reviews .spr-review .spr-review-footer {
   position: absolute;
-  top: 53px;
+  top: 55px;
   right: 35px;
 }
 
@@ -1869,7 +1884,7 @@
     position: absolute;
     right: 0;
     top: 20px;
-    z-index: 999;
+    z-index: 4;
   }
   .productView-nextProducts .next-prev-icons {
     display: -webkit-box;

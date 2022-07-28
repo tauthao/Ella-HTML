@@ -294,6 +294,8 @@
 
 .skin-4 .productView-variants .product-form__label .text {
   font-size: 14px;
+  position: relative;
+  top: 1px;
 }
 
 .skin-4 .halo-quickshop-popup .halo-productView-right .card-price .price-item .money {
@@ -348,12 +350,21 @@
   font-size: 16px !important;
 }
 
+.skin-4 .previewCartItem-qty .btn-quantity {
+  top: 2px;
+}
+
 .skin-4 .halo-quick-view-popup .productView-image img {
   width: 100%;
 }
 
 .skin-4 .halo-quick-view-popup .card-price .price-item .money {
   font-size: 18px;
+}
+
+.skin-4 .halo-quick-view-popup .productView-wishlist svg {
+  position: relative;
+  top: -2px;
 }
 
 .skin-4 .review-rating .spr-badge-caption {

@@ -362,7 +362,7 @@
 .halo-block-instagram .halo-block-navigation {
   width: 100%;
   padding-top: 45px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,26 +374,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
   margin: 0 auto;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .halo-block-instagram .halo-block-navigation .nav .nav-item {
   position: relative;
-  padding: 14px 25px 15px;
+  padding: 14px 23px 15px;
   background: #f9ede1;
-  margin: 0px 5px;
+  margin: 0px 5px 10px;
   border-radius: 30px;
   font-weight: 400;
   font-size: 16px;
@@ -664,9 +661,15 @@
     font-size: 16px;
     margin-bottom: 0;
   }
+  .halo-policies-block .wrapper-policies-content .policies-content .desc {
+    font-size: 13px;
+  }
   .halo-policies-block.style-2 .halo-row--swipe-policies {
     margin-left: -5px;
     margin-right: -5px;
+  }
+  .halo-policies-block.halo-policies-block-2 .row .policies-content .title {
+    font-size: 16px;
   }
   .halo-block-slideshow .slide-item .title {
     font-size: 50px;

@@ -474,6 +474,19 @@
   line-height: 22px;
 }
 
+.skin-2 .halo-quickshop-popup .previewCartItem-qty .quantity {
+  padding: 16px 14px 15px 20px;
+}
+
+.skin-2 .halo-quickshop-popup .previewCartItem-qty .btn-quantity {
+  height: 55px;
+  top: 5px;
+}
+
+.skin-2 .halo-quickshop-popup .halo-productView-right .product-title {
+  padding-bottom: 5px;
+}
+
 .skin-2 .halo-quick-view-popup input[type=text] {
   padding: 16px 12px 15px;
 }

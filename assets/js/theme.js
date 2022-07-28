@@ -82,6 +82,7 @@
                 this.initShowCustomReview();
                 this.initStickyAddToCart();
                 this.initOpenTabsProduct();
+                this.initSidebarLocalPickUp();
             }
 
             if($body.hasClass('template-collection')){
@@ -287,7 +288,7 @@
                                         }
                                     },
                                     {
-                                        breakpoint: 768,
+                                        breakpoint: 1100,
                                         settings: {
                                             dots: itemDots,
                                             arrows: itemRow,
@@ -555,6 +556,29 @@
                     event.stopPropagation();
                     if ($body.hasClass('auth-sidebar-show')) {
                         $body.removeClass('auth-sidebar-show');
+                    }
+                });
+
+            }
+        },
+
+        initSidebarLocalPickUp: function() {
+            var pickupIcon = $("[data-pickup-open]"),
+                btnClose = $(".background-overlay, .halo-sidebar-close");
+
+            if (pickupIcon.length) {
+                pickupIcon.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    $body.addClass('pickup-sidebar-show');
+                });
+
+                btnClose.on('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if ($body.hasClass('pickup-sidebar-show')) {
+                        $body.removeClass('pickup-sidebar-show');
                     }
                 });
 
@@ -896,9 +920,8 @@
                                 </div>
                             `;
                         }
-
-                        banner.find('.video-banner').addClass('open_video');
                         modal.html(templateModal);
+                        banner.find('.video-banner').addClass('open_video');
                     });
 
                     icon.off('click').on('click', (event) => {
@@ -1873,9 +1896,11 @@
 
                 if (scrollTop > offSetTop) {
                     $('.productView-stickyCart').addClass('show-sticky');
+                    $('body').addClass('show-sticky-cart');
                 }
                 else {
                     $('.productView-stickyCart').removeClass('show-sticky');
+                    $('body').removeClass('show-sticky-cart')
                 }
             });
 

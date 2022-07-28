@@ -6,10 +6,10 @@ body {
             visibility: visible;
             pointer-events: auto;
             transform: translate(-50%, -50%);
-            z-index: 101;
+            z-index: 999;
         }
         .background-overlay-popup {
-            z-index: 99;
+            z-index: 999;
             opacity: 1;
             visibility: visible;
         }
@@ -55,6 +55,14 @@ body {
             }
             [data-header-option] {
                 font-size: 12px;
+            }
+            .product-form__label{
+                margin-bottom: 11px;
+            }
+            .product-form__swatch {
+                .product-form__label{
+                    margin-bottom: 0;
+                }
             }
             
         }

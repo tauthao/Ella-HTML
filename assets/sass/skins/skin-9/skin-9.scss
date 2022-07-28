@@ -409,6 +409,18 @@
             right: 15px!important;
         }
     }
+    .halo-quick-view-popup{
+        .productView-information{
+            .slick-arrow{
+                &.slick-prev{
+                    left: 0;
+                }
+                &.slick-next{
+                    right: 0;
+                }
+            }
+        }
+    }
     .halo-quickshop-popup{
         .halo-productView-right{
             .product-title{

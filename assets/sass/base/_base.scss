@@ -632,7 +632,7 @@ button.disabled,
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 9;
+    z-index: 1;
     transform: translateY(-50%);
     padding: 15px;
     margin: 0 auto;
@@ -1388,11 +1388,14 @@ label {
         right: 40px;
         z-index: 9;
        .halo-modal-close{
-            display: none;
             position: absolute;
-            top: 15px;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            top: 60px;
+            bottom: auto;
             right: 15px;
-            z-index: 9;
+            transition: all ease .5s;
             svg{
                 width: 28px;
                 height: 28px;
@@ -1415,7 +1418,10 @@ label {
         top: 0;
         right: 0!important;
         .halo-modal-close{
-            display: block;
+            top: 15px;
+            z-index: 9;
+            opacity: 1;
+            visibility: visible;
         }
        }
        &.fixed_video{

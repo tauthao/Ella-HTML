@@ -317,25 +317,22 @@
     .halo-block-navigation {
         width: 100%;
         padding-top: 45px;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
         display: flex;
         place-items: center;
         .nav {
             list-style-type: none;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             padding: 0;
             margin: 0 auto;
-            flex-wrap: nowrap;
-            white-space: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
+            flex-wrap: wrap;
             .nav-item {
                 position: relative;
-                padding: 14px 25px 15px;
+                padding: 14px 23px 15px;
                 background: #f9ede1;
-                margin: 0px 5px;
+                margin: 0px 5px 10px;
                 border-radius: 30px;
                 font-weight:400;
                 font-size:16px;
@@ -679,12 +676,24 @@
                     font-size: 16px;
                     margin-bottom: 0;
                 }
+                .desc{
+                    font-size: 13px;
+                }
             }
         }
         &.style-2 {
             .halo-row--swipe-policies {
                 margin-left: -5px;
                 margin-right: -5px;
+            }
+        }
+        &.halo-policies-block-2{
+            .row {
+                .policies-content {
+                    .title{
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }//END: Policies Block.

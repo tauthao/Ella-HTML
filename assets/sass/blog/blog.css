@@ -1,3 +1,25 @@
+.blog-full-width .announcement-bar {
+  background: #232323;
+}
+
+.blog-full-width .announcement-bar .message {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.blog-full-width .announcement-bar .message a {
+  color: #ffffff;
+}
+
+.blog-full-width .breadcrumb-wrapper {
+  background: #f8f8f8;
+  margin-bottom: 30px;
+}
+
+.blog-full-width .breadcrumb-wrapper .breadcrumb {
+  padding: 15px 0px 15px;
+}
+
 .blog-template .halo-blog-content .page-content {
   padding-bottom: 77px;
 }

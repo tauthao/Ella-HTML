@@ -17,7 +17,11 @@
     }
     .halo-block-header {
         .title {
-            margin: -6px 0 0 0;
+            margin: 0;
+        }
+        .text {
+            width: 100%;
+            background: transparent;
         }
     }
     .desc{
@@ -114,6 +118,22 @@
     &.quickshop-popup-show {
         .halo-quickshop-popup {
             z-index: 999;
+        }
+    }
+    .halo-quickshop-popup {
+        .halo-productView-right {
+            .product-title{
+                line-height: 26px;
+            }
+        }
+        .previewCartItem-qty {
+            .quantity{
+                padding: 13px 14px 13px 20px;
+            }
+            .btn-quantity{
+                height: 50px;
+                top: 2px;
+            }
         }
     }
     .quickSearchResultsWrap {
@@ -838,10 +858,18 @@
             }
         }
     }
+    .productView-variants {
+        .product-form__label{
+            .text{
+                padding-top: 1px;
+            }
+        }
+    }
     .halo-quick-view-popup {
         .previewCartCheckbox input[type=checkbox] + label {
             color: #505050;
         }
+        
         .halo-popup-wrapper {
             .halo-popup-content {
                 padding: 0;
@@ -884,6 +912,10 @@
                             border-radius: 0;
                             padding: 0;
                             border: 0;
+                            .text{
+                                font-size: 13px;
+                                padding-top: 2px;
+                            }
                             img {
                                 width:68px;
                                 height:104px;
@@ -1032,7 +1064,7 @@
                 width: 100%;
                 display: flex;
                 justify-content:center;
-                bottom:115px;
+                bottom:140px;
                 color: #ffffff;
                 svg {
                     fill: #ffffff;
@@ -1045,6 +1077,7 @@
                     background-color: rgba(0, 0, 0, 0.2);
                     padding: 0 6px;
                     border-radius:5px;
+                    font-size: 14px;
                     svg {
                         width:20px;
                         height:20px;
@@ -1085,10 +1118,22 @@
                 height:60px;
                 justify-content:center;
                 align-items: center;
-                bottom:-30px;
                 border:1px solid #ececec;
                 font-size:14px;
                 margin:0 auto;
+                margin-bottom: 20px;
+                a{
+                    font-size: 14px;
+                    color: #202020;
+                    font-weight: 500;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    position: relative;
+                    left: -3px;
+                    top: -1px
+                }
             }
         }
         .productView-rating {

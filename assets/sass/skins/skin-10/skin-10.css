@@ -708,15 +708,21 @@
   padding: 19px 14px 17px 20px;
   font-size: 15px;
   color: #202020;
-  border-radius: 3px;
+  border-radius: 30px;
 }
 
 .skin-10 .productView-information .previewCartAction .previewCartGroup .previewCartGroup-top .previewCartItem-qty .btn-quantity {
   height: 60px;
+  left: 5px;
 }
 
 .skin-10 .productView-information .previewCartAction .previewCartGroup .previewCartGroup-top .previewCartItem-qty .btn-quantity::before, .skin-10 .productView-information .previewCartAction .previewCartGroup .previewCartGroup-top .previewCartItem-qty .btn-quantity::after {
   top: 30px;
+}
+
+.skin-10 .productView-information .previewCartAction .previewCartGroup .previewCartGroup-top .previewCartItem-qty .btn-quantity.plus {
+  right: 5px;
+  left: auto;
 }
 
 .skin-10 .productView-information .previewCartAction .previewCartGroup .previewCartGroup-top .productView-action .button {

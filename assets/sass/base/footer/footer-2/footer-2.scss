@@ -175,6 +175,10 @@
                 &::after {
                     background-color: #000000;
                 }
+                &.block-heading_custom{
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
             }
             .footer-col-left {
                 .row {
@@ -198,6 +202,7 @@
         .footer-block__list-social {
             margin-top: -16px;
         }
+
     }
 }
 

@@ -33,11 +33,6 @@
     }
 }
 
-// [data-header-sticky]{
-//     z-index: 20;
-//     will-change: transform;
-// }
-
 .has-stickyHeader {
     [data-header-sticky]{
         position: sticky;
@@ -60,9 +55,90 @@
             transform: translateY(-100%);
         }
     }
+    .header-default{
+        .header-top{
+            display: none;
+        }
+        .menu-lv-1 {
+            .label{
+                display: none;
+            }
+        }
+        .header-bottom{
+            .header-bottom--wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .header-log-fixed,
+            .Header-icon-fixed{
+                display: block;
+            }
+            .header-nav{
+                width: calc(100% - 224px);
+                padding-left: 50px;
+            }
+        }
+    }
 }
 
-
+.header-default{
+    .header-bottom{
+        .container{
+            position: initial;
+        }
+        .header-log-fixed{
+            display: none;
+            padding-left: 15px;
+            img{
+                max-width: 50px;;
+            }
+        }
+        .Header-icon-fixed{
+            display: none;
+            .header__icon-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 15px;
+            }
+            .header__icon{
+                position: relative;
+                border-left: 1px solid rgba(255,255,255,.15);
+                padding-top: 9px;
+                padding-bottom: 9px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    width: 22px;
+                    height: 22px;
+                    fill: #ffffff;
+                }
+            }
+            .cart-count-bubble{
+                position: absolute;
+                right: 2px;
+                top: 7px;
+                margin: 0;
+                background-color: #ffe5e8;
+                color: #323232;
+                min-width: 23px;
+                min-height: 23px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: .02em;
+                display: inline-block !important;
+                vertical-align: middle;
+            }
+        }
+    }
+}
 
 /* START: Header Top */
 
@@ -858,7 +934,7 @@
 .header{
     .header-bottom{
         .megamenu_style_4{
-            padding: 0;
+            padding: 0!important;
             .row{
                 margin: 0;
                 align-items: center;

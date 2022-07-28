@@ -433,6 +433,14 @@
   right: 15px !important;
 }
 
+.skin-9 .halo-quick-view-popup .productView-information .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.skin-9 .halo-quick-view-popup .productView-information .slick-arrow.slick-next {
+  right: 0;
+}
+
 .skin-9 .halo-quickshop-popup .halo-productView-right .product-title {
   font-weight: 600;
   letter-spacing: 0;

@@ -499,6 +499,22 @@
             }
         }
     }
+    .halo-quickshop-popup{
+        .previewCartItem-qty {
+            .quantity{
+                padding: 16px 14px 15px 20px;
+            }
+            .btn-quantity{
+                height: 55px;
+                top: 5px;
+            }
+        }
+        .halo-productView-right {
+            .product-title{
+                padding-bottom: 5px;
+            }
+        }
+    }
     .halo-quick-view-popup {
         input[type=text] {
             padding: 16px 12px 15px;

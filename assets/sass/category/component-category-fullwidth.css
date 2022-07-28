@@ -113,6 +113,21 @@
   color: #707070;
 }
 
+.template-full-width .toolbar .results-count,
+.template-full-width .toolbar .toolbar-colRight {
+  width: 40%;
+}
+
+.template-full-width .toolbar .toolbar-colRight {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.template-full-width .toolbar .toolbar-toolbar-colLeft {
+  width: 20%;
+}
+
 .template-full-width .collection-description {
   color: #3c3c3c;
   max-width: 900px;

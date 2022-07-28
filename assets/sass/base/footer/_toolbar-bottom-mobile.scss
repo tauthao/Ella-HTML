@@ -16,14 +16,25 @@
             .link{
                 text-align: center;
                 position: relative;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    fill: #232323;
+                    stroke: transparent;
+                    padding: 2px;
+                }
+                &.mobileSearch-toggle{
+                    svg{
+                        padding: 0;
+                    }
+                }
             }
-            svg{
-                width: 30px;
-                height: 30px;
-                fill: #232323;
-                stroke: transparent;
-                padding: 2px;
+            [data-open-auth-sidebar]{
+                svg{
+                    padding: 0;
+                }
             }
+
             .label{
                 display: block;
                 font-size: 12px;

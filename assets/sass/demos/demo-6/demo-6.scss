@@ -156,7 +156,16 @@
     }
 }// End Block Icon Width Text
 
-
+@media(max-width:767px){
+    .halo-block-custom{
+        .row{
+            .halo-row-item{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
 @media(min-width:768px){
     .halo-block-four-banner{
         .halo-row-item{

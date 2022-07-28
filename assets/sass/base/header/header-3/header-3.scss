@@ -260,6 +260,7 @@
                     font-weight: 400;
                     a {
                         color: #ffffff;
+                        font-size: 12px;
                     }
                     .underline {
                         text-decoration: underline;
@@ -272,15 +273,15 @@
                     position: relative;
                     .wishlist-quantity {
                         position: absolute;
-                        top: -4px;
+                        top: 0px;
                         right: 7px;
                         width: 22px;
                         height: 22px;
-                        background-color: #ffffff;
+                        background-color: #8463d8;
                         border-radius: 50%;
                         z-index: 99;
                         text-align: center;
-                        color: #000000;
+                        color: #ffffff;
                         .text {
                             position: relative;
                             top:-6px;

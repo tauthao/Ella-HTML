@@ -21,7 +21,12 @@
 }
 
 .skin-3 .halo-block-header .title {
-  margin: -6px 0 0 0;
+  margin: 0;
+}
+
+.skin-3 .halo-block-header .text {
+  width: 100%;
+  background: transparent;
 }
 
 .skin-3 .desc {
@@ -132,6 +137,19 @@
 
 .skin-3.quickshop-popup-show .halo-quickshop-popup {
   z-index: 999;
+}
+
+.skin-3 .halo-quickshop-popup .halo-productView-right .product-title {
+  line-height: 26px;
+}
+
+.skin-3 .halo-quickshop-popup .previewCartItem-qty .quantity {
+  padding: 13px 14px 13px 20px;
+}
+
+.skin-3 .halo-quickshop-popup .previewCartItem-qty .btn-quantity {
+  height: 50px;
+  top: 2px;
 }
 
 .skin-3 .quickSearchResultsWrap .list-item {
@@ -970,6 +988,10 @@
   position: relative;
 }
 
+.skin-3 .productView-variants .product-form__label .text {
+  padding-top: 1px;
+}
+
 .skin-3 .halo-quick-view-popup .previewCartCheckbox input[type=checkbox] + label {
   color: #505050;
 }
@@ -1025,6 +1047,11 @@
   border-radius: 0;
   padding: 0;
   border: 0;
+}
+
+.skin-3 .halo-quick-view-popup .halo-popup-wrapper .halo-popup-content .productView-variants .product-form__swatch .product-form__label .text {
+  font-size: 13px;
+  padding-top: 2px;
 }
 
 .skin-3 .halo-quick-view-popup .halo-popup-wrapper .halo-popup-content .productView-variants .product-form__swatch .product-form__label img {
@@ -1188,7 +1215,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 115px;
+  bottom: 140px;
   color: #ffffff;
 }
 
@@ -1204,6 +1231,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0 6px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .skin-3 .halo-quick-view-popup .halo-productView-left .text-zoom .content svg {
@@ -1259,10 +1287,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: -30px;
   border: 1px solid #ececec;
   font-size: 14px;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.skin-3 .halo-quick-view-popup .halo-productView-left .content-ask a {
+  font-size: 14px;
+  color: #202020;
+  font-weight: 500;
+}
+
+.skin-3 .halo-quick-view-popup .halo-productView-left .content-ask svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -3px;
+  top: -1px;
 }
 
 .skin-3 .halo-quick-view-popup .productView-rating .spr-badge-caption {

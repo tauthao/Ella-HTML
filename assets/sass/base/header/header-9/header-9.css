@@ -170,6 +170,13 @@
   margin-right: 30px;
 }
 
+.header-9 .header-right .header__iconItem .header__icon.header__icon--wishlist {
+  position: relative;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+}
+
 .header-9 .header-right .header__iconItem .header__icon .cart-count-bubble {
   position: absolute;
   right: -30px;

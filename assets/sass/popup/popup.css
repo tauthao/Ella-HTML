@@ -110,7 +110,7 @@ body.compare-color-show .background-overlay {
 }
 
 .halo-compare-color-popup {
-  max-width: calc(100% - 30px);
+  max-width: calc(100% - 40px);
 }
 
 .halo-compare-color-popup .halo-popup-wrapper {
@@ -209,9 +209,6 @@ body.compare-color-show .background-overlay {
   body.compare-color-show {
     padding-right: 10px;
   }
-}
-
-@media (min-width: 768px) {
   .halo-compare-color-popup {
     max-width: 970px;
   }
@@ -526,11 +523,11 @@ body.notify-me-show .halo-notify-popup {
   pointer-events: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 101;
+  z-index: 999;
 }
 
 body.notify-me-show .background-overlay-popup {
-  z-index: 99;
+  z-index: 999;
   opacity: 1;
   visibility: visible;
 }
@@ -776,11 +773,11 @@ body.quickshop-popup-show .halo-quickshop-popup {
   pointer-events: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 101;
+  z-index: 999;
 }
 
 body.quickshop-popup-show .background-overlay-popup {
-  z-index: 99;
+  z-index: 999;
   opacity: 1;
   visibility: visible;
 }
@@ -836,6 +833,14 @@ body.quickshop-popup-show .background-overlay-popup {
 
 .halo-quickshop-popup .halo-productView-right .productView-variants [data-header-option] {
   font-size: 12px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__label {
+  margin-bottom: 11px;
+}
+
+.halo-quickshop-popup .halo-productView-right .productView-variants .product-form__swatch .product-form__label {
+  margin-bottom: 0;
 }
 
 .halo-quickshop-popup .halo-productView-right .wrapper-action {
@@ -1293,11 +1298,11 @@ body.search-popup-show .halo-search-popup {
           transform: translate(-50%, 0);
   opacity: 1;
   visibility: visible;
-  z-index: 9;
+  z-index: 99;
 }
 
 body.search-popup-show .background-overlay {
-  z-index: 9;
+  z-index: 99;
   opacity: 1;
   visibility: visible;
 }
@@ -1377,6 +1382,40 @@ body.search-popup-show .background-overlay {
   font-size: 14px;
   background: #f2f2f2;
   border-radius: 4px;
+}
+
+.skin-1 .halo-search-popup {
+  max-width: 1200px;
+}
+
+.skin-1 .halo-search-popup .halo-popup-header .halo-popup-close svg {
+  fill: #232323;
+}
+
+.skin-1 .halo-search-popup .halo-popup-content {
+  margin-left: 0;
+}
+
+.skin-1 .halo-search-popup .halo-popup-content .input-group-field {
+  font-size: 12px;
+  color: #323232;
+}
+
+.skin-1 .halo-search-popup .halo-popup-content .icon-search svg {
+  fill: #232323;
+}
+
+.skin-1 .halo-search-popup .quickSearchResultsWrap .search-block-title .text {
+  color: #232323;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.skin-1 .halo-search-popup .quickSearchResultsWrap .list-item .link {
+  padding: 6px 10px 6px 7px;
+  text-transform: lowercase;
+  background-color: #f7f7f7;
+  color: #868686;
 }
 
 @media (min-width: 1025px) {

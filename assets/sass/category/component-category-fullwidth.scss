@@ -95,6 +95,16 @@
                 color: #707070;
             }
         }
+        .results-count,
+        .toolbar-colRight{
+            width: 40%;
+        }
+        .toolbar-colRight{
+            justify-content: flex-end;
+        }
+        .toolbar-toolbar-colLeft{
+            width: 20%;
+        }
     }
     .collection-description{
         color:#3c3c3c;

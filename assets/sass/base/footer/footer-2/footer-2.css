@@ -186,6 +186,10 @@
   .footer-2 .footer-top .footer-block__heading::before, .footer-2 .footer-top .footer-block__heading::after {
     background-color: #000000;
   }
+  .footer-2 .footer-top .footer-block__heading.block-heading_custom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .footer-2 .footer-top .footer-col-left .row {
     margin: 0;
   }

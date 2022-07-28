@@ -315,6 +315,8 @@
         .product-form__label {
             .text{
                 font-size: 14px;
+                position: relative;
+                top: 1px;
             }
         }
     }
@@ -395,6 +397,11 @@
             } 
         }
     }
+    .previewCartItem-qty {
+        .btn-quantity{
+            top: 2px;
+        }
+    }
     .halo-quick-view-popup{
         .productView-image{
             img{
@@ -407,7 +414,13 @@
                     font-size: 18px;
                 }
             } 
-        } 
+        }
+       .productView-wishlist{
+            svg{
+                position: relative;
+                top: -2px;
+            }
+       }
     }
     .review-rating{
         .spr-badge-caption{

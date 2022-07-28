@@ -1414,6 +1414,7 @@ body.menu-sidebar_show .background-overlay {
   position: absolute;
   -webkit-transform: none;
           transform: none;
+  z-index: -1;
 }
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item.dropdown .icon-dropdown svg {
@@ -1428,7 +1429,7 @@ body.menu-sidebar_show .background-overlay {
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item.dropdown .menu-lv__dropdownmenu .menu-lv__list .nav-title-mobile {
   margin: 0;
-  background: #ffe8e8;
+  background: #f8f8f8;
   padding: 11px 20px 12px;
   cursor: pointer;
 }
@@ -1437,10 +1438,11 @@ body.menu-sidebar_show .background-overlay {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #b05d5d;
+  color: #232323;
   line-height: 22px;
   letter-spacing: .02em;
   padding: 0;
+  z-index: 1;
 }
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item.dropdown .menu-lv__dropdownmenu .menu-lv__list .nav-title-mobile .icon-dropdown {
@@ -1529,13 +1531,13 @@ body.menu-sidebar_show .background-overlay {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #b05d5d;
+  color: #232323;
   line-height: 22px;
   letter-spacing: .02em;
   padding: 10px 19px 22px;
   text-align: left;
   margin: 0;
-  background: #ffe8e8;
+  background: #f8f8f8;
   padding: 11px 20px 12px;
 }
 
@@ -2353,6 +2355,104 @@ body.edit-cart-show .background-overlay-popup {
   }
   .halo-sidebar.halo-edit-option-sidebar .halo-sidebar-wrapper {
     padding: 41px 40px 70px;
+  }
+}
+
+body.pickup-sidebar-show {
+  overflow: hidden;
+}
+
+body.pickup-sidebar-show .halo-local-pick-up-sidebar {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+body.pickup-sidebar-show .background-overlay {
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+}
+
+.halo-local-pick-up-sidebar .halo-sidebar-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.halo-local-pick-up-sidebar .halo-sidebar-header {
+  border: none;
+}
+
+.halo-local-pick-up-sidebar .pickup-product-info {
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+
+.halo-local-pick-up-sidebar .pickup-product-info .pickup-product-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #232323;
+  line-height: 24px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.halo-local-pick-up-sidebar .pickup-product-info .pickup-product-variant span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #323232;
+  text-transform: capitalize;
+  letter-spacing: .02em;
+  line-height: 22px;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item {
+  padding: 22px 0px 10px;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item .pickup-heading {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #232323;
+  margin: 0;
+  padding-bottom: 6px;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item .pickup-preview {
+  padding-bottom: 10px;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item .pickup-preview .icon {
+  position: relative;
+  top: -1px;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item .pickup-preview .icon svg {
+  margin-right: 6px;
+  width: 17px;
+  height: 17px;
+  fill: #108043;
+}
+
+.halo-local-pick-up-sidebar .pickup-list .pickup-list-item .pickup-address {
+  line-height: 24px;
+}
+
+@media (min-width: 552px) {
+  .halo-local-pick-up-sidebar {
+    max-width: 410px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body.pickup-sidebar-show {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=sidebar.css.map */
