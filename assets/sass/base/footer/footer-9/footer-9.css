@@ -122,4 +122,10 @@
     margin: 5px 10px 5px 0px;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-9 .footer-top .footer-block-newsletter .footer-block__heading {
+    margin-bottom: 0 !important;
+  }
+}
 /*# sourceMappingURL=footer-9.css.map */

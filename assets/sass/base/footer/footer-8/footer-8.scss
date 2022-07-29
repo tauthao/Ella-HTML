@@ -79,7 +79,10 @@
                     svg{
                         width: 15px;
                         height: 15px;
-                        fill: #ffffff
+                        fill: #ffffff;
+                        position: relative;
+                        left: 3px;
+                        top: 2px;
                     }
                     &:hover{
                         &::before{

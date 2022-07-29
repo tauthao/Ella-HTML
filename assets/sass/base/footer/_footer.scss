@@ -148,9 +148,9 @@
         .footer-block__heading {
             border-bottom: 1px solid #c7c7c7;
             pointer-events: auto;
-            padding-bottom: 17px;
+            padding-bottom: 17px!important;
             position: relative;
-            margin-bottom: 20px;
+            margin-bottom: 20px!important;
             cursor: pointer;
             &::after,
             &::before {

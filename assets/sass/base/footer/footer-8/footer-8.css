@@ -98,6 +98,9 @@
   width: 15px;
   height: 15px;
   fill: #ffffff;
+  position: relative;
+  left: 3px;
+  top: 2px;
 }
 
 .footer-8 .footer-top .footer-nav .list-social .list-social__link:hover::before {

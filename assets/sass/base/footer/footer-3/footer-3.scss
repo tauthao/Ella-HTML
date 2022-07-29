@@ -162,7 +162,13 @@
         letter-spacing: 0;
     }
 }
-
+@media(max-width: 991px){
+    .footer-3{
+        .footer-col-left{
+            border-right: none;
+        }
+    }
+}
 @media (max-width: 767px) {
     .footer-3 {
         .footer-col-left {

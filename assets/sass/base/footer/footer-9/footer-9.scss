@@ -119,3 +119,15 @@
         }
     }
 }
+
+@media(max-width:767px){
+    .footer-9 {
+        .footer-top {
+            .footer-block-newsletter{
+                .footer-block__heading{
+                    margin-bottom: 0!important;
+                }
+            }
+        }
+    }
+}
