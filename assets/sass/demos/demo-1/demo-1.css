@@ -109,8 +109,13 @@
   display: block;
 }
 
+.halo-block-brands .halo-row-item a img {
+  padding: 10px;
+}
+
 .halo-block-brands .slick-initialized .halo-row-item {
   display: block;
+  padding-top: 5px;
 }
 
 /* START: Instagram*/
@@ -246,6 +251,12 @@
   .halo-block-content .content-box--right .banner-text {
     font-size: 12px !important;
     line-height: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .halo-block-brands .halo-row-item a img {
+    padding: 25px;
   }
 }
 

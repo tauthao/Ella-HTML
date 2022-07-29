@@ -1364,6 +1364,8 @@ body.menu-sidebar_show .background-overlay {
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item .menu-lv-1__action span {
   margin-left: 10px;
+  position: relative;
+  z-index: -1;
 }
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item .menu-lv-1__action.menu-lv__flex {
@@ -1383,6 +1385,8 @@ body.menu-sidebar_show .background-overlay {
   width: 24px;
   height: 24px;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
 }
 
 .halo-sidebar_menu .site-nav-mobile.nav .menu-lv-item .custom-icon.style-circle {

@@ -148,9 +148,9 @@
         .footer-block__heading {
             border-bottom: 1px solid #c7c7c7;
             pointer-events: auto;
-            padding-bottom: 13px;
+            padding-bottom: 17px;
             position: relative;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             cursor: pointer;
             &::after,
             &::before {
@@ -184,6 +184,7 @@
             overflow: hidden;
             pointer-events: none;
             position: relative;
+            margin-bottom: 0;
         }
     }
     .footer-block-newsletter{

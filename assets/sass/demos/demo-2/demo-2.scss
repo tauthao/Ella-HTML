@@ -186,7 +186,7 @@
 }//END: Halo Banner.
 
 .halo-custom-text {
-    margin-top: 50px;
+    margin-top: 60px;
     .content {
         &:hover {
             .desc {
@@ -237,6 +237,8 @@
     .button {
         height:54px;
         margin: 0 auto;
+        position: relative;
+        top: 1px;
     }
 }//END: Halo Custom text.
 
@@ -527,6 +529,17 @@
             margin: 0 -5px;
         } 
     }
+
+    .halo-custom-text {
+        .col-left,
+        .col-right{
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .slick-dots{
+            margin: 15px 0px 20px;
+        }
+    }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -576,7 +589,7 @@
     }//END: Halo Banner.
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .halo-policies-block {
         .row {
             margin: 0 -5px;
@@ -593,17 +606,6 @@
             }
         }
     }//END: Policies Block.
-
-    .halo-custom-text {
-        .row {
-            white-space: nowrap;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding: 0; 
-            margin: 0 -10px;
-            flex-wrap: nowrap;
-        }
-    }//END: Custom Text.
 
     .halo-tab-category {
         .row {
@@ -816,12 +818,6 @@
 }
 
 @media (min-width: 768px) {
-    .halo-block-slideshow {
-        .slick-dots{
-            bottom:48px;
-        }
-    }//END: Halo Banner.
-
     .halo-tab-category {
         .content {
             &:hover {
@@ -847,5 +843,13 @@
             margin-top: 56px;
         }
     }
+}
+
+@media (min-width: 1025px){
+    .halo-block-slideshow {
+        .slick-dots{
+            bottom:48px;
+        }
+    }//END: Halo Banner.
 }
 

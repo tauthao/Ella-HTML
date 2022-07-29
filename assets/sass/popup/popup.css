@@ -1249,7 +1249,7 @@ body.quick-view-show .background-overlay-popup {
 
 @media (min-width: 551px) {
   .halo-recently-viewed-popup {
-    right: 20px;
+    right: 2px;
     border: none;
   }
 }

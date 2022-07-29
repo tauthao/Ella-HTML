@@ -260,7 +260,7 @@
 
 .header-3 .header-top .header-top-wrapper .content-left .link {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   letter-spacing: 0;
 }
@@ -355,7 +355,7 @@
 .header-3 .header-top .header-top-wrapper .content-right .nav-wishlist .wishlist-quantity .text,
 .header-3 .header-top .header-top-wrapper .content-right .cart .wishlist-quantity .text {
   position: relative;
-  top: -6px;
+  top: -5px;
   font-size: 14px;
 }
 
@@ -576,7 +576,7 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 9px 0 9px 14px;
+  padding: 11px 0 9px 12px;
   width: 230px;
   background-color: #ffffff;
   border: 1px solid #ececec;
@@ -631,6 +631,16 @@
   color: #202020;
   font-weight: 600;
   margin: 28px 0 16px 0;
+}
+
+.header-3 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .title .halo-search-close {
+  position: absolute;
+  right: 0;
+}
+
+.header-3 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .title .halo-search-close svg {
+  width: 17px;
+  height: 17px;
 }
 
 .header-3 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .list-item .item {
@@ -697,7 +707,7 @@
 
 .header-3 .header-bottom .header-search .quickSearchResultsWrap.show {
   top: 65px;
-  z-index: 999;
+  z-index: 9;
   visibility: visible;
   pointer-events: auto;
 }
@@ -945,7 +955,7 @@
 
 .header-3 .header-mobile .header-mobile--top .link {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   letter-spacing: 0;
 }

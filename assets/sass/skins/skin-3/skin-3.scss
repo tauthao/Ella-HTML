@@ -1,6 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Medium.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Black.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-ExtraBold.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-ExtraBold.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Bold.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Bold.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-ExtraLight.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-ExtraLight.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Medium.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Medium.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Light.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Light.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Regular.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Regular.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-Thin.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-Thin.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../../fonts/spartan/Spartan-SemiBold.woff2') format('woff2'),
+        url('../../../fonts/spartan/Spartan-SemiBold.woff') format('woff'),
+        url('../../../fonts/spartan/Spartan-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 .skin-3{
-    font-family: "Spartan", "Arial", "sans-serif";
+    font-family: 'Spartan';
     line-height: 34px;
     font-size: 16px;
     font-weight:400;
@@ -745,17 +836,6 @@
             right: 0;
         }
     }
-    .newsletter-toolbar {
-        position: fixed;
-        left: 0;
-        top: 50%;
-        max-width: 20px;
-        transform: translateY(-50%);
-        z-index: 4;
-        display:flex;
-        flex-direction: column;
-        gap: 85px;
-    }
     .toolbar--text {
         transform: rotate(-90deg);
         cursor: pointer;
@@ -785,7 +865,7 @@
     }
     .halo-notification-popup {
         width: 100%;
-        max-width: 458px;
+        max-width: 410px;
         top: auto;
         left: 0;
         right: auto;
@@ -798,8 +878,8 @@
         }
         .halo-popup-header {
             .halo-popup-close {
-                top: auto;
-                right: 0;
+                top: 5px;
+                right: 5px;
                 background:#ffffff;
                 svg {
                     fill:#000000;
@@ -817,28 +897,14 @@
         .halo-popup-content {
             .img-box {
                 img {
-                    width:100px;
-                    height:150px;
+                    width:80px;
                 }
             }
             .product-content {
-                display: flex;
-                flex-direction: column;
-                .info-ago {
-                    margin-top: 10px;
-                    position: absolute;
-                    right: 10px;
-                    bottom: 3px;
-                }
                 .text {
                     width: 100%;
-                    max-width: 195px;
-                    height: 30px;
-                    display: flex;
-                    align-items: center;
-                    margin: 20px 0;
-                    border: 1px solid #e3e3e3;
-                    padding: 10px;
+                    padding: 17px 0px 10px;
+                    display: block;
                 }
             }
         }
@@ -1272,7 +1338,7 @@
     &.quickSearchResult-show {
         overflow: hidden;
         .background-header-search {
-            z-index: 8;
+            z-index: 1;
             opacity: 1;
             visibility: visible;
         }

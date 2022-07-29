@@ -524,6 +524,16 @@
         
     }
 }
+
+@media(min-width:1025px){
+    .skin-6 {
+        .product-card{
+            .card-action{
+                padding-top: 10px;
+            }
+        }
+    }
+}
 @media(min-width:1300px){
     .skin-6{
         .halo-product-block{

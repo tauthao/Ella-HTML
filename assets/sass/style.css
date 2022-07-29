@@ -2517,6 +2517,15 @@ label {
   margin: 0 0 15px;
   padding-bottom: 8px;
   border-bottom: 1px solid #e8e8e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .quickSearchResultsWrap .search-block-title .text {
@@ -2529,6 +2538,13 @@ label {
   position: relative;
   z-index: 2;
   background-color: #ffffff;
+}
+
+.quickSearchResultsWrap .search-block-title .halo-search-close svg {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -2px;
 }
 
 .quickSearchResultsWrap .list-item {
@@ -3919,9 +3935,9 @@ label {
   .footer-top .footer-block__heading {
     border-bottom: 1px solid #c7c7c7;
     pointer-events: auto;
-    padding-bottom: 13px;
+    padding-bottom: 17px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
   }
   .footer-top .footer-block__heading::after, .footer-top .footer-block__heading::before {
@@ -3958,6 +3974,7 @@ label {
     overflow: hidden;
     pointer-events: none;
     position: relative;
+    margin-bottom: 0;
   }
   .footer-block-newsletter .footer-block__heading {
     padding: 0;

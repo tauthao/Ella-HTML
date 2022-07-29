@@ -219,7 +219,7 @@
 }
 
 .halo-custom-text {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .halo-custom-text .content:hover .desc {
@@ -271,6 +271,8 @@
 .halo-custom-text .button {
   height: 54px;
   margin: 0 auto;
+  position: relative;
+  top: 1px;
 }
 
 .halo-tab-category {
@@ -552,6 +554,16 @@
   .halo-block-instagram .halo-block-navigation {
     margin: 0 -5px;
   }
+  .halo-custom-text .col-left,
+  .halo-custom-text .col-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+  .halo-custom-text .slick-dots {
+    margin: 15px 0px 20px;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -590,7 +602,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .halo-policies-block .row {
     margin: 0 -5px;
   }
@@ -601,15 +613,6 @@
     padding: 0 15px;
     margin-left: -5px;
     margin-right: -5px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .halo-custom-text .row {
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 0;
-    margin: 0 -10px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -758,9 +761,6 @@
 }
 
 @media (min-width: 768px) {
-  .halo-block-slideshow .slick-dots {
-    bottom: 48px;
-  }
   .halo-tab-category .content:hover {
     -webkit-box-shadow: 5px 9px 20px #00000026;
             box-shadow: 5px 9px 20px #00000026;
@@ -778,6 +778,12 @@
   }
   .halo-product .halo-block-header {
     margin-top: 56px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .halo-block-slideshow .slick-dots {
+    bottom: 48px;
   }
 }
 /*# sourceMappingURL=demo-2.css.map */

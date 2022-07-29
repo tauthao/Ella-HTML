@@ -482,6 +482,9 @@
         margin: 0 0 15px;
         padding-bottom: 8px;
         border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         .text {
             font-size: 12px;
             font-weight: 700;
@@ -492,6 +495,14 @@
             position: relative;
             z-index: 2;
             background-color: #ffffff;
+        }
+        .halo-search-close{
+            svg{
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: -2px;
+            }
         }
     }
     .list-item {

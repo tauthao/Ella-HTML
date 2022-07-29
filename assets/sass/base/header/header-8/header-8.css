@@ -539,4 +539,8 @@
 .header-mobile .header-mobile--icon.item-mobile-logo .header__heading-link {
   max-width: 100px;
 }
+
+.header-mobile .header-mobile--icon.icon-mobile-search {
+  padding-right: 10px;
+}
 /*# sourceMappingURL=header-8.css.map */

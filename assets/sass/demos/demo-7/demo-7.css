@@ -487,7 +487,8 @@
     z-index: 1;
     overflow: visible;
   }
-  .halo-block-product-width-banner .slick-arrow {
+  .halo-block-product-width-banner .slick-arrow,
+  .halo-block-product-tab .slick-arrow {
     top: calc(50% - 100px);
   }
 }

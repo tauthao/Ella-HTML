@@ -279,7 +279,7 @@
 }
 
 .skin-7 .halo-toolbar-bottom-mobile .halo-toolbar-item .label {
-  display: none;
+  text-transform: uppercase;
 }
 
 .skin-7 .halo-toolbar-bottom-mobile .cart-count-bubble {

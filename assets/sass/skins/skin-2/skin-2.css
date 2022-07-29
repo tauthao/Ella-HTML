@@ -213,7 +213,7 @@
 }
 
 .skin-2.quickSearchResult-show .background-header-search {
-  z-index: 99;
+  z-index: 1;
   opacity: 1;
   visibility: visible;
 }

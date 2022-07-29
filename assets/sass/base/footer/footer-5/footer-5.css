@@ -7,6 +7,7 @@
   font-weight: 600;
   letter-spacing: 0;
   color: #232323;
+  text-transform: capitalize;
 }
 
 .footer-5 .footer-link {
@@ -251,9 +252,6 @@
   }
   .footer-5.footer .footer-top .contact .footer-block__heading::after, .footer-5.footer .footer-top .contact .footer-block__heading::before {
     display: none;
-  }
-  .footer-5.footer .footer-top .footer-block__heading {
-    padding: 0;
   }
   .footer-5.footer .footer-top .halo-row-item.contact {
     padding-left: 0;

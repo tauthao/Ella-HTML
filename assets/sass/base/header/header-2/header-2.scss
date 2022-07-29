@@ -1,3 +1,4 @@
+
 .header-2 {
     background: #ffffff;
     .header-top {
@@ -513,6 +514,14 @@
                         color: #202020;
                         font-weight: 600;
                         margin:28px 0 16px 0;
+                        .halo-search-close{
+                            position: absolute;
+                            right: 0;
+                            svg{
+                                width: 17px;
+                                height: 17px;
+                            }
+                        }
                     }
                     .list-item {
                         .item {
@@ -572,7 +581,7 @@
                 }
                 &.show {
                     top: 65px;
-                    z-index: 999;
+                    z-index: 9;
                     visibility: visible;
                     pointer-events: auto;
                 }

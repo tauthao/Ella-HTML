@@ -620,6 +620,16 @@
   margin: 28px 0 16px 0;
 }
 
+.header-2 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .title .halo-search-close {
+  position: absolute;
+  right: 0;
+}
+
+.header-2 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .title .halo-search-close svg {
+  width: 17px;
+  height: 17px;
+}
+
 .header-2 .header-bottom .header-search .quickSearchResultsWrap .header-search__trending .list-item .item {
   border: 1px solid #808080;
   background-color: #ffffff;
@@ -684,7 +694,7 @@
 
 .header-2 .header-bottom .header-search .quickSearchResultsWrap.show {
   top: 65px;
-  z-index: 999;
+  z-index: 9;
   visibility: visible;
   pointer-events: auto;
 }
